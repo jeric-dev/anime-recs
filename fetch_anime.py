@@ -33,6 +33,14 @@ query ($username: String) {
           episodes
           averageScore
           siteUrl
+          relations {
+            edges {
+              relationType
+              node {
+                type
+              }
+            }
+          }
         }
       }
     }
@@ -68,16 +76,24 @@ def fetch_anime_list():
             if media["id"] in seen_ids:
                 continue
             seen_ids.add(media["id"])
+            score = entry["score"] or 0
+            if score == 0:
+                continue  # drop unrated entries entirely
             tags = [
                 {"name": t["name"], "rank": t["rank"]}
                 for t in media["tags"]
                 if not t["isGeneralSpoiler"] and not t["isMediaSpoiler"]
             ]
+            relation_edges = media.get("relations", {}).get("edges", [])
+            is_sequel = any(
+                e["relationType"] == "PREQUEL" and e["node"]["type"] == "ANIME"
+                for e in relation_edges
+            )
             entries.append({
                 "id": media["id"],
                 "title": media["title"]["english"] or media["title"]["romaji"],
                 "titleRomaji": media["title"]["romaji"],
-                "score": entry["score"],
+                "score": score,
                 "genres": media["genres"],
                 "tags": tags,
                 "description": clean_description(media["description"]),
@@ -86,6 +102,7 @@ def fetch_anime_list():
                 "averageScore": media["averageScore"],
                 "url": media["siteUrl"],
                 "notes": entry["notes"] or "",
+                "isSequel": is_sequel,
             })
 
     entries.sort(key=lambda x: (x["score"] or 0, x["averageScore"] or 0), reverse=True)

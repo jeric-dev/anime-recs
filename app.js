@@ -260,14 +260,33 @@ function search(query) {
   const terms = getSearchTerms(query);
   if (!terms.length) return [];
 
-  return animeData
+  // Score and rank by relevance first
+  const scored = animeData
     .map(anime => {
       const { weightedScore, rawScore, matched } = scoreAnime(anime, terms);
       return { ...anime, weightedScore, rawScore, matched };
     })
     .filter(a => a.rawScore > 0)
-    .sort((a, b) => (a.title || a.titleRomaji || '').localeCompare(b.title || b.titleRomaji || ''))
-    .slice(0, 30);
+    .sort((a, b) => b.weightedScore - a.weightedScore);
+
+  let result;
+  if (scored.length <= 10) {
+    result = scored;
+  } else {
+    // Prefer non-sequels; fill with sequels only if not enough non-sequels
+    const nonSequels = scored.filter(a => !a.isSequel);
+    if (nonSequels.length >= 10) {
+      result = nonSequels.slice(0, 10);
+    } else {
+      const seqs = scored.filter(a => a.isSequel);
+      result = [...nonSequels, ...seqs.slice(0, 10 - nonSequels.length)];
+    }
+  }
+
+  // Display alphabetically
+  return result.sort((a, b) =>
+    (a.title || a.titleRomaji || '').localeCompare(b.title || b.titleRomaji || '')
+  );
 }
 
 function renderCard(anime, showMatched) {
