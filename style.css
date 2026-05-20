@@ -339,12 +339,10 @@ main {
 .modal-inner {
   display: grid;
   grid-template-columns: 200px 1fr;
-  align-items: start;
 }
 
 .modal-cover {
   position: relative;
-  aspect-ratio: 2 / 3;
   overflow: hidden;
   flex-shrink: 0;
 }
