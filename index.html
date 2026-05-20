@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeric's Anime Picks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Jeric's Anime Picks</h1>
+      <p class="hero-subtitle">Describe what you're in the mood for — I'll find something from my list.</p>
+      <div class="search-wrapper">
+        <input
+          type="text"
+          id="search"
+          class="search-input"
+          placeholder="e.g. something dark and psychological, or a funny slice of life..."
+          autocomplete="off"
+          spellcheck="false"
+        >
+        <span class="search-icon">⌕</span>
+      </div>
+      <div class="example-prompts">
+        <span class="prompt-label">Try:</span>
+        <button class="prompt-chip" data-query="dark psychological thriller">dark psychological</button>
+        <button class="prompt-chip" data-query="funny slice of life">funny slice of life</button>
+        <button class="prompt-chip" data-query="emotional romance drama">emotional romance</button>
+        <button class="prompt-chip" data-query="epic fantasy adventure">epic fantasy</button>
+        <button class="prompt-chip" data-query="action supernatural">action supernatural</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="status-bar" class="status-bar hidden"></div>
+    <div id="results" class="results-grid"></div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
