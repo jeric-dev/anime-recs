@@ -230,7 +230,7 @@ function scoreAnime(anime, terms) {
 
   const genres = anime.genres.map(normalize);
   const tags = anime.tags.map(t => ({ name: normalize(t.name), rank: t.rank }));
-  const description = normalize(anime.description || '');
+  const descWords = new Set((anime.description || '').toLowerCase().split(/[^a-z0-9]+/));
 
   for (const term of terms) {
     for (const genre of genres) {
@@ -244,7 +244,7 @@ function scoreAnime(anime, terms) {
         matchedTags.set(tag.name, 5 * (tag.rank / 100));
       }
     }
-    if (description.includes(term)) {
+    if (descWords.has(term)) {
       score += 1;
     }
   }
