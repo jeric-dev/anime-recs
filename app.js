@@ -25,11 +25,11 @@ const DESCRIPTOR_MAP = {
   mindfuck:       ['psychological', 'mind games', 'unreliable narrator', 'thriller'],
 
   // Cast / setting descriptors
-  adult:          ['adult cast', 'seinen', 'josei', 'workplace', 'mature themes'],
-  adults:         ['adult cast', 'seinen', 'josei'],
-  older:          ['adult cast', 'seinen', 'josei'],
-  grown:          ['adult cast', 'seinen', 'josei'],
-  grownup:        ['adult cast', 'seinen', 'josei'],
+  adult:          ['adult cast', 'workplace', 'mature themes'],
+  adults:         ['adult cast', 'workplace'],
+  older:          ['adult cast'],
+  grown:          ['adult cast'],
+  grownup:        ['adult cast'],
   work:           ['workplace', 'adult cast', 'salaryman', 'seinen'],
   working:        ['workplace', 'adult cast', 'seinen'],
   office:         ['workplace', 'adult cast', 'salaryman'],
@@ -138,13 +138,20 @@ const PHRASES = {
   'mind games':        ['mind games', 'psychological', 'thriller'],
 };
 
+// When a term is in the search, penalize anime that have these conflicting tags
+const CONFLICT_MAP = {
+  'adult cast': ['primarily teen cast', 'school', 'middle school', 'high school', 'elementary school'],
+  'child':      ['adult cast', 'violence', 'gore'],
+  'kids':       ['adult cast', 'violence', 'gore'],
+};
+
 const STOPWORDS = new Set([
   'a', 'an', 'the', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of',
   'with', 'is', 'it', 'me', 'something', 'some', 'want', 'looking', 'find',
   'give', 'like', 'really', 'very', 'quite', 'bit', 'kind', 'sort', 'show',
   'anime', 'watch', 'watching', 'recommend', 'good', 'great', 'best', 'top',
   'please', 'any', 'have', 'about', 'more', 'nice', 'cool', 'awesome',
-  'i', 'my', 'we', 'us', 'you', 'that', 'this',
+  'i', 'my', 'we', 'us', 'you', 'that', 'this', 'cast',
 ]);
 
 let animeData = [];
@@ -222,11 +229,25 @@ function scoreAnime(anime, terms) {
 
   for (const tagScore of matchedTags.values()) score += tagScore;
 
+  // Penalize anime whose tags directly conflict with what was searched for
+  let penalty = 1.0;
+  for (const term of terms) {
+    const conflicts = CONFLICT_MAP[term];
+    if (!conflicts) continue;
+    for (const tag of tags) {
+      for (const conflict of conflicts) {
+        if (tag.name.includes(conflict) || conflict.includes(tag.name)) {
+          penalty = Math.min(penalty, 0.1);
+        }
+      }
+    }
+  }
+
   const userScore = anime.score || 0;
   const weight = userScore > 0 ? userScore / 10 : 0.5;
 
   return {
-    weightedScore: score * weight,
+    weightedScore: score * weight * penalty,
     rawScore: score,
     matched: [...matchedGenres, ...matchedTags.keys()].slice(0, 5),
   };
