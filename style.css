@@ -448,6 +448,10 @@ main {
   flex-shrink: 0;
 }
 
+.modal-notes-section.hidden {
+  display: none;
+}
+
 .modal-notes-section {
   background: var(--surface-3);
   border-radius: var(--radius-sm);
