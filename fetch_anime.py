@@ -28,7 +28,7 @@ query ($username: String) {
           }
           description(asHtml: false)
           coverImage {
-            large
+            extraLarge
           }
           episodes
           averageScore
@@ -97,7 +97,7 @@ def fetch_anime_list():
                 "genres": media["genres"],
                 "tags": tags,
                 "description": clean_description(media["description"]),
-                "cover": media["coverImage"]["large"],
+                "cover": media["coverImage"]["extraLarge"],
                 "episodes": media["episodes"],
                 "averageScore": media["averageScore"],
                 "url": media["siteUrl"],
