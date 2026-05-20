@@ -18,7 +18,60 @@ const DESCRIPTOR_MAP = {
   mindblowing:    ['psychological', 'mystery', 'sci-fi', 'mind games', 'plot twist'],
   epic:           ['action', 'adventure', 'fantasy', 'military', 'war'],
   chill:          ['slice of life', 'iyashikei', 'healing', 'daily life'],
-  mature:         ['seinen', 'violence', 'gore', 'mature themes'],
+  mature:         ['seinen', 'violence', 'gore', 'mature themes', 'adult cast'],
+  lighthearted:   ['slice of life', 'comedy', 'iyashikei', 'healing', 'feel-good'],
+  bittersweet:    ['drama', 'romance', 'tragedy', 'grief'],
+  mindblowing:    ['psychological', 'mystery', 'sci-fi', 'mind games', 'plot twist'],
+  mindfuck:       ['psychological', 'mind games', 'unreliable narrator', 'thriller'],
+
+  // Cast / setting descriptors
+  adult:          ['adult cast', 'seinen', 'josei', 'workplace', 'mature themes'],
+  adults:         ['adult cast', 'seinen', 'josei'],
+  older:          ['adult cast', 'seinen', 'josei'],
+  grown:          ['adult cast', 'seinen', 'josei'],
+  grownup:        ['adult cast', 'seinen', 'josei'],
+  work:           ['workplace', 'adult cast', 'salaryman', 'seinen'],
+  working:        ['workplace', 'adult cast', 'seinen'],
+  office:         ['workplace', 'adult cast', 'salaryman'],
+  job:            ['workplace', 'adult cast', 'salaryman'],
+  career:         ['workplace', 'adult cast', 'salaryman'],
+  realistic:      ['seinen', 'josei', 'slice of life', 'adult cast', 'real world setting'],
+  grounded:       ['seinen', 'josei', 'slice of life', 'drama'],
+  serious:        ['seinen', 'drama', 'psychological', 'military'],
+
+  // Tropes / themes
+  revenge:        ['revenge', 'action', 'thriller', 'drama'],
+  betrayal:       ['betrayal', 'psychological', 'thriller', 'drama'],
+  redemption:     ['drama', 'action', 'seinen', 'character development'],
+  overpowered:    ['overpowered main characters', 'isekai', 'action', 'super power'],
+  reincarnation:  ['reincarnation', 'isekai', 'parallel world'],
+  friendship:     ['friendship', 'slice of life', 'coming of age', 'school'],
+  family:         ['family', 'drama', 'slice of life'],
+  underdog:       ['sports', 'drama', 'competition', 'coming of age'],
+  war:            ['war', 'military', 'historical', 'action'],
+  death:          ['tragedy', 'drama', 'horror', 'grief'],
+  grief:          ['grief', 'tragedy', 'drama'],
+  loss:           ['grief', 'tragedy', 'drama', 'loss'],
+  philosophy:     ['philosophical', 'seinen', 'psychological'],
+  tournament:     ['competition', 'sports', 'action', 'martial arts'],
+  detective:      ['detective', 'mystery', 'thriller', 'crime'],
+  crime:          ['crime', 'mystery', 'thriller', 'detective'],
+  pirates:        ['pirates', 'adventure', 'action'],
+  ninja:          ['ninja', 'historical', 'action', 'martial arts'],
+  ninjas:         ['ninja', 'historical', 'action', 'martial arts'],
+  robot:          ['mecha', 'sci-fi', 'android', 'artificial intelligence'],
+  robots:         ['mecha', 'sci-fi', 'android', 'artificial intelligence'],
+  aliens:         ['alien', 'sci-fi', 'space'],
+  dystopia:       ['dystopian', 'sci-fi', 'post-apocalyptic', 'survival'],
+  dystopian:      ['dystopian', 'sci-fi', 'post-apocalyptic', 'survival'],
+  idol:           ['idol', 'music', 'performing arts'],
+  band:           ['band', 'music', 'performing arts'],
+  gods:           ['gods', 'supernatural', 'mythology', 'mythological'],
+  god:            ['gods', 'supernatural', 'mythology'],
+  witches:        ['magic', 'fantasy', 'witch'],
+  unrequited:     ['unrequited love', 'romance', 'drama'],
+  tsundere:       ['tsundere', 'romance', 'comedy'],
+  yandere:        ['yandere', 'romance', 'psychological', 'horror'],
 
   // Genres / themes
   romance:           ['romance', 'love triangle', 'childhood romance', 'unrequited love'],
@@ -59,6 +112,32 @@ const DESCRIPTOR_MAP = {
   'post-apocalyptic':['post-apocalyptic', 'dystopian', 'survival'],
 };
 
+// Exact multi-word phrases → Anilist tag/genre targets (checked before tokenizing)
+const PHRASES = {
+  'adult cast':        ['adult cast'],
+  'high school':       ['school', 'high school'],
+  'middle school':     ['school', 'middle school'],
+  'slice of life':     ['slice of life', 'iyashikei', 'daily life'],
+  'coming of age':     ['coming of age', 'youth'],
+  'time travel':       ['time travel', 'time manipulation'],
+  'martial arts':      ['martial arts', 'fighting'],
+  'magical girl':      ['magical girl', 'mahou shoujo'],
+  'love triangle':     ['love triangle'],
+  'found family':      ['found family', 'drama'],
+  'power fantasy':     ['isekai', 'super power', 'reincarnation', 'overpowered main characters'],
+  'sci fi':            ['sci-fi', 'futuristic'],
+  'science fiction':   ['sci-fi', 'space', 'futuristic'],
+  'dark fantasy':      ['dark', 'fantasy', 'violence'],
+  'feel good':         ['iyashikei', 'healing', 'slice of life'],
+  'feel-good':         ['iyashikei', 'healing', 'slice of life'],
+  'post apocalyptic':  ['post-apocalyptic', 'dystopian', 'survival'],
+  'childhood friends': ['childhood friends', 'romance', 'school'],
+  'unrequited love':   ['unrequited love', 'romance', 'drama'],
+  'reverse harem':     ['reverse harem', 'romance'],
+  'super power':       ['super power', 'action'],
+  'mind games':        ['mind games', 'psychological', 'thriller'],
+};
+
 const STOPWORDS = new Set([
   'a', 'an', 'the', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of',
   'with', 'is', 'it', 'me', 'something', 'some', 'want', 'looking', 'find',
@@ -88,17 +167,24 @@ function tokenize(input) {
 }
 
 function getSearchTerms(input) {
-  const tokens = tokenize(input);
-  const terms = new Set(tokens);
   const lower = input.toLowerCase();
+  const terms = new Set();
 
-  tokens.forEach(token => {
-    const key = token.replace(/-/g, '');
-    const mapped = DESCRIPTOR_MAP[token] || DESCRIPTOR_MAP[key];
+  // Check exact multi-word phrases first (before tokenizing splits them up)
+  Object.entries(PHRASES).forEach(([phrase, expansions]) => {
+    if (lower.includes(phrase)) {
+      expansions.forEach(t => terms.add(normalize(t)));
+    }
+  });
+
+  // Then expand individual tokens via the descriptor map
+  tokenize(input).forEach(token => {
+    terms.add(token);
+    const mapped = DESCRIPTOR_MAP[token] || DESCRIPTOR_MAP[token.replace(/-/g, '')];
     if (mapped) mapped.forEach(t => terms.add(normalize(t)));
   });
 
-  // Multi-word phrase detection
+  // Multi-word DESCRIPTOR_MAP entries
   Object.entries(DESCRIPTOR_MAP).forEach(([phrase, expansions]) => {
     if (phrase.includes(' ') && lower.includes(phrase)) {
       expansions.forEach(t => terms.add(normalize(t)));
@@ -110,7 +196,8 @@ function getSearchTerms(input) {
 
 function scoreAnime(anime, terms) {
   let score = 0;
-  const matched = new Set();
+  const matchedGenres = new Set();
+  const matchedTags = new Map(); // tag name → score; each tag counted once
 
   const genres = anime.genres.map(normalize);
   const tags = anime.tags.map(t => ({ name: normalize(t.name), rank: t.rank }));
@@ -118,15 +205,14 @@ function scoreAnime(anime, terms) {
 
   for (const term of terms) {
     for (const genre of genres) {
-      if (genre.includes(term) || term.includes(genre)) {
+      if (!matchedGenres.has(genre) && (genre.includes(term) || term.includes(genre))) {
         score += 10;
-        matched.add(genre);
+        matchedGenres.add(genre);
       }
     }
     for (const tag of tags) {
-      if (tag.name.includes(term) || term.includes(tag.name)) {
-        score += 5 * (tag.rank / 100);
-        matched.add(tag.name);
+      if (!matchedTags.has(tag.name) && (tag.name.includes(term) || term.includes(tag.name))) {
+        matchedTags.set(tag.name, 5 * (tag.rank / 100));
       }
     }
     if (description.includes(term)) {
@@ -134,13 +220,15 @@ function scoreAnime(anime, terms) {
     }
   }
 
+  for (const tagScore of matchedTags.values()) score += tagScore;
+
   const userScore = anime.score || 0;
   const weight = userScore > 0 ? userScore / 10 : 0.5;
 
   return {
     weightedScore: score * weight,
     rawScore: score,
-    matched: Array.from(matched).slice(0, 5),
+    matched: [...matchedGenres, ...matchedTags.keys()].slice(0, 5),
   };
 }
 

@@ -59,10 +59,14 @@ def fetch_anime_list():
     if "errors" in data:
         raise Exception(f"Anilist API error: {data['errors']}")
 
+    seen_ids = set()
     entries = []
     for lst in data["data"]["MediaListCollection"]["lists"]:
         for entry in lst["entries"]:
             media = entry["media"]
+            if media["id"] in seen_ids:
+                continue
+            seen_ids.add(media["id"])
             tags = [
                 {"name": t["name"], "rank": t["rank"]}
                 for t in media["tags"]
