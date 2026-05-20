@@ -40,8 +40,8 @@ const DESCRIPTOR_MAP = {
   serious:        ['seinen', 'drama', 'psychological', 'military'],
 
   // Tropes / themes
-  revenge:        ['revenge', 'action', 'thriller', 'drama'],
-  betrayal:       ['betrayal', 'psychological', 'thriller', 'drama'],
+  revenge:        ['revenge', 'betrayal'],
+  betrayal:       ['betrayal', 'revenge'],
   redemption:     ['drama', 'action', 'seinen', 'character development'],
   overpowered:    ['overpowered main characters', 'isekai', 'action', 'super power'],
   reincarnation:  ['reincarnation', 'isekai', 'parallel world'],
@@ -299,7 +299,7 @@ function search(query) {
       const { weightedScore, rawScore, matched } = scoreAnime(anime, terms);
       return { ...anime, weightedScore, rawScore, matched };
     })
-    .filter(a => a.rawScore > 0)
+    .filter(a => a.rawScore >= 2)
     .filter(a => required.length === 0 || meetsGenreRequirements(a, required))
     .sort((a, b) => b.weightedScore - a.weightedScore);
 
