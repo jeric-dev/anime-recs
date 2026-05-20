@@ -77,6 +77,9 @@ const DESCRIPTOR_MAP = {
   shounen:        ['shounen'],
   josei:          ['josei'],
 
+  // Compound / adjacent terms
+  romantic:       ['romance', 'love triangle', 'childhood romance', 'unrequited love'],
+
   // Genres / themes
   romance:           ['romance', 'love triangle', 'childhood romance', 'unrequited love'],
   fantasy:           ['fantasy', 'magic', 'sword and sorcery', 'mythological', 'isekai'],
@@ -173,6 +176,16 @@ const CONFLICT_MAP = {
   'kids':       ['adult cast', 'violence', 'gore'],
 };
 
+// Abbreviations / portmanteaus rewritten to their full form before any processing
+const QUERY_ALIASES = {
+  'rom-com':      'romantic comedy',
+  'romcom':       'romantic comedy',
+  'rom com':      'romantic comedy',
+  'mahou shoujo': 'magical girl',
+  'maho shojo':   'magical girl',
+  'sci fi':       'sci-fi',
+};
+
 const STOPWORDS = new Set([
   'a', 'an', 'the', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of',
   'with', 'is', 'it', 'me', 'something', 'some', 'want', 'looking', 'find',
@@ -190,6 +203,14 @@ async function loadData() {
   if (!res.ok) throw new Error('Could not load anime.json — run fetch_anime.py first.');
   animeData = await res.json();
   animeMap = new Map(animeData.map(a => [a.id, a]));
+}
+
+function normalizeQuery(input) {
+  let q = input.toLowerCase();
+  for (const [alias, replacement] of Object.entries(QUERY_ALIASES)) {
+    q = q.split(alias).join(replacement);
+  }
+  return q;
 }
 
 function normalize(str) {
@@ -327,10 +348,11 @@ function tokenSatisfied(token, anime) {
 
 function search(query) {
   if (!query.trim()) return null;
-  const terms = getSearchTerms(query);
+  const q = normalizeQuery(query); // expand aliases before all other processing
+  const terms = getSearchTerms(q);
   if (!terms.length) return [];
 
-  const queryLower = query.toLowerCase();
+  const queryLower = q.toLowerCase();
 
   // Find which genre words were explicitly typed so we can require them
   const required = GENRE_REQUIREMENTS.filter(r => queryLower.includes(r.word));
@@ -339,7 +361,7 @@ function search(query) {
   // so "slice of life" counts as one concept, not three
   const phraseTokens = Object.keys(PHRASES).filter(p => queryLower.includes(p));
   const coveredByPhrase = new Set(phraseTokens.flatMap(p => tokenize(p)));
-  const singleTokens = tokenize(query).filter(t => !coveredByPhrase.has(t));
+  const singleTokens = tokenize(q).filter(t => !coveredByPhrase.has(t));
   const effectiveTokens = [...phraseTokens, ...singleTokens];
 
   // Score and rank by relevance first
