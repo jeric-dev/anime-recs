@@ -72,6 +72,11 @@ const DESCRIPTOR_MAP = {
   tsundere:       ['tsundere'],
   yandere:        ['yandere', 'psychological'],
 
+  // Demographics
+  shoujo:         ['shoujo'],
+  shounen:        ['shounen'],
+  josei:          ['josei'],
+
   // Genres / themes
   romance:           ['romance', 'love triangle', 'childhood romance', 'unrequited love'],
   fantasy:           ['fantasy', 'magic', 'sword and sorcery', 'mythological', 'isekai'],
@@ -297,14 +302,45 @@ function meetsGenreRequirements(anime, required) {
   });
 }
 
+// Returns all the expanded terms that a single user token maps to
+function getTokenExpansions(token) {
+  const expanded = new Set([token]);
+  const phraseExpansions = PHRASES[token];
+  if (phraseExpansions) phraseExpansions.forEach(t => expanded.add(normalize(t)));
+  const mapped = DESCRIPTOR_MAP[token] || DESCRIPTOR_MAP[token.replace(/-/g, '')];
+  if (mapped) mapped.forEach(t => expanded.add(normalize(t)));
+  return expanded;
+}
+
+// Returns true if any of the token's expansions match the anime's genres, tags, or description
+function tokenSatisfied(token, anime) {
+  const genres = anime.genres.map(normalize);
+  const tags = anime.tags.map(t => normalize(t.name));
+  const descWords = new Set((anime.description || '').toLowerCase().split(/[^a-z0-9]+/));
+  for (const term of getTokenExpansions(token)) {
+    if (genres.some(g => matchesTerm(term, g))) return true;
+    if (tags.some(t => matchesTerm(term, t))) return true;
+    if (descWords.has(term)) return true;
+  }
+  return false;
+}
+
 function search(query) {
   if (!query.trim()) return null;
   const terms = getSearchTerms(query);
   if (!terms.length) return [];
 
-  // Find which genre words were explicitly typed so we can require them
   const queryLower = query.toLowerCase();
+
+  // Find which genre words were explicitly typed so we can require them
   const required = GENRE_REQUIREMENTS.filter(r => queryLower.includes(r.word));
+
+  // Build effective tokens for AND-requirement: treat matched phrases as single units
+  // so "slice of life" counts as one concept, not three
+  const phraseTokens = Object.keys(PHRASES).filter(p => queryLower.includes(p));
+  const coveredByPhrase = new Set(phraseTokens.flatMap(p => tokenize(p)));
+  const singleTokens = tokenize(query).filter(t => !coveredByPhrase.has(t));
+  const effectiveTokens = [...phraseTokens, ...singleTokens];
 
   // Score and rank by relevance first
   let scored = animeData
@@ -314,6 +350,8 @@ function search(query) {
     })
     .filter(a => a.rawScore >= 2)
     .filter(a => required.length === 0 || meetsGenreRequirements(a, required))
+    // AND requirement: every concept the user typed must independently match the anime
+    .filter(a => effectiveTokens.every(t => tokenSatisfied(t, a)))
     .sort((a, b) => b.weightedScore - a.weightedScore);
 
   let result;
