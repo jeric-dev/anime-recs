@@ -138,6 +138,26 @@ const PHRASES = {
   'mind games':        ['mind games', 'psychological', 'thriller'],
 };
 
+// When one of these words appears in the raw query, the anime MUST match
+// the listed genre or at least one of the listed tags — otherwise filtered out
+const GENRE_REQUIREMENTS = [
+  { word: 'romance',       genre: 'romance',       tags: ['romance', 'love triangle', 'childhood romance', 'unrequited love', 'romantic'] },
+  { word: 'horror',        genre: 'horror',        tags: ['horror', 'supernatural horror', 'survival horror', 'gore'] },
+  { word: 'action',        genre: 'action',        tags: ['action', 'martial arts', 'fighting', 'super power'] },
+  { word: 'comedy',        genre: 'comedy',        tags: ['comedy', 'parody', 'slapstick humor', 'gag humor', 'dark comedy'] },
+  { word: 'sports',        genre: 'sports',        tags: ['sports'] },
+  { word: 'music',         genre: 'music',         tags: ['music', 'band', 'idol', 'singing'] },
+  { word: 'mystery',       genre: 'mystery',       tags: ['mystery', 'detective', 'thriller', 'whodunnit'] },
+  { word: 'fantasy',       genre: 'fantasy',       tags: ['fantasy', 'magic', 'isekai', 'mythological', 'sword and sorcery'] },
+  { word: 'historical',    genre: 'historical',    tags: ['historical', 'samurai', 'feudal japan', 'period piece'] },
+  { word: 'supernatural',  genre: 'supernatural',  tags: ['supernatural', 'demons', 'ghosts', 'spirits', 'exorcism'] },
+  { word: 'mecha',         genre: 'mecha',         tags: ['mecha', 'super robot'] },
+  { word: 'psychological', genre: 'psychological', tags: ['psychological', 'mind games', 'unreliable narrator'] },
+  { word: 'adventure',     genre: 'adventure',     tags: ['adventure', 'exploration', 'journey'] },
+  { word: 'thriller',      genre: 'thriller',      tags: ['thriller', 'suspense', 'psychological'] },
+  { word: 'drama',         genre: 'drama',         tags: ['drama', 'tragedy', 'tearjerker'] },
+];
+
 // When a term is in the search, penalize anime that have these conflicting tags
 const CONFLICT_MAP = {
   'adult cast': ['primarily teen cast', 'school', 'middle school', 'high school', 'elementary school'],
@@ -255,18 +275,32 @@ function scoreAnime(anime, terms) {
   };
 }
 
+function meetsGenreRequirements(anime, required) {
+  const genres = anime.genres.map(g => g.toLowerCase());
+  const tags = anime.tags.map(t => t.name.toLowerCase());
+  return required.every(req => {
+    if (genres.includes(req.genre)) return true;
+    return req.tags.some(tag => genres.some(g => g.includes(tag)) || tags.some(t => t.includes(tag) || tag.includes(t)));
+  });
+}
+
 function search(query) {
   if (!query.trim()) return null;
   const terms = getSearchTerms(query);
   if (!terms.length) return [];
 
+  // Find which genre words were explicitly typed so we can require them
+  const queryLower = query.toLowerCase();
+  const required = GENRE_REQUIREMENTS.filter(r => queryLower.includes(r.word));
+
   // Score and rank by relevance first
-  const scored = animeData
+  let scored = animeData
     .map(anime => {
       const { weightedScore, rawScore, matched } = scoreAnime(anime, terms);
       return { ...anime, weightedScore, rawScore, matched };
     })
     .filter(a => a.rawScore > 0)
+    .filter(a => required.length === 0 || meetsGenreRequirements(a, required))
     .sort((a, b) => b.weightedScore - a.weightedScore);
 
   let result;
@@ -283,10 +317,11 @@ function search(query) {
     }
   }
 
-  // Display alphabetically
-  return result.sort((a, b) =>
-    (a.title || a.titleRomaji || '').localeCompare(b.title || b.titleRomaji || '')
-  );
+  // Sort by score descending, then alphabetically
+  return result.sort((a, b) => {
+    if (b.score !== a.score) return b.score - a.score;
+    return (a.title || a.titleRomaji || '').localeCompare(b.title || b.titleRomaji || '');
+  });
 }
 
 function renderCard(anime, showMatched) {
@@ -379,7 +414,10 @@ function renderDefault() {
   const status = document.getElementById('status-bar');
   const top = animeData
     .filter(a => a.score >= 9)
-    .sort((a, b) => (a.title || a.titleRomaji || '').localeCompare(b.title || b.titleRomaji || ''))
+    .sort((a, b) => {
+      if (b.score !== a.score) return b.score - a.score;
+      return (a.title || a.titleRomaji || '').localeCompare(b.title || b.titleRomaji || '');
+    })
     .slice(0, 24);
 
   if (!top.length) {
