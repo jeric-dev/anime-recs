@@ -21,7 +21,6 @@ const DESCRIPTOR_MAP = {
   mature:         ['seinen', 'violence', 'gore', 'mature themes', 'adult cast'],
   lighthearted:   ['slice of life', 'comedy', 'iyashikei', 'healing', 'feel-good'],
   bittersweet:    ['drama', 'romance', 'tragedy', 'grief'],
-  mindblowing:    ['psychological', 'mystery', 'sci-fi', 'mind games', 'plot twist'],
   mindfuck:       ['psychological', 'mind games', 'unreliable narrator', 'thriller'],
 
   // Cast / setting descriptors
@@ -45,8 +44,8 @@ const DESCRIPTOR_MAP = {
   redemption:     ['drama', 'action', 'seinen', 'character development'],
   overpowered:    ['overpowered main characters', 'isekai', 'action', 'super power'],
   reincarnation:  ['reincarnation', 'isekai', 'parallel world'],
-  friendship:     ['friendship', 'slice of life', 'coming of age', 'school'],
-  family:         ['family', 'drama', 'slice of life'],
+  friendship:     ['friendship'],
+  family:         ['family', 'found family'],
   underdog:       ['sports', 'drama', 'competition', 'coming of age'],
   war:            ['war', 'military', 'historical', 'action'],
   death:          ['tragedy', 'drama', 'horror', 'grief'],
@@ -69,9 +68,9 @@ const DESCRIPTOR_MAP = {
   gods:           ['gods', 'supernatural', 'mythology', 'mythological'],
   god:            ['gods', 'supernatural', 'mythology'],
   witches:        ['magic', 'fantasy', 'witch'],
-  unrequited:     ['unrequited love', 'romance', 'drama'],
-  tsundere:       ['tsundere', 'romance', 'comedy'],
-  yandere:        ['yandere', 'romance', 'psychological', 'horror'],
+  unrequited:     ['unrequited love'],
+  tsundere:       ['tsundere'],
+  yandere:        ['yandere', 'psychological'],
 
   // Genres / themes
   romance:           ['romance', 'love triangle', 'childhood romance', 'unrequited love'],
@@ -99,7 +98,7 @@ const DESCRIPTOR_MAP = {
   cyberpunk:         ['cyberpunk', 'sci-fi', 'dystopian', 'futuristic', 'hacking'],
   space:             ['space', 'sci-fi', 'mecha', 'alien', 'galaxy'],
   harem:             ['harem', 'reverse harem', 'romance'],
-  cooking:           ['food', 'cooking', 'slice of life', 'culinary'],
+  cooking:           ['food', 'cooking', 'culinary'],
   survival:          ['survival', 'post-apocalyptic', 'dystopian', 'battle royale'],
   military:          ['military', 'war', 'historical', 'political', 'action'],
   competition:       ['competition', 'sports', 'strategy game', 'card game'],
@@ -156,6 +155,10 @@ const GENRE_REQUIREMENTS = [
   { word: 'adventure',     genre: 'adventure',     tags: ['adventure', 'exploration', 'journey'] },
   { word: 'thriller',      genre: 'thriller',      tags: ['thriller', 'suspense', 'psychological'] },
   { word: 'drama',         genre: 'drama',         tags: ['drama', 'tragedy', 'tearjerker'] },
+  { word: 'slice of life', genre: 'slice of life', tags: ['slice of life', 'iyashikei', 'daily life'] },
+  { word: 'sci-fi',        genre: 'sci-fi',        tags: ['sci-fi', 'space', 'cyberpunk', 'futuristic', 'mecha'] },
+  { word: 'scifi',         genre: 'sci-fi',        tags: ['sci-fi', 'space', 'cyberpunk', 'futuristic', 'mecha'] },
+  { word: 'cooking',       genre: 'slice of life', tags: ['food', 'cooking', 'culinary'] },
 ];
 
 // When a term is in the search, penalize anime that have these conflicting tags
@@ -186,6 +189,16 @@ async function loadData() {
 
 function normalize(str) {
   return str.toLowerCase().trim();
+}
+
+// Whole-word match only: "ice" must not match "slice of life", "man" must not match "romance"
+function matchesTerm(term, candidate) {
+  if (term === candidate) return true;
+  const cWords = candidate.split(/\s+/);
+  if (cWords.includes(term)) return true;
+  const tWords = term.split(/\s+/);
+  if (tWords.includes(candidate)) return true;
+  return false;
 }
 
 function tokenize(input) {
@@ -234,13 +247,13 @@ function scoreAnime(anime, terms) {
 
   for (const term of terms) {
     for (const genre of genres) {
-      if (!matchedGenres.has(genre) && (genre.includes(term) || term.includes(genre))) {
+      if (!matchedGenres.has(genre) && matchesTerm(term, genre)) {
         score += 10;
         matchedGenres.add(genre);
       }
     }
     for (const tag of tags) {
-      if (!matchedTags.has(tag.name) && (tag.name.includes(term) || term.includes(tag.name))) {
+      if (!matchedTags.has(tag.name) && matchesTerm(term, tag.name)) {
         matchedTags.set(tag.name, 5 * (tag.rank / 100));
       }
     }
@@ -280,7 +293,7 @@ function meetsGenreRequirements(anime, required) {
   const tags = anime.tags.map(t => t.name.toLowerCase());
   return required.every(req => {
     if (genres.includes(req.genre)) return true;
-    return req.tags.some(tag => genres.some(g => g.includes(tag)) || tags.some(t => t.includes(tag) || tag.includes(t)));
+    return req.tags.some(tag => genres.some(g => matchesTerm(tag, g)) || tags.some(t => matchesTerm(tag, t)));
   });
 }
 
