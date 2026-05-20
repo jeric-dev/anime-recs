@@ -155,11 +155,13 @@ const STOPWORDS = new Set([
 ]);
 
 let animeData = [];
+let animeMap = new Map();
 
 async function loadData() {
   const res = await fetch('data/anime.json');
   if (!res.ok) throw new Error('Could not load anime.json — run fetch_anime.py first.');
   animeData = await res.json();
+  animeMap = new Map(animeData.map(a => [a.id, a]));
 }
 
 function normalize(str) {
@@ -264,34 +266,73 @@ function search(query) {
       return { ...anime, weightedScore, rawScore, matched };
     })
     .filter(a => a.rawScore > 0)
-    .sort((a, b) => b.weightedScore - a.weightedScore)
-    .slice(0, 18);
+    .sort((a, b) => (a.title || a.titleRomaji || '').localeCompare(b.title || b.titleRomaji || ''))
+    .slice(0, 30);
 }
 
 function renderCard(anime, showMatched) {
   const title = anime.title || anime.titleRomaji;
-  const score = anime.score > 0 ? `${anime.score}/10` : '—';
+  const score = anime.score > 0 ? `★ ${anime.score}` : '—';
   const genres = (anime.genres || []).slice(0, 3);
-  const desc = anime.description || '';
-  const synopsis = desc.length > 180 ? desc.slice(0, 180) + '…' : desc;
   const matched = anime.matched || [];
 
   return `
-    <div class="card" onclick="window.open('${anime.url}', '_blank')" title="${title}">
+    <div class="card" data-id="${anime.id}" title="${title}">
       <div class="card-cover">
         <img src="${anime.cover}" alt="" loading="lazy">
-        <div class="card-score">★ ${score}</div>
+        <div class="card-score">${score}</div>
       </div>
       <div class="card-body">
         <h3 class="card-title">${title}</h3>
         <div class="card-genres">
           ${genres.map(g => `<span class="genre-pill">${g}</span>`).join('')}
         </div>
-        ${synopsis ? `<p class="card-synopsis">${synopsis}</p>` : ''}
         ${showMatched && matched.length ? `<div class="card-matched">↳ ${matched.join(', ')}</div>` : ''}
       </div>
     </div>
   `;
+}
+
+function openModal(id) {
+  const anime = animeMap.get(id);
+  if (!anime) return;
+
+  const overlay = document.getElementById('modal-overlay');
+  const title = anime.title || anime.titleRomaji;
+  const topTags = [...anime.tags].sort((a, b) => b.rank - a.rank).slice(0, 5);
+
+  overlay.querySelector('.modal-cover img').src = anime.cover;
+  overlay.querySelector('.modal-cover img').alt = title;
+  overlay.querySelector('.modal-score').textContent = anime.score > 0 ? `★ ${anime.score}` : '—';
+  overlay.querySelector('.modal-title').textContent = title;
+  overlay.querySelector('.modal-genres').innerHTML =
+    (anime.genres || []).map(g => `<span class="genre-pill">${g}</span>`).join('');
+  overlay.querySelector('.modal-description').textContent =
+    anime.description || 'No description available.';
+  overlay.querySelector('.modal-themes-list').innerHTML = topTags.map(tag => `
+    <div class="modal-theme-row">
+      <span class="modal-theme-name">${tag.name}</span>
+      <div class="modal-theme-bar"><div class="modal-theme-fill" style="width:${tag.rank}%"></div></div>
+      <span class="modal-theme-pct">${tag.rank}%</span>
+    </div>
+  `).join('');
+
+  const notesSection = overlay.querySelector('.modal-notes-section');
+  if (anime.notes) {
+    overlay.querySelector('.modal-notes-text').textContent = anime.notes;
+    notesSection.classList.remove('hidden');
+  } else {
+    notesSection.classList.add('hidden');
+  }
+
+  overlay.querySelector('.modal-anilist-link').href = anime.url;
+  overlay.classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  document.getElementById('modal-overlay').classList.add('hidden');
+  document.body.style.overflow = '';
 }
 
 function renderResults(results, query) {
@@ -317,7 +358,10 @@ function renderResults(results, query) {
 function renderDefault() {
   const grid = document.getElementById('results');
   const status = document.getElementById('status-bar');
-  const top = animeData.filter(a => a.score >= 9).slice(0, 12);
+  const top = animeData
+    .filter(a => a.score >= 9)
+    .sort((a, b) => (a.title || a.titleRomaji || '').localeCompare(b.title || b.titleRomaji || ''))
+    .slice(0, 24);
 
   if (!top.length) {
     grid.innerHTML = '';
@@ -338,6 +382,46 @@ function debounce(fn, ms) {
 async function init() {
   const grid = document.getElementById('results');
   grid.innerHTML = '<div class="loading">Loading…</div>';
+
+  // Inject modal into DOM
+  document.body.insertAdjacentHTML('beforeend', `
+    <div id="modal-overlay" class="modal-overlay hidden" role="dialog" aria-modal="true">
+      <div class="modal">
+        <button class="modal-close" aria-label="Close">×</button>
+        <div class="modal-inner">
+          <div class="modal-cover">
+            <img src="" alt="" loading="lazy">
+            <div class="modal-score"></div>
+          </div>
+          <div class="modal-content">
+            <h2 class="modal-title"></h2>
+            <div class="modal-genres"></div>
+            <p class="modal-description"></p>
+            <div class="modal-themes-section">
+              <div class="modal-section-label">Top Themes</div>
+              <div class="modal-themes-list"></div>
+            </div>
+            <div class="modal-notes-section hidden">
+              <div class="modal-section-label">My Notes</div>
+              <p class="modal-notes-text"></p>
+            </div>
+            <a class="modal-anilist-link" href="#" target="_blank" rel="noopener">View on Anilist →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  `);
+
+  const overlay = document.getElementById('modal-overlay');
+  overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
+  overlay.querySelector('.modal-close').addEventListener('click', closeModal);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+  // Card click delegation — survives innerHTML replacements on the grid
+  grid.addEventListener('click', e => {
+    const card = e.target.closest('.card');
+    if (card && card.dataset.id) openModal(parseInt(card.dataset.id));
+  });
 
   try {
     await loadData();

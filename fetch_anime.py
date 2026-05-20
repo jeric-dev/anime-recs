@@ -12,6 +12,7 @@ query ($username: String) {
     lists {
       entries {
         score(format: POINT_10)
+        notes
         media {
           id
           title {
@@ -84,6 +85,7 @@ def fetch_anime_list():
                 "episodes": media["episodes"],
                 "averageScore": media["averageScore"],
                 "url": media["siteUrl"],
+                "notes": entry["notes"] or "",
             })
 
     entries.sort(key=lambda x: (x["score"] or 0, x["averageScore"] or 0), reverse=True)
