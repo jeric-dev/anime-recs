@@ -754,6 +754,7 @@ main {
 
   .modal-cover img {
     border-radius: var(--radius) var(--radius) 0 0;
+    object-position: center center;
   }
 
   .modal-content {
