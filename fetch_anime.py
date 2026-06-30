@@ -114,7 +114,7 @@ def fetch_anime_list():
                 "year": media.get("seasonYear"),
                 "url": media["siteUrl"],
                 "notes": entry["notes"] or "",
-                "studios": [s["name"] for s in media.get("studios", {}).get("nodes", []) if s.get("isAnimationStudio")],
+                "studios": list(dict.fromkeys(s["name"] for s in media.get("studios", {}).get("nodes", []) if s.get("isAnimationStudio"))),
                 "isSequel": is_sequel,
             })
 

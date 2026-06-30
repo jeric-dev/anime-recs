@@ -514,7 +514,7 @@ function buildFilterUI() {
   const studioCounts = new Map();
   animeData
     .filter(a => !a.isSequel || SEQUEL_OVERRIDES.has(a.id))
-    .forEach(a => (a.studios || []).forEach(s => studioCounts.set(s, (studioCounts.get(s) || 0) + 1)));
+    .forEach(a => [...new Set(a.studios || [])].forEach(s => studioCounts.set(s, (studioCounts.get(s) || 0) + 1)));
   const qualifiedStudios = [...studioCounts.entries()]
     .filter(([, n]) => n >= 5)
     .sort(([a], [b]) => a.localeCompare(b))
