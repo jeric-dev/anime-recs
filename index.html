@@ -13,28 +13,26 @@
   <header class="hero">
     <div class="hero-content">
       <h1>Jeric's Anime Picks</h1>
-      <p class="hero-subtitle">Describe what you're in the mood for — I'll find something from my list.</p>
-      <div class="search-wrapper">
-        <input
-          type="text"
-          id="search"
-          class="search-input"
-          placeholder="e.g. something dark and psychological, or a funny slice of life..."
-          autocomplete="off"
-          spellcheck="false"
-        >
-        <span class="search-icon">⌕</span>
-      </div>
-      <div class="example-prompts">
-        <span class="prompt-label">Try:</span>
-        <button class="prompt-chip" data-query="dark psychological thriller">dark psychological</button>
-        <button class="prompt-chip" data-query="funny slice of life">funny slice of life</button>
-        <button class="prompt-chip" data-query="emotional romance drama">emotional romance</button>
-        <button class="prompt-chip" data-query="epic fantasy adventure">epic fantasy</button>
-        <button class="prompt-chip" data-query="action supernatural">action supernatural</button>
-      </div>
+      <p class="hero-subtitle">Pick what you're in the mood for — mix and match filters to find something from my list.</p>
     </div>
   </header>
+
+  <section class="filter-section">
+    <div class="filter-section-inner">
+      <div class="filter-controls-bar">
+        <span class="filter-count" id="filter-count"></span>
+        <div class="filter-actions">
+          <button id="clear-filters" class="clear-btn">Clear all</button>
+          <label class="toggle-18-label">
+            <input type="checkbox" id="toggle-18plus">
+            <span class="toggle-track"><span class="toggle-thumb"></span></span>
+            18+ Content
+          </label>
+        </div>
+      </div>
+      <div id="filter-panel"></div>
+    </div>
+  </section>
 
   <main>
     <div id="status-bar" class="status-bar hidden"></div>

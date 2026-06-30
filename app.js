@@ -1,403 +1,211 @@
-const DESCRIPTOR_MAP = {
-  // Mood
-  dark:           ['dark', 'psychological', 'tragedy', 'horror', 'violence', 'seinen', 'nihilism'],
-  funny:          ['comedy', 'parody', 'slapstick humor', 'satire', 'gag humor', 'dark comedy'],
-  cute:           ['moe', 'iyashikei', 'healing', 'cute girls doing cute things'],
-  wholesome:      ['slice of life', 'iyashikei', 'healing', 'feel-good'],
-  cozy:           ['slice of life', 'iyashikei', 'daily life', 'healing'],
-  sad:            ['tragedy', 'drama', 'tearjerker', 'grief', 'loss'],
-  emotional:      ['tragedy', 'drama', 'tearjerker', 'coming of age', 'grief'],
-  depressing:     ['tragedy', 'drama', 'psychological', 'nihilism'],
-  heartwarming:   ['slice of life', 'iyashikei', 'healing', 'feel-good', 'romance'],
-  intense:        ['thriller', 'psychological', 'action', 'military', 'suspense'],
-  scary:          ['horror', 'supernatural horror', 'gore', 'psychological', 'survival horror'],
-  creepy:         ['horror', 'psychological', 'supernatural horror', 'mystery', 'suspense'],
-  spooky:         ['horror', 'supernatural', 'ghosts', 'supernatural horror'],
-  gory:           ['gore', 'violence', 'horror', 'action'],
-  violent:        ['violence', 'gore', 'action', 'military', 'martial arts'],
-  mindblowing:    ['psychological', 'mystery', 'sci-fi', 'mind games', 'plot twist'],
-  epic:           ['action', 'adventure', 'fantasy', 'military', 'war'],
-  chill:          ['slice of life', 'iyashikei', 'healing', 'daily life'],
-  mature:         ['seinen', 'violence', 'gore', 'mature themes', 'adult cast'],
-  lighthearted:   ['slice of life', 'comedy', 'iyashikei', 'healing', 'feel-good'],
-  bittersweet:    ['drama', 'romance', 'tragedy', 'grief'],
-  mindfuck:       ['psychological', 'mind games', 'unreliable narrator', 'thriller'],
+// ── Filter definitions ─────────────────────────────────────────────────────
 
-  // Cast / setting descriptors
-  adult:          ['adult cast', 'workplace', 'mature themes'],
-  adults:         ['adult cast', 'workplace'],
-  older:          ['adult cast'],
-  grown:          ['adult cast'],
-  grownup:        ['adult cast'],
-  work:           ['workplace', 'adult cast', 'salaryman', 'seinen'],
-  working:        ['workplace', 'adult cast', 'seinen'],
-  office:         ['workplace', 'adult cast', 'salaryman'],
-  job:            ['workplace', 'adult cast', 'salaryman'],
-  career:         ['workplace', 'adult cast', 'salaryman'],
-  realistic:      ['seinen', 'josei', 'slice of life', 'adult cast', 'real world setting'],
-  grounded:       ['seinen', 'josei', 'slice of life', 'drama'],
-  serious:        ['seinen', 'drama', 'psychological', 'military'],
+const DEMOGRAPHICS = ['Shounen', 'Shoujo', 'Seinen', 'Josei', 'Kids'];
 
-  // Tropes / themes
-  revenge:        ['revenge', 'betrayal'],
-  betrayal:       ['betrayal', 'revenge'],
-  redemption:     ['drama', 'action', 'seinen', 'character development'],
-  overpowered:    ['overpowered main characters', 'isekai', 'action', 'super power'],
-  reincarnation:  ['reincarnation', 'isekai', 'parallel world'],
-  friendship:     ['friendship'],
-  family:         ['family', 'found family'],
-  underdog:       ['sports', 'drama', 'competition', 'coming of age'],
-  war:            ['war', 'military', 'historical', 'action'],
-  death:          ['tragedy', 'drama', 'horror', 'grief'],
-  grief:          ['grief', 'tragedy', 'drama'],
-  loss:           ['grief', 'tragedy', 'drama', 'loss'],
-  philosophy:     ['philosophical', 'seinen', 'psychological'],
-  tournament:     ['competition', 'sports', 'action', 'martial arts'],
-  detective:      ['detective', 'mystery', 'thriller', 'crime'],
-  crime:          ['crime', 'mystery', 'thriller', 'detective'],
-  pirates:        ['pirates', 'adventure', 'action'],
-  ninja:          ['ninja', 'historical', 'action', 'martial arts'],
-  ninjas:         ['ninja', 'historical', 'action', 'martial arts'],
-  robot:          ['mecha', 'sci-fi', 'android', 'artificial intelligence'],
-  robots:         ['mecha', 'sci-fi', 'android', 'artificial intelligence'],
-  aliens:         ['alien', 'sci-fi', 'space'],
-  dystopia:       ['dystopian', 'sci-fi', 'post-apocalyptic', 'survival'],
-  dystopian:      ['dystopian', 'sci-fi', 'post-apocalyptic', 'survival'],
-  idol:           ['idol', 'music', 'performing arts'],
-  band:           ['band', 'music', 'performing arts'],
-  gods:           ['gods', 'mythology', 'mythological'],
-  god:            ['gods', 'mythology', 'mythological'],
-  witches:        ['magic', 'fantasy', 'witch'],
-  unrequited:     ['unrequited love'],
-  tsundere:       ['tsundere'],
-  yandere:        ['yandere', 'psychological'],
-
-  // Demographics
-  shoujo:         ['shoujo'],
-  shounen:        ['shounen'],
-  josei:          ['josei'],
-
-  // Compound / adjacent terms
-  romantic:       ['romance', 'love triangle', 'childhood romance', 'unrequited love'],
-
-  // Genres / themes
-  romance:           ['romance', 'love triangle', 'childhood romance', 'unrequited love'],
-  fantasy:           ['fantasy', 'magic', 'sword and sorcery', 'mythological', 'isekai'],
-  isekai:            ['isekai', 'reincarnation', 'parallel world', 'transported to another world'],
-  scifi:             ['sci-fi', 'space', 'mecha', 'cyberpunk', 'dystopian', 'futuristic'],
-  action:            ['action', 'martial arts', 'super power', 'military', 'fighting'],
-  mystery:           ['mystery', 'thriller', 'detective', 'suspense', 'whodunnit', 'crime'],
-  school:            ['school', 'high school', 'coming of age', 'student council', 'clubs'],
-  historical:        ['historical', 'samurai', 'war', 'feudal japan', 'period piece'],
-  sports:            ['sports', 'baseball', 'basketball', 'swimming', 'cycling', 'volleyball', 'soccer', 'tennis'],
-  music:             ['music', 'band', 'idol', 'singing', 'musical'],
-  supernatural:      ['supernatural', 'demons', 'ghosts', 'exorcism', 'spirits', 'gods'],
-  mecha:             ['mecha', 'super robot', 'space', 'sci-fi'],
-  adventure:         ['adventure', 'exploration', 'journey', 'quest', 'travel'],
-  psychological:     ['psychological', 'mind games', 'unreliable narrator', 'dark', 'thriller'],
-  thriller:          ['thriller', 'suspense', 'mystery', 'psychological', 'crime'],
-  horror:            ['horror', 'gore', 'supernatural horror', 'psychological', 'survival horror'],
-  comedy:            ['comedy', 'parody', 'slapstick humor', 'gag humor', 'dark comedy'],
-  drama:             ['drama', 'tragedy', 'coming of age', 'grief', 'family'],
-  political:         ['politics', 'military', 'war', 'dystopian', 'power struggle'],
-  magic:             ['magic', 'fantasy', 'witches', 'wizards', 'sorcery'],
-  demons:            ['demons', 'exorcism', 'devil'],
-  samurai:           ['samurai', 'historical', 'katana', 'feudal japan'],
-  cyberpunk:         ['cyberpunk', 'sci-fi', 'dystopian', 'futuristic', 'hacking'],
-  space:             ['space', 'sci-fi', 'mecha', 'alien', 'galaxy'],
-  harem:             ['harem', 'reverse harem', 'romance'],
-  cooking:           ['food', 'cooking', 'culinary'],
-  survival:          ['survival', 'post-apocalyptic', 'dystopian', 'battle royale'],
-  military:          ['military', 'war', 'historical', 'political', 'action'],
-  competition:       ['competition', 'sports', 'strategy game', 'card game'],
-  mythology:         ['mythology', 'gods', 'historical', 'fantasy', 'mythological'],
-  vampire:           ['vampire', 'supernatural', 'horror'],
-  zombie:            ['zombie', 'post-apocalyptic', 'horror', 'survival'],
-  'time travel':     ['time travel', 'sci-fi', 'time manipulation'],
-  'slice of life':   ['slice of life', 'daily life', 'iyashikei', 'healing'],
-  'coming of age':   ['coming of age', 'school', 'drama', 'youth'],
-  'post-apocalyptic':['post-apocalyptic', 'dystopian', 'survival'],
-};
-
-// Exact multi-word phrases → Anilist tag/genre targets (checked before tokenizing)
-const PHRASES = {
-  'adult cast':        ['adult cast'],
-  'high school':       ['school', 'high school'],
-  'middle school':     ['school', 'middle school'],
-  'slice of life':     ['slice of life', 'iyashikei', 'daily life'],
-  'coming of age':     ['coming of age', 'youth'],
-  'time travel':       ['time travel', 'time manipulation'],
-  'martial arts':      ['martial arts', 'fighting'],
-  'magical girl':      ['magical girl', 'mahou shoujo'],
-  'love triangle':     ['love triangle'],
-  'found family':      ['found family', 'drama'],
-  'power fantasy':     ['isekai', 'super power', 'reincarnation', 'overpowered main characters'],
-  'sci fi':            ['sci-fi', 'futuristic'],
-  'science fiction':   ['sci-fi', 'space', 'futuristic'],
-  'dark fantasy':      ['dark', 'fantasy', 'violence'],
-  'feel good':         ['iyashikei', 'healing', 'slice of life'],
-  'feel-good':         ['iyashikei', 'healing', 'slice of life'],
-  'post apocalyptic':  ['post-apocalyptic', 'dystopian', 'survival'],
-  'childhood friends': ['childhood friends', 'romance', 'school'],
-  'unrequited love':   ['unrequited love', 'romance', 'drama'],
-  'reverse harem':     ['reverse harem', 'romance'],
-  'super power':       ['super power', 'action'],
-  'mind games':        ['mind games', 'psychological', 'thriller'],
-};
-
-// When one of these words appears in the raw query, the anime MUST match
-// the listed genre or at least one of the listed tags — otherwise filtered out
-const GENRE_REQUIREMENTS = [
-  { word: 'romance',       genre: 'romance',       tags: ['romance', 'love triangle', 'childhood romance', 'unrequited love', 'romantic'] },
-  { word: 'horror',        genre: 'horror',        tags: ['horror', 'supernatural horror', 'survival horror', 'gore'] },
-  { word: 'action',        genre: 'action',        tags: ['action', 'martial arts', 'fighting', 'super power'] },
-  { word: 'comedy',        genre: 'comedy',        tags: ['comedy', 'parody', 'slapstick humor', 'gag humor', 'dark comedy'] },
-  { word: 'sports',        genre: 'sports',        tags: ['sports'] },
-  { word: 'music',         genre: 'music',         tags: ['music', 'band', 'idol', 'singing'] },
-  { word: 'mystery',       genre: 'mystery',       tags: ['mystery', 'detective', 'thriller', 'whodunnit'] },
-  { word: 'fantasy',       genre: 'fantasy',       tags: ['fantasy', 'magic', 'isekai', 'mythological', 'sword and sorcery'] },
-  { word: 'historical',    genre: 'historical',    tags: ['historical', 'samurai', 'feudal japan', 'period piece'] },
-  { word: 'supernatural',  genre: 'supernatural',  tags: ['supernatural', 'demons', 'ghosts', 'spirits', 'exorcism'] },
-  { word: 'mecha',         genre: 'mecha',         tags: ['mecha', 'super robot'] },
-  { word: 'psychological', genre: 'psychological', tags: ['psychological', 'mind games', 'unreliable narrator'] },
-  { word: 'adventure',     genre: 'adventure',     tags: ['adventure', 'exploration', 'journey'] },
-  { word: 'thriller',      genre: 'thriller',      tags: ['thriller', 'suspense', 'psychological'] },
-  { word: 'drama',         genre: 'drama',         tags: ['drama', 'tragedy', 'tearjerker'] },
-  { word: 'slice of life', genre: 'slice of life', tags: ['slice of life', 'iyashikei', 'daily life'] },
-  { word: 'sci-fi',        genre: 'sci-fi',        tags: ['sci-fi', 'space', 'cyberpunk', 'futuristic', 'mecha'] },
-  { word: 'scifi',         genre: 'sci-fi',        tags: ['sci-fi', 'space', 'cyberpunk', 'futuristic', 'mecha'] },
-  { word: 'cooking',       genre: 'slice of life', tags: ['food', 'cooking', 'culinary'] },
+const ALL_GENRES = [
+  'Action', 'Adventure', 'Comedy', 'Drama', 'Fantasy', 'Horror',
+  'Mahou Shoujo', 'Mecha', 'Music', 'Mystery', 'Psychological',
+  'Romance', 'Sci-Fi', 'Slice of Life', 'Sports', 'Supernatural', 'Thriller',
 ];
 
-// When a term is in the search, penalize anime that have these conflicting tags
-const CONFLICT_MAP = {
-  'adult cast': ['primarily teen cast', 'school', 'middle school', 'high school', 'elementary school'],
-  'child':      ['adult cast', 'violence', 'gore'],
-  'kids':       ['adult cast', 'violence', 'gore'],
+// Only tags appearing in ≥10 anime in the list
+const FILTER_GROUPS = [
+  {
+    label: 'Setting',
+    items: ['Isekai', 'College', 'Historical', 'Medieval', 'Urban Fantasy'],
+  },
+  {
+    label: 'Themes',
+    items: [
+      'Coming of Age', 'War', 'Revenge', 'Found Family', 'Philosophy',
+      'Politics', 'Crime', 'Class Struggle', 'Mythology', 'Travel',
+    ],
+  },
+  {
+    label: 'Tone',
+    items: ['Iyashikei', 'Surreal Comedy', 'Slapstick', 'Parody', 'Satire', 'Episodic'],
+  },
+  {
+    label: 'Characters',
+    items: [
+      'Tsundere', 'Yandere', 'Kuudere', 'Anti-Hero', 'Ensemble Cast',
+      'Primarily Adult Cast', 'Ojou-sama',
+    ],
+  },
+  // Conditional: only shown when Romance genre is selected
+  {
+    label: 'Romance & Relationships',
+    items: [
+      'Love Triangle', 'Female Harem', 'Yuri', 'Arranged Marriage',
+      'Unrequited Love', 'Cohabitation', 'Fake Relationship',
+      'Marriage', 'LGBTQ+ Themes',
+    ],
+    showWhenGenres: ['Romance'],
+  },
+  // Conditional: only shown when Fantasy or Supernatural genre is selected
+  {
+    label: 'Supernatural & Fantasy',
+    items: ['Magic', 'Demons', 'Gods', 'Youkai', 'Vampire', 'Shapeshifting', 'Dragons', 'Elf', 'Witch'],
+    showWhenGenres: ['Fantasy', 'Supernatural'],
+  },
+  {
+    label: 'Sports & Activities',
+    items: ['Baseball', 'Basketball', 'Archery', 'Food'],
+  },
+];
+
+const NSFW_GROUP = {
+  label: '18+ Content',
+  items: [
+    'Nudity', 'Gore', 'Body Horror', 'Torture', 'Suicide', 'Drugs', 'Slavery',
+    'Bondage', 'Exhibitionism', 'Femdom', 'Group Sex', 'Incest', 'Large Breasts',
+    'Masochism', 'MILF', 'Psychosexual', 'Rape', 'Sadism', 'Feet', 'Sweat',
+  ],
 };
 
-// Abbreviations / portmanteaus rewritten to their full form before any processing
-const QUERY_ALIASES = {
-  'rom-com':      'romantic comedy',
-  'romcom':       'romantic comedy',
-  'rom com':      'romantic comedy',
-  'mahou shoujo': 'magical girl',
-  'maho shojo':   'magical girl',
-  'sci fi':       'sci-fi',
+// AniList IDs that are sequels by metadata but should be treated as standalones
+const SEQUEL_OVERRIDES = new Set([3972]); // Yu-Gi-Oh! 5D's
+
+// NSFW + conditional groups use a relaxed 50% rank threshold instead of 80%
+const THRESHOLD_50_TAG_SET = new Set([
+  ...NSFW_GROUP.items,
+  ...FILTER_GROUPS.filter(g => g.showWhenGenres).flatMap(g => g.items),
+].map(t => t.toLowerCase()));
+
+// ── State ──────────────────────────────────────────────────────────────────
+
+const state = {
+  genres: new Set(),
+  tags: new Set(),
+  studios: new Set(),
+  excludedGenres: new Set(),
+  excludedTags: new Set(),
+  excludedStudios: new Set(),
+  episodes: new Set(),
+  yearMin: null,
+  yearMax: null,
 };
 
-const STOPWORDS = new Set([
-  'a', 'an', 'the', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of',
-  'with', 'is', 'it', 'me', 'something', 'some', 'want', 'looking', 'find',
-  'give', 'like', 'really', 'very', 'quite', 'bit', 'kind', 'sort', 'show',
-  'anime', 'watch', 'watching', 'recommend', 'good', 'great', 'best', 'top',
-  'please', 'any', 'have', 'about', 'more', 'nice', 'cool', 'awesome',
-  'i', 'my', 'we', 'us', 'you', 'that', 'this', 'cast',
-]);
+// Refs to conditional groups
+const conditionalGroupEls = new Map();
+
+// ── Data ───────────────────────────────────────────────────────────────────
 
 let animeData = [];
 let animeMap = new Map();
 
 async function loadData() {
-  const res = await fetch('data/anime.json');
+  const res = await fetch('data/anime.json', { cache: 'no-cache' });
   if (!res.ok) throw new Error('Could not load anime.json — run fetch_anime.py first.');
   animeData = await res.json();
   animeMap = new Map(animeData.map(a => [a.id, a]));
 }
 
-function normalizeQuery(input) {
-  let q = input.toLowerCase();
-  for (const [alias, replacement] of Object.entries(QUERY_ALIASES)) {
-    q = q.split(alias).join(replacement);
-  }
-  return q;
-}
+// ── Engine ─────────────────────────────────────────────────────────────────
 
-function normalize(str) {
-  return str.toLowerCase().trim();
-}
-
-// Whole-word match only: "ice" must not match "slice of life", "man" must not match "romance"
-function matchesTerm(term, candidate) {
-  if (term === candidate) return true;
-  const cWords = candidate.split(/\s+/);
-  if (cWords.includes(term)) return true;
-  const tWords = term.split(/\s+/);
-  if (tWords.includes(candidate)) return true;
+function matchesEpisodeFilter(anime) {
+  if (state.episodes.size === 0) return true;
+  const eps = anime.episodes;
+  if (!eps) return true;
+  if (state.episodes.has('short') && eps <= 13) return true;
+  if (state.episodes.has('medium') && eps >= 14 && eps <= 26) return true;
+  if (state.episodes.has('long') && eps > 26) return true;
   return false;
 }
 
-function tokenize(input) {
-  return input.toLowerCase()
-    .replace(/[^\w\s-]/g, ' ')
-    .split(/\s+/)
-    .filter(t => t.length > 1 && !STOPWORDS.has(t));
+function matchesYearFilter(anime) {
+  if (state.yearMin === null && state.yearMax === null) return true;
+  const y = anime.year;
+  if (!y) return true;
+  if (state.yearMin !== null && y < state.yearMin) return false;
+  if (state.yearMax !== null && y > state.yearMax) return false;
+  return true;
 }
 
-function getSearchTerms(input) {
-  const lower = input.toLowerCase();
-  const terms = new Set();
-
-  // Check exact multi-word phrases first (before tokenizing splits them up)
-  Object.entries(PHRASES).forEach(([phrase, expansions]) => {
-    if (lower.includes(phrase)) {
-      expansions.forEach(t => terms.add(normalize(t)));
-    }
-  });
-
-  // Then expand individual tokens via the descriptor map
-  tokenize(input).forEach(token => {
-    terms.add(token);
-    const mapped = DESCRIPTOR_MAP[token] || DESCRIPTOR_MAP[token.replace(/-/g, '')];
-    if (mapped) mapped.forEach(t => terms.add(normalize(t)));
-  });
-
-  // Multi-word DESCRIPTOR_MAP entries
-  Object.entries(DESCRIPTOR_MAP).forEach(([phrase, expansions]) => {
-    if (phrase.includes(' ') && lower.includes(phrase)) {
-      expansions.forEach(t => terms.add(normalize(t)));
-    }
-  });
-
-  return Array.from(terms);
+function isExcluded(anime) {
+  const genres = new Set(anime.genres.map(g => g.toLowerCase()));
+  const tags = new Set(anime.tags.map(t => t.name.toLowerCase()));
+  const studios = new Set((anime.studios || []).map(s => s.toLowerCase()));
+  for (const g of state.excludedGenres) {
+    if (genres.has(g.toLowerCase())) return true;
+  }
+  for (const t of state.excludedTags) {
+    if (tags.has(t.toLowerCase())) return true;
+  }
+  for (const s of state.excludedStudios) {
+    if (studios.has(s.toLowerCase())) return true;
+  }
+  return false;
 }
 
-function scoreAnime(anime, terms) {
+function scoreAnime(anime) {
   let score = 0;
-  const matchedGenres = new Set();
-  const matchedTags = new Map(); // tag name → score; each tag counted once
+  const matched = [];
 
-  const genres = anime.genres.map(normalize);
-  const tags = anime.tags.map(t => ({ name: normalize(t.name), rank: t.rank }));
-  const descWords = new Set((anime.description || '').toLowerCase().split(/[^a-z0-9]+/));
+  const animeGenres = new Set(anime.genres.map(g => g.toLowerCase()));
+  const animeTagsMap = new Map(anime.tags.map(t => [t.name.toLowerCase(), t.rank]));
 
-  for (const term of terms) {
-    for (const genre of genres) {
-      if (!matchedGenres.has(genre) && matchesTerm(term, genre)) {
-        score += 10;
-        matchedGenres.add(genre);
-      }
-    }
-    for (const tag of tags) {
-      if (!matchedTags.has(tag.name) && matchesTerm(term, tag.name)) {
-        matchedTags.set(tag.name, 5 * (tag.rank / 100));
-      }
-    }
-    if (descWords.has(term)) {
-      score += 1;
+  for (const genre of state.genres) {
+    if (animeGenres.has(genre.toLowerCase())) {
+      score += 10;
+      matched.push(genre);
     }
   }
 
-  for (const tagScore of matchedTags.values()) score += tagScore;
-
-  // Penalize anime whose tags directly conflict with what was searched for
-  let penalty = 1.0;
-  for (const term of terms) {
-    const conflicts = CONFLICT_MAP[term];
-    if (!conflicts) continue;
-    for (const tag of tags) {
-      for (const conflict of conflicts) {
-        if (tag.name.includes(conflict) || conflict.includes(tag.name)) {
-          penalty = Math.min(penalty, 0.1);
-        }
-      }
+  for (const tag of state.tags) {
+    const rank = animeTagsMap.get(tag.toLowerCase());
+    if (rank !== undefined && (THRESHOLD_50_TAG_SET.has(tag.toLowerCase()) ? rank >= 50 : rank >= 80)) {
+      score += (rank / 100) * 5;
+      matched.push(tag);
     }
   }
 
-  const userScore = anime.score || 0;
-  const weight = userScore > 0 ? userScore / 10 : 0.5;
-
-  return {
-    weightedScore: score * weight * penalty,
-    rawScore: score,
-    matched: [...matchedGenres, ...matchedTags.keys()].slice(0, 5),
-  };
-}
-
-function meetsGenreRequirements(anime, required) {
-  const genres = anime.genres.map(g => g.toLowerCase());
-  const tags = anime.tags.map(t => t.name.toLowerCase());
-  return required.every(req => {
-    if (genres.includes(req.genre)) return true;
-    return req.tags.some(tag => genres.some(g => matchesTerm(tag, g)) || tags.some(t => matchesTerm(tag, t)));
-  });
-}
-
-// Returns all the expanded terms that a single user token maps to
-function getTokenExpansions(token) {
-  const expanded = new Set([token]);
-  const phraseExpansions = PHRASES[token];
-  if (phraseExpansions) phraseExpansions.forEach(t => expanded.add(normalize(t)));
-  const mapped = DESCRIPTOR_MAP[token] || DESCRIPTOR_MAP[token.replace(/-/g, '')];
-  if (mapped) mapped.forEach(t => expanded.add(normalize(t)));
-  return expanded;
-}
-
-// Returns true if any of the token's expansions match the anime's genres, tags, or description
-function tokenSatisfied(token, anime) {
-  const genres = anime.genres.map(normalize);
-  const tags = anime.tags.map(t => normalize(t.name));
-  const descWords = new Set((anime.description || '').toLowerCase().split(/[^a-z0-9]+/));
-  for (const term of getTokenExpansions(token)) {
-    if (genres.some(g => matchesTerm(term, g))) return true;
-    if (tags.some(t => matchesTerm(term, t))) return true;
-    if (descWords.has(term)) return true;
+  const animeStudios = new Set((anime.studios || []).map(s => s.toLowerCase()));
+  for (const studio of state.studios) {
+    if (animeStudios.has(studio.toLowerCase())) {
+      score += 10;
+      matched.push(studio);
+    }
   }
-  return false;
+
+  return { score, matched };
 }
 
-function search(query) {
-  if (!query.trim()) return null;
-  const q = normalizeQuery(query); // expand aliases before all other processing
-  const terms = getSearchTerms(q);
-  if (!terms.length) return [];
+function recommend() {
+  updateFilterCount();
+  const hasFilters =
+    state.genres.size > 0 || state.tags.size > 0 || state.studios.size > 0 ||
+    state.excludedGenres.size > 0 || state.excludedTags.size > 0 || state.excludedStudios.size > 0 ||
+    state.episodes.size > 0 || state.yearMin !== null || state.yearMax !== null;
 
-  const queryLower = q.toLowerCase();
+  if (!hasFilters) {
+    renderDefault();
+    return;
+  }
 
-  // Find which genre words were explicitly typed so we can require them
-  const required = GENRE_REQUIREMENTS.filter(r => queryLower.includes(r.word));
+  const noScoringFilters = state.genres.size === 0 && state.tags.size === 0 && state.studios.size === 0;
 
-  // Build effective tokens for AND-requirement: treat matched phrases as single units
-  // so "slice of life" counts as one concept, not three
-  const phraseTokens = Object.keys(PHRASES).filter(p => queryLower.includes(p));
-  const coveredByPhrase = new Set(phraseTokens.flatMap(p => tokenize(p)));
-  const singleTokens = tokenize(q).filter(t => !coveredByPhrase.has(t));
-  const effectiveTokens = [...phraseTokens, ...singleTokens];
-
-  // Score and rank by relevance first
-  let scored = animeData
-    .map(anime => {
-      const { weightedScore, rawScore, matched } = scoreAnime(anime, terms);
-      return { ...anime, weightedScore, rawScore, matched };
+  const results = animeData
+    .filter(a => !a.isSequel || SEQUEL_OVERRIDES.has(a.id))
+    .filter(matchesEpisodeFilter)
+    .filter(matchesYearFilter)
+    .filter(a => !isExcluded(a))
+    .map(a => {
+      const { score, matched } = scoreAnime(a);
+      return { ...a, _score: score, matched };
     })
-    .filter(a => a.rawScore >= 2)
-    .filter(a => required.length === 0 || meetsGenreRequirements(a, required))
-    // AND requirement: every concept the user typed must independently match the anime
-    .filter(a => effectiveTokens.every(t => tokenSatisfied(t, a)))
-    .sort((a, b) => b.weightedScore - a.weightedScore);
+    .filter(a => a._score > 0 || noScoringFilters)
+    .sort((a, b) => {
+      if (Math.abs(b._score - a._score) > 0.5) return b._score - a._score;
+      return (b.score || 0) - (a.score || 0);
+    });
 
-  let result;
-  if (scored.length <= 10) {
-    result = scored;
-  } else {
-    // Prefer non-sequels; fill with sequels only if not enough non-sequels
-    const nonSequels = scored.filter(a => !a.isSequel);
-    if (nonSequels.length >= 10) {
-      result = nonSequels.slice(0, 10);
-    } else {
-      const seqs = scored.filter(a => a.isSequel);
-      result = [...nonSequels, ...seqs.slice(0, 10 - nonSequels.length)];
-    }
-  }
-
-  // Sort by score descending, then alphabetically
-  return result.sort((a, b) => {
-    if (b.score !== a.score) return b.score - a.score;
-    return (a.title || a.titleRomaji || '').localeCompare(b.title || b.titleRomaji || '');
-  });
+  renderResults(results);
 }
 
-function renderCard(anime, showMatched) {
+// ── Render ─────────────────────────────────────────────────────────────────
+
+function renderCard(anime) {
   const title = anime.title || anime.titleRomaji;
   const score = anime.score > 0 ? `★ ${anime.score}` : '—';
   const genres = (anime.genres || []).slice(0, 3);
@@ -414,7 +222,7 @@ function renderCard(anime, showMatched) {
         <div class="card-genres">
           ${genres.map(g => `<span class="genre-pill">${g}</span>`).join('')}
         </div>
-        ${showMatched && matched.length ? `<div class="card-matched">↳ ${matched.join(', ')}</div>` : ''}
+        ${matched.length ? `<div class="card-matched">↳ ${matched.join(', ')}</div>` : ''}
       </div>
     </div>
   `;
@@ -426,7 +234,6 @@ function openModal(id) {
 
   const overlay = document.getElementById('modal-overlay');
   const title = anime.title || anime.titleRomaji;
-  const topTags = [...anime.tags].sort((a, b) => b.rank - a.rank).slice(0, 5);
 
   overlay.querySelector('.modal-cover img').src = anime.cover;
   overlay.querySelector('.modal-cover img').alt = title;
@@ -436,20 +243,13 @@ function openModal(id) {
     (anime.genres || []).map(g => `<span class="genre-pill">${g}</span>`).join('');
   overlay.querySelector('.modal-description').textContent =
     anime.description || 'No description available.';
-  overlay.querySelector('.modal-themes-list').innerHTML = topTags.map(tag => `
-    <div class="modal-theme-row">
-      <span class="modal-theme-name">${tag.name}</span>
-      <div class="modal-theme-bar"><div class="modal-theme-fill" style="width:${tag.rank}%"></div></div>
-      <span class="modal-theme-pct">${tag.rank}%</span>
-    </div>
-  `).join('');
-
-  const notesSection = overlay.querySelector('.modal-notes-section');
-  if (anime.notes) {
-    overlay.querySelector('.modal-notes-text').textContent = anime.notes;
-    notesSection.classList.remove('hidden');
+  const reviewLink = overlay.querySelector('.modal-review-link');
+  const reviewUrl = (anime.notes || '').match(/https?:\/\/\S+/)?.[0] ?? null;
+  if (reviewUrl) {
+    reviewLink.href = reviewUrl;
+    reviewLink.classList.remove('hidden');
   } else {
-    notesSection.classList.add('hidden');
+    reviewLink.classList.add('hidden');
   }
 
   overlay.querySelector('.modal-anilist-link').href = anime.url;
@@ -462,7 +262,7 @@ function closeModal() {
   document.body.style.overflow = '';
 }
 
-function renderResults(results, query) {
+function renderResults(results) {
   const grid = document.getElementById('results');
   const status = document.getElementById('status-bar');
 
@@ -472,26 +272,25 @@ function renderResults(results, query) {
     grid.innerHTML = `
       <div class="empty-state">
         <div class="emoji">¯\\_(ツ)_/¯</div>
-        <p>Nothing matched "<strong>${query}</strong>". Try genre names like "horror", "romance", or moods like "dark" or "wholesome".</p>
+        <p>No matches for those filters. Try removing some or picking different combinations.</p>
       </div>`;
     return;
   }
 
   status.textContent = `${results.length} match${results.length === 1 ? '' : 'es'} from my completed list`;
   status.classList.remove('hidden');
-  grid.innerHTML = results.map(a => renderCard(a, true)).join('');
+  grid.innerHTML = results.map(renderCard).join('');
 }
 
 function renderDefault() {
   const grid = document.getElementById('results');
   const status = document.getElementById('status-bar');
   const top = animeData
-    .filter(a => a.score >= 9)
+    .filter(a => (!a.isSequel || SEQUEL_OVERRIDES.has(a.id)) && a.score === 10)
     .sort((a, b) => {
       if (b.score !== a.score) return b.score - a.score;
       return (a.title || a.titleRomaji || '').localeCompare(b.title || b.titleRomaji || '');
-    })
-    .slice(0, 24);
+    });
 
   if (!top.length) {
     grid.innerHTML = '';
@@ -499,21 +298,294 @@ function renderDefault() {
     return;
   }
 
-  status.textContent = 'My highest-rated picks — or search above to find something specific';
+  status.textContent = 'My highest-rated picks — select filters above to find something specific';
   status.classList.remove('hidden');
-  grid.innerHTML = top.map(a => renderCard(a, false)).join('');
+  grid.innerHTML = top.map(renderCard).join('');
 }
 
-function debounce(fn, ms) {
-  let t;
-  return (...args) => { clearTimeout(t); t = setTimeout(() => fn(...args), ms); };
+function updateFilterCount() {
+  const count =
+    state.genres.size + state.tags.size + state.studios.size +
+    state.excludedGenres.size + state.excludedTags.size + state.excludedStudios.size +
+    state.episodes.size +
+    (state.yearMin !== null || state.yearMax !== null ? 1 : 0);
+  const el = document.getElementById('filter-count');
+  if (el) el.textContent = count > 0 ? `${count} filter${count === 1 ? '' : 's'} active` : '';
 }
+
+// ── Conditional group visibility ───────────────────────────────────────────
+
+function updateConditionalGroups() {
+  for (const [, { el, showWhenGenres }] of conditionalGroupEls) {
+    const shouldShow = showWhenGenres.some(g => state.genres.has(g));
+    const wasVisible = !el.classList.contains('group-hidden');
+    if (!shouldShow && wasVisible) {
+      el.querySelectorAll('.filter-chip.active, .filter-chip.excluded').forEach(btn => {
+        const val = btn.dataset.value;
+        if (btn.classList.contains('active')) state.tags.delete(val);
+        else state.excludedTags.delete(val);
+        btn.classList.remove('active', 'excluded');
+      });
+    }
+    el.classList.toggle('group-hidden', !shouldShow);
+  }
+}
+
+// ── Filter UI ──────────────────────────────────────────────────────────────
+
+function makeFilterChip(label, type, extraClass) {
+  const btn = document.createElement('button');
+  btn.className = 'filter-chip' + (extraClass ? ` ${extraClass}` : '');
+  btn.textContent = label;
+  btn.dataset.type = type;
+  btn.dataset.value = label;
+
+  btn.addEventListener('click', () => {
+    const includeSet = type === 'genre' ? state.genres : type === 'studio' ? state.studios : state.tags;
+    const excludeSet = type === 'genre' ? state.excludedGenres : type === 'studio' ? state.excludedStudios : state.excludedTags;
+
+    if (!includeSet.has(label) && !excludeSet.has(label)) {
+      // Unselected → Include
+      includeSet.add(label);
+      btn.classList.add('active');
+    } else if (includeSet.has(label)) {
+      // Include → Exclude
+      includeSet.delete(label);
+      excludeSet.add(label);
+      btn.classList.remove('active');
+      btn.classList.add('excluded');
+    } else {
+      // Exclude → Unselected
+      excludeSet.delete(label);
+      btn.classList.remove('excluded');
+    }
+
+    if (type === 'genre') updateConditionalGroups();
+    recommend();
+  });
+
+  return btn;
+}
+
+function makeGroup(label, extraClass) {
+  const group = document.createElement('div');
+  group.className = 'filter-group' + (extraClass ? ` ${extraClass}` : '');
+  const labelEl = document.createElement('div');
+  labelEl.className = 'filter-group-label';
+  labelEl.textContent = label;
+  const chips = document.createElement('div');
+  chips.className = 'filter-chips';
+  group.appendChild(labelEl);
+  group.appendChild(chips);
+  return { group, chips };
+}
+
+function buildFilterUI() {
+  const panel = document.getElementById('filter-panel');
+
+  // Episode length
+  const { group: epsGroup, chips: epsChips } = makeGroup('Episode Count');
+  [['short', 'Short (1–13)'], ['medium', 'Medium (14–26)'], ['long', 'Long (27+)']].forEach(([val, label]) => {
+    const btn = document.createElement('button');
+    btn.className = 'filter-chip';
+    btn.textContent = label;
+    btn.addEventListener('click', () => {
+      if (state.episodes.has(val)) {
+        state.episodes.delete(val);
+        btn.classList.remove('active');
+      } else {
+        state.episodes.add(val);
+        btn.classList.add('active');
+      }
+      recommend();
+    });
+    epsChips.appendChild(btn);
+  });
+  panel.appendChild(epsGroup);
+
+  // Year range slider
+  const years = [...new Set(animeData.map(a => a.year).filter(Boolean))].sort((a, b) => a - b);
+  const dataMinYear = years[0];
+  const dataMaxYear = years[years.length - 1];
+
+  const { group: yearGroup, chips: yearChips } = makeGroup('Year Range');
+  yearChips.classList.add('year-range-chips');
+
+  const sliderWrapper = document.createElement('div');
+  sliderWrapper.className = 'year-slider-wrapper';
+
+  const yearDisplay = document.createElement('div');
+  yearDisplay.className = 'year-display';
+  const minLabel = document.createElement('span');
+  minLabel.className = 'year-display-val';
+  minLabel.id = 'year-min-display';
+  minLabel.textContent = dataMinYear;
+  const yearDash = document.createElement('span');
+  yearDash.className = 'year-display-dash';
+  yearDash.textContent = '—';
+  const maxLabel = document.createElement('span');
+  maxLabel.className = 'year-display-val';
+  maxLabel.id = 'year-max-display';
+  maxLabel.textContent = dataMaxYear;
+  yearDisplay.appendChild(minLabel);
+  yearDisplay.appendChild(yearDash);
+  yearDisplay.appendChild(maxLabel);
+
+  const trackContainer = document.createElement('div');
+  trackContainer.className = 'year-track-container';
+  const trackBg = document.createElement('div');
+  trackBg.className = 'year-track-bg';
+  const trackFill = document.createElement('div');
+  trackFill.className = 'year-track-fill';
+  trackFill.id = 'year-track-fill';
+  trackBg.appendChild(trackFill);
+
+  const minInput = document.createElement('input');
+  minInput.type = 'range';
+  minInput.className = 'year-slider';
+  minInput.id = 'year-slider-min';
+  minInput.min = dataMinYear;
+  minInput.max = dataMaxYear;
+  minInput.value = dataMinYear;
+  minInput.style.zIndex = '2';
+
+  const maxInput = document.createElement('input');
+  maxInput.type = 'range';
+  maxInput.className = 'year-slider';
+  maxInput.id = 'year-slider-max';
+  maxInput.min = dataMinYear;
+  maxInput.max = dataMaxYear;
+  maxInput.value = dataMaxYear;
+  maxInput.style.zIndex = '3';
+
+  const updateFill = () => {
+    const range = dataMaxYear - dataMinYear;
+    const lo = parseInt(minInput.value);
+    const hi = parseInt(maxInput.value);
+    trackFill.style.left  = ((lo - dataMinYear) / range * 100) + '%';
+    trackFill.style.right = ((dataMaxYear - hi)  / range * 100) + '%';
+    minLabel.textContent = lo;
+    maxLabel.textContent = hi;
+    minInput.style.zIndex = lo >= hi ? '4' : '2';
+  };
+
+  minInput.addEventListener('input', () => {
+    if (parseInt(minInput.value) > parseInt(maxInput.value)) minInput.value = maxInput.value;
+    state.yearMin = parseInt(minInput.value) <= dataMinYear ? null : parseInt(minInput.value);
+    state.yearMax = parseInt(maxInput.value) >= dataMaxYear ? null : parseInt(maxInput.value);
+    updateFill();
+    recommend();
+  });
+
+  maxInput.addEventListener('input', () => {
+    if (parseInt(maxInput.value) < parseInt(minInput.value)) maxInput.value = minInput.value;
+    state.yearMin = parseInt(minInput.value) <= dataMinYear ? null : parseInt(minInput.value);
+    state.yearMax = parseInt(maxInput.value) >= dataMaxYear ? null : parseInt(maxInput.value);
+    updateFill();
+    recommend();
+  });
+
+  trackContainer.appendChild(trackBg);
+  trackContainer.appendChild(minInput);
+  trackContainer.appendChild(maxInput);
+  sliderWrapper.appendChild(yearDisplay);
+  sliderWrapper.appendChild(trackContainer);
+  yearChips.appendChild(sliderWrapper);
+  panel.appendChild(yearGroup);
+
+  // Studio (dynamic — only studios with ≥5 anime)
+  const studioCounts = new Map();
+  animeData
+    .filter(a => !a.isSequel || SEQUEL_OVERRIDES.has(a.id))
+    .forEach(a => (a.studios || []).forEach(s => studioCounts.set(s, (studioCounts.get(s) || 0) + 1)));
+  const qualifiedStudios = [...studioCounts.entries()]
+    .filter(([, n]) => n >= 5)
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([name]) => name);
+  if (qualifiedStudios.length) {
+    const { group: studioGroup, chips: studioChips } = makeGroup('Studio');
+    qualifiedStudios.forEach(s => studioChips.appendChild(makeFilterChip(s, 'studio')));
+    panel.appendChild(studioGroup);
+  }
+
+  // Demographic
+  const { group: demoGroup, chips: demoChips } = makeGroup('Demographic');
+  DEMOGRAPHICS.forEach(d => demoChips.appendChild(makeFilterChip(d, 'tag')));
+  panel.appendChild(demoGroup);
+
+  // Genres
+  const { group: genreGroup, chips: genreChips } = makeGroup('Genres');
+  ALL_GENRES.forEach(g => genreChips.appendChild(makeFilterChip(g, 'genre')));
+  genreChips.appendChild(makeFilterChip('Ecchi', 'genre', 'nsfw-chip'));
+  panel.appendChild(genreGroup);
+
+  // Tag groups (including conditional ones)
+  FILTER_GROUPS.forEach(({ label, items, showWhenGenres }) => {
+    const isConditional = !!showWhenGenres;
+    const { group, chips } = makeGroup(label, isConditional ? 'group-hidden' : '');
+    items.forEach(item => chips.appendChild(makeFilterChip(item, 'tag')));
+    if (isConditional) conditionalGroupEls.set(label, { el: group, showWhenGenres });
+    panel.appendChild(group);
+  });
+
+  // NSFW group
+  const { group: nsfwGroup, chips: nsfwChips } = makeGroup(NSFW_GROUP.label, 'nsfw-group');
+  NSFW_GROUP.items.forEach(item => nsfwChips.appendChild(makeFilterChip(item, 'tag')));
+  panel.appendChild(nsfwGroup);
+}
+
+function toggle18plus(enabled) {
+  document.body.classList.toggle('show-18plus', enabled);
+  if (!enabled) {
+    document.querySelectorAll('.nsfw-chip, .nsfw-group .filter-chip').forEach(btn => {
+      const val = btn.dataset.value;
+      if (btn.classList.contains('active')) {
+        if (btn.dataset.type === 'genre') state.genres.delete(val);
+        else state.tags.delete(val);
+      } else if (btn.classList.contains('excluded')) {
+        if (btn.dataset.type === 'genre') state.excludedGenres.delete(val);
+        else state.excludedTags.delete(val);
+      }
+      btn.classList.remove('active', 'excluded');
+    });
+    recommend();
+  }
+}
+
+function clearAllFilters() {
+  state.genres.clear();
+  state.tags.clear();
+  state.studios.clear();
+  state.excludedGenres.clear();
+  state.excludedTags.clear();
+  state.excludedStudios.clear();
+  state.episodes.clear();
+  state.yearMin = null;
+  state.yearMax = null;
+  document.querySelectorAll('.filter-chip.active, .filter-chip.excluded')
+    .forEach(btn => btn.classList.remove('active', 'excluded'));
+  const minSlider = document.getElementById('year-slider-min');
+  const maxSlider = document.getElementById('year-slider-max');
+  if (minSlider && maxSlider) {
+    minSlider.value = minSlider.min;
+    maxSlider.value = maxSlider.max;
+    const fill = document.getElementById('year-track-fill');
+    if (fill) { fill.style.left = '0%'; fill.style.right = '0%'; }
+    const minDisp = document.getElementById('year-min-display');
+    const maxDisp = document.getElementById('year-max-display');
+    if (minDisp) minDisp.textContent = minSlider.min;
+    if (maxDisp) maxDisp.textContent = maxSlider.max;
+  }
+  updateConditionalGroups();
+  recommend();
+}
+
+// ── Init ───────────────────────────────────────────────────────────────────
 
 async function init() {
   const grid = document.getElementById('results');
   grid.innerHTML = '<div class="loading">Loading…</div>';
 
-  // Inject modal into DOM
   document.body.insertAdjacentHTML('beforeend', `
     <div id="modal-overlay" class="modal-overlay hidden" role="dialog" aria-modal="true">
       <div class="modal">
@@ -527,14 +599,7 @@ async function init() {
             <h2 class="modal-title"></h2>
             <div class="modal-genres"></div>
             <p class="modal-description"></p>
-            <div class="modal-themes-section">
-              <div class="modal-section-label">Top Themes</div>
-              <div class="modal-themes-list"></div>
-            </div>
-            <div class="modal-notes-section hidden">
-              <div class="modal-section-label">My Notes</div>
-              <p class="modal-notes-text"></p>
-            </div>
+            <a class="modal-review-link hidden" href="#" target="_blank" rel="noopener">Read Jeric's Review →</a>
             <a class="modal-anilist-link" href="#" target="_blank" rel="noopener">View on Anilist →</a>
           </div>
         </div>
@@ -546,8 +611,6 @@ async function init() {
   overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
   overlay.querySelector('.modal-close').addEventListener('click', closeModal);
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
-
-  // Card click delegation — survives innerHTML replacements on the grid
   grid.addEventListener('click', e => {
     const card = e.target.closest('.card');
     if (card && card.dataset.id) openModal(parseInt(card.dataset.id));
@@ -560,24 +623,12 @@ async function init() {
     return;
   }
 
+  buildFilterUI();
+
+  document.getElementById('toggle-18plus').addEventListener('change', e => toggle18plus(e.target.checked));
+  document.getElementById('clear-filters').addEventListener('click', clearAllFilters);
+
   renderDefault();
-
-  const input = document.getElementById('search');
-
-  const handleSearch = debounce(query => {
-    if (!query.trim()) { renderDefault(); return; }
-    renderResults(search(query), query);
-  }, 280);
-
-  input.addEventListener('input', e => handleSearch(e.target.value));
-
-  document.querySelectorAll('.prompt-chip').forEach(chip => {
-    chip.addEventListener('click', () => {
-      input.value = chip.dataset.query;
-      input.dispatchEvent(new Event('input'));
-      input.focus();
-    });
-  });
 }
 
 init();

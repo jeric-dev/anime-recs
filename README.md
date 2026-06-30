@@ -1,19 +1,53 @@
 # Jeric's Anime Picks
 
-A personal anime recommendation site built on top of my [Anilist](https://anilist.co) profile. Friends can describe what they're in the mood for and find something from my completed list that fits.
+A personal anime recommendation site built on top of my [Anilist](https://anilist.co) profile. Friends can filter by mood, genre, studio, and more to find something from my completed list that fits.
 
 **Live site:** https://jeric-dev.github.io/anime-recs
 
 ## What it does
 
-- Pulls my completed anime list from Anilist (ratings, genres, themes, and personal notes)
-- Lets visitors search by mood, genre, or vibe using plain English — "dark psychological thriller", "funny slice of life", "rom com with an adult cast"
-- Returns up to 10 results ranked by how well they match the query and how highly I rated them
-- Clicking a card opens a detail view with the full description, top themes, and my personal notes where available
+- Pulls my completed anime list from Anilist (ratings, genres, tags, studios, and personal notes)
+- Lets visitors filter using structured chips — genres, demographics, studios, themes, tone, characters, and more
+- Ranks results by how well they match the selected filters, tiebroken by my personal rating
+- Clicking a card opens a detail view with the full description and a link to my review where one exists
+- Default view (no filters) shows only my ★10-rated picks
 
-## How search works
+## How filtering works
 
-Search is keyword-based with descriptor expansion. Typed words are mapped to Anilist genre and tag vocabulary before matching — so "sad" finds anime tagged with tragedy/tearjerker/grief, "rom com" expands to romantic comedy requirements, and so on. Multi-word queries use AND logic: every concept you type must independently match the result.
+Filters are multi-select chips grouped by category. Clicking a chip cycles through three states:
+
+- **Unselected** → **Include** (purple) → **Exclude** (red/strikethrough) → Unselected
+
+Selecting multiple chips uses OR logic within each group and AND logic across groups — so selecting Action + Comedy finds anime that have at least one of those genres, while adding Kyoto Animation as a studio further narrows to anime matching both genre and studio criteria.
+
+### Filter groups
+
+| Group | Notes |
+|---|---|
+| Episode Count | Short (1–13), Medium (14–26), Long (27+) — hard filter, not scored |
+| Year Range | Dual-handle slider — hard filter, not scored |
+| Studio | Only studios with 5+ anime from my list |
+| Demographic | Shounen, Shoujo, Seinen, Josei, Kids |
+| Genres | 17 standard Anilist genres |
+| Setting | Isekai, College, Historical, Medieval, Urban Fantasy |
+| Themes | Coming of Age, War, Revenge, Found Family, and more |
+| Tone | Iyashikei, Parody, Slapstick, Episodic, and more |
+| Characters | Tsundere, Yandere, Anti-Hero, Ensemble Cast, and more |
+| Romance & Relationships | Only shown when Romance genre is selected |
+| Supernatural & Fantasy | Only shown when Fantasy or Supernatural genre is selected |
+| Sports & Activities | Baseball, Basketball, Archery, Food |
+| 18+ Content | Hidden behind a toggle — explicit/mature tags |
+
+### Scoring algorithm
+
+Hard filters (episode count, year range) pass/fail with no score contribution. Everything else accumulates points:
+
+- **Genres & Studios:** +10 pts flat per match
+- **Tags & Demographics:** `(rank / 100) × 5` pts — a tag at 96% confidence scores 4.8 pts, one at 50% scores 2.5 pts
+
+Results are sorted by total score descending. When scores are within 0.5 pts of each other, my personal rating (★1–10) breaks the tie. Final fallback is Anilist's community average score.
+
+Sequels are excluded from results by default so recommendations always point to a good entry point.
 
 ## Stack
 

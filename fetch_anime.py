@@ -32,7 +32,14 @@ query ($username: String) {
           }
           episodes
           averageScore
+          seasonYear
           siteUrl
+          studios {
+            nodes {
+              name
+              isAnimationStudio
+            }
+          }
           relations {
             edges {
               relationType
@@ -100,8 +107,10 @@ def fetch_anime_list():
                 "cover": media["coverImage"]["extraLarge"],
                 "episodes": media["episodes"],
                 "averageScore": media["averageScore"],
+                "year": media.get("seasonYear"),
                 "url": media["siteUrl"],
                 "notes": entry["notes"] or "",
+                "studios": [s["name"] for s in media.get("studios", {}).get("nodes", []) if s.get("isAnimationStudio")],
                 "isSequel": is_sequel,
             })
 
