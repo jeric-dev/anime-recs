@@ -85,17 +85,9 @@ let animeData = [];
 let animeMap = new Map();
 
 async function loadData() {
-  const [animeRes, descRes] = await Promise.all([
-    fetch('data/anime.json', { cache: 'no-cache' }),
-    fetch('data/descriptions.json', { cache: 'no-cache' }).catch(() => null),
-  ]);
-  if (!animeRes.ok) throw new Error('Could not load anime.json — run fetch_anime.py first.');
-  animeData = await animeRes.json();
-  const customDesc = descRes && descRes.ok ? await descRes.json() : {};
-  animeData = animeData.map(a => ({
-    ...a,
-    description: customDesc[String(a.id)] || a.description,
-  }));
+  const res = await fetch('data/anime.json', { cache: 'no-cache' });
+  if (!res.ok) throw new Error('Could not load anime.json — run fetch_anime.py first.');
+  animeData = await res.json();
   animeMap = new Map(animeData.map(a => [a.id, a]));
 }
 

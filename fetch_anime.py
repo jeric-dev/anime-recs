@@ -60,6 +60,8 @@ def clean_description(desc):
         return ""
     desc = re.sub(r'<[^>]+>', '', desc)
     desc = re.sub(r'&[a-zA-Z]+;', ' ', desc)
+    desc = re.sub(r'\s*\(Source:[^)]*\)', '', desc, flags=re.IGNORECASE)
+    desc = re.sub(r'\s*Notes?:.*$', '', desc, flags=re.IGNORECASE | re.DOTALL)
     desc = re.sub(r'\s+', ' ', desc).strip()
     return desc
 
