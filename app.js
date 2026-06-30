@@ -1,6 +1,6 @@
 // ── Filter definitions ─────────────────────────────────────────────────────
 
-const DEMOGRAPHICS = ['Shounen', 'Shoujo', 'Seinen', 'Josei', 'Kids'];
+const DEMOGRAPHICS = ['Josei', 'Kids', 'Seinen', 'Shoujo', 'Shounen'];
 
 const ALL_GENRES = [
   'Action', 'Adventure', 'Comedy', 'Drama', 'Fantasy', 'Horror',
@@ -12,40 +12,39 @@ const ALL_GENRES = [
 const FILTER_GROUPS = [
   {
     label: 'Setting',
-    items: ['Isekai', 'College', 'Historical', 'Medieval', 'Urban Fantasy'],
+    items: ['College', 'Historical', 'Isekai', 'Medieval', 'Urban Fantasy'],
   },
   {
     label: 'Themes',
     items: [
-      'Coming of Age', 'War', 'Revenge', 'Found Family', 'Philosophy',
-      'Politics', 'Crime', 'Class Struggle', 'Mythology', 'Travel', 'Food',
+      'Class Struggle', 'Coming of Age', 'Crime', 'Food', 'Found Family',
+      'Mythology', 'Philosophy', 'Politics', 'Revenge', 'Travel', 'War',
     ],
   },
   {
     label: 'Tone',
-    items: ['Iyashikei', 'Surreal Comedy', 'Slapstick', 'Parody', 'Satire', 'Episodic'],
+    items: ['Episodic', 'Iyashikei', 'Parody', 'Satire', 'Slapstick', 'Surreal Comedy'],
   },
   {
     label: 'Characters',
     items: [
-      'Tsundere', 'Yandere', 'Kuudere', 'Anti-Hero', 'Ensemble Cast',
-      'Primarily Adult Cast', 'Ojou-sama',
+      'Anti-Hero', 'Ensemble Cast', 'Kuudere', 'Ojou-sama',
+      'Primarily Adult Cast', 'Tsundere', 'Yandere',
     ],
   },
   // Conditional: only shown when Romance genre is selected
   {
     label: 'Romance & Relationships',
     items: [
-      'Love Triangle', 'Female Harem', 'Yuri', 'Arranged Marriage',
-      'Unrequited Love', 'Cohabitation', 'Fake Relationship',
-      'Marriage', 'LGBTQ+ Themes',
+      'Arranged Marriage', 'Cohabitation', 'Fake Relationship', 'Female Harem',
+      'LGBTQ+ Themes', 'Love Triangle', 'Marriage', 'Unrequited Love', 'Yuri',
     ],
     showWhenGenres: ['Romance'],
   },
   // Conditional: only shown when Fantasy or Supernatural genre is selected
   {
     label: 'Supernatural & Fantasy',
-    items: ['Magic', 'Demons', 'Gods', 'Youkai', 'Vampire', 'Shapeshifting', 'Dragons', 'Elf', 'Witch'],
+    items: ['Demons', 'Dragons', 'Elf', 'Gods', 'Magic', 'Shapeshifting', 'Vampire', 'Witch', 'Youkai'],
     showWhenGenres: ['Fantasy', 'Supernatural'],
   },
 ];
@@ -53,8 +52,8 @@ const FILTER_GROUPS = [
 const NSFW_GROUP = {
   label: '18+ Content',
   items: [
-    'Nudity', 'Gore', 'Torture', 'Suicide', 'Drugs',
-    'Bondage', 'Large Breasts', 'Masochism', 'Psychosexual', 'Rape', 'Sadism',
+    'Bondage', 'Drugs', 'Gore', 'Large Breasts', 'Masochism',
+    'Nudity', 'Psychosexual', 'Rape', 'Sadism', 'Suicide', 'Torture',
   ],
 };
 
