@@ -18,7 +18,7 @@ const FILTER_GROUPS = [
     label: 'Themes',
     items: [
       'Coming of Age', 'War', 'Revenge', 'Found Family', 'Philosophy',
-      'Politics', 'Crime', 'Class Struggle', 'Mythology', 'Travel',
+      'Politics', 'Crime', 'Class Struggle', 'Mythology', 'Travel', 'Food',
     ],
   },
   {
@@ -47,10 +47,6 @@ const FILTER_GROUPS = [
     label: 'Supernatural & Fantasy',
     items: ['Magic', 'Demons', 'Gods', 'Youkai', 'Vampire', 'Shapeshifting', 'Dragons', 'Elf', 'Witch'],
     showWhenGenres: ['Fantasy', 'Supernatural'],
-  },
-  {
-    label: 'Sports & Activities',
-    items: ['Baseball', 'Basketball', 'Archery', 'Food'],
   },
 ];
 
