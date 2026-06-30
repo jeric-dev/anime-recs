@@ -57,20 +57,13 @@ const FILTER_GROUPS = [
 const NSFW_GROUP = {
   label: '18+ Content',
   items: [
-    'Nudity', 'Gore', 'Body Horror', 'Torture', 'Suicide', 'Drugs', 'Slavery',
-    'Bondage', 'Exhibitionism', 'Femdom', 'Group Sex', 'Incest', 'Large Breasts',
-    'Masochism', 'MILF', 'Psychosexual', 'Rape', 'Sadism', 'Feet', 'Sweat',
+    'Nudity', 'Gore', 'Torture', 'Suicide', 'Drugs',
+    'Bondage', 'Large Breasts', 'Masochism', 'Psychosexual', 'Rape', 'Sadism',
   ],
 };
 
 // AniList IDs that are sequels by metadata but should be treated as standalones
 const SEQUEL_OVERRIDES = new Set([3972]); // Yu-Gi-Oh! 5D's
-
-// NSFW + conditional groups use a relaxed 50% rank threshold instead of 80%
-const THRESHOLD_50_TAG_SET = new Set([
-  ...NSFW_GROUP.items,
-  ...FILTER_GROUPS.filter(g => g.showWhenGenres).flatMap(g => g.items),
-].map(t => t.toLowerCase()));
 
 // ── State ──────────────────────────────────────────────────────────────────
 
@@ -154,7 +147,7 @@ function scoreAnime(anime) {
 
   for (const tag of state.tags) {
     const rank = animeTagsMap.get(tag.toLowerCase());
-    if (rank !== undefined && (THRESHOLD_50_TAG_SET.has(tag.toLowerCase()) ? rank >= 50 : rank >= 80)) {
+    if (rank !== undefined && rank >= 80) {
       score += (rank / 100) * 5;
       matched.push(tag);
     }
