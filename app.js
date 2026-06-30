@@ -454,7 +454,7 @@ function buildFilterUI() {
   minInput.min = dataMinYear;
   minInput.max = dataMaxYear;
   minInput.value = dataMinYear;
-  minInput.style.zIndex = '2';
+  minInput.style.zIndex = '4';
 
   const maxInput = document.createElement('input');
   maxInput.type = 'range';
@@ -473,7 +473,7 @@ function buildFilterUI() {
     trackFill.style.right = ((dataMaxYear - hi)  / range * 100) + '%';
     minLabel.textContent = lo;
     maxLabel.textContent = hi;
-    minInput.style.zIndex = lo >= hi ? '4' : '2';
+    minInput.style.zIndex = (lo >= hi || lo <= dataMinYear) ? '4' : '2';
   };
 
   minInput.addEventListener('input', () => {
