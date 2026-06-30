@@ -74,6 +74,8 @@ const state = {
   yearMax: null,
 };
 
+let andMode = false;
+
 // Refs to conditional groups
 const conditionalGroupEls = new Map();
 
@@ -159,6 +161,23 @@ function scoreAnime(anime) {
   return { score, matched };
 }
 
+function matchesAllFilters(anime) {
+  const animeGenres = new Set(anime.genres.map(g => g.toLowerCase()));
+  const animeTagsMap = new Map(anime.tags.map(t => [t.name.toLowerCase(), t.rank]));
+  const animeStudios = new Set((anime.studios || []).map(s => s.toLowerCase()));
+  for (const g of state.genres) {
+    if (!animeGenres.has(g.toLowerCase())) return false;
+  }
+  for (const t of state.tags) {
+    const rank = animeTagsMap.get(t.toLowerCase());
+    if (rank === undefined || rank < 80) return false;
+  }
+  for (const s of state.studios) {
+    if (!animeStudios.has(s.toLowerCase())) return false;
+  }
+  return true;
+}
+
 function recommend() {
   updateFilterCount();
   const hasFilters =
@@ -182,7 +201,7 @@ function recommend() {
       const { score, matched } = scoreAnime(a);
       return { ...a, _score: score, matched };
     })
-    .filter(a => a._score > 0 || noScoringFilters)
+    .filter(a => noScoringFilters || (andMode ? matchesAllFilters(a) : a._score > 0))
     .sort((a, b) => {
       if (Math.abs(b._score - a._score) > 0.5) return b._score - a._score;
       return (b.score || 0) - (a.score || 0);
@@ -614,6 +633,7 @@ async function init() {
   buildFilterUI();
 
   document.getElementById('toggle-18plus').addEventListener('change', e => toggle18plus(e.target.checked));
+  document.getElementById('toggle-and-mode').addEventListener('change', e => { andMode = e.target.checked; recommend(); });
   document.getElementById('clear-filters').addEventListener('click', clearAllFilters);
 
   renderDefault();
