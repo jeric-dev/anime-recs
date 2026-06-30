@@ -208,6 +208,13 @@ h1 {
   color: var(--accent);
 }
 
+@media (hover: none) {
+  .filter-chip:hover {
+    border-color: var(--border);
+    color: var(--text-muted);
+  }
+}
+
 .filter-chip.active {
   background: rgba(192, 132, 252, 0.14);
   border-color: var(--accent);

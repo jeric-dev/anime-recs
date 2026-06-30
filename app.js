@@ -29,7 +29,7 @@ const FILTER_GROUPS = [
     label: 'Characters',
     items: [
       'Anti-Hero', 'Ensemble Cast', 'Kuudere', 'Ojou-sama',
-      'Primarily Adult Cast', 'Tsundere', 'Yandere',
+      'Primarily Adult Cast', 'Tsundere',
     ],
   },
   // Conditional: only shown when Romance genre is selected
@@ -365,6 +365,7 @@ function makeFilterChip(label, type, extraClass) {
       // Exclude → Unselected
       excludeSet.delete(label);
       btn.classList.remove('excluded');
+      btn.blur();
     }
 
     if (type === 'genre') updateConditionalGroups();
@@ -473,7 +474,7 @@ function buildFilterUI() {
     trackFill.style.right = ((dataMaxYear - hi)  / range * 100) + '%';
     minLabel.textContent = lo;
     maxLabel.textContent = hi;
-    minInput.style.zIndex = (lo >= hi || lo <= dataMinYear) ? '4' : '2';
+    minInput.style.zIndex = (hi > dataMinYear && (lo <= dataMinYear || lo >= hi)) ? '4' : '2';
   };
 
   minInput.addEventListener('input', () => {
