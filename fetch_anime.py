@@ -62,8 +62,10 @@ def clean_description(desc):
     desc = re.sub(r'&[a-zA-Z]+;', ' ', desc)
     desc = re.sub(r'\s*\(Source:[^)]*\)', '', desc, flags=re.IGNORECASE)
     desc = re.sub(r'\s*Notes?:.*$', '', desc, flags=re.IGNORECASE | re.DOTALL)
-    desc = re.sub(r'\s+', ' ', desc).strip()
-    return desc
+    desc = desc.replace('\r\n', '\n').replace('\r', '\n')
+    desc = '\n'.join(re.sub(r' +', ' ', line).strip() for line in desc.split('\n'))
+    desc = re.sub(r'\n{3,}', '\n\n', desc)
+    return desc.strip()
 
 def fetch_anime_list():
     response = requests.post(

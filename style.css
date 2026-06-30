@@ -606,6 +606,7 @@ main {
   line-height: 1.65;
   max-height: 160px;
   overflow-y: auto;
+  white-space: pre-line;
   padding-right: 6px;
 }
 
