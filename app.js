@@ -212,6 +212,14 @@ function recommend() {
 
 // ── Render ─────────────────────────────────────────────────────────────────
 
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
 function renderCard(anime) {
   const title = anime.title || anime.titleRomaji;
   const score = anime.score > 0 ? `★ ${anime.score}` : '—';
@@ -219,17 +227,17 @@ function renderCard(anime) {
   const matched = anime.matched || [];
 
   return `
-    <div class="card" data-id="${anime.id}" title="${title}">
+    <div class="card" data-id="${anime.id}" title="${escapeHtml(title)}">
       <div class="card-cover">
-        <img src="${anime.cover}" alt="" loading="lazy">
+        <img src="${escapeHtml(anime.cover)}" alt="" loading="lazy">
         <div class="card-score">${score}</div>
       </div>
       <div class="card-body">
-        <h3 class="card-title">${title}</h3>
+        <h3 class="card-title">${escapeHtml(title)}</h3>
         <div class="card-genres">
-          ${genres.map(g => `<span class="genre-pill">${g}</span>`).join('')}
+          ${genres.map(g => `<span class="genre-pill">${escapeHtml(g)}</span>`).join('')}
         </div>
-        ${matched.length ? `<div class="card-matched">↳ ${matched.join(', ')}</div>` : ''}
+        ${matched.length ? `<div class="card-matched">↳ ${matched.map(escapeHtml).join(', ')}</div>` : ''}
       </div>
     </div>
   `;
@@ -247,7 +255,7 @@ function openModal(id) {
   overlay.querySelector('.modal-score').textContent = anime.score > 0 ? `★ ${anime.score}` : '—';
   overlay.querySelector('.modal-title').textContent = title;
   overlay.querySelector('.modal-genres').innerHTML =
-    (anime.genres || []).map(g => `<span class="genre-pill">${g}</span>`).join('');
+    (anime.genres || []).map(g => `<span class="genre-pill">${escapeHtml(g)}</span>`).join('');
   overlay.querySelector('.modal-description').textContent =
     anime.description || 'No description available.';
   const reviewLink = overlay.querySelector('.modal-review-link');
@@ -259,7 +267,8 @@ function openModal(id) {
     reviewLink.classList.add('hidden');
   }
 
-  overlay.querySelector('.modal-anilist-link').href = anime.url;
+  const anilistUrl = /^https?:\/\//.test(anime.url || '') ? anime.url : '#';
+  overlay.querySelector('.modal-anilist-link').href = anilistUrl;
   overlay.classList.remove('hidden');
   document.body.style.overflow = 'hidden';
 }
@@ -627,7 +636,11 @@ async function init() {
   try {
     await loadData();
   } catch (err) {
-    grid.innerHTML = `<div class="error-state"><p>⚠ ${err.message}</p></div>`;
+    const errEl = document.createElement('div');
+    errEl.className = 'error-state';
+    errEl.innerHTML = '<p></p>';
+    errEl.querySelector('p').textContent = `⚠ ${err.message}`;
+    grid.replaceChildren(errEl);
     return;
   }
 
