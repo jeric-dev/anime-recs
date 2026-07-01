@@ -28,7 +28,7 @@ Toggling **Match All (AND)** switches every group to strict AND logic, including
 
 ### Filter groups
 
-Roughly ordered from "facts about the entry" → "broad classification" → "genre-linked deep dives" → "what it's about" → "who's involved":
+Roughly ordered from "facts about the entry" → "broad classification" → "what it's about" (alphabetical) → "who's involved":
 
 | Group | Notes |
 |---|---|
@@ -38,12 +38,12 @@ Roughly ordered from "facts about the entry" → "broad classification" → "gen
 | Special Titles | Certified Fresh, Certified Rotten, Medalists (any AOTY/MOTY placement or r/anime award) |
 | Genres | 17 standard Anilist genres |
 | Demographic | Shounen, Shoujo, Seinen, Josei |
-| Romance & Relationships | Heterosexual, Female Harem, Love Triangle, and more |
-| Supernatural & Fantasy | Magic, Demons, Youkai, Aliens, and more |
+| Fantasy & Supernatural | Magic, Demons, Youkai, Aliens, and more |
+| Hobbies & Activities | Band, Video Games, Athletics, Card Battle, and more |
+| Relationships & Romance | Heterosexual, Female Harem, Love Triangle, and more |
 | Setting | School, Isekai, Urban Fantasy, Historical, Medieval, and more |
 | Themes | Coming of Age, War, Revenge, Found Family, and more |
 | Tone | Iyashikei, Parody, Slapstick, Episodic, and more |
-| Hobbies & Activities | Band, Video Games, Athletics, Card Battle, and more |
 | Cast | Female/Male Protagonist, Ensemble Cast, Primarily Teen/Adult/Child Cast |
 | Characters | Tsundere, Kuudere, Anti-Hero, and more |
 | Studio | Only studios with 5+ non-prerequisite anime from my list, per Anilist's own Studios (not Producers) credit |
