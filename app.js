@@ -9,22 +9,30 @@ const ALL_GENRES = [
 ];
 
 // Only tags appearing in ≥5 anime at ≥75% rank
-// Ordered hierarchically: genre-linked deep dives first, then what-it's-about
-// content descriptors, then who's-involved facts (paired with Studio after).
+// Ordered hierarchically: what-it's-about content descriptors (alphabetical,
+// now that none of them are genre-gated), then who's-involved facts (paired
+// with Studio after).
 const FILTER_GROUPS = [
   {
-    label: 'Romance & Relationships',
-    items: [
-      'Cohabitation', 'Fake Relationship', 'Female Harem', 'Heterosexual',
-      'LGBTQ+ Themes', 'Love Triangle', 'Marriage', 'Unrequited Love', 'Yuri',
-    ],
-  },
-  {
-    label: 'Supernatural & Fantasy',
+    label: 'Fantasy & Supernatural',
     items: [
       'Aliens', 'Animals', 'Creature Taming', 'Demons', 'Gods', 'Henshin',
       'Kemonomimi', 'Magic', 'Mythology', 'Shapeshifting', 'Super Power',
       'Witch', 'Youkai',
+    ],
+  },
+  {
+    label: 'Hobbies & Activities',
+    items: [
+      'Acting', 'Athletics', 'Band', 'Card Battle', 'Drawing',
+      'Outdoor Activities', 'Rock Music', 'Video Games', 'Writing',
+    ],
+  },
+  {
+    label: 'Relationships & Romance',
+    items: [
+      'Cohabitation', 'Fake Relationship', 'Female Harem', 'Heterosexual',
+      'LGBTQ+ Themes', 'Love Triangle', 'Marriage', 'Unrequited Love', 'Yuri',
     ],
   },
   {
@@ -48,13 +56,6 @@ const FILTER_GROUPS = [
     items: [
       'Cute Girls Doing Cute Things', 'Episodic', 'Iyashikei', 'Meta',
       'Parody', 'Satire', 'Slapstick', 'Surreal Comedy',
-    ],
-  },
-  {
-    label: 'Hobbies & Activities',
-    items: [
-      'Acting', 'Athletics', 'Band', 'Card Battle', 'Drawing',
-      'Outdoor Activities', 'Rock Music', 'Video Games', 'Writing',
     ],
   },
   {
