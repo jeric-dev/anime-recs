@@ -176,7 +176,6 @@ const state = {
   excludedGenres: new Set(),
   excludedTags: new Set(),
   excludedStudios: new Set(),
-  excludedSpecialTitles: new Set(),
   lengths: new Set(),
   yearMin: null,
   yearMax: null,
@@ -261,9 +260,6 @@ function isExcluded(anime) {
   for (const s of state.excludedStudios) {
     if (studios.has(s.toLowerCase())) return true;
   }
-  for (const key of state.excludedSpecialTitles) {
-    if (animeHasSpecialTitle(anime, key)) return true;
-  }
   return false;
 }
 
@@ -322,7 +318,6 @@ function recommend() {
   const hasFilters =
     state.genres.size > 0 || state.tags.size > 0 || state.studios.size > 0 || state.specialTitles.size > 0 ||
     state.excludedGenres.size > 0 || state.excludedTags.size > 0 || state.excludedStudios.size > 0 ||
-    state.excludedSpecialTitles.size > 0 ||
     state.lengths.size > 0 || state.yearMin !== null || state.yearMax !== null ||
     state.scoreMin !== null || state.scoreMax !== null;
 
@@ -495,7 +490,6 @@ function updateFilterCount() {
   const count =
     state.genres.size + state.tags.size + state.studios.size + state.specialTitles.size +
     state.excludedGenres.size + state.excludedTags.size + state.excludedStudios.size +
-    state.excludedSpecialTitles.size +
     state.lengths.size +
     (state.yearMin !== null || state.yearMax !== null ? 1 : 0) +
     (state.scoreMin !== null || state.scoreMax !== null ? 1 : 0);
@@ -603,8 +597,6 @@ function makeFilterChip(label, type, extraClass, value) {
 
   if (type === 'tag' && tagDescriptions[label]) {
     attachHoverTooltip(btn, tagDescriptions[label], { suppressClick: true });
-  } else if (type === 'special' && SPECIAL_TITLES_META[value]) {
-    attachHoverTooltip(btn, SPECIAL_TITLES_META[value].hover, { suppressClick: true });
   }
 
   btn.addEventListener('click', () => {
@@ -613,8 +605,8 @@ function makeFilterChip(label, type, extraClass, value) {
       return;
     }
     hideTooltip();
-    const includeSet = type === 'genre' ? state.genres : type === 'studio' ? state.studios : type === 'special' ? state.specialTitles : state.tags;
-    const excludeSet = type === 'genre' ? state.excludedGenres : type === 'studio' ? state.excludedStudios : type === 'special' ? state.excludedSpecialTitles : state.excludedTags;
+    const includeSet = type === 'genre' ? state.genres : type === 'studio' ? state.studios : state.tags;
+    const excludeSet = type === 'genre' ? state.excludedGenres : type === 'studio' ? state.excludedStudios : state.excludedTags;
 
     if (!includeSet.has(value) && !excludeSet.has(value)) {
       // Unselected → Include
@@ -856,9 +848,29 @@ function buildFilterUI() {
   panel.appendChild(scoreGroup);
 
   // Special Titles (Certified Fresh/Rotten, Medalists — derived from specialAwards)
+  // Include-only toggle, same as Length — no exclude state.
   const { group: specialGroup, chips: specialChips } = makeGroup('Special Titles');
   Object.entries(SPECIAL_TITLES_META).forEach(([key, meta]) => {
-    specialChips.appendChild(makeFilterChip(meta.label, 'special', '', key));
+    const btn = document.createElement('button');
+    btn.className = 'filter-chip';
+    btn.textContent = meta.label;
+    attachHoverTooltip(btn, meta.hover, { suppressClick: true });
+    btn.addEventListener('click', () => {
+      if (btn._suppressClick) {
+        btn._suppressClick = false;
+        return;
+      }
+      hideTooltip();
+      if (state.specialTitles.has(key)) {
+        state.specialTitles.delete(key);
+        btn.classList.remove('active');
+      } else {
+        state.specialTitles.add(key);
+        btn.classList.add('active');
+      }
+      recommend();
+    });
+    specialChips.appendChild(btn);
   });
   panel.appendChild(specialGroup);
 
@@ -929,7 +941,6 @@ function clearAllFilters() {
   state.excludedGenres.clear();
   state.excludedTags.clear();
   state.excludedStudios.clear();
-  state.excludedSpecialTitles.clear();
   state.lengths.clear();
   state.yearMin = null;
   state.yearMax = null;
