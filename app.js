@@ -215,10 +215,13 @@ function matchesLengthFilter(anime) {
   const minutes = anime.lengthMinutes;
   if (!minutes) return true;
   const hours = minutes / 60;
-  if (state.lengths.has('short') && hours < 5) return true;
-  if (state.lengths.has('medium') && hours >= 5 && hours <= 10) return true;
-  if (state.lengths.has('long') && hours > 10) return true;
-  return false;
+  const bucketMatch = {
+    short: hours < 5,
+    medium: hours >= 5 && hours <= 10,
+    long: hours > 10,
+  };
+  const selected = [...state.lengths];
+  return andMode ? selected.every(k => bucketMatch[k]) : selected.some(k => bucketMatch[k]);
 }
 
 function matchesYearFilter(anime) {
@@ -241,10 +244,8 @@ function matchesScoreFilter(anime) {
 
 function matchesSpecialTitleFilter(anime) {
   if (state.specialTitles.size === 0) return true;
-  for (const key of state.specialTitles) {
-    if (animeHasSpecialTitle(anime, key)) return true;
-  }
-  return false;
+  const selected = [...state.specialTitles];
+  return andMode ? selected.every(key => animeHasSpecialTitle(anime, key)) : selected.some(key => animeHasSpecialTitle(anime, key));
 }
 
 function isExcluded(anime) {
