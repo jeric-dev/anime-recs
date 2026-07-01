@@ -490,6 +490,7 @@ function updateFilterCount() {
     (state.scoreMin !== null || state.scoreMax !== null ? 1 : 0);
   const el = document.getElementById('filter-count');
   if (el) el.textContent = count > 0 ? `${count} filter${count === 1 ? '' : 's'} active` : '';
+  updateGroupBadges();
 }
 
 // ── Tag tooltips ───────────────────────────────────────────────────────────
@@ -608,17 +609,51 @@ function makeFilterChip(label, type, extraClass, value) {
   return btn;
 }
 
-function makeGroup(label, extraClass) {
+const collapsibleGroups = [];
+
+function makeGroup(label, extraClass, collapsible) {
   const group = document.createElement('div');
   group.className = 'filter-group' + (extraClass ? ` ${extraClass}` : '');
-  const labelEl = document.createElement('div');
-  labelEl.className = 'filter-group-label';
-  labelEl.textContent = label;
   const chips = document.createElement('div');
   chips.className = 'filter-chips';
-  group.appendChild(labelEl);
-  group.appendChild(chips);
+
+  if (collapsible) {
+    group.classList.add('collapsible', 'collapsed');
+    const labelEl = document.createElement('button');
+    labelEl.type = 'button';
+    labelEl.className = 'filter-group-label collapsible-label';
+    const text = document.createElement('span');
+    text.className = 'label-text';
+    text.textContent = label;
+    const badge = document.createElement('span');
+    badge.className = 'group-badge hidden';
+    const chevron = document.createElement('span');
+    chevron.className = 'collapse-chevron';
+    chevron.textContent = '▾';
+    labelEl.appendChild(text);
+    labelEl.appendChild(badge);
+    labelEl.appendChild(chevron);
+    labelEl.addEventListener('click', () => group.classList.toggle('collapsed'));
+    group.appendChild(labelEl);
+    group.appendChild(chips);
+    collapsibleGroups.push({ chips, badge });
+  } else {
+    const labelEl = document.createElement('div');
+    labelEl.className = 'filter-group-label';
+    labelEl.textContent = label;
+    group.appendChild(labelEl);
+    group.appendChild(chips);
+  }
+
   return { group, chips };
+}
+
+function updateGroupBadges() {
+  collapsibleGroups.forEach(({ chips, badge }) => {
+    const count = chips.querySelectorAll('.filter-chip.active, .filter-chip.excluded').length;
+    badge.textContent = count;
+    badge.classList.toggle('hidden', count === 0);
+  });
 }
 
 function buildFilterUI() {
@@ -857,13 +892,13 @@ function buildFilterUI() {
   panel.appendChild(genreGroup);
 
   // Demographic
-  const { group: demoGroup, chips: demoChips } = makeGroup('Demographic');
+  const { group: demoGroup, chips: demoChips } = makeGroup('Demographic', '', true);
   DEMOGRAPHICS.forEach(d => demoChips.appendChild(makeFilterChip(d, 'tag')));
   panel.appendChild(demoGroup);
 
   // Tag groups
   FILTER_GROUPS.forEach(({ label, items }) => {
-    const { group, chips } = makeGroup(label);
+    const { group, chips } = makeGroup(label, '', true);
     items.forEach(item => chips.appendChild(makeFilterChip(item, 'tag')));
     panel.appendChild(group);
   });
@@ -878,13 +913,13 @@ function buildFilterUI() {
     .sort(([a], [b]) => a.localeCompare(b))
     .map(([name]) => name);
   if (qualifiedStudios.length) {
-    const { group: studioGroup, chips: studioChips } = makeGroup('Studio');
+    const { group: studioGroup, chips: studioChips } = makeGroup('Studio', '', true);
     qualifiedStudios.forEach(s => studioChips.appendChild(makeFilterChip(s, 'studio')));
     panel.appendChild(studioGroup);
   }
 
   // NSFW group
-  const { group: nsfwGroup, chips: nsfwChips } = makeGroup(NSFW_GROUP.label, 'nsfw-group');
+  const { group: nsfwGroup, chips: nsfwChips } = makeGroup(NSFW_GROUP.label, 'nsfw-group', true);
   NSFW_GROUP.items.forEach(item => nsfwChips.appendChild(makeFilterChip(item, 'tag')));
   panel.appendChild(nsfwGroup);
 }

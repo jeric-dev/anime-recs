@@ -181,6 +181,57 @@ h1 {
   line-height: 1.4;
 }
 
+.collapsible-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 5px 0 0;
+}
+
+.collapsible-label:hover {
+  color: var(--accent);
+}
+
+.collapsible-label .label-text {
+  flex: 1;
+  text-align: left;
+}
+
+.group-badge {
+  background: var(--accent);
+  color: var(--bg);
+  font-size: 0.68rem;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 1px 6px;
+  min-width: 8px;
+  text-align: center;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.group-badge.hidden {
+  display: none;
+}
+
+.collapse-chevron {
+  font-size: 0.7rem;
+  transition: transform var(--transition);
+  flex-shrink: 0;
+}
+
+.filter-group.collapsible.collapsed .collapse-chevron {
+  transform: rotate(-90deg);
+}
+
+.filter-group.collapsible.collapsed .filter-chips {
+  display: none;
+}
+
 .filter-chips {
   display: flex;
   flex-wrap: wrap;
@@ -841,6 +892,10 @@ main {
   .filter-group-label {
     min-width: unset;
     padding-top: 0;
+  }
+
+  .collapsible-label {
+    width: 100%;
   }
 
   main {
