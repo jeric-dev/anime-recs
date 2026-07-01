@@ -12,16 +12,13 @@ const ALL_GENRES = [
 // Ordered hierarchically: genre-linked deep dives first, then what-it's-about
 // content descriptors, then who's-involved facts (paired with Studio after).
 const FILTER_GROUPS = [
-  // Conditional: only shown when Romance genre is selected
   {
     label: 'Romance & Relationships',
     items: [
       'Cohabitation', 'Fake Relationship', 'Female Harem', 'Heterosexual',
       'LGBTQ+ Themes', 'Love Triangle', 'Marriage', 'Unrequited Love', 'Yuri',
     ],
-    showWhenGenres: ['Romance'],
   },
-  // Conditional: only shown when Fantasy or Supernatural genre is selected
   {
     label: 'Supernatural & Fantasy',
     items: [
@@ -29,7 +26,6 @@ const FILTER_GROUPS = [
       'Kemonomimi', 'Magic', 'Mythology', 'Shapeshifting', 'Super Power',
       'Witch', 'Youkai',
     ],
-    showWhenGenres: ['Fantasy', 'Supernatural'],
   },
   {
     label: 'Setting',
@@ -184,9 +180,6 @@ const state = {
 };
 
 let andMode = false;
-
-// Refs to conditional groups
-const conditionalGroupEls = new Map();
 
 // ── Data ───────────────────────────────────────────────────────────────────
 
@@ -498,24 +491,6 @@ function updateFilterCount() {
   if (el) el.textContent = count > 0 ? `${count} filter${count === 1 ? '' : 's'} active` : '';
 }
 
-// ── Conditional group visibility ───────────────────────────────────────────
-
-function updateConditionalGroups() {
-  for (const [, { el, showWhenGenres }] of conditionalGroupEls) {
-    const shouldShow = showWhenGenres.some(g => state.genres.has(g));
-    const wasVisible = !el.classList.contains('group-hidden');
-    if (!shouldShow && wasVisible) {
-      el.querySelectorAll('.filter-chip.active, .filter-chip.excluded').forEach(btn => {
-        const val = btn.dataset.value;
-        if (btn.classList.contains('active')) state.tags.delete(val);
-        else state.excludedTags.delete(val);
-        btn.classList.remove('active', 'excluded');
-      });
-    }
-    el.classList.toggle('group-hidden', !shouldShow);
-  }
-}
-
 // ── Tag tooltips ───────────────────────────────────────────────────────────
 // Desktop: hover (with a short delay) or keyboard focus shows the tooltip.
 // Mobile: long-press (~500ms) shows it without triggering the tap-to-select
@@ -626,7 +601,6 @@ function makeFilterChip(label, type, extraClass, value) {
       btn.blur();
     }
 
-    if (type === 'genre') updateConditionalGroups();
     recommend();
   });
 
@@ -886,12 +860,10 @@ function buildFilterUI() {
   DEMOGRAPHICS.forEach(d => demoChips.appendChild(makeFilterChip(d, 'tag')));
   panel.appendChild(demoGroup);
 
-  // Tag groups (including conditional ones)
-  FILTER_GROUPS.forEach(({ label, items, showWhenGenres }) => {
-    const isConditional = !!showWhenGenres;
-    const { group, chips } = makeGroup(label, isConditional ? 'group-hidden' : '');
+  // Tag groups
+  FILTER_GROUPS.forEach(({ label, items }) => {
+    const { group, chips } = makeGroup(label);
     items.forEach(item => chips.appendChild(makeFilterChip(item, 'tag')));
-    if (isConditional) conditionalGroupEls.set(label, { el: group, showWhenGenres });
     panel.appendChild(group);
   });
 
@@ -973,7 +945,6 @@ function clearAllFilters() {
     if (scoreMinDisp) scoreMinDisp.textContent = scoreMinSlider.min;
     if (scoreMaxDisp) scoreMaxDisp.textContent = scoreMaxSlider.max;
   }
-  updateConditionalGroups();
   recommend();
 }
 
