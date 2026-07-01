@@ -1,4 +1,4 @@
-# Jeric's Anime Picks
+# Jeric's Anime Recommendations
 
 A personal anime recommendation site built on top of my [Anilist](https://anilist.co) profile. Friends can filter by mood, genre, studio, and more to find something from my completed list that fits.
 
