@@ -31,6 +31,7 @@ query ($username: String) {
             extraLarge
           }
           episodes
+          duration
           averageScore
           season
           seasonYear
@@ -123,6 +124,7 @@ def fetch_anime_list(existing_prereq_map):
                 "description": clean_description(media["description"]),
                 "cover": media["coverImage"]["extraLarge"],
                 "episodes": media["episodes"],
+                "lengthMinutes": (media["episodes"] or 0) * (media["duration"] or 0) or None,
                 "averageScore": media["averageScore"],
                 "year": media.get("seasonYear"),
                 "season": media.get("season"),

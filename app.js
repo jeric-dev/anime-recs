@@ -73,7 +73,7 @@ const state = {
   excludedGenres: new Set(),
   excludedTags: new Set(),
   excludedStudios: new Set(),
-  episodes: new Set(),
+  lengths: new Set(),
   yearMin: null,
   yearMax: null,
 };
@@ -97,13 +97,14 @@ async function loadData() {
 
 // ── Engine ─────────────────────────────────────────────────────────────────
 
-function matchesEpisodeFilter(anime) {
-  if (state.episodes.size === 0) return true;
-  const eps = anime.episodes;
-  if (!eps) return true;
-  if (state.episodes.has('short') && eps <= 13) return true;
-  if (state.episodes.has('medium') && eps >= 14 && eps <= 26) return true;
-  if (state.episodes.has('long') && eps > 26) return true;
+function matchesLengthFilter(anime) {
+  if (state.lengths.size === 0) return true;
+  const minutes = anime.lengthMinutes;
+  if (!minutes) return true;
+  const hours = minutes / 60;
+  if (state.lengths.has('short') && hours < 5) return true;
+  if (state.lengths.has('medium') && hours >= 5 && hours <= 10) return true;
+  if (state.lengths.has('long') && hours > 10) return true;
   return false;
 }
 
@@ -187,7 +188,7 @@ function recommend() {
   const hasFilters =
     state.genres.size > 0 || state.tags.size > 0 || state.studios.size > 0 ||
     state.excludedGenres.size > 0 || state.excludedTags.size > 0 || state.excludedStudios.size > 0 ||
-    state.episodes.size > 0 || state.yearMin !== null || state.yearMax !== null;
+    state.lengths.size > 0 || state.yearMin !== null || state.yearMax !== null;
 
   if (!hasFilters) {
     renderDefault();
@@ -198,7 +199,7 @@ function recommend() {
 
   const results = animeData
     .filter(a => !a.requiresPrereq)
-    .filter(matchesEpisodeFilter)
+    .filter(matchesLengthFilter)
     .filter(matchesYearFilter)
     .filter(a => !isExcluded(a))
     .map(a => {
@@ -339,7 +340,7 @@ function updateFilterCount() {
   const count =
     state.genres.size + state.tags.size + state.studios.size +
     state.excludedGenres.size + state.excludedTags.size + state.excludedStudios.size +
-    state.episodes.size +
+    state.lengths.size +
     (state.yearMin !== null || state.yearMax !== null ? 1 : 0);
   const el = document.getElementById('filter-count');
   if (el) el.textContent = count > 0 ? `${count} filter${count === 1 ? '' : 's'} active` : '';
@@ -416,25 +417,25 @@ function makeGroup(label, extraClass) {
 function buildFilterUI() {
   const panel = document.getElementById('filter-panel');
 
-  // Episode length
-  const { group: epsGroup, chips: epsChips } = makeGroup('Episode Count');
-  [['short', 'Short (1–13)'], ['medium', 'Medium (14–26)'], ['long', 'Long (27+)']].forEach(([val, label]) => {
+  // Length (total watch time = episodes × episode duration)
+  const { group: lengthGroup, chips: lengthChips } = makeGroup('Length');
+  [['short', 'Short (< 5 hrs)'], ['medium', 'Medium (5–10 hrs)'], ['long', 'Long (> 10 hrs)']].forEach(([val, label]) => {
     const btn = document.createElement('button');
     btn.className = 'filter-chip';
     btn.textContent = label;
     btn.addEventListener('click', () => {
-      if (state.episodes.has(val)) {
-        state.episodes.delete(val);
+      if (state.lengths.has(val)) {
+        state.lengths.delete(val);
         btn.classList.remove('active');
       } else {
-        state.episodes.add(val);
+        state.lengths.add(val);
         btn.classList.add('active');
       }
       recommend();
     });
-    epsChips.appendChild(btn);
+    lengthChips.appendChild(btn);
   });
-  panel.appendChild(epsGroup);
+  panel.appendChild(lengthGroup);
 
   // Year range slider
   const years = [...new Set(animeData.map(a => a.year).filter(Boolean))].sort((a, b) => a - b);
@@ -592,7 +593,7 @@ function clearAllFilters() {
   state.excludedGenres.clear();
   state.excludedTags.clear();
   state.excludedStudios.clear();
-  state.episodes.clear();
+  state.lengths.clear();
   state.yearMin = null;
   state.yearMax = null;
   document.querySelectorAll('.filter-chip.active, .filter-chip.excluded')
@@ -629,8 +630,10 @@ async function init() {
             <div class="modal-score"></div>
           </div>
           <div class="modal-content">
-            <h2 class="modal-title"></h2>
-            <div class="modal-studio"></div>
+            <div class="modal-title-row">
+              <h2 class="modal-title"></h2>
+              <span class="modal-studio"></span>
+            </div>
             <div class="modal-meta">
               <span class="modal-season-chip"></span>
             </div>
