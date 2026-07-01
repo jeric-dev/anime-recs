@@ -37,9 +37,11 @@ query ($username: String) {
           seasonYear
           siteUrl
           studios {
-            nodes {
-              name
-              isAnimationStudio
+            edges {
+              isMain
+              node {
+                name
+              }
             }
           }
           relations {
@@ -70,15 +72,10 @@ def clean_description(desc):
     return desc.strip()
 
 def get_studios(media):
-    nodes = media.get("studios", {}).get("nodes", [])
-    animation_studios = [s["name"] for s in nodes if s.get("isAnimationStudio")]
-    if animation_studios:
-        return list(dict.fromkeys(animation_studios))
-    # AniList sometimes hasn't flagged an animation studio yet (new/obscure
-    # entries) — fall back to the first listed studio rather than showing none.
-    if nodes:
-        return [nodes[0]["name"]]
-    return []
+    # AniList's "Studios" section on the site is the isMain edges; the rest
+    # (isMain: false) are "Producers" and shouldn't show up as a studio.
+    edges = media.get("studios", {}).get("edges", [])
+    return list(dict.fromkeys(e["node"]["name"] for e in edges if e.get("isMain")))
 
 def load_existing_prereq_map(path):
     if not os.path.exists(path):
