@@ -6,11 +6,13 @@ A personal anime recommendation site built on top of my [Anilist](https://anilis
 
 ## What it does
 
-- Pulls my completed anime list from Anilist (ratings, genres, tags, studios, and personal notes)
-- Lets visitors filter using structured chips — genres, demographics, studios, themes, tone, characters, and more
-- Ranks results by how well they match the selected filters, tiebroken by my personal rating
-- Clicking a card opens a detail view with the full description and a link to my review where one exists
-- Default view (no filters) shows only my ★10-rated picks
+- Pulls my completed anime list from Anilist (ratings, genres, tags, studios, seasons, and personal review notes)
+- Lets visitors filter using structured chips — genres, demographics, studios, themes, tone, cast/characters, and more
+- Tag chips show Anilist's own description on hover (desktop) or long-press (mobile)
+- Ranks results by my personal rating first, tiebroken by tag relevance, then Anilist's community average
+- Clicking a card opens a detail view with the full description, studio, season, any special award badges, and a link to my review where one exists
+- Default view (no filters) shows my ★9 and ★10 rated picks
+- Anime that need prior series/season context are excluded from results entirely (hand-curated, not just "has a prequel")
 
 ## How filtering works
 
@@ -18,41 +20,58 @@ Filters are multi-select chips grouped by category. Clicking a chip cycles throu
 
 - **Unselected** → **Include** (purple) → **Exclude** (red/strikethrough) → Unselected
 
-Selecting multiple chips uses OR logic within each group and AND logic across groups — so selecting Action + Comedy finds anime that have at least one of those genres, while adding Kyoto Animation as a studio further narrows to anime matching both genre and studio criteria.
+(Length and Special Titles chips are include-only — no exclude state, since excluding a length bucket or a "Certified Fresh" tag isn't a meaningful thing to do.)
+
+By default, selecting multiple chips uses OR logic within each group and AND logic across groups — so selecting Action + Comedy finds anime with at least one of those genres, while adding Kyoto Animation as a studio further narrows to anime matching both genre and studio criteria.
+
+Toggling **Match All (AND)** switches every group to strict AND logic, including within a single group — so Action + Comedy now requires *both* genres, and picking two Length buckets (like Short + Medium) correctly returns nothing, since a show can't be both at once.
 
 ### Filter groups
 
+Roughly ordered from "facts about the entry" → "broad classification" → "genre-linked deep dives" → "what it's about" → "who's involved":
+
 | Group | Notes |
 |---|---|
-| Episode Count | Short (1–13), Medium (14–26), Long (27+) — hard filter, not scored |
-| Year Range | Dual-handle slider — hard filter, not scored |
-| Studio | Only studios with 5+ anime from my list |
-| Demographic | Shounen, Shoujo, Seinen, Josei, Kids |
+| Length | Short (< 5 hrs), Medium (5–10 hrs), Long (> 10 hrs) — based on total runtime (episodes × episode length), not episode count |
+| Year Range | Dual-handle slider |
+| My Score | Dual-handle slider, 1–10, same mechanics as Year Range |
+| Special Titles | Certified Fresh, Certified Rotten, Medalists (any AOTY/MOTY placement or r/anime award) |
 | Genres | 17 standard Anilist genres |
-| Setting | Isekai, College, Historical, Medieval, Urban Fantasy |
-| Themes | Coming of Age, War, Revenge, Found Family, and more |
-| Tone | Iyashikei, Parody, Slapstick, Episodic, and more |
-| Characters | Tsundere, Yandere, Anti-Hero, Ensemble Cast, and more |
+| Demographic | Shounen, Shoujo, Seinen, Josei |
 | Romance & Relationships | Only shown when Romance genre is selected |
 | Supernatural & Fantasy | Only shown when Fantasy or Supernatural genre is selected |
-| Sports & Activities | Baseball, Basketball, Archery, Food |
+| Setting | School, Isekai, Urban Fantasy, Historical, Medieval, and more |
+| Themes | Coming of Age, War, Revenge, Found Family, and more |
+| Tone | Iyashikei, Parody, Slapstick, Episodic, and more |
+| Hobbies & Activities | Band, Video Games, Athletics, Card Battle, and more |
+| Cast | Female/Male Protagonist, Ensemble Cast, Primarily Teen/Adult/Child Cast |
+| Characters | Tsundere, Kuudere, Anti-Hero, and more |
+| Studio | Only studios with 5+ non-prerequisite anime from my list, per Anilist's own Studios (not Producers) credit |
 | 18+ Content | Hidden behind a toggle — explicit/mature tags |
 
-### Scoring algorithm
+Length, Year Range, My Score, and hard-filter tags (Special Titles) are pass/fail — they don't contribute to the ranking score, only include/exclude anime from the results.
 
-Hard filters (episode count, year range) pass/fail with no score contribution. Everything else accumulates points:
+Every tag shown as a filter appears in at least 5 of my completed anime at ≥75% Anilist rank confidence — this keeps the chip list free of one-off or barely-relevant tags.
+
+### Scoring & sort order
 
 - **Genres & Studios:** +10 pts flat per match
-- **Tags & Demographics:** `(rank / 100) × 5` pts — a tag at 96% confidence scores 4.8 pts, one at 50% scores 2.5 pts
+- **Tags & Demographics:** `(rank / 100) × 5` pts if the tag's rank is ≥75% — a tag at 96% confidence scores 4.8 pts, one at 75% scores 3.75 pts
 
-Results are sorted by total score descending. When scores are within 0.5 pts of each other, my personal rating (★1–10) breaks the tie. Final fallback is Anilist's community average score.
+Results are sorted by **my personal rating first**, then by **total match score** (tag/genre/studio relevance) as a tiebreaker, then by **Anilist's community average score** as the final tiebreaker.
 
-Sequels are excluded from results by default so recommendations always point to a good entry point.
+## Special award badges
+
+Shown on the detail view next to the season badge, and filterable via the "Special Titles" group:
+
+- 🥇🥈🥉 **AOTY Winner / First Runner-Up / Second Runner-Up** — my own personal picks for a given year
+- 🥇 **r/anime AOTY/MOTY Jury/Public Winner** — community award wins
+- 🍅 **Certified Fresh** / 🗑️ **Certified Rotten** — my own quality call, independent of score, for shows that are either a great starting point regardless of genre or a rough watch
 
 ## Stack
 
 - **Frontend:** Vanilla JS, HTML, CSS — no frameworks, no build step
-- **Data:** Static `data/anime.json` generated by `fetch_anime.py`
+- **Data:** Static `data/anime.json` and `data/tag_descriptions.json`, both generated by `fetch_anime.py`
 - **Hosting:** GitHub Pages
 
 ## Updating the anime list
@@ -64,4 +83,6 @@ pip install requests
 python fetch_anime.py
 ```
 
-This overwrites `data/anime.json`. Commit and push to deploy.
+This overwrites `data/anime.json` and `data/tag_descriptions.json`. Hand-curated fields (`requiresPrereq`, `specialAwards`) are preserved across re-runs by ID — only genuinely new anime get a best-guess default (flagged in the script's output for manual review). Commit and push to deploy.
+
+If you change any CSS or JS, bump the `?v=` cache-busting query string on `style.css`/`app.js` in `index.html` — GitHub Pages' CDN caches aggressively and won't pick up changes otherwise.
