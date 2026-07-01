@@ -77,6 +77,19 @@ def get_studios(media):
     edges = media.get("studios", {}).get("edges", [])
     return list(dict.fromkeys(e["node"]["name"] for e in edges if e.get("isMain")))
 
+def fetch_tag_descriptions():
+    query = "query { MediaTagCollection { name description } }"
+    response = requests.post(
+        ANILIST_API,
+        json={"query": query},
+        headers={"Content-Type": "application/json", "Accept": "application/json"},
+    )
+    response.raise_for_status()
+    data = response.json()
+    if "errors" in data:
+        raise Exception(f"Anilist API error: {data['errors']}")
+    return {t["name"]: t["description"] for t in data["data"]["MediaTagCollection"]}
+
 def load_existing_prereq_map(path):
     if not os.path.exists(path):
         return {}
@@ -84,7 +97,14 @@ def load_existing_prereq_map(path):
         existing = json.load(f)
     return {a["id"]: a["requiresPrereq"] for a in existing if "requiresPrereq" in a}
 
-def fetch_anime_list(existing_prereq_map):
+def load_existing_awards_map(path):
+    if not os.path.exists(path):
+        return {}
+    with open(path, encoding="utf-8") as f:
+        existing = json.load(f)
+    return {a["id"]: a["specialAwards"] for a in existing if "specialAwards" in a}
+
+def fetch_anime_list(existing_prereq_map, existing_awards_map):
     response = requests.post(
         ANILIST_API,
         json={"query": QUERY, "variables": {"username": USERNAME}},
@@ -140,6 +160,7 @@ def fetch_anime_list(existing_prereq_map):
                 "notes": entry["notes"] or "",
                 "studios": get_studios(media),
                 "requiresPrereq": requires_prereq,
+                "specialAwards": existing_awards_map.get(media["id"], []),
             })
 
     entries.sort(key=lambda x: (x["score"] or 0, x["averageScore"] or 0), reverse=True)
@@ -149,11 +170,20 @@ if __name__ == "__main__":
     os.makedirs("data", exist_ok=True)
     out = os.path.join("data", "anime.json")
     existing_prereq_map = load_existing_prereq_map(out)
+    existing_awards_map = load_existing_awards_map(out)
     print(f"Fetching completed anime for {USERNAME}...")
-    anime, new_ids = fetch_anime_list(existing_prereq_map)
+    anime, new_ids = fetch_anime_list(existing_prereq_map, existing_awards_map)
     with open(out, "w", encoding="utf-8") as f:
         json.dump(anime, f, ensure_ascii=False, indent=2)
     print(f"Saved {len(anime)} anime to {out}")
+
+    print("Fetching AniList tag descriptions...")
+    tag_descriptions = fetch_tag_descriptions()
+    tags_out = os.path.join("data", "tag_descriptions.json")
+    with open(tags_out, "w", encoding="utf-8") as f:
+        json.dump(tag_descriptions, f, ensure_ascii=False, indent=2, sort_keys=True)
+    print(f"Saved {len(tag_descriptions)} tag descriptions to {tags_out}")
+
     if new_ids:
         print(f"\n{len(new_ids)} new anime not in prior data — requiresPrereq was guessed from AniList's PREQUEL relation. Review these manually:")
         for a in anime:

@@ -112,7 +112,8 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 151384,
@@ -199,7 +200,8 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 130003,
@@ -305,7 +307,12 @@
     "studios": [
       "CloverWorks"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "fresh",
+      "gold",
+      "public"
+    ]
   },
   {
     "id": 21519,
@@ -391,7 +398,10 @@
     "studios": [
       "CoMix Wave"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "fresh"
+    ]
   },
   {
     "id": 166216,
@@ -469,7 +479,8 @@
     "studios": [
       "Shin-Ei Animation"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 182587,
@@ -552,11 +563,12 @@
     "year": 2026,
     "season": "WINTER",
     "url": "https://anilist.co/anime/182587",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/193196458/oshi-no-ko-season-3-doga-kobo",
     "studios": [
       "Doga Kobo"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 120377,
@@ -679,7 +691,11 @@
     "studios": [
       "TRIGGER"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "fresh",
+      "silver"
+    ]
   },
   {
     "id": 166531,
@@ -754,7 +770,8 @@
     "studios": [
       "Doga Kobo"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 104157,
@@ -833,7 +850,8 @@
     "studios": [
       "CloverWorks"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 150672,
@@ -940,7 +958,11 @@
     "studios": [
       "Doga Kobo"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "fresh",
+      "gold"
+    ]
   },
   {
     "id": 129201,
@@ -1024,7 +1046,11 @@
     "studios": [
       "OLM"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "fresh",
+      "bronze"
+    ]
   },
   {
     "id": 171018,
@@ -1141,7 +1167,11 @@
     "studios": [
       "Science SARU"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "fresh",
+      "gold"
+    ]
   },
   {
     "id": 184951,
@@ -1223,7 +1253,8 @@
     "studios": [
       "Lapin Track"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 102976,
@@ -1328,7 +1359,8 @@
     "studios": [
       "J.C.STAFF"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 154768,
@@ -1455,7 +1487,8 @@
     "studios": [
       "CloverWorks"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 101291,
@@ -1552,7 +1585,10 @@
     "studios": [
       "CloverWorks"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "fresh"
+    ]
   },
   {
     "id": 166794,
@@ -1633,7 +1669,10 @@
     "studios": [
       "Ajiado"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "silver"
+    ]
   },
   {
     "id": 21875,
@@ -1729,7 +1768,8 @@
     "studios": [
       "MADHOUSE"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 172258,
@@ -1831,7 +1871,8 @@
     "studios": [
       "Bibury Animation Studios"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 19815,
@@ -1958,7 +1999,8 @@
     "studios": [
       "MADHOUSE"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 20872,
@@ -2041,7 +2083,8 @@
     "studios": [
       "Doga Kobo"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 162780,
@@ -2172,7 +2215,10 @@
     "studios": [
       "Asahi Production"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "bronze"
+    ]
   },
   {
     "id": 154587,
@@ -2306,7 +2352,11 @@
     "studios": [
       "MADHOUSE"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "fresh",
+      "public"
+    ]
   },
   {
     "id": 5114,
@@ -2485,7 +2535,10 @@
     "studios": [
       "bones"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "fresh"
+    ]
   },
   {
     "id": 161645,
@@ -2619,7 +2672,10 @@
       "OLM",
       "TOHO animation STUDIO"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "fresh"
+    ]
   },
   {
     "id": 182255,
@@ -2729,11 +2785,12 @@
     "year": 2026,
     "season": "WINTER",
     "url": "https://anilist.co/anime/182255",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/193196458/frieren-beyond-journeys-end-season-2-madhouse",
     "studios": [
       "MADHOUSE"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 176301,
@@ -2847,7 +2904,8 @@
       "TOHO animation STUDIO",
       "OLM"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 177385,
@@ -2932,7 +2990,8 @@
     "studios": [
       "Shuka"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 185407,
@@ -3006,7 +3065,11 @@
     "studios": [
       "ENISHIYA"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "fresh",
+      "gold"
+    ]
   },
   {
     "id": 112641,
@@ -3117,7 +3180,8 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 165253,
@@ -3187,7 +3251,8 @@
     "studios": [
       "CloverWorks"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 171099,
@@ -3253,7 +3318,8 @@
     "studios": [
       "CloverWorks"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 164212,
@@ -3335,7 +3401,8 @@
     "studios": [
       "Toei Animation"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 185660,
@@ -3436,7 +3503,8 @@
     "studios": [
       "Science SARU"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 165171,
@@ -3522,7 +3590,10 @@
     "studios": [
       "ENGI"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "silver"
+    ]
   },
   {
     "id": 108489,
@@ -3613,7 +3684,8 @@
     "studios": [
       "feel."
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 136804,
@@ -3709,7 +3781,108 @@
     "studios": [
       "Drive"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
+  },
+  {
+    "id": 181839,
+    "title": "Miss Kobayashi's Dragon Maid: A lonely dragon wants to be loved",
+    "titleRomaji": "Kobayashi-san Chi no Maidragon: Samishigariya no Ryuu",
+    "score": 9,
+    "genres": [
+      "Action",
+      "Drama",
+      "Fantasy",
+      "Slice of Life"
+    ],
+    "tags": [
+      {
+        "name": "Dragons",
+        "rank": 94
+      },
+      {
+        "name": "Magic",
+        "rank": 88
+      },
+      {
+        "name": "Found Family",
+        "rank": 85
+      },
+      {
+        "name": "Female Protagonist",
+        "rank": 83
+      },
+      {
+        "name": "Estranged Family",
+        "rank": 80
+      },
+      {
+        "name": "Cute Girls Doing Cute Things",
+        "rank": 79
+      },
+      {
+        "name": "Shapeshifting",
+        "rank": 79
+      },
+      {
+        "name": "Reverse Isekai",
+        "rank": 79
+      },
+      {
+        "name": "War",
+        "rank": 75
+      },
+      {
+        "name": "Family Life",
+        "rank": 73
+      },
+      {
+        "name": "Seinen",
+        "rank": 71
+      },
+      {
+        "name": "Office Lady",
+        "rank": 60
+      },
+      {
+        "name": "Monster Girl",
+        "rank": 60
+      },
+      {
+        "name": "Isekai",
+        "rank": 60
+      },
+      {
+        "name": "Swordplay",
+        "rank": 60
+      },
+      {
+        "name": "Maids",
+        "rank": 56
+      },
+      {
+        "name": "Yuri",
+        "rank": 55
+      },
+      {
+        "name": "LGBTQ+ Themes",
+        "rank": 34
+      }
+    ],
+    "description": "Theatrical follow-up to the second season Kobayashi-san Chi no Maidragon S and Kobayashi-san Chi no Maidragon S: Nippon no Omotenashi (Attend wa Dragon desu) OVA.\n\n\"I don’t want to let go of her hand. Because, we are a family.\"\n\nMiss Kobayashi, Tohru, Kanna, and Iruru's peaceful lives are shattered when Kanna’s father, Kamun Kamui, leader of the Chaos Forces, arrives and forces her to return to the Dragon World to fix a past mistake. With a war brewing between Chaos and Harmony, Kanna must find a way to unite the two worlds but is torn between her loyalty to her friends and her father's demands. Miss Kobayashi, however, refuses to let her go and tries to mend Kanna and Kamui’s broken bond. As dragons clash, Iruru uncovers a hidden force manipulating the war. Can they stop the war before it consumes both worlds?",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx181839-pgM02tCNM2ae.png",
+    "episodes": 1,
+    "lengthMinutes": 105,
+    "averageScore": 82,
+    "year": 2025,
+    "season": "SPRING",
+    "url": "https://anilist.co/anime/181839",
+    "notes": "Review - https://animejb.substack.com/i/193196458/miss-kobayashis-dragon-maid-a-lonely-dragon-wants-to-be-loved-kyoto-animation",
+    "studios": [
+      "Kyoto Animation"
+    ],
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 21699,
@@ -3820,7 +3993,8 @@
     "studios": [
       "Studio DEEN"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 124080,
@@ -3898,7 +4072,8 @@
     "studios": [
       "CloverWorks"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 107717,
@@ -4028,7 +4203,8 @@
     "studios": [
       "Kyoto Animation"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 143270,
@@ -4109,7 +4285,8 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 163132,
@@ -4191,7 +4368,8 @@
     "studios": [
       "CloverWorks"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 158928,
@@ -4336,7 +4514,8 @@
       "WIT STUDIO",
       "CloverWorks"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 109261,
@@ -4431,7 +4610,8 @@
     "studios": [
       "Bibury Animation Studios"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 138565,
@@ -4523,7 +4703,8 @@
     "studios": [
       "Drive"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 132405,
@@ -4622,7 +4803,8 @@
     "studios": [
       "CloverWorks"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 158927,
@@ -4770,7 +4952,8 @@
       "WIT STUDIO",
       "CloverWorks"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 143653,
@@ -4867,7 +5050,10 @@
     "studios": [
       "LIDENFILMS"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "silver"
+    ]
   },
   {
     "id": 21202,
@@ -4990,7 +5176,8 @@
     "studios": [
       "Studio DEEN"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 98202,
@@ -5060,7 +5247,8 @@
     "studios": [
       "feel."
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 141774,
@@ -5159,7 +5347,8 @@
     "studios": [
       "P.A.WORKS"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 199112,
@@ -5236,11 +5425,12 @@
     "year": 2026,
     "season": "WINTER",
     "url": "https://anilist.co/anime/199112",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/193196458/watanare-next-shine-studio-mother",
     "studios": [
       "studio MOTHER"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 143338,
@@ -5301,7 +5491,8 @@
     "studios": [
       "project No.9"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 116267,
@@ -5379,7 +5570,8 @@
     "studios": [
       "Seven Arcs"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 2167,
@@ -5495,7 +5687,8 @@
     "studios": [
       "Kyoto Animation"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 21776,
@@ -5629,7 +5822,8 @@
     "studios": [
       "Kyoto Animation"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 185939,
@@ -5702,7 +5896,10 @@
     "studios": [
       "P.A.WORKS"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "bronze"
+    ]
   },
   {
     "id": 151380,
@@ -5790,7 +5987,8 @@
     "studios": [
       "GEEKTOYS"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 147103,
@@ -5888,7 +6086,8 @@
     "studios": [
       "Kinema Citrus"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 162694,
@@ -5994,7 +6193,10 @@
     "studios": [
       "Bibury Animation Studios"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "bronze"
+    ]
   },
   {
     "id": 176370,
@@ -6091,11 +6293,12 @@
     "year": 2026,
     "season": "WINTER",
     "url": "https://anilist.co/anime/176370",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/193196458/tis-time-for-torture-princess-season-2-pine-jam",
     "studios": [
       "PINE JAM"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 17895,
@@ -6160,7 +6363,8 @@
     "studios": [
       "J.C.STAFF"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 11887,
@@ -6243,7 +6447,8 @@
     "studios": [
       "SILVER LINK."
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 102882,
@@ -6294,7 +6499,8 @@
     "studios": [
       "Hoods Entertainment"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 106479,
@@ -6402,7 +6608,8 @@
     "studios": [
       "SILVER LINK."
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 18245,
@@ -6473,7 +6680,8 @@
     "studios": [
       "Satelight"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 179696,
@@ -6535,7 +6743,8 @@
     "studios": [
       "BLADE"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 3972,
@@ -6640,7 +6849,8 @@
     "studios": [
       "Studio Gallop"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 158704,
@@ -6746,7 +6956,8 @@
     "studios": [
       "Platinum Vision"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 21092,
@@ -6866,7 +7077,8 @@
       "SILVER LINK.",
       "Nexus"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 158559,
@@ -6949,7 +7161,8 @@
     "studios": [
       "J.C.STAFF"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 20745,
@@ -7061,7 +7274,8 @@
     "studios": [
       "TNK"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 114232,
@@ -7159,7 +7373,8 @@
     "studios": [
       "project No.9"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 127911,
@@ -7253,7 +7468,10 @@
     "studios": [
       "Doga Kobo"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 20954,
@@ -7335,7 +7553,11 @@
     "studios": [
       "Kyoto Animation"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "fresh",
+      "motyPublic"
+    ]
   },
   {
     "id": 4181,
@@ -7438,7 +7660,8 @@
     "studios": [
       "Kyoto Animation"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 174788,
@@ -7519,7 +7742,10 @@
     "studios": [
       "Studio Durian"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "motyPublic"
+    ]
   },
   {
     "id": 153658,
@@ -7581,7 +7807,8 @@
     "studios": [
       "Production I.G"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 195240,
@@ -7666,11 +7893,12 @@
     "year": 2025,
     "season": "FALL",
     "url": "https://anilist.co/anime/195240",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/193196458/part-2",
     "studios": [
       "CygamesPictures"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 147105,
@@ -7780,7 +8008,8 @@
     "studios": [
       "BUG FILMS"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 181444,
@@ -7862,7 +8091,8 @@
     "studios": [
       "CloverWorks"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 21399,
@@ -7931,7 +8161,8 @@
     "studios": [
       "Shaft"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 20665,
@@ -8022,7 +8253,10 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "fresh"
+    ]
   },
   {
     "id": 99750,
@@ -8084,7 +8318,10 @@
     "studios": [
       "Studio VOLN"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "fresh"
+    ]
   },
   {
     "id": 104459,
@@ -8181,7 +8418,8 @@
     "studios": [
       "C-Station"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 99426,
@@ -8291,7 +8529,11 @@
     "studios": [
       "MADHOUSE"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "fresh",
+      "public"
+    ]
   },
   {
     "id": 201903,
@@ -8416,12 +8658,13 @@
     "year": 2026,
     "season": "WINTER",
     "url": "https://anilist.co/anime/201903",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/193196458/cosmic-princess-kaguya-studio-colorido-and-studio-chromato",
     "studios": [
       "Studio Colorido",
       "Studio Chromato"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 101921,
@@ -8516,7 +8759,10 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "fresh"
+    ]
   },
   {
     "id": 108511,
@@ -8631,7 +8877,8 @@
     "studios": [
       "8-bit"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 104460,
@@ -8716,7 +8963,8 @@
     "studios": [
       "C-Station"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 108632,
@@ -8849,7 +9097,8 @@
     "studios": [
       "WHITE FOX"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 109403,
@@ -8922,7 +9171,8 @@
     "studios": [
       "SILVER LINK."
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 140960,
@@ -9074,7 +9324,10 @@
       "CloverWorks",
       "WIT STUDIO"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "fresh"
+    ]
   },
   {
     "id": 189275,
@@ -9140,11 +9393,12 @@
     "year": 2026,
     "season": "WINTER",
     "url": "https://anilist.co/anime/189275",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/193196458/medalist-season-2-engi",
     "studios": [
       "ENGI"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 116742,
@@ -9267,7 +9521,8 @@
     "studios": [
       "8-bit"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 177937,
@@ -9374,12 +9629,13 @@
     "year": 2025,
     "season": "FALL",
     "url": "https://anilist.co/anime/177937",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/193196458/spy-x-family-season-3-wit-studio-and-cloverworks",
     "studios": [
       "WIT STUDIO",
       "CloverWorks"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 20698,
@@ -9474,7 +9730,8 @@
     "studios": [
       "feel."
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 106286,
@@ -9565,7 +9822,8 @@
     "studios": [
       "CoMix Wave"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 98444,
@@ -9666,7 +9924,8 @@
     "studios": [
       "C-Station"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 114535,
@@ -9766,7 +10025,8 @@
     "studios": [
       "Brain's Base"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 98779,
@@ -9843,7 +10103,8 @@
     "studios": [
       "SILVER LINK."
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 142838,
@@ -9983,7 +10244,8 @@
       "WIT STUDIO",
       "CloverWorks"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 142770,
@@ -10070,7 +10332,8 @@
     "studios": [
       "CoMix Wave"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 141911,
@@ -10148,7 +10411,8 @@
     "studios": [
       "P.A.WORKS"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 153152,
@@ -10218,7 +10482,8 @@
     "studios": [
       "Shin-Ei Animation"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 171457,
@@ -10332,7 +10597,8 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 179966,
@@ -10441,7 +10707,8 @@
     "studios": [
       "Studio Gokumi"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 9989,
@@ -10508,7 +10775,10 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "fresh"
+    ]
   },
   {
     "id": 101280,
@@ -10647,7 +10917,8 @@
     "studios": [
       "8-bit"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 180675,
@@ -10749,7 +11020,8 @@
     "studios": [
       "CygamesPictures"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 21258,
@@ -10835,7 +11107,8 @@
     "studios": [
       "bones"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 20770,
@@ -10964,7 +11237,8 @@
     "studios": [
       "Studio Pierrot"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 145728,
@@ -11087,7 +11361,8 @@
     "studios": [
       "Passione"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 184237,
@@ -11180,7 +11455,8 @@
     "studios": [
       "TMS Entertainment"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 14813,
@@ -11283,7 +11559,8 @@
     "studios": [
       "Brain's Base"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 13759,
@@ -11402,7 +11679,8 @@
     "studios": [
       "J.C.STAFF"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 101573,
@@ -11508,7 +11786,8 @@
     "studios": [
       "TROYCA"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 21049,
@@ -11595,7 +11874,8 @@
     "studios": [
       "TMS Entertainment"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 142984,
@@ -11705,7 +11985,8 @@
     "studios": [
       "OLM"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 170503,
@@ -11780,7 +12061,8 @@
     "studios": [
       "Studio Pierrot"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 186043,
@@ -11849,11 +12131,12 @@
     "year": 2025,
     "season": "SUMMER",
     "url": "https://anilist.co/anime/186043",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/175593668/my-melody-and-kuromi-wit-studio",
     "studios": [
       "WIT STUDIO"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 178005,
@@ -11942,7 +12225,8 @@
     "studios": [
       "J.C.STAFF"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 21058,
@@ -12020,7 +12304,8 @@
     "studios": [
       "bones"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 154965,
@@ -12094,7 +12379,8 @@
     "studios": [
       "MADHOUSE"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 179694,
@@ -12175,7 +12461,8 @@
     "studios": [
       "Bandai Namco Pictures"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 21180,
@@ -12257,7 +12544,8 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 103572,
@@ -12356,7 +12644,8 @@
     "studios": [
       "Tezuka Productions"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 15039,
@@ -12431,7 +12720,8 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 122808,
@@ -12530,7 +12820,8 @@
     "studios": [
       "CygamesPictures"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 116605,
@@ -12639,7 +12930,8 @@
     "studios": [
       "GEEKTOYS"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 100049,
@@ -12730,7 +13022,8 @@
     "studios": [
       "WHITE FOX"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 98292,
@@ -12835,7 +13128,8 @@
     "studios": [
       "Doga Kobo"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 141014,
@@ -12902,7 +13196,8 @@
     "studios": [
       "Okuruto Noboru"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 163623,
@@ -12980,7 +13275,8 @@
     "studios": [
       "Nomad"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 163078,
@@ -13066,7 +13362,8 @@
     "studios": [
       "Doga Kobo"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 15809,
@@ -13165,7 +13462,8 @@
     "studios": [
       "WHITE FOX"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 147864,
@@ -13275,7 +13573,8 @@
     "studios": [
       "Studio Bind"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 20997,
@@ -13371,7 +13670,8 @@
     "studios": [
       "P.A.WORKS"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 153629,
@@ -13444,7 +13744,8 @@
     "studios": [
       "diomedéa"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 162804,
@@ -13538,7 +13839,8 @@
     "studios": [
       "Doga Kobo"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 168374,
@@ -13648,7 +13950,8 @@
       "HORNETS",
       "Studio KAI"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 177120,
@@ -13752,7 +14055,8 @@
     "studios": [
       "Shaft"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 116741,
@@ -13851,7 +14155,8 @@
     "studios": [
       "8-bit"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 131516,
@@ -13923,7 +14228,8 @@
     "studios": [
       "PINE JAM"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 21455,
@@ -14028,7 +14334,8 @@
     "studios": [
       "Doga Kobo"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 151379,
@@ -14122,7 +14429,8 @@
     "studios": [
       "P.A.WORKS"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 150075,
@@ -14220,7 +14528,8 @@
     "studios": [
       "Drive"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 148969,
@@ -14278,7 +14587,8 @@
     "studios": [
       "PINE JAM"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 158898,
@@ -14360,7 +14670,8 @@
     "studios": [
       "SILVER LINK."
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 159039,
@@ -14430,7 +14741,8 @@
     "studios": [
       "CONNECT"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 179979,
@@ -14516,11 +14828,12 @@
     "year": 2025,
     "season": "SPRING",
     "url": "https://anilist.co/anime/179979",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/175593668/aharen-san-is-indecipherable-season-2-felix-film",
     "studios": [
       "Felix Film"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 183385,
@@ -14616,11 +14929,12 @@
     "year": 2025,
     "season": "FALL",
     "url": "https://anilist.co/anime/183385",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/175593668/watatabe-this-monster-wants-to-eat-me-studio-lings",
     "studios": [
       "Studio Lings"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 21265,
@@ -14679,7 +14993,8 @@
       "Studio Dice",
       "Studio Gallop"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 111501,
@@ -14744,7 +15059,8 @@
     "studios": [
       "Ezo’la"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 20966,
@@ -14819,7 +15135,8 @@
     "studios": [
       "LIDENFILMS"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 128545,
@@ -14905,7 +15222,8 @@
     "studios": [
       "P.A.WORKS"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 100179,
@@ -14951,7 +15269,8 @@
     "studios": [
       "Doga Kobo"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 20527,
@@ -15010,7 +15329,8 @@
     "studios": [
       "Brain's Base"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 132010,
@@ -15093,7 +15413,8 @@
     "studios": [
       "project No.9"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 101316,
@@ -15168,7 +15489,8 @@
     "studios": [
       "P.A.WORKS"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 152681,
@@ -15237,7 +15559,8 @@
     "studios": [
       "Studio DEEN"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 166477,
@@ -15328,7 +15651,8 @@
     "studios": [
       "Tezuka Productions"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 180425,
@@ -15389,11 +15713,12 @@
     "year": 2025,
     "season": "SUMMER",
     "url": "https://anilist.co/anime/180425",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/175593668/with-you-and-the-rain-lesprit",
     "studios": [
       "Lesprit"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 1689,
@@ -15463,7 +15788,8 @@
     "studios": [
       "CoMix Wave"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 109019,
@@ -15553,7 +15879,8 @@
     "studios": [
       "Doga Kobo"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 163133,
@@ -15631,7 +15958,8 @@
     "studios": [
       "project No.9"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 2847,
@@ -15687,7 +16015,8 @@
     "studios": [
       "OLM"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 15451,
@@ -15815,7 +16144,8 @@
     "studios": [
       "TNK"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 105914,
@@ -15910,7 +16240,8 @@
     "studios": [
       "Doga Kobo"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 127549,
@@ -16003,7 +16334,8 @@
     "studios": [
       "CONNECT"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 137281,
@@ -16109,7 +16441,8 @@
     "studios": [
       "Felix Film"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 168138,
@@ -16200,7 +16533,8 @@
     "studios": [
       "Gekkou"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 166522,
@@ -16322,7 +16656,8 @@
     "studios": [
       "PINE JAM"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 109287,
@@ -16395,7 +16730,8 @@
     "studios": [
       "Tezuka Productions"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 112443,
@@ -16474,7 +16810,8 @@
     "studios": [
       "project No.9"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 100722,
@@ -16580,7 +16917,8 @@
     "studios": [
       "J.C.STAFF"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 20741,
@@ -16642,7 +16980,8 @@
     "studios": [
       "Production IMS"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 16732,
@@ -16715,7 +17054,8 @@
     "studios": [
       "Studio Gokumi"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 98596,
@@ -16794,7 +17134,8 @@
     "studios": [
       "SILVER LINK."
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 114340,
@@ -16881,7 +17222,8 @@
     "studios": [
       "EMT Squared"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 97767,
@@ -16985,7 +17327,8 @@
     "studios": [
       "Passione"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 6178,
@@ -17052,7 +17395,8 @@
     "studios": [
       "OLM"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 132456,
@@ -17167,7 +17511,8 @@
     "studios": [
       "SILVER LINK."
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 160488,
@@ -17248,7 +17593,8 @@
     "studios": [
       "TNK"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 175977,
@@ -17382,7 +17728,8 @@
     "studios": [
       "WIT STUDIO"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 7695,
@@ -17444,7 +17791,8 @@
     "studios": [
       "OLM"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 146625,
@@ -17527,7 +17875,8 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 100526,
@@ -17582,7 +17931,10 @@
     "studios": [
       "Hoods Entertainment"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 160514,
@@ -17646,7 +17998,8 @@
     "studios": [
       "Fugaku"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 124194,
@@ -17791,7 +18144,8 @@
     "studios": [
       "TMS Entertainment"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 21400,
@@ -17880,7 +18234,8 @@
     "studios": [
       "Shaft"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 199,
@@ -17979,7 +18334,10 @@
     "studios": [
       "Studio Ghibli"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "fresh"
+    ]
   },
   {
     "id": 151514,
@@ -18067,7 +18425,8 @@
     "studios": [
       "MADHOUSE"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 180516,
@@ -18148,11 +18507,12 @@
     "year": 2025,
     "season": "SPRING",
     "url": "https://anilist.co/anime/180516",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/193196458/part-1",
     "studios": [
       "CygamesPictures"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 100675,
@@ -18238,7 +18598,8 @@
     "studios": [
       "CloverWorks"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 161474,
@@ -18305,7 +18666,8 @@
     "studios": [
       "CloverWorks"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 9260,
@@ -18386,7 +18748,8 @@
     "studios": [
       "Shaft"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 113596,
@@ -18460,7 +18823,8 @@
     "studios": [
       "bones"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 177687,
@@ -18525,11 +18889,12 @@
     "year": 2025,
     "season": "SUMMER",
     "url": "https://anilist.co/anime/177687",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/193196458/100-meters-rockn-roll-mountain",
     "studios": [
       "ROCK'N ROLL MOUNTAIN"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 105334,
@@ -18733,7 +19098,8 @@
     "studios": [
       "TMS Entertainment"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 5081,
@@ -18890,7 +19256,10 @@
     "studios": [
       "Shaft"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "fresh"
+    ]
   },
   {
     "id": 163571,
@@ -18976,11 +19345,14 @@
     "year": 2023,
     "season": "SUMMER",
     "url": "https://anilist.co/anime/163571",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/175593668/bang-dream-its-mygo-sanzigen",
     "studios": [
       "SANZIGEN"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "jury"
+    ]
   },
   {
     "id": 171046,
@@ -19048,11 +19420,12 @@
     "year": 2025,
     "season": "SUMMER",
     "url": "https://anilist.co/anime/171046",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/175593668/aobuta-rascal-does-not-dream-of-santa-claus-season-2-cloverworks",
     "studios": [
       "CloverWorks"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 523,
@@ -19131,7 +19504,8 @@
     "studios": [
       "Studio Ghibli"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 21355,
@@ -19261,7 +19635,11 @@
     "studios": [
       "WHITE FOX"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "fresh",
+      "public"
+    ]
   },
   {
     "id": 20694,
@@ -19337,7 +19715,8 @@
     "studios": [
       "SILVER LINK."
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 170942,
@@ -19419,7 +19798,8 @@
     "studios": [
       "Telecom Animation Film"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 167152,
@@ -19501,7 +19881,8 @@
     "studios": [
       "Studio KAI"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 155908,
@@ -19598,7 +19979,8 @@
     "studios": [
       "8-bit"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 181841,
@@ -19703,7 +20085,8 @@
     "studios": [
       "Kyoto Animation"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 145545,
@@ -19781,7 +20164,8 @@
     "studios": [
       "Lerche"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 154967,
@@ -19871,7 +20255,8 @@
     "studios": [
       "CloverWorks"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 198188,
@@ -20025,7 +20410,7 @@
     "year": 2025,
     "season": "FALL",
     "url": "https://anilist.co/anime/198188",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/175593668/tatsuki-fujimoto-17-26-pa-works-zexcs-lapin-track-studio-kafka-100studio-studio-graph77",
     "studios": [
       "ZEXCS",
       "Lapin Track",
@@ -20034,7 +20419,8 @@
       "P.A.WORKS",
       "GRAPH77"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 17549,
@@ -20122,7 +20508,8 @@
     "studios": [
       "SILVER LINK."
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 153930,
@@ -20219,7 +20606,8 @@
     "studios": [
       "domerica"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 158166,
@@ -20311,7 +20699,10 @@
     "studios": [
       "Science SARU"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "motyJury"
+    ]
   },
   {
     "id": 166610,
@@ -20417,7 +20808,8 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 155645,
@@ -20512,7 +20904,8 @@
     "studios": [
       "david production"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 20668,
@@ -20610,7 +21003,8 @@
     "studios": [
       "Doga Kobo"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 16067,
@@ -20697,7 +21091,8 @@
     "studios": [
       "P.A.WORKS"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 6547,
@@ -20804,7 +21199,8 @@
     "studios": [
       "P.A.WORKS"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 162896,
@@ -20902,7 +21298,8 @@
     "studios": [
       "CloverWorks"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 133965,
@@ -21028,7 +21425,8 @@
     "studios": [
       "OLM"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 141208,
@@ -21102,7 +21500,8 @@
     "studios": [
       "Seven Arcs"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 98659,
@@ -21191,7 +21590,8 @@
     "studios": [
       "Lerche"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 141949,
@@ -21274,7 +21674,8 @@
     "studios": [
       "studio MOTHER"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 165598,
@@ -21377,7 +21778,8 @@
     "studios": [
       "CygamesPictures"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 177709,
@@ -21474,7 +21876,8 @@
     "studios": [
       "TMS Entertainment"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 167087,
@@ -21585,7 +21988,8 @@
     "studios": [
       "Satelight"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 184591,
@@ -21654,11 +22058,12 @@
     "year": 2025,
     "season": "SUMMER",
     "url": "https://anilist.co/anime/184591",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/175593668/watanare-studio-mother",
     "studios": [
       "studio MOTHER"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 178886,
@@ -21743,11 +22148,12 @@
     "year": 2025,
     "season": "SUMMER",
     "url": "https://anilist.co/anime/178886",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/175593668/dealing-with-mikadono-sisters-is-a-breeze-pa-works",
     "studios": [
       "P.A.WORKS"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 20596,
@@ -21809,7 +22215,8 @@
     "studios": [
       "Production I.G"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 98291,
@@ -21880,7 +22287,8 @@
     "studios": [
       "Studio Gokumi"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 169441,
@@ -21962,11 +22370,12 @@
     "year": 2025,
     "season": "WINTER",
     "url": "https://anilist.co/anime/169441",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/193196458/my-happy-marriage-season-2-kinema-citrus",
     "studios": [
       "Kinema Citrus"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 20657,
@@ -22052,7 +22461,8 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 99726,
@@ -22131,7 +22541,8 @@
     "studios": [
       "Signal.MD"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 20654,
@@ -22188,7 +22599,8 @@
     "studios": [
       "Studio Gokumi"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 164172,
@@ -22296,7 +22708,8 @@
     "studios": [
       "Drive"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 176273,
@@ -22434,7 +22847,8 @@
     "studios": [
       "MAPPA"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 166527,
@@ -22502,11 +22916,12 @@
     "year": 2025,
     "season": "SPRING",
     "url": "https://anilist.co/anime/166527",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/175593668/cocoon-one-summer-of-girlhood-sasayuri",
     "studios": [
       "Sasayuri"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 110229,
@@ -22590,7 +23005,8 @@
       "Studio Silver",
       "Arvo Animation"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 107067,
@@ -22659,7 +23075,8 @@
     "studios": [
       "Zero-G"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 114065,
@@ -22745,7 +23162,8 @@
     "studios": [
       "feel."
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 151252,
@@ -22837,7 +23255,8 @@
       "Zero-G",
       "Liber"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 127550,
@@ -22920,7 +23339,8 @@
     "studios": [
       "EMT Squared"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 174044,
@@ -23017,7 +23437,8 @@
     "studios": [
       "P.A.WORKS"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 155657,
@@ -23116,7 +23537,8 @@
     "studios": [
       "EMT Squared"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 151300,
@@ -23206,7 +23628,8 @@
     "studios": [
       "MADHOUSE"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 143277,
@@ -23341,7 +23764,8 @@
     "studios": [
       "david production"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 180367,
@@ -23478,7 +23902,8 @@
     "studios": [
       "Bibury Animation Studios"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 183965,
@@ -23540,11 +23965,12 @@
     "year": 2025,
     "season": "FALL",
     "url": "https://anilist.co/anime/183965",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/175593668/yano-kuns-ordinary-days-ajia-do",
     "studios": [
       "Ajiado"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 124395,
@@ -23627,7 +24053,8 @@
     "studios": [
       "ENGI"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 103900,
@@ -23715,7 +24142,8 @@
       "Studio Silver",
       "Arvo Animation"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 3470,
@@ -23819,7 +24247,8 @@
       "GONZO",
       "AIC"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 104464,
@@ -23899,7 +24328,8 @@
     "studios": [
       "CONNECT"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 11433,
@@ -23975,7 +24405,8 @@
     "studios": [
       "J.C.STAFF"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 116867,
@@ -24067,7 +24498,8 @@
     "studios": [
       "SILVER LINK."
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 125124,
@@ -24136,7 +24568,8 @@
     "studios": [
       "Zero-G"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 100876,
@@ -24222,7 +24655,8 @@
     "studios": [
       "MAPPA"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 141351,
@@ -24284,7 +24718,8 @@
     "studios": [
       "MAPPA"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 135778,
@@ -24385,7 +24820,8 @@
     "studios": [
       "Studio Hibari"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 154412,
@@ -24479,7 +24915,8 @@
     "studios": [
       "Tezuka Productions"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 143200,
@@ -24562,11 +24999,12 @@
     "year": 2025,
     "season": "SPRING",
     "url": "https://anilist.co/anime/143200",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/175593668/summer-pockets-feel",
     "studios": [
       "feel."
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 1120,
@@ -24647,7 +25085,8 @@
       "OLM",
       "Shogakukan-Shueisha Productions"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 98314,
@@ -24769,7 +25208,8 @@
     "studios": [
       "MAPPA"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 147369,
@@ -24830,7 +25270,8 @@
     "studios": [
       "Nippon Animation"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 155419,
@@ -24928,7 +25369,8 @@
     "studios": [
       "Studio Gokumi"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 154963,
@@ -25002,7 +25444,8 @@
     "studios": [
       "TROYCA"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 163151,
@@ -25091,7 +25534,8 @@
     "studios": [
       "Studio Hibari"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 186161,
@@ -25177,11 +25621,12 @@
     "year": 2025,
     "season": "FALL",
     "url": "https://anilist.co/anime/186161",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/175593668/with-you-our-love-will-make-it-through-millepensee",
     "studios": [
       "Millepensee"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 107871,
@@ -25303,7 +25748,8 @@
     "studios": [
       "CygamesPictures"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 11617,
@@ -25431,7 +25877,8 @@
     "studios": [
       "TNK"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 19163,
@@ -25556,7 +26003,8 @@
     "studios": [
       "Production IMS"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 126546,
@@ -25628,7 +26076,8 @@
       "TMS Entertainment",
       "WAO World"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 128223,
@@ -25690,7 +26139,8 @@
     "studios": [
       "SILVER LINK."
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 15583,
@@ -25804,7 +26254,8 @@
     "studios": [
       "AIC Plus+"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 114840,
@@ -25866,7 +26317,8 @@
     "studios": [
       "Nomad"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 20646,
@@ -25950,7 +26402,8 @@
     "studios": [
       "TRIGGER"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 151189,
@@ -26021,7 +26474,8 @@
     "studios": [
       "Tezuka Productions"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 171291,
@@ -26082,11 +26536,12 @@
     "year": 2024,
     "season": "SPRING",
     "url": "https://anilist.co/anime/171291",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/175593668/trapezium-cloverworks",
     "studios": [
       "CloverWorks"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 4026,
@@ -26148,7 +26603,8 @@
     "studios": [
       "OLM"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 1122,
@@ -26213,7 +26669,8 @@
     "studios": [
       "OLM"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 1723,
@@ -26275,7 +26732,8 @@
     "studios": [
       "Toei Animation"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 108092,
@@ -26364,7 +26822,8 @@
     "studios": [
       "Doga Kobo"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 109020,
@@ -26462,7 +26921,10 @@
     "studios": [
       "Doga Kobo"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 154459,
@@ -26522,7 +26984,8 @@
     "studios": [
       "ENGI"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 113813,
@@ -26612,7 +27075,10 @@
     "studios": [
       "TMS Entertainment"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 1119,
@@ -26688,7 +27154,8 @@
     "studios": [
       "OLM"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 12175,
@@ -26745,7 +27212,8 @@
     "studios": [
       "AIC Build"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 136934,
@@ -26814,7 +27282,10 @@
     "studios": [
       "project No.9"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 155389,
@@ -26880,7 +27351,8 @@
     "studios": [
       "8-bit"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 97766,
@@ -26963,7 +27435,10 @@
     "studios": [
       "PINE JAM"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 130592,
@@ -27074,7 +27549,8 @@
     "studios": [
       "Studio 3Hz"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 21131,
@@ -27155,7 +27631,10 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 175450,
@@ -27218,7 +27697,8 @@
     "studios": [
       "Tezuka Productions"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 20552,
@@ -27279,7 +27759,8 @@
     "studios": [
       "Studio Gallop"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 103139,
@@ -27357,7 +27838,10 @@
     "studios": [
       "diomedéa"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 97979,
@@ -27412,7 +27896,8 @@
       "TMS Entertainment",
       "Double Eagle"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 98231,
@@ -27486,7 +27971,8 @@
     "studios": [
       "Studio Gallop"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 9917,
@@ -27529,7 +28015,8 @@
     "studios": [
       "OLM"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 126192,
@@ -27628,7 +28115,10 @@
     "studios": [
       "Tezuka Productions"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 127090,
@@ -27707,7 +28197,10 @@
     "studios": [
       "Passione"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 107961,
@@ -27783,7 +28276,10 @@
       "GEEKTOYS",
       "Seven"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 117989,
@@ -27878,7 +28374,10 @@
     "studios": [
       "Asread"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 21887,
@@ -27969,7 +28468,10 @@
     "studios": [
       "diomedéa"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 118375,
@@ -28054,7 +28556,10 @@
     "studios": [
       "Okuruto Noboru"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 13161,
@@ -28128,7 +28633,10 @@
     "studios": [
       "ARMS"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 146323,
@@ -28207,7 +28715,8 @@
     "studios": [
       "feel."
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 13367,
@@ -28269,7 +28778,10 @@
     "studios": [
       "Studio Gokumi"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 97730,
@@ -28329,7 +28841,10 @@
     "studios": [
       "Studio Gokumi"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 114072,
@@ -28379,7 +28894,8 @@
     "studios": [
       "Bridge"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 142842,
@@ -28425,7 +28941,8 @@
     "studios": [
       "Bridge"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 111762,
@@ -28578,7 +29095,8 @@
     "studios": [
       "TMS Entertainment"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 431,
@@ -28689,7 +29207,10 @@
     "studios": [
       "Studio Ghibli"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "fresh"
+    ]
   },
   {
     "id": 168872,
@@ -28772,7 +29293,8 @@
     "studios": [
       "Production I.G"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 202955,
@@ -28853,7 +29375,8 @@
     "studios": [
       "WIT STUDIO"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 169295,
@@ -28939,11 +29462,12 @@
     "year": 2025,
     "season": "WINTER",
     "url": "https://anilist.co/anime/169295",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/193196458/bang-dream-ave-mujica-sanzigen",
     "studios": [
       "SANZIGEN"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 178533,
@@ -29067,7 +29591,8 @@
     "studios": [
       "MAPPA"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 99578,
@@ -29169,7 +29694,8 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 146066,
@@ -29266,7 +29792,8 @@
     "studios": [
       "Lerche"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 21120,
@@ -29320,7 +29847,8 @@
     "studios": [
       "Production I.G"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 109979,
@@ -29411,7 +29939,8 @@
     "studios": [
       "Studio Ghibli"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 151801,
@@ -29513,7 +30042,8 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 176246,
@@ -29618,7 +30148,8 @@
     "studios": [
       "Soigne"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 99468,
@@ -29684,7 +30215,8 @@
     "studios": [
       "Shin-Ei Animation"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 170938,
@@ -29775,7 +30307,8 @@
     "studios": [
       "bones"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 14227,
@@ -29833,7 +30366,8 @@
     "studios": [
       "Brain's Base"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 182158,
@@ -29907,11 +30441,12 @@
     "year": 2025,
     "season": "WINTER",
     "url": "https://anilist.co/anime/182158",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/175593668/senpai-is-an-otokonoko-movie-sunshine-after-the-rain-project-no-9",
     "studios": [
       "project No.9"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 186621,
@@ -29971,11 +30506,12 @@
     "year": 2025,
     "season": "FALL",
     "url": "https://anilist.co/anime/186621",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/175593668/tamahoshi-a-star-brighter-than-the-sun-studio-kai",
     "studios": [
       "Studio KAI"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 166828,
@@ -30058,7 +30594,8 @@
       "SynergySP",
       "Studio Comet"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 173935,
@@ -30114,12 +30651,13 @@
     "year": 2024,
     "season": "SPRING",
     "url": "https://anilist.co/anime/173935",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/175593668/a-few-moments-of-cheers-hurray-100studio",
     "studios": [
       "100studio",
       "Hurray!"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 148098,
@@ -30196,7 +30734,8 @@
     "studios": [
       "Asahi Production"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 155963,
@@ -30283,7 +30822,8 @@
       "BLADE",
       "SILVER LINK."
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 165790,
@@ -30364,7 +30904,8 @@
     "studios": [
       "Ashi Productions"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 183291,
@@ -30425,11 +30966,12 @@
     "year": 2025,
     "season": "FALL",
     "url": "https://anilist.co/anime/183291",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/193196458/pass-the-monster-meat-milady-asahi-production",
     "studios": [
       "Asahi Production"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 154692,
@@ -30508,7 +31050,8 @@
     "studios": [
       "SynergySP"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 160188,
@@ -30573,7 +31116,8 @@
     "studios": [
       "GoHands"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 172190,
@@ -30683,7 +31227,8 @@
     "studios": [
       "Felix Film"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 178022,
@@ -30740,11 +31285,12 @@
     "year": 2025,
     "season": "WINTER",
     "url": "https://anilist.co/anime/178022",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/175593668/flower-and-asura-studio-bind",
     "studios": [
       "Studio Bind"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 1118,
@@ -30807,7 +31353,8 @@
     "studios": [
       "OLM"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 21701,
@@ -30890,7 +31437,8 @@
     "studios": [
       "Lerche"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 169927,
@@ -30957,7 +31505,8 @@
     "studios": [
       "Okuruto Noboru"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 171748,
@@ -31010,7 +31559,8 @@
     "studios": [
       "8-bit"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 115113,
@@ -31097,7 +31647,10 @@
     "studios": [
       "ENGI"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 21390,
@@ -31186,7 +31739,8 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 144533,
@@ -31259,7 +31813,8 @@
     "studios": [
       "MADHOUSE"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 21093,
@@ -31383,7 +31938,10 @@
       "Lerche",
       "Seva"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 14749,
@@ -31456,7 +32014,10 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 124410,
@@ -31546,7 +32107,8 @@
     "studios": [
       "TMS Entertainment"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 118419,
@@ -31634,7 +32196,10 @@
     "studios": [
       "P.A.WORKS"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 146676,
@@ -31698,7 +32263,8 @@
     "studios": [
       "Passione"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 160181,
@@ -31773,7 +32339,8 @@
       "CLOUDHEARTS",
       "Yokohama Animation Lab"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 148116,
@@ -31839,7 +32406,10 @@
     "studios": [
       "CLOUDHEARTS"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 159483,
@@ -31889,11 +32459,12 @@
     "year": 2025,
     "season": "SUMMER",
     "url": "https://anilist.co/anime/159483",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/175593668/turkey-time-to-strike-bakken-record",
     "studios": [
       "BAKKEN RECORD"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 20565,
@@ -31985,7 +32556,10 @@
     "studios": [
       "Production IMS"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 6205,
@@ -32060,7 +32634,10 @@
     "studios": [
       "Nomad"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 113425,
@@ -32187,7 +32764,10 @@
     "studios": [
       "TNK"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 98951,
@@ -32262,7 +32842,10 @@
       "diomedéa",
       "Studio Blanc"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 8861,
@@ -32372,7 +32955,10 @@
     "studios": [
       "feel."
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 4224,
@@ -32455,7 +33041,8 @@
     "studios": [
       "J.C.STAFF"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 7054,
@@ -32557,7 +33144,8 @@
     "studios": [
       "J.C.STAFF"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 143866,
@@ -32620,7 +33208,8 @@
     "studios": [
       "project No.9"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 19221,
@@ -32699,7 +33288,8 @@
     "studios": [
       "diomedéa"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 132052,
@@ -32761,7 +33351,8 @@
       "Shin-Ei Animation",
       "SynergySP"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 164244,
@@ -32823,7 +33414,8 @@
     "studios": [
       "Children's Playground Entertainment"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 168623,
@@ -32886,7 +33478,8 @@
       "Imagica Infos",
       "TYPHOON GRAPHICS"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 165855,
@@ -32951,7 +33544,8 @@
     "studios": [
       "East Fish Studio"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 157397,
@@ -33014,7 +33608,10 @@
       "Studio Gokumi",
       "AXsiZ"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 1894,
@@ -33067,7 +33664,8 @@
     "studios": [
       "Studio Gallop"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 104325,
@@ -33161,7 +33759,10 @@
     "studios": [
       "Tear-Studio"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 128712,
@@ -33261,7 +33862,10 @@
     "studios": [
       "ENGI"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 131863,
@@ -33334,7 +33938,10 @@
     "studios": [
       "GEEKTOYS"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 21685,
@@ -33446,7 +34053,10 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 97863,
@@ -33541,7 +34151,10 @@
     "studios": [
       "NAZ"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 124675,
@@ -33610,7 +34223,10 @@
     "studios": [
       "Doga Kobo"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 187331,
@@ -33705,11 +34321,12 @@
     "year": 2025,
     "season": "FALL",
     "url": "https://anilist.co/anime/187331",
-    "notes": "",
+    "notes": "Review - https://animejb.substack.com/i/175593668/hands-off-sawaranaide-kotesashi-kun-quad",
     "studios": [
       "Quad"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 2034,
@@ -33771,7 +34388,8 @@
     "studios": [
       "Toei Animation"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 18897,
@@ -33869,7 +34487,8 @@
     "studios": [
       "Shaft"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 20876,
@@ -33963,7 +34582,8 @@
     "studios": [
       "Shaft"
     ],
-    "requiresPrereq": true
+    "requiresPrereq": true,
+    "specialAwards": []
   },
   {
     "id": 10110,
@@ -34045,7 +34665,8 @@
     "studios": [
       "feel."
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 20701,
@@ -34103,7 +34724,10 @@
     "studios": [
       "TYO Animations"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 98320,
@@ -34176,7 +34800,10 @@
     "studios": [
       "LIDENFILMS"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 167144,
@@ -34240,7 +34867,8 @@
     "studios": [
       "ROLL2"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 144176,
@@ -34312,7 +34940,8 @@
     "studios": [
       "LIDENFILMS"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 7593,
@@ -34375,7 +35004,10 @@
     "studios": [
       "feel."
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": [
+      "rotten"
+    ]
   },
   {
     "id": 166896,
@@ -34431,7 +35063,8 @@
     "studios": [
       "Quad"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   },
   {
     "id": 156896,
@@ -34497,6 +35130,7 @@
       "Signal.MD",
       "WIT STUDIO"
     ],
-    "requiresPrereq": false
+    "requiresPrereq": false,
+    "specialAwards": []
   }
 ]

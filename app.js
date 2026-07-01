@@ -1,6 +1,6 @@
 // ── Filter definitions ─────────────────────────────────────────────────────
 
-const DEMOGRAPHICS = ['Josei', 'Kids', 'Seinen', 'Shoujo', 'Shounen'];
+const DEMOGRAPHICS = ['Josei', 'Seinen', 'Shoujo', 'Shounen'];
 
 const ALL_GENRES = [
   'Action', 'Adventure', 'Comedy', 'Drama', 'Fantasy', 'Horror',
@@ -8,35 +8,15 @@ const ALL_GENRES = [
   'Romance', 'Sci-Fi', 'Slice of Life', 'Sports', 'Supernatural', 'Thriller',
 ];
 
-// Only tags appearing in ≥10 anime in the list
+// Only tags appearing in ≥5 anime at ≥75% rank
+// Ordered hierarchically: genre-linked deep dives first, then what-it's-about
+// content descriptors, then who's-involved facts (paired with Studio after).
 const FILTER_GROUPS = [
-  {
-    label: 'Setting',
-    items: ['College', 'Historical', 'Isekai', 'Medieval', 'Urban Fantasy'],
-  },
-  {
-    label: 'Themes',
-    items: [
-      'Class Struggle', 'Coming of Age', 'Crime', 'Food', 'Found Family',
-      'Mythology', 'Philosophy', 'Politics', 'Revenge', 'Travel', 'War',
-    ],
-  },
-  {
-    label: 'Tone',
-    items: ['Episodic', 'Iyashikei', 'Parody', 'Satire', 'Slapstick', 'Surreal Comedy'],
-  },
-  {
-    label: 'Characters',
-    items: [
-      'Anti-Hero', 'Ensemble Cast', 'Kuudere', 'Ojou-sama',
-      'Primarily Adult Cast', 'Tsundere',
-    ],
-  },
   // Conditional: only shown when Romance genre is selected
   {
     label: 'Romance & Relationships',
     items: [
-      'Arranged Marriage', 'Cohabitation', 'Fake Relationship', 'Female Harem',
+      'Cohabitation', 'Fake Relationship', 'Female Harem', 'Heterosexual',
       'LGBTQ+ Themes', 'Love Triangle', 'Marriage', 'Unrequited Love', 'Yuri',
     ],
     showWhenGenres: ['Romance'],
@@ -44,17 +24,64 @@ const FILTER_GROUPS = [
   // Conditional: only shown when Fantasy or Supernatural genre is selected
   {
     label: 'Supernatural & Fantasy',
-    items: ['Demons', 'Dragons', 'Elf', 'Gods', 'Magic', 'Shapeshifting', 'Vampire', 'Witch', 'Youkai'],
+    items: [
+      'Aliens', 'Animals', 'Creature Taming', 'Demons', 'Gods', 'Henshin',
+      'Kemonomimi', 'Magic', 'Mythology', 'Shapeshifting', 'Super Power',
+      'Witch', 'Youkai',
+    ],
     showWhenGenres: ['Fantasy', 'Supernatural'],
+  },
+  {
+    label: 'Setting',
+    items: [
+      'Coastal', 'College', 'Foreign', 'Historical', 'Isekai', 'Medieval',
+      'Office', 'Rural', 'School', 'School Club', 'Urban', 'Urban Fantasy', 'Work',
+    ],
+  },
+  {
+    label: 'Themes',
+    items: [
+      'Assassins', 'Coming of Age', 'Crime', 'Environmental', 'Espionage',
+      'Family Life', 'Food', 'Found Family', 'Guns', 'Otaku Culture',
+      'Philosophy', 'Politics', 'Proxy Battle', 'Rehabilitation', 'Revenge',
+      'Royal Affairs', 'Travel', 'War',
+    ],
+  },
+  {
+    label: 'Tone',
+    items: [
+      'Cute Girls Doing Cute Things', 'Episodic', 'Iyashikei', 'Meta',
+      'Parody', 'Satire', 'Slapstick', 'Surreal Comedy',
+    ],
+  },
+  {
+    label: 'Hobbies & Activities',
+    items: [
+      'Acting', 'Athletics', 'Band', 'Card Battle', 'Drawing',
+      'Outdoor Activities', 'Rock Music', 'Video Games', 'Writing',
+    ],
+  },
+  {
+    label: 'Cast',
+    items: [
+      'Ensemble Cast', 'Female Protagonist', 'Male Protagonist',
+      'Primarily Adult Cast', 'Primarily Child Cast', 'Primarily Female Cast',
+      'Primarily Teen Cast',
+    ],
+  },
+  {
+    label: 'Characters',
+    items: [
+      'Age Regression', 'Anti-Hero', 'Disability', 'Gyaru', 'Hikikomori',
+      'Idol', 'Kuudere', 'Maids', 'Office Lady', 'Ojou-sama', 'Orphan',
+      'Teacher', 'Tsundere', 'Twins',
+    ],
   },
 ];
 
 const NSFW_GROUP = {
   label: '18+ Content',
-  items: [
-    'Bondage', 'Drugs', 'Gore', 'Large Breasts', 'Masochism',
-    'Nudity', 'Psychosexual', 'Rape', 'Sadism', 'Suicide', 'Torture',
-  ],
+  items: ['Inseki', 'Large Breasts', 'Nudity'],
 };
 
 const SEASON_META = {
@@ -64,18 +91,97 @@ const SEASON_META = {
   FALL: { emoji: '🍁', label: 'Fall', className: 'season-fall' },
 };
 
+const AWARD_META = {
+  gold: {
+    emoji: '🥇',
+    className: 'award-gold',
+    label: () => 'AOTY Winner',
+    hover: () => 'This anime is my favorite from this year!',
+  },
+  silver: {
+    emoji: '🥈',
+    className: 'award-silver',
+    label: () => 'AOTY First Runner-Up',
+    hover: () => 'This anime is my second favorite from this year!',
+  },
+  bronze: {
+    emoji: '🥉',
+    className: 'award-bronze',
+    label: () => 'AOTY Second Runner-Up',
+    hover: () => 'This anime is my third favorite from this year!',
+  },
+  jury: {
+    emoji: '🥇',
+    className: 'award-gold',
+    label: () => 'r/anime AOTY Jury Winner',
+    hover: () => 'This anime won the r/anime Anime of the Year award among the jury!',
+  },
+  public: {
+    emoji: '🥇',
+    className: 'award-gold',
+    label: () => 'r/anime AOTY Public Winner',
+    hover: () => 'This anime won the r/anime Anime of the Year award among the public!',
+  },
+  motyJury: {
+    emoji: '🥇',
+    className: 'award-gold',
+    label: () => 'r/anime MOTY Jury Winner',
+    hover: () => 'This anime won the r/anime Movie of the Year award among the jury!',
+  },
+  motyPublic: {
+    emoji: '🥇',
+    className: 'award-gold',
+    label: () => 'r/anime MOTY Public Winner',
+    hover: () => 'This anime won the r/anime Movie of the Year award among the public!',
+  },
+  fresh: {
+    emoji: '🍅',
+    className: 'award-fresh',
+    label: () => 'Certified Fresh',
+    hover: () => 'Anime that are highly-acclaimed and good starters, regardless of what genres you usually watch.',
+  },
+  rotten: {
+    emoji: '🗑️',
+    className: 'award-rotten',
+    label: () => 'Certified Rotten',
+    hover: () => 'Anime that score poorly across most metrics. Watch at your own risk.',
+  },
+};
+
+// Filter chips for anime.specialAwards — "medalist" covers any AOTY placement (gold/silver/bronze)
+const SPECIAL_TITLES_META = {
+  fresh: { label: `${AWARD_META.fresh.emoji} Certified Fresh`, hover: AWARD_META.fresh.hover() },
+  rotten: { label: `${AWARD_META.rotten.emoji} Certified Rotten`, hover: AWARD_META.rotten.hover() },
+  medalist: {
+    label: '🥇🥈🥉 Medalists',
+    hover: 'Anime recognized for outstanding achievement in their year of release.',
+  },
+};
+
+const MEDALIST_AWARDS = ['gold', 'silver', 'bronze', 'jury', 'public', 'motyJury', 'motyPublic'];
+
+function animeHasSpecialTitle(anime, key) {
+  const awards = anime.specialAwards || [];
+  if (key === 'medalist') return MEDALIST_AWARDS.some(a => awards.includes(a));
+  return awards.includes(key);
+}
+
 // ── State ──────────────────────────────────────────────────────────────────
 
 const state = {
   genres: new Set(),
   tags: new Set(),
   studios: new Set(),
+  specialTitles: new Set(),
   excludedGenres: new Set(),
   excludedTags: new Set(),
   excludedStudios: new Set(),
+  excludedSpecialTitles: new Set(),
   lengths: new Set(),
   yearMin: null,
   yearMax: null,
+  scoreMin: null,
+  scoreMax: null,
 };
 
 let andMode = false;
@@ -87,12 +193,20 @@ const conditionalGroupEls = new Map();
 
 let animeData = [];
 let animeMap = new Map();
+let tagDescriptions = {};
 
 async function loadData() {
   const res = await fetch('data/anime.json', { cache: 'no-cache' });
   if (!res.ok) throw new Error('Could not load anime.json — run fetch_anime.py first.');
   animeData = await res.json();
   animeMap = new Map(animeData.map(a => [a.id, a]));
+
+  try {
+    const tagRes = await fetch('data/tag_descriptions.json', { cache: 'no-cache' });
+    if (tagRes.ok) tagDescriptions = await tagRes.json();
+  } catch {
+    // Tooltips are a nice-to-have; missing descriptions shouldn't break the app.
+  }
 }
 
 // ── Engine ─────────────────────────────────────────────────────────────────
@@ -117,6 +231,23 @@ function matchesYearFilter(anime) {
   return true;
 }
 
+function matchesScoreFilter(anime) {
+  if (state.scoreMin === null && state.scoreMax === null) return true;
+  const s = anime.score;
+  if (!s) return true;
+  if (state.scoreMin !== null && s < state.scoreMin) return false;
+  if (state.scoreMax !== null && s > state.scoreMax) return false;
+  return true;
+}
+
+function matchesSpecialTitleFilter(anime) {
+  if (state.specialTitles.size === 0) return true;
+  for (const key of state.specialTitles) {
+    if (animeHasSpecialTitle(anime, key)) return true;
+  }
+  return false;
+}
+
 function isExcluded(anime) {
   const genres = new Set(anime.genres.map(g => g.toLowerCase()));
   const tags = new Set(anime.tags.map(t => t.name.toLowerCase()));
@@ -129,6 +260,9 @@ function isExcluded(anime) {
   }
   for (const s of state.excludedStudios) {
     if (studios.has(s.toLowerCase())) return true;
+  }
+  for (const key of state.excludedSpecialTitles) {
+    if (animeHasSpecialTitle(anime, key)) return true;
   }
   return false;
 }
@@ -149,7 +283,7 @@ function scoreAnime(anime) {
 
   for (const tag of state.tags) {
     const rank = animeTagsMap.get(tag.toLowerCase());
-    if (rank !== undefined && rank >= 80) {
+    if (rank !== undefined && rank >= 75) {
       score += (rank / 100) * 5;
       matched.push(tag);
     }
@@ -175,7 +309,7 @@ function matchesAllFilters(anime) {
   }
   for (const t of state.tags) {
     const rank = animeTagsMap.get(t.toLowerCase());
-    if (rank === undefined || rank < 80) return false;
+    if (rank === undefined || rank < 75) return false;
   }
   for (const s of state.studios) {
     if (!animeStudios.has(s.toLowerCase())) return false;
@@ -186,9 +320,11 @@ function matchesAllFilters(anime) {
 function recommend() {
   updateFilterCount();
   const hasFilters =
-    state.genres.size > 0 || state.tags.size > 0 || state.studios.size > 0 ||
+    state.genres.size > 0 || state.tags.size > 0 || state.studios.size > 0 || state.specialTitles.size > 0 ||
     state.excludedGenres.size > 0 || state.excludedTags.size > 0 || state.excludedStudios.size > 0 ||
-    state.lengths.size > 0 || state.yearMin !== null || state.yearMax !== null;
+    state.excludedSpecialTitles.size > 0 ||
+    state.lengths.size > 0 || state.yearMin !== null || state.yearMax !== null ||
+    state.scoreMin !== null || state.scoreMax !== null;
 
   if (!hasFilters) {
     renderDefault();
@@ -201,6 +337,8 @@ function recommend() {
     .filter(a => !a.requiresPrereq)
     .filter(matchesLengthFilter)
     .filter(matchesYearFilter)
+    .filter(matchesScoreFilter)
+    .filter(matchesSpecialTitleFilter)
     .filter(a => !isExcluded(a))
     .map(a => {
       const { score, matched } = scoreAnime(a);
@@ -208,8 +346,9 @@ function recommend() {
     })
     .filter(a => noScoringFilters || (andMode ? matchesAllFilters(a) : a._score > 0))
     .sort((a, b) => {
-      if (Math.abs(b._score - a._score) > 0.5) return b._score - a._score;
-      return (b.score || 0) - (a.score || 0);
+      if ((b.score || 0) !== (a.score || 0)) return (b.score || 0) - (a.score || 0);
+      if (b._score !== a._score) return b._score - a._score;
+      return (b.averageScore || 0) - (a.averageScore || 0);
     });
 
   renderResults(results);
@@ -258,7 +397,7 @@ function openModal(id) {
   overlay.querySelector('.modal-cover img').src = anime.cover;
   overlay.querySelector('.modal-cover img').alt = title;
   overlay.querySelector('.modal-score').textContent = anime.score > 0 ? `★ ${anime.score}` : '—';
-  overlay.querySelector('.modal-title').textContent = title;
+  overlay.querySelector('.modal-title-text').textContent = title;
   overlay.querySelector('.modal-studio').textContent = (anime.studios || []).join(', ');
 
   const seasonChip = overlay.querySelector('.modal-season-chip');
@@ -270,6 +409,21 @@ function openModal(id) {
   } else {
     seasonChip.classList.add('hidden');
   }
+
+  const metaRow = overlay.querySelector('.modal-meta');
+  metaRow.querySelectorAll('.modal-award-chip').forEach(el => el.remove());
+  (anime.specialAwards || []).forEach(awardId => {
+    const info = AWARD_META[awardId];
+    if (!info) return;
+    const chip = document.createElement('span');
+    chip.className = `modal-award-chip award-chip ${info.className}`;
+    chip.textContent = `${info.emoji} ${info.label(anime.year)}`;
+    metaRow.appendChild(chip);
+    // Fresh/Rotten hover text lives on the "Special Titles" filter chips instead.
+    if (awardId !== 'fresh' && awardId !== 'rotten') {
+      attachHoverTooltip(chip, info.hover(anime.year));
+    }
+  });
 
   overlay.querySelector('.modal-genres').innerHTML =
     (anime.genres || []).map(g => `<span class="genre-pill">${escapeHtml(g)}</span>`).join('');
@@ -319,9 +473,10 @@ function renderDefault() {
   const grid = document.getElementById('results');
   const status = document.getElementById('status-bar');
   const top = animeData
-    .filter(a => !a.requiresPrereq && a.score === 10)
+    .filter(a => !a.requiresPrereq && a.score >= 9)
     .sort((a, b) => {
       if (b.score !== a.score) return b.score - a.score;
+      if ((b.averageScore || 0) !== (a.averageScore || 0)) return (b.averageScore || 0) - (a.averageScore || 0);
       return (a.title || a.titleRomaji || '').localeCompare(b.title || b.titleRomaji || '');
     });
 
@@ -338,10 +493,12 @@ function renderDefault() {
 
 function updateFilterCount() {
   const count =
-    state.genres.size + state.tags.size + state.studios.size +
+    state.genres.size + state.tags.size + state.studios.size + state.specialTitles.size +
     state.excludedGenres.size + state.excludedTags.size + state.excludedStudios.size +
+    state.excludedSpecialTitles.size +
     state.lengths.size +
-    (state.yearMin !== null || state.yearMax !== null ? 1 : 0);
+    (state.yearMin !== null || state.yearMax !== null ? 1 : 0) +
+    (state.scoreMin !== null || state.scoreMax !== null ? 1 : 0);
   const el = document.getElementById('filter-count');
   if (el) el.textContent = count > 0 ? `${count} filter${count === 1 ? '' : 's'} active` : '';
 }
@@ -364,32 +521,114 @@ function updateConditionalGroups() {
   }
 }
 
+// ── Tag tooltips ───────────────────────────────────────────────────────────
+// Desktop: hover (with a short delay) or keyboard focus shows the tooltip.
+// Mobile: long-press (~500ms) shows it without triggering the tap-to-select
+// action; a normal quick tap still selects the chip as usual.
+
+let tooltipEl = null;
+let tooltipHoverTimer = null;
+let tooltipOwner = null;
+
+function ensureTooltipEl() {
+  if (!tooltipEl) {
+    tooltipEl = document.createElement('div');
+    tooltipEl.className = 'tag-tooltip hidden';
+    document.body.appendChild(tooltipEl);
+  }
+  return tooltipEl;
+}
+
+function showTooltip(target, text) {
+  const el = ensureTooltipEl();
+  el.textContent = text;
+  el.classList.remove('hidden');
+  tooltipOwner = target;
+
+  const rect = target.getBoundingClientRect();
+  const elRect = el.getBoundingClientRect();
+  let top = rect.top - elRect.height - 8;
+  const placedAbove = top >= 8;
+  if (!placedAbove) top = rect.bottom + 8;
+
+  let left = rect.left + rect.width / 2 - elRect.width / 2;
+  left = Math.max(8, Math.min(left, window.innerWidth - elRect.width - 8));
+
+  el.style.top = `${top + window.scrollY}px`;
+  el.style.left = `${left + window.scrollX}px`;
+  el.classList.toggle('tooltip-below', !placedAbove);
+}
+
+function hideTooltip() {
+  if (tooltipEl) tooltipEl.classList.add('hidden');
+  tooltipOwner = null;
+}
+
+function attachHoverTooltip(el, text, { suppressClick = false } = {}) {
+  el.addEventListener('mouseenter', () => {
+    clearTimeout(tooltipHoverTimer);
+    tooltipHoverTimer = setTimeout(() => showTooltip(el, text), 350);
+  });
+  el.addEventListener('mouseleave', () => {
+    clearTimeout(tooltipHoverTimer);
+    hideTooltip();
+  });
+  el.addEventListener('focus', () => showTooltip(el, text));
+  el.addEventListener('blur', hideTooltip);
+
+  let longPressTimer = null;
+  const cancelLongPress = () => clearTimeout(longPressTimer);
+  el.addEventListener('touchstart', () => {
+    cancelLongPress();
+    longPressTimer = setTimeout(() => {
+      showTooltip(el, text);
+      if (suppressClick) el._suppressClick = true;
+    }, 500);
+  }, { passive: true });
+  el.addEventListener('touchend', cancelLongPress);
+  el.addEventListener('touchmove', cancelLongPress);
+  el.addEventListener('touchcancel', cancelLongPress);
+}
+
 // ── Filter UI ──────────────────────────────────────────────────────────────
 
-function makeFilterChip(label, type, extraClass) {
+function makeFilterChip(label, type, extraClass, value) {
+  value = value !== undefined ? value : label;
+
   const btn = document.createElement('button');
   btn.className = 'filter-chip' + (extraClass ? ` ${extraClass}` : '');
   btn.textContent = label;
   btn.dataset.type = type;
-  btn.dataset.value = label;
+  btn.dataset.value = value;
+
+  if (type === 'tag' && tagDescriptions[label]) {
+    attachHoverTooltip(btn, tagDescriptions[label], { suppressClick: true });
+  } else if (type === 'special' && SPECIAL_TITLES_META[value]) {
+    attachHoverTooltip(btn, SPECIAL_TITLES_META[value].hover, { suppressClick: true });
+  }
 
   btn.addEventListener('click', () => {
-    const includeSet = type === 'genre' ? state.genres : type === 'studio' ? state.studios : state.tags;
-    const excludeSet = type === 'genre' ? state.excludedGenres : type === 'studio' ? state.excludedStudios : state.excludedTags;
+    if (btn._suppressClick) {
+      btn._suppressClick = false;
+      return;
+    }
+    hideTooltip();
+    const includeSet = type === 'genre' ? state.genres : type === 'studio' ? state.studios : type === 'special' ? state.specialTitles : state.tags;
+    const excludeSet = type === 'genre' ? state.excludedGenres : type === 'studio' ? state.excludedStudios : type === 'special' ? state.excludedSpecialTitles : state.excludedTags;
 
-    if (!includeSet.has(label) && !excludeSet.has(label)) {
+    if (!includeSet.has(value) && !excludeSet.has(value)) {
       // Unselected → Include
-      includeSet.add(label);
+      includeSet.add(value);
       btn.classList.add('active');
-    } else if (includeSet.has(label)) {
+    } else if (includeSet.has(value)) {
       // Include → Exclude
-      includeSet.delete(label);
-      excludeSet.add(label);
+      includeSet.delete(value);
+      excludeSet.add(value);
       btn.classList.remove('active');
       btn.classList.add('excluded');
     } else {
       // Exclude → Unselected
-      excludeSet.delete(label);
+      excludeSet.delete(value);
       btn.classList.remove('excluded');
       btn.blur();
     }
@@ -527,6 +766,122 @@ function buildFilterUI() {
   yearChips.appendChild(sliderWrapper);
   panel.appendChild(yearGroup);
 
+  // My Score range slider
+  const dataMinScore = 1;
+  const dataMaxScore = 10;
+
+  const { group: scoreGroup, chips: scoreChips } = makeGroup('My Score');
+  scoreChips.classList.add('year-range-chips');
+
+  const scoreSliderWrapper = document.createElement('div');
+  scoreSliderWrapper.className = 'year-slider-wrapper';
+
+  const scoreDisplay = document.createElement('div');
+  scoreDisplay.className = 'year-display';
+  const scoreMinLabel = document.createElement('span');
+  scoreMinLabel.className = 'year-display-val';
+  scoreMinLabel.id = 'score-min-display';
+  scoreMinLabel.textContent = dataMinScore;
+  const scoreDash = document.createElement('span');
+  scoreDash.className = 'year-display-dash';
+  scoreDash.textContent = '—';
+  const scoreMaxLabel = document.createElement('span');
+  scoreMaxLabel.className = 'year-display-val';
+  scoreMaxLabel.id = 'score-max-display';
+  scoreMaxLabel.textContent = dataMaxScore;
+  scoreDisplay.appendChild(scoreMinLabel);
+  scoreDisplay.appendChild(scoreDash);
+  scoreDisplay.appendChild(scoreMaxLabel);
+
+  const scoreTrackContainer = document.createElement('div');
+  scoreTrackContainer.className = 'year-track-container';
+  const scoreTrackBg = document.createElement('div');
+  scoreTrackBg.className = 'year-track-bg';
+  const scoreTrackFill = document.createElement('div');
+  scoreTrackFill.className = 'year-track-fill';
+  scoreTrackFill.id = 'score-track-fill';
+  scoreTrackBg.appendChild(scoreTrackFill);
+
+  const scoreMinInput = document.createElement('input');
+  scoreMinInput.type = 'range';
+  scoreMinInput.className = 'year-slider';
+  scoreMinInput.id = 'score-slider-min';
+  scoreMinInput.min = dataMinScore;
+  scoreMinInput.max = dataMaxScore;
+  scoreMinInput.value = dataMinScore;
+  scoreMinInput.style.zIndex = '4';
+
+  const scoreMaxInput = document.createElement('input');
+  scoreMaxInput.type = 'range';
+  scoreMaxInput.className = 'year-slider';
+  scoreMaxInput.id = 'score-slider-max';
+  scoreMaxInput.min = dataMinScore;
+  scoreMaxInput.max = dataMaxScore;
+  scoreMaxInput.value = dataMaxScore;
+  scoreMaxInput.style.zIndex = '3';
+
+  const updateScoreFill = () => {
+    const range = dataMaxScore - dataMinScore;
+    const lo = parseInt(scoreMinInput.value);
+    const hi = parseInt(scoreMaxInput.value);
+    scoreTrackFill.style.left  = ((lo - dataMinScore) / range * 100) + '%';
+    scoreTrackFill.style.right = ((dataMaxScore - hi)  / range * 100) + '%';
+    scoreMinLabel.textContent = lo;
+    scoreMaxLabel.textContent = hi;
+    scoreMinInput.style.zIndex = (hi > dataMinScore && (lo <= dataMinScore || lo >= hi)) ? '4' : '2';
+  };
+
+  scoreMinInput.addEventListener('input', () => {
+    if (parseInt(scoreMinInput.value) > parseInt(scoreMaxInput.value)) scoreMinInput.value = scoreMaxInput.value;
+    state.scoreMin = parseInt(scoreMinInput.value) <= dataMinScore ? null : parseInt(scoreMinInput.value);
+    state.scoreMax = parseInt(scoreMaxInput.value) >= dataMaxScore ? null : parseInt(scoreMaxInput.value);
+    updateScoreFill();
+    recommend();
+  });
+
+  scoreMaxInput.addEventListener('input', () => {
+    if (parseInt(scoreMaxInput.value) < parseInt(scoreMinInput.value)) scoreMaxInput.value = scoreMinInput.value;
+    state.scoreMin = parseInt(scoreMinInput.value) <= dataMinScore ? null : parseInt(scoreMinInput.value);
+    state.scoreMax = parseInt(scoreMaxInput.value) >= dataMaxScore ? null : parseInt(scoreMaxInput.value);
+    updateScoreFill();
+    recommend();
+  });
+
+  scoreTrackContainer.appendChild(scoreTrackBg);
+  scoreTrackContainer.appendChild(scoreMinInput);
+  scoreTrackContainer.appendChild(scoreMaxInput);
+  scoreSliderWrapper.appendChild(scoreDisplay);
+  scoreSliderWrapper.appendChild(scoreTrackContainer);
+  scoreChips.appendChild(scoreSliderWrapper);
+  panel.appendChild(scoreGroup);
+
+  // Special Titles (Certified Fresh/Rotten, Medalists — derived from specialAwards)
+  const { group: specialGroup, chips: specialChips } = makeGroup('Special Titles');
+  Object.entries(SPECIAL_TITLES_META).forEach(([key, meta]) => {
+    specialChips.appendChild(makeFilterChip(meta.label, 'special', '', key));
+  });
+  panel.appendChild(specialGroup);
+
+  // Genres
+  const { group: genreGroup, chips: genreChips } = makeGroup('Genres');
+  ALL_GENRES.forEach(g => genreChips.appendChild(makeFilterChip(g, 'genre')));
+  genreChips.appendChild(makeFilterChip('Ecchi', 'genre', 'nsfw-chip'));
+  panel.appendChild(genreGroup);
+
+  // Demographic
+  const { group: demoGroup, chips: demoChips } = makeGroup('Demographic');
+  DEMOGRAPHICS.forEach(d => demoChips.appendChild(makeFilterChip(d, 'tag')));
+  panel.appendChild(demoGroup);
+
+  // Tag groups (including conditional ones)
+  FILTER_GROUPS.forEach(({ label, items, showWhenGenres }) => {
+    const isConditional = !!showWhenGenres;
+    const { group, chips } = makeGroup(label, isConditional ? 'group-hidden' : '');
+    items.forEach(item => chips.appendChild(makeFilterChip(item, 'tag')));
+    if (isConditional) conditionalGroupEls.set(label, { el: group, showWhenGenres });
+    panel.appendChild(group);
+  });
+
   // Studio (dynamic — only studios with ≥5 anime)
   const studioCounts = new Map();
   animeData
@@ -541,26 +896,6 @@ function buildFilterUI() {
     qualifiedStudios.forEach(s => studioChips.appendChild(makeFilterChip(s, 'studio')));
     panel.appendChild(studioGroup);
   }
-
-  // Demographic
-  const { group: demoGroup, chips: demoChips } = makeGroup('Demographic');
-  DEMOGRAPHICS.forEach(d => demoChips.appendChild(makeFilterChip(d, 'tag')));
-  panel.appendChild(demoGroup);
-
-  // Genres
-  const { group: genreGroup, chips: genreChips } = makeGroup('Genres');
-  ALL_GENRES.forEach(g => genreChips.appendChild(makeFilterChip(g, 'genre')));
-  genreChips.appendChild(makeFilterChip('Ecchi', 'genre', 'nsfw-chip'));
-  panel.appendChild(genreGroup);
-
-  // Tag groups (including conditional ones)
-  FILTER_GROUPS.forEach(({ label, items, showWhenGenres }) => {
-    const isConditional = !!showWhenGenres;
-    const { group, chips } = makeGroup(label, isConditional ? 'group-hidden' : '');
-    items.forEach(item => chips.appendChild(makeFilterChip(item, 'tag')));
-    if (isConditional) conditionalGroupEls.set(label, { el: group, showWhenGenres });
-    panel.appendChild(group);
-  });
 
   // NSFW group
   const { group: nsfwGroup, chips: nsfwChips } = makeGroup(NSFW_GROUP.label, 'nsfw-group');
@@ -590,12 +925,16 @@ function clearAllFilters() {
   state.genres.clear();
   state.tags.clear();
   state.studios.clear();
+  state.specialTitles.clear();
   state.excludedGenres.clear();
   state.excludedTags.clear();
   state.excludedStudios.clear();
+  state.excludedSpecialTitles.clear();
   state.lengths.clear();
   state.yearMin = null;
   state.yearMax = null;
+  state.scoreMin = null;
+  state.scoreMax = null;
   document.querySelectorAll('.filter-chip.active, .filter-chip.excluded')
     .forEach(btn => btn.classList.remove('active', 'excluded'));
   const minSlider = document.getElementById('year-slider-min');
@@ -609,6 +948,18 @@ function clearAllFilters() {
     const maxDisp = document.getElementById('year-max-display');
     if (minDisp) minDisp.textContent = minSlider.min;
     if (maxDisp) maxDisp.textContent = maxSlider.max;
+  }
+  const scoreMinSlider = document.getElementById('score-slider-min');
+  const scoreMaxSlider = document.getElementById('score-slider-max');
+  if (scoreMinSlider && scoreMaxSlider) {
+    scoreMinSlider.value = scoreMinSlider.min;
+    scoreMaxSlider.value = scoreMaxSlider.max;
+    const scoreFill = document.getElementById('score-track-fill');
+    if (scoreFill) { scoreFill.style.left = '0%'; scoreFill.style.right = '0%'; }
+    const scoreMinDisp = document.getElementById('score-min-display');
+    const scoreMaxDisp = document.getElementById('score-max-display');
+    if (scoreMinDisp) scoreMinDisp.textContent = scoreMinSlider.min;
+    if (scoreMaxDisp) scoreMaxDisp.textContent = scoreMaxSlider.max;
   }
   updateConditionalGroups();
   recommend();
@@ -630,10 +981,7 @@ async function init() {
             <div class="modal-score"></div>
           </div>
           <div class="modal-content">
-            <div class="modal-title-row">
-              <h2 class="modal-title"></h2>
-              <span class="modal-studio"></span>
-            </div>
+            <h2 class="modal-title"><span class="modal-title-text"></span><span class="modal-studio"></span></h2>
             <div class="modal-meta">
               <span class="modal-season-chip"></span>
             </div>
@@ -651,6 +999,13 @@ async function init() {
   overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
   overlay.querySelector('.modal-close').addEventListener('click', closeModal);
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+  document.addEventListener('click', e => {
+    if (tooltipOwner && e.target !== tooltipOwner) hideTooltip();
+  });
+  document.addEventListener('touchstart', e => {
+    if (tooltipOwner && e.target !== tooltipOwner) hideTooltip();
+  }, { passive: true });
+  window.addEventListener('scroll', hideTooltip, { passive: true });
   grid.addEventListener('click', e => {
     const card = e.target.closest('.card');
     if (card && card.dataset.id) openModal(parseInt(card.dataset.id));
