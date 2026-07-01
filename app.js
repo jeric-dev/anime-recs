@@ -57,9 +57,6 @@ const NSFW_GROUP = {
   ],
 };
 
-// AniList IDs that are sequels by metadata but should be treated as standalones
-const SEQUEL_OVERRIDES = new Set([3972]); // Yu-Gi-Oh! 5D's
-
 // ── State ──────────────────────────────────────────────────────────────────
 
 const state = {
@@ -193,7 +190,7 @@ function recommend() {
   const noScoringFilters = state.genres.size === 0 && state.tags.size === 0 && state.studios.size === 0;
 
   const results = animeData
-    .filter(a => !a.isSequel || SEQUEL_OVERRIDES.has(a.id))
+    .filter(a => !a.requiresPrereq)
     .filter(matchesEpisodeFilter)
     .filter(matchesYearFilter)
     .filter(a => !isExcluded(a))
@@ -302,7 +299,7 @@ function renderDefault() {
   const grid = document.getElementById('results');
   const status = document.getElementById('status-bar');
   const top = animeData
-    .filter(a => (!a.isSequel || SEQUEL_OVERRIDES.has(a.id)) && a.score === 10)
+    .filter(a => !a.requiresPrereq && a.score === 10)
     .sort((a, b) => {
       if (b.score !== a.score) return b.score - a.score;
       return (a.title || a.titleRomaji || '').localeCompare(b.title || b.titleRomaji || '');
@@ -513,7 +510,7 @@ function buildFilterUI() {
   // Studio (dynamic — only studios with ≥5 anime)
   const studioCounts = new Map();
   animeData
-    .filter(a => !a.isSequel || SEQUEL_OVERRIDES.has(a.id))
+    .filter(a => !a.requiresPrereq)
     .forEach(a => [...new Set(a.studios || [])].forEach(s => studioCounts.set(s, (studioCounts.get(s) || 0) + 1)));
   const qualifiedStudios = [...studioCounts.entries()]
     .filter(([, n]) => n >= 5)

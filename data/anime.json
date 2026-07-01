@@ -110,7 +110,7 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 151384,
@@ -195,7 +195,7 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 130003,
@@ -299,7 +299,7 @@
     "studios": [
       "CloverWorks"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 21519,
@@ -383,7 +383,7 @@
     "studios": [
       "CoMix Wave"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 166216,
@@ -459,7 +459,7 @@
     "studios": [
       "Shin-Ei Animation"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 182587,
@@ -544,7 +544,7 @@
     "studios": [
       "Doga Kobo"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 120377,
@@ -665,7 +665,7 @@
     "studios": [
       "TRIGGER"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 166531,
@@ -734,7 +734,7 @@
     "studios": [
       "Doga Kobo"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 104157,
@@ -811,7 +811,7 @@
     "studios": [
       "CloverWorks"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 150672,
@@ -916,7 +916,7 @@
     "studios": [
       "Doga Kobo"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 129201,
@@ -998,7 +998,7 @@
     "studios": [
       "OLM"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 171018,
@@ -1113,7 +1113,7 @@
     "studios": [
       "Science SARU"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 184951,
@@ -1191,7 +1191,7 @@
     "url": "https://anilist.co/anime/184951",
     "notes": "",
     "studios": [],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 102976,
@@ -1294,7 +1294,7 @@
     "studios": [
       "J.C.STAFF"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 154768,
@@ -1419,7 +1419,7 @@
     "studios": [
       "CloverWorks"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 101291,
@@ -1514,7 +1514,7 @@
     "studios": [
       "CloverWorks"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 166794,
@@ -1593,7 +1593,7 @@
     "studios": [
       "Ajiado"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 21875,
@@ -1687,7 +1687,7 @@
     "studios": [
       "MADHOUSE"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 172258,
@@ -1787,7 +1787,7 @@
     "studios": [
       "Bibury Animation Studios"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 19815,
@@ -1912,7 +1912,7 @@
     "studios": [
       "MADHOUSE"
     ],
-    "isSequel": true
+    "requiresPrereq": false
   },
   {
     "id": 20872,
@@ -1993,7 +1993,7 @@
     "studios": [
       "Doga Kobo"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 162780,
@@ -2122,7 +2122,7 @@
     "studios": [
       "Asahi Production"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 154587,
@@ -2254,7 +2254,7 @@
     "studios": [
       "MADHOUSE"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 5114,
@@ -2431,7 +2431,7 @@
     "studios": [
       "bones"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 161645,
@@ -2563,7 +2563,7 @@
       "OLM",
       "TOHO animation STUDIO"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 182255,
@@ -2675,7 +2675,7 @@
     "studios": [
       "MADHOUSE"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 176301,
@@ -2787,7 +2787,7 @@
       "TOHO animation STUDIO",
       "OLM"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 177385,
@@ -2870,7 +2870,7 @@
     "studios": [
       "Shuka"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 185407,
@@ -2940,7 +2940,7 @@
     "url": "https://anilist.co/anime/185407",
     "notes": "Review - https://animejb.substack.com/i/173630024/takopis-original-sin-enishiya",
     "studios": [],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 112641,
@@ -3049,7 +3049,7 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 165253,
@@ -3117,7 +3117,7 @@
     "studios": [
       "CloverWorks"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 171099,
@@ -3181,7 +3181,7 @@
     "studios": [
       "CloverWorks"
     ],
-    "isSequel": true
+    "requiresPrereq": false
   },
   {
     "id": 164212,
@@ -3261,7 +3261,7 @@
     "studios": [
       "Toei Animation"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 185660,
@@ -3360,7 +3360,7 @@
     "studios": [
       "Science SARU"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 165171,
@@ -3444,7 +3444,7 @@
     "studios": [
       "ENGI"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 108489,
@@ -3533,7 +3533,7 @@
     "studios": [
       "feel."
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 136804,
@@ -3627,7 +3627,7 @@
     "studios": [
       "Drive"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 21699,
@@ -3736,7 +3736,7 @@
     "studios": [
       "Studio DEEN"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 124080,
@@ -3812,7 +3812,7 @@
     "studios": [
       "CloverWorks"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 107717,
@@ -3940,7 +3940,7 @@
     "studios": [
       "Kyoto Animation"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 143270,
@@ -4019,7 +4019,7 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 163132,
@@ -4099,7 +4099,7 @@
     "studios": [
       "CloverWorks"
     ],
-    "isSequel": false
+    "requiresPrereq": true
   },
   {
     "id": 158928,
@@ -4242,7 +4242,7 @@
       "WIT STUDIO",
       "CloverWorks"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 109261,
@@ -4335,7 +4335,7 @@
     "studios": [
       "Bibury Animation Studios"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 138565,
@@ -4425,7 +4425,7 @@
     "studios": [
       "Drive"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 132405,
@@ -4522,7 +4522,7 @@
     "studios": [
       "CloverWorks"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 158927,
@@ -4668,7 +4668,7 @@
       "WIT STUDIO",
       "CloverWorks"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 143653,
@@ -4763,7 +4763,7 @@
     "studios": [
       "LIDENFILMS"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 21202,
@@ -4884,7 +4884,7 @@
     "studios": [
       "Studio DEEN"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 98202,
@@ -4952,7 +4952,7 @@
     "studios": [
       "feel."
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 141774,
@@ -5049,7 +5049,7 @@
     "studios": [
       "P.A.WORKS"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 199112,
@@ -5128,7 +5128,7 @@
     "studios": [
       "studio MOTHER"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 143338,
@@ -5187,7 +5187,7 @@
     "studios": [
       "project No.9"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 116267,
@@ -5263,7 +5263,7 @@
     "studios": [
       "Seven Arcs"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 2167,
@@ -5378,7 +5378,7 @@
       "Animation Do",
       "Kyoto Animation"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 21776,
@@ -5510,7 +5510,7 @@
     "studios": [
       "Kyoto Animation"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 185939,
@@ -5581,7 +5581,7 @@
     "studios": [
       "P.A.WORKS"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 151380,
@@ -5667,7 +5667,7 @@
     "studios": [
       "GEEKTOYS"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 147103,
@@ -5763,7 +5763,7 @@
     "studios": [
       "Kinema Citrus"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 162694,
@@ -5867,7 +5867,7 @@
     "studios": [
       "Bibury Animation Studios"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 176370,
@@ -5966,7 +5966,7 @@
     "studios": [
       "PINE JAM"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 17895,
@@ -6029,7 +6029,7 @@
     "studios": [
       "J.C.STAFF"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 11887,
@@ -6111,7 +6111,7 @@
       "SILVER LINK.",
       "Enterbrain"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 102882,
@@ -6160,7 +6160,7 @@
     "studios": [
       "Hoods Entertainment"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 106479,
@@ -6266,7 +6266,7 @@
     "studios": [
       "SILVER LINK."
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 18245,
@@ -6335,7 +6335,7 @@
     "studios": [
       "Satelight"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 179696,
@@ -6395,7 +6395,7 @@
     "studios": [
       "BLADE"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 3972,
@@ -6498,7 +6498,7 @@
     "studios": [
       "Studio Gallop"
     ],
-    "isSequel": true
+    "requiresPrereq": false
   },
   {
     "id": 158704,
@@ -6602,7 +6602,7 @@
     "studios": [
       "Platinum Vision"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 21092,
@@ -6720,7 +6720,7 @@
       "SILVER LINK.",
       "Nexus"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 158559,
@@ -6801,7 +6801,7 @@
     "studios": [
       "J.C.STAFF"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 20745,
@@ -6911,7 +6911,7 @@
     "studios": [
       "TNK"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 114232,
@@ -7007,7 +7007,7 @@
     "studios": [
       "project No.9"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 127911,
@@ -7099,7 +7099,7 @@
     "studios": [
       "Doga Kobo"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 20954,
@@ -7179,7 +7179,7 @@
     "studios": [
       "Kyoto Animation"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 4181,
@@ -7281,7 +7281,7 @@
       "Kyoto Animation",
       "Animation Do"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 174788,
@@ -7358,7 +7358,7 @@
     "url": "https://anilist.co/anime/174788",
     "notes": "Review - https://animejb.substack.com/i/148872535/look-back-studio-durian",
     "studios": [],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 153658,
@@ -7418,7 +7418,7 @@
     "studios": [
       "Production I.G"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 195240,
@@ -7505,7 +7505,7 @@
     "studios": [
       "CygamesPictures"
     ],
-    "isSequel": true
+    "requiresPrereq": false
   },
   {
     "id": 147105,
@@ -7613,7 +7613,7 @@
     "studios": [
       "BUG FILMS"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 181444,
@@ -7693,7 +7693,7 @@
     "studios": [
       "CloverWorks"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 21399,
@@ -7760,7 +7760,7 @@
     "studios": [
       "Shaft"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 20665,
@@ -7849,7 +7849,7 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "isSequel": true
+    "requiresPrereq": false
   },
   {
     "id": 99750,
@@ -7907,7 +7907,7 @@
     "url": "https://anilist.co/anime/99750",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1380345377363202048",
     "studios": [],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 104459,
@@ -8002,7 +8002,7 @@
     "studios": [
       "C-Station"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 99426,
@@ -8110,7 +8110,7 @@
     "studios": [
       "MADHOUSE"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 201903,
@@ -8238,7 +8238,7 @@
       "Studio Colorido",
       "Studio Chromato"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 101921,
@@ -8331,7 +8331,7 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 108511,
@@ -8444,7 +8444,7 @@
     "studios": [
       "8-bit"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 104460,
@@ -8527,7 +8527,7 @@
     "studios": [
       "C-Station"
     ],
-    "isSequel": true
+    "requiresPrereq": false
   },
   {
     "id": 108632,
@@ -8658,7 +8658,7 @@
     "studios": [
       "WHITE FOX"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 109403,
@@ -8729,7 +8729,7 @@
     "studios": [
       "SILVER LINK."
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 140960,
@@ -8879,7 +8879,7 @@
       "CloverWorks",
       "WIT STUDIO"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 189275,
@@ -8947,7 +8947,7 @@
     "studios": [
       "ENGI"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 116742,
@@ -9068,7 +9068,7 @@
     "studios": [
       "8-bit"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 177937,
@@ -9178,7 +9178,7 @@
       "WIT STUDIO",
       "CloverWorks"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 20698,
@@ -9271,7 +9271,7 @@
     "studios": [
       "feel."
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 106286,
@@ -9360,7 +9360,7 @@
     "studios": [
       "CoMix Wave"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 98444,
@@ -9459,7 +9459,7 @@
     "studios": [
       "C-Station"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 114535,
@@ -9557,7 +9557,7 @@
     "studios": [
       "Brain's Base"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 98779,
@@ -9632,7 +9632,7 @@
     "studios": [
       "SILVER LINK."
     ],
-    "isSequel": false
+    "requiresPrereq": true
   },
   {
     "id": 142838,
@@ -9770,7 +9770,7 @@
       "WIT STUDIO",
       "CloverWorks"
     ],
-    "isSequel": true
+    "requiresPrereq": false
   },
   {
     "id": 142770,
@@ -9855,7 +9855,7 @@
     "studios": [
       "CoMix Wave"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 141911,
@@ -9931,7 +9931,7 @@
     "studios": [
       "P.A.WORKS"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 153152,
@@ -9999,7 +9999,7 @@
     "studios": [
       "Shin-Ei Animation"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 171457,
@@ -10111,7 +10111,7 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 179966,
@@ -10218,7 +10218,7 @@
     "studios": [
       "Studio Gokumi"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 9989,
@@ -10283,7 +10283,7 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 101280,
@@ -10421,7 +10421,7 @@
       "8-bit",
       "Bandai Namco Pictures"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 180675,
@@ -10521,7 +10521,7 @@
     "studios": [
       "CygamesPictures"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 21258,
@@ -10605,7 +10605,7 @@
     "studios": [
       "bones"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 20770,
@@ -10732,7 +10732,7 @@
     "studios": [
       "Studio Pierrot"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 145728,
@@ -10853,7 +10853,7 @@
     "studios": [
       "Passione"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 184237,
@@ -10944,7 +10944,7 @@
     "studios": [
       "TMS Entertainment"
     ],
-    "isSequel": true
+    "requiresPrereq": false
   },
   {
     "id": 14813,
@@ -11045,7 +11045,7 @@
     "studios": [
       "Brain's Base"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 13759,
@@ -11162,7 +11162,7 @@
     "studios": [
       "J.C.STAFF"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 101573,
@@ -11266,7 +11266,7 @@
     "studios": [
       "TROYCA"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 21049,
@@ -11351,7 +11351,7 @@
     "studios": [
       "TMS Entertainment"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 142984,
@@ -11459,7 +11459,7 @@
     "studios": [
       "OLM"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 170503,
@@ -11532,7 +11532,7 @@
     "studios": [
       "Studio Pierrot"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 186043,
@@ -11603,7 +11603,7 @@
     "studios": [
       "WIT STUDIO"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 178005,
@@ -11690,7 +11690,7 @@
     "studios": [
       "J.C.STAFF"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 21058,
@@ -11766,7 +11766,7 @@
     "studios": [
       "bones"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 154965,
@@ -11839,7 +11839,7 @@
       "MADHOUSE",
       "EGG FIRM"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 179694,
@@ -11918,7 +11918,7 @@
     "studios": [
       "Bandai Namco Pictures"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 21180,
@@ -11998,7 +11998,7 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 103572,
@@ -12095,7 +12095,7 @@
     "studios": [
       "Tezuka Productions"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 15039,
@@ -12168,7 +12168,7 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "isSequel": false
+    "requiresPrereq": true
   },
   {
     "id": 122808,
@@ -12265,7 +12265,7 @@
     "studios": [
       "CygamesPictures"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 116605,
@@ -12372,7 +12372,7 @@
     "studios": [
       "GEEKTOYS"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 100049,
@@ -12461,7 +12461,7 @@
     "studios": [
       "WHITE FOX"
     ],
-    "isSequel": false
+    "requiresPrereq": true
   },
   {
     "id": 98292,
@@ -12564,7 +12564,7 @@
     "studios": [
       "Doga Kobo"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 141014,
@@ -12629,7 +12629,7 @@
     "studios": [
       "Okuruto Noboru"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 163623,
@@ -12705,7 +12705,7 @@
     "studios": [
       "Nomad"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 163078,
@@ -12789,7 +12789,7 @@
     "studios": [
       "Doga Kobo"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 15809,
@@ -12886,7 +12886,7 @@
     "studios": [
       "WHITE FOX"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 147864,
@@ -12995,7 +12995,7 @@
       "Studio Bind",
       "EGG FIRM"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 20997,
@@ -13089,7 +13089,7 @@
     "studios": [
       "P.A.WORKS"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 153629,
@@ -13160,7 +13160,7 @@
     "studios": [
       "diomedéa"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 162804,
@@ -13252,7 +13252,7 @@
     "studios": [
       "Doga Kobo"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 168374,
@@ -13360,7 +13360,7 @@
       "HORNETS",
       "Studio KAI"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 177120,
@@ -13462,7 +13462,7 @@
     "studios": [
       "Shaft"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 116741,
@@ -13559,7 +13559,7 @@
     "studios": [
       "8-bit"
     ],
-    "isSequel": false
+    "requiresPrereq": true
   },
   {
     "id": 131516,
@@ -13629,7 +13629,7 @@
     "studios": [
       "PINE JAM"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 21455,
@@ -13732,7 +13732,7 @@
     "studios": [
       "Doga Kobo"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 151379,
@@ -13824,7 +13824,7 @@
     "studios": [
       "P.A.WORKS"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 150075,
@@ -13920,7 +13920,7 @@
     "studios": [
       "Drive"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 148969,
@@ -13976,7 +13976,7 @@
     "studios": [
       "PINE JAM"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 158898,
@@ -14057,7 +14057,7 @@
       "SILVER LINK.",
       "Studio Pierrot"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 159039,
@@ -14125,7 +14125,7 @@
     "studios": [
       "CONNECT"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 179979,
@@ -14213,7 +14213,7 @@
     "studios": [
       "Felix Film"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 183385,
@@ -14311,7 +14311,7 @@
     "studios": [
       "Studio Lings"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 21265,
@@ -14367,7 +14367,7 @@
     "studios": [
       "Studio Gallop"
     ],
-    "isSequel": true
+    "requiresPrereq": false
   },
   {
     "id": 111501,
@@ -14428,7 +14428,7 @@
     "url": "https://anilist.co/anime/111501",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1418750960361525250",
     "studios": [],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 20966,
@@ -14501,7 +14501,7 @@
     "studios": [
       "LIDENFILMS"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 128545,
@@ -14586,7 +14586,7 @@
       "P.A.WORKS",
       "AQUA ARIS"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 100179,
@@ -14630,7 +14630,7 @@
     "studios": [
       "Doga Kobo"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 20527,
@@ -14687,7 +14687,7 @@
     "studios": [
       "Brain's Base"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 132010,
@@ -14768,7 +14768,7 @@
     "studios": [
       "project No.9"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 101316,
@@ -14841,7 +14841,7 @@
     "studios": [
       "P.A.WORKS"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 152681,
@@ -14908,7 +14908,7 @@
     "studios": [
       "Studio DEEN"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 166477,
@@ -14997,7 +14997,7 @@
     "studios": [
       "Tezuka Productions"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 180425,
@@ -15058,7 +15058,7 @@
     "url": "https://anilist.co/anime/180425",
     "notes": "",
     "studios": [],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 1689,
@@ -15126,7 +15126,7 @@
     "studios": [
       "CoMix Wave"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 109019,
@@ -15214,7 +15214,7 @@
     "studios": [
       "Doga Kobo"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 163133,
@@ -15290,7 +15290,7 @@
     "studios": [
       "project No.9"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 2847,
@@ -15344,7 +15344,7 @@
     "studios": [
       "OLM"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 15451,
@@ -15470,7 +15470,7 @@
     "studios": [
       "TNK"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 105914,
@@ -15563,7 +15563,7 @@
     "studios": [
       "Doga Kobo"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 127549,
@@ -15654,7 +15654,7 @@
     "studios": [
       "CONNECT"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 137281,
@@ -15758,7 +15758,7 @@
     "studios": [
       "Felix Film"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 168138,
@@ -15847,7 +15847,7 @@
     "studios": [
       "Gekkou"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 166522,
@@ -15967,7 +15967,7 @@
     "studios": [
       "PINE JAM"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 109287,
@@ -16038,7 +16038,7 @@
     "studios": [
       "Tezuka Productions"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 112443,
@@ -16115,7 +16115,7 @@
     "studios": [
       "project No.9"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 100722,
@@ -16220,7 +16220,7 @@
       "J.C.STAFF",
       "ENGI"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 20741,
@@ -16281,7 +16281,7 @@
       "AIC Plus+",
       "Production IMS"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 16732,
@@ -16352,7 +16352,7 @@
     "studios": [
       "Studio Gokumi"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 98596,
@@ -16429,7 +16429,7 @@
     "studios": [
       "SILVER LINK."
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 114340,
@@ -16514,7 +16514,7 @@
     "studios": [
       "EMT Squared"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 97767,
@@ -16616,7 +16616,7 @@
     "studios": [
       "Passione"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 6178,
@@ -16681,7 +16681,7 @@
     "studios": [
       "OLM"
     ],
-    "isSequel": true
+    "requiresPrereq": false
   },
   {
     "id": 132456,
@@ -16794,7 +16794,7 @@
     "studios": [
       "SILVER LINK."
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 160488,
@@ -16873,7 +16873,7 @@
     "studios": [
       "TNK"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 175977,
@@ -17005,7 +17005,7 @@
     "studios": [
       "WIT STUDIO"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 7695,
@@ -17065,7 +17065,7 @@
     "studios": [
       "OLM"
     ],
-    "isSequel": true
+    "requiresPrereq": false
   },
   {
     "id": 146625,
@@ -17146,7 +17146,7 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 100526,
@@ -17199,7 +17199,7 @@
     "studios": [
       "Hoods Entertainment"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 160514,
@@ -17261,7 +17261,7 @@
     "studios": [
       "Fugaku"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 124194,
@@ -17404,7 +17404,7 @@
     "studios": [
       "TMS Entertainment"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 21400,
@@ -17491,7 +17491,7 @@
     "studios": [
       "Shaft"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 199,
@@ -17589,7 +17589,7 @@
       "Studio Ghibli",
       "Studio Hibari"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 151514,
@@ -17675,7 +17675,7 @@
     "studios": [
       "MADHOUSE"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 180516,
@@ -17758,7 +17758,7 @@
     "studios": [
       "CygamesPictures"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 100675,
@@ -17842,7 +17842,7 @@
     "studios": [
       "CloverWorks"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 161474,
@@ -17907,7 +17907,7 @@
     "studios": [
       "CloverWorks"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 9260,
@@ -17986,7 +17986,7 @@
     "studios": [
       "Shaft"
     ],
-    "isSequel": false
+    "requiresPrereq": true
   },
   {
     "id": 113596,
@@ -18058,7 +18058,7 @@
     "studios": [
       "bones"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 177687,
@@ -18125,7 +18125,7 @@
     "studios": [
       "ROCK'N ROLL MOUNTAIN"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 105334,
@@ -18327,7 +18327,7 @@
     "studios": [
       "TMS Entertainment"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 5081,
@@ -18482,7 +18482,7 @@
     "studios": [
       "Shaft"
     ],
-    "isSequel": true
+    "requiresPrereq": false
   },
   {
     "id": 163571,
@@ -18570,7 +18570,7 @@
     "studios": [
       "SANZIGEN"
     ],
-    "isSequel": true
+    "requiresPrereq": false
   },
   {
     "id": 171046,
@@ -18640,7 +18640,7 @@
     "studios": [
       "CloverWorks"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 523,
@@ -18718,7 +18718,7 @@
       "Studio Ghibli",
       "Studio Fantasia"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 21355,
@@ -18846,7 +18846,7 @@
     "studios": [
       "WHITE FOX"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 20694,
@@ -18920,7 +18920,7 @@
     "studios": [
       "SILVER LINK."
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 170942,
@@ -19001,7 +19001,7 @@
       "Telecom Animation Film",
       "TMS Entertainment"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 167152,
@@ -19081,7 +19081,7 @@
     "studios": [
       "Studio KAI"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 155908,
@@ -19176,7 +19176,7 @@
     "studios": [
       "8-bit"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 181841,
@@ -19279,7 +19279,7 @@
     "studios": [
       "Kyoto Animation"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 145545,
@@ -19356,7 +19356,7 @@
       "Lerche",
       "Studio Hibari"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 154967,
@@ -19444,7 +19444,7 @@
     "studios": [
       "CloverWorks"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 198188,
@@ -19604,7 +19604,7 @@
       "P.A.WORKS",
       "GRAPH77"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 17549,
@@ -19690,7 +19690,7 @@
     "studios": [
       "SILVER LINK."
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 153930,
@@ -19785,7 +19785,7 @@
     "studios": [
       "domerica"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 158166,
@@ -19875,7 +19875,7 @@
     "studios": [
       "Science SARU"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 166610,
@@ -19979,7 +19979,7 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 155645,
@@ -20072,7 +20072,7 @@
     "studios": [
       "david production"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 20668,
@@ -20168,7 +20168,7 @@
     "studios": [
       "Doga Kobo"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 16067,
@@ -20253,7 +20253,7 @@
     "studios": [
       "P.A.WORKS"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 6547,
@@ -20358,7 +20358,7 @@
     "studios": [
       "P.A.WORKS"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 162896,
@@ -20454,7 +20454,7 @@
     "studios": [
       "CloverWorks"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 133965,
@@ -20578,7 +20578,7 @@
     "studios": [
       "OLM"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 141208,
@@ -20650,7 +20650,7 @@
     "studios": [
       "Seven Arcs"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 98659,
@@ -20737,7 +20737,7 @@
     "studios": [
       "Lerche"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 141949,
@@ -20818,7 +20818,7 @@
     "studios": [
       "studio MOTHER"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 165598,
@@ -20919,7 +20919,7 @@
     "studios": [
       "CygamesPictures"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 177709,
@@ -21014,7 +21014,7 @@
     "studios": [
       "TMS Entertainment"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 167087,
@@ -21123,7 +21123,7 @@
     "studios": [
       "Satelight"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 184591,
@@ -21194,7 +21194,7 @@
     "studios": [
       "studio MOTHER"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 178886,
@@ -21281,7 +21281,7 @@
     "studios": [
       "P.A.WORKS"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 20596,
@@ -21341,7 +21341,7 @@
     "studios": [
       "Production I.G"
     ],
-    "isSequel": true
+    "requiresPrereq": false
   },
   {
     "id": 98291,
@@ -21410,7 +21410,7 @@
     "studios": [
       "Studio Gokumi"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 169441,
@@ -21494,7 +21494,7 @@
     "studios": [
       "Kinema Citrus"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 20657,
@@ -21578,7 +21578,7 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 99726,
@@ -21655,7 +21655,7 @@
     "studios": [
       "Signal.MD"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 20654,
@@ -21711,7 +21711,7 @@
       "Studio Gokumi",
       "AXsiZ"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 164172,
@@ -21817,7 +21817,7 @@
     "studios": [
       "Drive"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 176273,
@@ -21953,7 +21953,7 @@
     "studios": [
       "MAPPA"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 166527,
@@ -22021,7 +22021,7 @@
     "url": "https://anilist.co/anime/166527",
     "notes": "",
     "studios": [],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 110229,
@@ -22103,7 +22103,7 @@
       "Studio Silver",
       "Arvo Animation"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 107067,
@@ -22170,7 +22170,7 @@
     "studios": [
       "Zero-G"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 114065,
@@ -22254,7 +22254,7 @@
     "studios": [
       "feel."
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 151252,
@@ -22344,7 +22344,7 @@
       "Zero-G",
       "Liber"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 127550,
@@ -22425,7 +22425,7 @@
     "studios": [
       "EMT Squared"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 174044,
@@ -22520,7 +22520,7 @@
     "studios": [
       "P.A.WORKS"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 155657,
@@ -22617,7 +22617,7 @@
     "studios": [
       "EMT Squared"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 151300,
@@ -22705,7 +22705,7 @@
     "studios": [
       "MADHOUSE"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 143277,
@@ -22838,7 +22838,7 @@
     "studios": [
       "david production"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 180367,
@@ -22974,7 +22974,7 @@
       "Bibury Animation Studios",
       "AQUA ARIS"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 183965,
@@ -23038,7 +23038,7 @@
     "studios": [
       "Ajiado"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 124395,
@@ -23119,7 +23119,7 @@
     "studios": [
       "ENGI"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 103900,
@@ -23205,7 +23205,7 @@
       "Studio Silver",
       "Arvo Animation"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 3470,
@@ -23307,7 +23307,7 @@
       "GONZO",
       "AIC"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 104464,
@@ -23385,7 +23385,7 @@
     "studios": [
       "CONNECT"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 11433,
@@ -23459,7 +23459,7 @@
     "studios": [
       "J.C.STAFF"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 116867,
@@ -23549,7 +23549,7 @@
     "studios": [
       "SILVER LINK."
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 125124,
@@ -23616,7 +23616,7 @@
     "studios": [
       "Zero-G"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 100876,
@@ -23700,7 +23700,7 @@
     "studios": [
       "MAPPA"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 141351,
@@ -23760,7 +23760,7 @@
     "studios": [
       "MAPPA"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 135778,
@@ -23860,7 +23860,7 @@
       "TMS Entertainment",
       "Studio Hibari"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 154412,
@@ -23952,7 +23952,7 @@
     "studios": [
       "Tezuka Productions"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 143200,
@@ -24037,7 +24037,7 @@
     "studios": [
       "feel."
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 1120,
@@ -24115,7 +24115,7 @@
     "studios": [
       "OLM"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 98314,
@@ -24235,7 +24235,7 @@
     "studios": [
       "MAPPA"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 147369,
@@ -24294,7 +24294,7 @@
     "studios": [
       "Nippon Animation"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 155419,
@@ -24390,7 +24390,7 @@
     "studios": [
       "Studio Gokumi"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 154963,
@@ -24462,7 +24462,7 @@
     "studios": [
       "TROYCA"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 163151,
@@ -24550,7 +24550,7 @@
       "Studio Hibari",
       "TMS Entertainment"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 186161,
@@ -24638,7 +24638,7 @@
     "studios": [
       "Millepensee"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 107871,
@@ -24758,7 +24758,7 @@
     "studios": [
       "CygamesPictures"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 11617,
@@ -24884,7 +24884,7 @@
     "studios": [
       "TNK"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 19163,
@@ -25008,7 +25008,7 @@
       "AIC Plus+",
       "Production IMS"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 126546,
@@ -25078,7 +25078,7 @@
       "TMS Entertainment",
       "WAO World"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 128223,
@@ -25138,7 +25138,7 @@
     "studios": [
       "SILVER LINK."
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 15583,
@@ -25250,7 +25250,7 @@
     "studios": [
       "AIC Plus+"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 114840,
@@ -25310,7 +25310,7 @@
     "studios": [
       "Nomad"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 20646,
@@ -25392,7 +25392,7 @@
     "studios": [
       "TRIGGER"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 151189,
@@ -25462,7 +25462,7 @@
       "Tezuka Productions",
       "AQUA ARIS"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 171291,
@@ -25525,7 +25525,7 @@
     "studios": [
       "CloverWorks"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 4026,
@@ -25585,7 +25585,7 @@
     "studios": [
       "OLM"
     ],
-    "isSequel": true
+    "requiresPrereq": false
   },
   {
     "id": 1122,
@@ -25648,7 +25648,7 @@
     "studios": [
       "OLM"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 1723,
@@ -25708,7 +25708,7 @@
     "studios": [
       "Toei Animation"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 108092,
@@ -25795,7 +25795,7 @@
     "studios": [
       "Doga Kobo"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 109020,
@@ -25892,7 +25892,7 @@
       "Doga Kobo",
       "DMM.futureworks"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 154459,
@@ -25950,7 +25950,7 @@
     "studios": [
       "ENGI"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 113813,
@@ -26038,7 +26038,7 @@
     "studios": [
       "TMS Entertainment"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 1119,
@@ -26112,7 +26112,7 @@
     "studios": [
       "OLM"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 12175,
@@ -26167,7 +26167,7 @@
     "studios": [
       "AIC Build"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 136934,
@@ -26234,7 +26234,7 @@
     "studios": [
       "project No.9"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 155389,
@@ -26298,7 +26298,7 @@
     "studios": [
       "8-bit"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 97766,
@@ -26379,7 +26379,7 @@
     "studios": [
       "PINE JAM"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 130592,
@@ -26488,7 +26488,7 @@
     "studios": [
       "Studio 3Hz"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 21131,
@@ -26567,7 +26567,7 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 175450,
@@ -26629,7 +26629,7 @@
       "Tezuka Productions",
       "TMS Entertainment"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 20552,
@@ -26688,7 +26688,7 @@
     "studios": [
       "Studio Gallop"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 103139,
@@ -26764,7 +26764,7 @@
     "studios": [
       "diomedéa"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 97979,
@@ -26817,7 +26817,7 @@
       "TMS Entertainment",
       "Double Eagle"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 98231,
@@ -26889,7 +26889,7 @@
     "studios": [
       "Studio Gallop"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 9917,
@@ -26932,7 +26932,7 @@
       "Xebec",
       "OLM"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 126192,
@@ -27029,7 +27029,7 @@
     "studios": [
       "Tezuka Productions"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 127090,
@@ -27106,7 +27106,7 @@
     "studios": [
       "Passione"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 107961,
@@ -27180,7 +27180,7 @@
       "GEEKTOYS",
       "Seven"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 117989,
@@ -27273,7 +27273,7 @@
     "studios": [
       "Asread"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 21887,
@@ -27362,7 +27362,7 @@
     "studios": [
       "diomedéa"
     ],
-    "isSequel": true
+    "requiresPrereq": false
   },
   {
     "id": 13161,
@@ -27434,7 +27434,7 @@
     "studios": [
       "ARMS"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 146323,
@@ -27511,7 +27511,7 @@
     "studios": [
       "feel."
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 118375,
@@ -27594,7 +27594,7 @@
     "studios": [
       "Okuruto Noboru"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 13367,
@@ -27654,7 +27654,7 @@
     "studios": [
       "Studio Gokumi"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 97730,
@@ -27713,7 +27713,7 @@
       "Studio Gokumi",
       "AXsiZ"
     ],
-    "isSequel": true
+    "requiresPrereq": false
   },
   {
     "id": 114072,
@@ -27761,7 +27761,7 @@
     "studios": [
       "Bridge"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 142842,
@@ -27805,7 +27805,7 @@
     "studios": [
       "Bridge"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 111762,
@@ -27956,7 +27956,7 @@
     "studios": [
       "TMS Entertainment"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 431,
@@ -28065,7 +28065,7 @@
     "studios": [
       "Studio Ghibli"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 168872,
@@ -28146,7 +28146,7 @@
     "studios": [
       "Production I.G"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 202955,
@@ -28225,7 +28225,7 @@
     "studios": [
       "WIT STUDIO"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 169295,
@@ -28313,7 +28313,7 @@
     "studios": [
       "SANZIGEN"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 178533,
@@ -28435,7 +28435,7 @@
     "studios": [
       "MAPPA"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 99578,
@@ -28535,7 +28535,7 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 146066,
@@ -28631,7 +28631,7 @@
       "Lerche",
       "Studio Hibari"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 21120,
@@ -28683,7 +28683,7 @@
     "studios": [
       "Production I.G"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 109979,
@@ -28772,7 +28772,7 @@
     "studios": [
       "Studio Ghibli"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 151801,
@@ -28872,7 +28872,7 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 176246,
@@ -28975,7 +28975,7 @@
     "studios": [
       "Soigne"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 99468,
@@ -29039,7 +29039,7 @@
     "studios": [
       "Shin-Ei Animation"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 170938,
@@ -29128,7 +29128,7 @@
     "studios": [
       "bones"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 14227,
@@ -29184,7 +29184,7 @@
     "studios": [
       "Brain's Base"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 182158,
@@ -29260,7 +29260,7 @@
     "studios": [
       "project No.9"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 186621,
@@ -29322,7 +29322,7 @@
     "studios": [
       "Studio KAI"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 166828,
@@ -29404,7 +29404,7 @@
       "Studio Comet",
       "Studio Pierrot"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 173935,
@@ -29463,7 +29463,7 @@
       "100studio",
       "Hurray!"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 148098,
@@ -29538,7 +29538,7 @@
     "studios": [
       "Asahi Production"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 155963,
@@ -29623,7 +29623,7 @@
       "BLADE",
       "SILVER LINK."
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 165790,
@@ -29702,7 +29702,7 @@
     "studios": [
       "Ashi Productions"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 183291,
@@ -29765,7 +29765,7 @@
     "studios": [
       "Asahi Production"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 154692,
@@ -29842,7 +29842,7 @@
     "studios": [
       "SynergySP"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 160188,
@@ -29905,7 +29905,7 @@
     "studios": [
       "GoHands"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 172190,
@@ -30013,7 +30013,7 @@
     "studios": [
       "Felix Film"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 178022,
@@ -30072,7 +30072,7 @@
     "studios": [
       "Studio Bind"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 1118,
@@ -30133,7 +30133,7 @@
     "studios": [
       "OLM"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 21701,
@@ -30214,7 +30214,7 @@
     "studios": [
       "Lerche"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 169927,
@@ -30279,7 +30279,7 @@
     "studios": [
       "Okuruto Noboru"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 171748,
@@ -30330,7 +30330,7 @@
     "studios": [
       "8-bit"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 115113,
@@ -30415,7 +30415,7 @@
     "studios": [
       "ENGI"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 21390,
@@ -30502,7 +30502,7 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 144533,
@@ -30573,7 +30573,7 @@
     "studios": [
       "MADHOUSE"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 21093,
@@ -30695,7 +30695,7 @@
       "Lerche",
       "Seva"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 14749,
@@ -30766,7 +30766,7 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 124410,
@@ -30854,7 +30854,7 @@
     "studios": [
       "TMS Entertainment"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 118419,
@@ -30940,7 +30940,7 @@
     "studios": [
       "P.A.WORKS"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 146676,
@@ -31002,7 +31002,7 @@
     "studios": [
       "Passione"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 160181,
@@ -31074,7 +31074,7 @@
     "studios": [
       "CLOUDHEARTS"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 148116,
@@ -31138,7 +31138,7 @@
     "studios": [
       "CLOUDHEARTS"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 159483,
@@ -31191,7 +31191,7 @@
       "BAKKEN RECORD",
       "Tatsunoko Production"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 20565,
@@ -31281,7 +31281,7 @@
     "studios": [
       "Production IMS"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 6205,
@@ -31354,7 +31354,7 @@
     "studios": [
       "Nomad"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 113425,
@@ -31479,7 +31479,7 @@
     "studios": [
       "TNK"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 98951,
@@ -31552,7 +31552,7 @@
       "diomedéa",
       "Studio Blanc"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 8861,
@@ -31661,7 +31661,7 @@
       "feel.",
       "PRA"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 4224,
@@ -31742,7 +31742,7 @@
     "studios": [
       "J.C.STAFF"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 7054,
@@ -31842,7 +31842,7 @@
     "studios": [
       "J.C.STAFF"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 143866,
@@ -31903,7 +31903,7 @@
     "studios": [
       "project No.9"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 19221,
@@ -31980,7 +31980,7 @@
     "studios": [
       "diomedéa"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 132052,
@@ -32040,7 +32040,7 @@
       "Shin-Ei Animation",
       "SynergySP"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 164244,
@@ -32100,7 +32100,7 @@
     "studios": [
       "Children's Playground Entertainment"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 168623,
@@ -32160,7 +32160,7 @@
     "studios": [
       "TYPHOON GRAPHICS"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 165855,
@@ -32223,7 +32223,7 @@
     "studios": [
       "East Fish Studio"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 157397,
@@ -32284,7 +32284,7 @@
       "Studio Gokumi",
       "AXsiZ"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 1894,
@@ -32335,7 +32335,7 @@
     "studios": [
       "Studio Gallop"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 104325,
@@ -32427,7 +32427,7 @@
     "studios": [
       "Tear-Studio"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 128712,
@@ -32525,7 +32525,7 @@
     "studios": [
       "ENGI"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 131863,
@@ -32596,7 +32596,7 @@
     "studios": [
       "GEEKTOYS"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 21685,
@@ -32706,7 +32706,7 @@
     "studios": [
       "A-1 Pictures"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 97863,
@@ -32799,7 +32799,7 @@
     "studios": [
       "NAZ"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 124675,
@@ -32866,7 +32866,7 @@
     "studios": [
       "Doga Kobo"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 187331,
@@ -32963,7 +32963,7 @@
     "studios": [
       "Quad"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 2034,
@@ -33023,7 +33023,7 @@
     "studios": [
       "Toei Animation"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 18897,
@@ -33119,7 +33119,7 @@
     "studios": [
       "Shaft"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 20876,
@@ -33211,7 +33211,7 @@
     "studios": [
       "Shaft"
     ],
-    "isSequel": true
+    "requiresPrereq": true
   },
   {
     "id": 10110,
@@ -33292,7 +33292,7 @@
       "feel.",
       "PRA"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 20701,
@@ -33348,7 +33348,7 @@
     "studios": [
       "TYO Animations"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 98320,
@@ -33419,7 +33419,7 @@
     "studios": [
       "LIDENFILMS"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 167144,
@@ -33481,7 +33481,7 @@
     "studios": [
       "ROLL2"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 144176,
@@ -33551,7 +33551,7 @@
     "studios": [
       "LIDENFILMS"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 7593,
@@ -33612,7 +33612,7 @@
     "studios": [
       "feel."
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 166896,
@@ -33668,7 +33668,7 @@
       "Gekkou",
       "AQUA ARIS"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   },
   {
     "id": 156896,
@@ -33732,6 +33732,6 @@
       "Signal.MD",
       "WIT STUDIO"
     ],
-    "isSequel": false
+    "requiresPrereq": false
   }
 ]
