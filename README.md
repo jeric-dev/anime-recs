@@ -26,6 +26,8 @@ By default, selecting multiple chips uses OR logic within each group and AND log
 
 Toggling **Match All (AND)** switches every group to strict AND logic, including within a single group — so Action + Comedy now requires *both* genres, and picking two Length buckets (like Short + Medium) correctly returns nothing, since a show can't be both at once.
 
+Length, Year Range, My Score, Special Titles, and Genres are always expanded — everything after that (Demographic, Fantasy & Supernatural, Setting, Studio, 18+ Content, etc.) starts collapsed to keep the panel from being overwhelming on first load. A small badge on a collapsed group's header shows how many chips are active inside it, so selections in a collapsed section aren't invisible.
+
 ### Filter groups
 
 Roughly ordered from "facts about the entry" → "broad classification" → "what it's about" (alphabetical) → "who's involved":
