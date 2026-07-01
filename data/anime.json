@@ -1220,7 +1220,9 @@
     "season": "WINTER",
     "url": "https://anilist.co/anime/184951",
     "notes": "",
-    "studios": [],
+    "studios": [
+      "Lapin Track"
+    ],
     "requiresPrereq": false
   },
   {
@@ -3001,7 +3003,9 @@
     "season": "SUMMER",
     "url": "https://anilist.co/anime/185407",
     "notes": "Review - https://animejb.substack.com/i/173630024/takopis-original-sin-enishiya",
-    "studios": [],
+    "studios": [
+      "ENISHIYA"
+    ],
     "requiresPrereq": false
   },
   {
@@ -7515,7 +7519,9 @@
     "season": "SPRING",
     "url": "https://anilist.co/anime/174788",
     "notes": "Review - https://animejb.substack.com/i/148872535/look-back-studio-durian",
-    "studios": [],
+    "studios": [
+      "Studio Durian"
+    ],
     "requiresPrereq": false
   },
   {
@@ -8078,7 +8084,9 @@
     "season": "SUMMER",
     "url": "https://anilist.co/anime/99750",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1380345377363202048",
-    "studios": [],
+    "studios": [
+      "Studio VOLN"
+    ],
     "requiresPrereq": false
   },
   {
@@ -14739,7 +14747,9 @@
     "season": "WINTER",
     "url": "https://anilist.co/anime/111501",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1418750960361525250",
-    "studios": [],
+    "studios": [
+      "Ezo’la"
+    ],
     "requiresPrereq": false
   },
   {
@@ -15387,7 +15397,9 @@
     "season": "SUMMER",
     "url": "https://anilist.co/anime/180425",
     "notes": "",
-    "studios": [],
+    "studios": [
+      "Lesprit"
+    ],
     "requiresPrereq": false
   },
   {
@@ -22504,7 +22516,9 @@
     "season": "SPRING",
     "url": "https://anilist.co/anime/166527",
     "notes": "",
-    "studios": [],
+    "studios": [
+      "Sasayuri"
+    ],
     "requiresPrereq": false
   },
   {

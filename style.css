@@ -590,7 +590,7 @@ main {
 .modal-title-row {
   display: flex;
   align-items: baseline;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 8px;
   padding-right: 32px;
 }
@@ -599,11 +599,17 @@ main {
   font-size: 1.15rem;
   font-weight: 700;
   line-height: 1.3;
+  flex: 1 1 auto;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .modal-studio {
   color: var(--text-muted);
   font-size: 0.85rem;
+  flex-shrink: 0;
 }
 
 .modal-meta {

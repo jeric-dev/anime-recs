@@ -69,6 +69,17 @@ def clean_description(desc):
     desc = re.sub(r'\n{3,}', '\n\n', desc)
     return desc.strip()
 
+def get_studios(media):
+    nodes = media.get("studios", {}).get("nodes", [])
+    animation_studios = [s["name"] for s in nodes if s.get("isAnimationStudio")]
+    if animation_studios:
+        return list(dict.fromkeys(animation_studios))
+    # AniList sometimes hasn't flagged an animation studio yet (new/obscure
+    # entries) — fall back to the first listed studio rather than showing none.
+    if nodes:
+        return [nodes[0]["name"]]
+    return []
+
 def load_existing_prereq_map(path):
     if not os.path.exists(path):
         return {}
@@ -130,7 +141,7 @@ def fetch_anime_list(existing_prereq_map):
                 "season": media.get("season"),
                 "url": media["siteUrl"],
                 "notes": entry["notes"] or "",
-                "studios": list(dict.fromkeys(s["name"] for s in media.get("studios", {}).get("nodes", []) if s.get("isAnimationStudio"))),
+                "studios": get_studios(media),
                 "requiresPrereq": requires_prereq,
             })
 
