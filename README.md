@@ -38,8 +38,8 @@ Roughly ordered from "facts about the entry" → "broad classification" → "gen
 | Special Titles | Certified Fresh, Certified Rotten, Medalists (any AOTY/MOTY placement or r/anime award) |
 | Genres | 17 standard Anilist genres |
 | Demographic | Shounen, Shoujo, Seinen, Josei |
-| Romance & Relationships | Only shown when Romance genre is selected |
-| Supernatural & Fantasy | Only shown when Fantasy or Supernatural genre is selected |
+| Romance & Relationships | Heterosexual, Female Harem, Love Triangle, and more |
+| Supernatural & Fantasy | Magic, Demons, Youkai, Aliens, and more |
 | Setting | School, Isekai, Urban Fantasy, Historical, Medieval, and more |
 | Themes | Coming of Age, War, Revenge, Found Family, and more |
 | Tone | Iyashikei, Parody, Slapstick, Episodic, and more |
