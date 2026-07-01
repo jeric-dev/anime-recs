@@ -57,6 +57,13 @@ const NSFW_GROUP = {
   ],
 };
 
+const SEASON_META = {
+  WINTER: { emoji: '❄️', label: 'Winter', className: 'season-winter' },
+  SPRING: { emoji: '🌸', label: 'Spring', className: 'season-spring' },
+  SUMMER: { emoji: '☀️', label: 'Summer', className: 'season-summer' },
+  FALL: { emoji: '🍁', label: 'Fall', className: 'season-fall' },
+};
+
 // ── State ──────────────────────────────────────────────────────────────────
 
 const state = {
@@ -251,6 +258,18 @@ function openModal(id) {
   overlay.querySelector('.modal-cover img').alt = title;
   overlay.querySelector('.modal-score').textContent = anime.score > 0 ? `★ ${anime.score}` : '—';
   overlay.querySelector('.modal-title').textContent = title;
+  overlay.querySelector('.modal-studio').textContent = (anime.studios || []).join(', ');
+
+  const seasonChip = overlay.querySelector('.modal-season-chip');
+  const seasonInfo = SEASON_META[anime.season];
+  if (seasonInfo && anime.year) {
+    seasonChip.textContent = `${seasonInfo.emoji} ${seasonInfo.label} ${anime.year}`;
+    seasonChip.className = `modal-season-chip ${seasonInfo.className}`;
+    seasonChip.classList.remove('hidden');
+  } else {
+    seasonChip.classList.add('hidden');
+  }
+
   overlay.querySelector('.modal-genres').innerHTML =
     (anime.genres || []).map(g => `<span class="genre-pill">${escapeHtml(g)}</span>`).join('');
   overlay.querySelector('.modal-description').textContent =
@@ -611,6 +630,10 @@ async function init() {
           </div>
           <div class="modal-content">
             <h2 class="modal-title"></h2>
+            <div class="modal-studio"></div>
+            <div class="modal-meta">
+              <span class="modal-season-chip"></span>
+            </div>
             <div class="modal-genres"></div>
             <p class="modal-description"></p>
             <a class="modal-review-link hidden" href="#" target="_blank" rel="noopener">Read Jeric's Review →</a>

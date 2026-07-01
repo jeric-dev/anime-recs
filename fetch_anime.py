@@ -32,6 +32,7 @@ query ($username: String) {
           }
           episodes
           averageScore
+          season
           seasonYear
           siteUrl
           studios {
@@ -124,6 +125,7 @@ def fetch_anime_list(existing_prereq_map):
                 "episodes": media["episodes"],
                 "averageScore": media["averageScore"],
                 "year": media.get("seasonYear"),
+                "season": media.get("season"),
                 "url": media["siteUrl"],
                 "notes": entry["notes"] or "",
                 "studios": list(dict.fromkeys(s["name"] for s in media.get("studios", {}).get("nodes", []) if s.get("isAnimationStudio"))),

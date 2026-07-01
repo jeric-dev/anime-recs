@@ -105,6 +105,7 @@
     "episodes": 13,
     "averageScore": 89,
     "year": 2022,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/125367",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1540436614299717633\n\nScore adjusted from 8/10 to 10/10 (6/24/2022).",
     "studios": [
@@ -190,6 +191,7 @@
     "episodes": 4,
     "averageScore": 87,
     "year": 2023,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/151384",
     "notes": "Review - https://animejb.substack.com/i/109902923/bonus-kaguya-sama-love-is-war-the-first-kiss-that-never-ends-masterpiece\n\nScore adjusted from 9/10 to 10/10 (4/10/2023).",
     "studios": [
@@ -294,6 +296,7 @@
     "episodes": 12,
     "averageScore": 87,
     "year": 2022,
+    "season": "FALL",
     "url": "https://anilist.co/anime/130003",
     "notes": "Review - http://www.twitlonger.com/show/n_1ss756l\n\nScore adjusted from 9/10 to 10/10 (12/24/2022).",
     "studios": [
@@ -378,6 +381,7 @@
     "episodes": 1,
     "averageScore": 86,
     "year": 2016,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/21519",
     "notes": "",
     "studios": [
@@ -454,6 +458,7 @@
     "episodes": 13,
     "averageScore": 86,
     "year": 2024,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/166216",
     "notes": "Review - https://animejb.substack.com/i/140949852/bokuyaba-the-dangers-in-my-heart-season-shin-ei-animation",
     "studios": [
@@ -486,11 +491,11 @@
         "rank": 88
       },
       {
-        "name": "Twins",
-        "rank": 82
+        "name": "Female Protagonist",
+        "rank": 83
       },
       {
-        "name": "Female Protagonist",
+        "name": "Twins",
         "rank": 82
       },
       {
@@ -519,7 +524,7 @@
       },
       {
         "name": "Cosplay",
-        "rank": 56
+        "rank": 57
       },
       {
         "name": "Tsundere",
@@ -527,7 +532,7 @@
       },
       {
         "name": "VTuber",
-        "rank": 45
+        "rank": 44
       },
       {
         "name": "School",
@@ -539,6 +544,7 @@
     "episodes": 11,
     "averageScore": 86,
     "year": 2026,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/182587",
     "notes": "",
     "studios": [
@@ -660,6 +666,7 @@
     "episodes": 10,
     "averageScore": 85,
     "year": 2022,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/120377",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1575875526547341314\n\nNote: Score adjusted from 9/10 to 10/10 (9/27/2022).",
     "studios": [
@@ -708,6 +715,10 @@
         "rank": 79
       },
       {
+        "name": "Female Protagonist",
+        "rank": 79
+      },
+      {
         "name": "Urban",
         "rank": 70
       },
@@ -729,6 +740,7 @@
     "episodes": 13,
     "averageScore": 85,
     "year": 2024,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/166531",
     "notes": "https://animejb.substack.com/i/148872535/oshi-no-ko-season-2-doga-kobo",
     "studios": [
@@ -806,6 +818,7 @@
     "episodes": 1,
     "averageScore": 84,
     "year": 2019,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/104157",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1287185338260226048",
     "studios": [
@@ -903,7 +916,7 @@
       },
       {
         "name": "Female Harem",
-        "rank": 46
+        "rank": 44
       }
     ],
     "description": "When a pregnant young starlet appears in Gorou Amemiya’s countryside medical clinic, the doctor takes it upon himself to safely (and secretly) deliver Ai Hoshino’s child so she can make a scandal-free return to the stage. But no good deed goes unpunished, and on the eve of her delivery, he finds himself slain at the hands of Ai’s deluded stalker — and subsequently reborn as Ai’s child, Aquamarine Hoshino! The glitz and glamor of showbiz hide the dark underbelly of the entertainment industry, threatening to dull the shine of his favorite star. Can he help his new mother rise to the top of the charts? And what will he do when unthinkable disaster strikes?",
@@ -911,6 +924,7 @@
     "episodes": 11,
     "averageScore": 84,
     "year": 2023,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/150672",
     "notes": "Review - https://animejb.substack.com/i/129052785/oshi-no-ko-doga-kobo",
     "studios": [
@@ -993,6 +1007,7 @@
     "episodes": 25,
     "averageScore": 83,
     "year": 2022,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/129201",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1575887589118464000\n\nScore adjusted from 9/10 to 10/10 (9/29/2022).",
     "studios": [
@@ -1108,6 +1123,7 @@
     "episodes": 12,
     "averageScore": 83,
     "year": 2024,
+    "season": "FALL",
     "url": "https://anilist.co/anime/171018",
     "notes": "Review - https://animejb.substack.com/i/150383017/dandadan-season-science-saru",
     "studios": [
@@ -1167,6 +1183,10 @@
         "rank": 66
       },
       {
+        "name": "Female Protagonist",
+        "rank": 64
+      },
+      {
         "name": "Shounen",
         "rank": 61
       },
@@ -1176,11 +1196,7 @@
       },
       {
         "name": "Male Protagonist",
-        "rank": 55
-      },
-      {
-        "name": "Female Protagonist",
-        "rank": 55
+        "rank": 58
       }
     ],
     "description": "Suzuki’s a high school girl in love, but the guy she’s fallen for is nothing like her! While she’s cheerful, outgoing, and always trying to fit in, her classmate Yusuke Tani is stoic, quiet, and doesn’t seem to care what people think of him. Will Suzuki be able to overcome her anxieties and ask him out, or will she discover that opposites really don’t attract?",
@@ -1188,6 +1204,7 @@
     "episodes": 12,
     "averageScore": 83,
     "year": 2026,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/184951",
     "notes": "",
     "studios": [],
@@ -1289,6 +1306,7 @@
     "episodes": 1,
     "averageScore": 82,
     "year": 2019,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/102976",
     "notes": "",
     "studios": [
@@ -1414,6 +1432,7 @@
     "episodes": 12,
     "averageScore": 82,
     "year": 2025,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/154768",
     "notes": "Review - https://animejb.substack.com/i/173630024/my-dress-up-darling-season-2-cloverworks",
     "studios": [
@@ -1509,6 +1528,7 @@
     "episodes": 13,
     "averageScore": 81,
     "year": 2018,
+    "season": "FALL",
     "url": "https://anilist.co/anime/101291",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1287185338260226048",
     "studios": [
@@ -1588,6 +1608,7 @@
     "episodes": 12,
     "averageScore": 81,
     "year": 2024,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/166794",
     "notes": "Review - https://animejb.substack.com/i/140949852/a-sign-of-affection-ajia-do",
     "studios": [
@@ -1682,6 +1703,7 @@
     "episodes": 1,
     "averageScore": 80,
     "year": 2017,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/21875",
     "notes": "",
     "studios": [
@@ -1780,8 +1802,9 @@
     "description": "The second season of Kimi no Koto ga Dai Dai Dai Dai Daisuki na 100-nin no Kanojo.\nRentaro meets new soulmates, balancing comedic chaos and heartfelt moments as his relationships deepen.",
     "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx172258-n23TSWk54aXv.jpg",
     "episodes": 12,
-    "averageScore": 78,
+    "averageScore": 79,
     "year": 2025,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/172258",
     "notes": "Review - https://animejb.substack.com/i/160456882/hyakkano-the-girlfriends-season-bibury-animation-studios",
     "studios": [
@@ -1907,6 +1930,7 @@
     "episodes": 12,
     "averageScore": 77,
     "year": 2014,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/19815",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1330674824314806275",
     "studios": [
@@ -1988,6 +2012,7 @@
     "episodes": 13,
     "averageScore": 77,
     "year": 2015,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/20872",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1304194359005507584",
     "studios": [
@@ -2117,6 +2142,7 @@
     "episodes": 13,
     "averageScore": 74,
     "year": 2024,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/162780",
     "notes": "Review - https://animejb.substack.com/i/140949852/mahoako-gushing-over-magical-girls-asahi-production",
     "studios": [
@@ -2249,6 +2275,7 @@
     "episodes": 28,
     "averageScore": 91,
     "year": 2023,
+    "season": "FALL",
     "url": "https://anilist.co/anime/154587",
     "notes": "Review - https://animejb.substack.com/i/140949852/frieren-beyond-journeys-end-madhouse",
     "studios": [
@@ -2426,6 +2453,7 @@
     "episodes": 64,
     "averageScore": 90,
     "year": 2009,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/5114",
     "notes": "Completed episodes 1-13 in May 2021, episodes 14-26 in July 2021, episodes 27-39 in April 2022, episodes 40-51 in May 2022, and episodes 52-64 in August 2022.\n\nReview thread - https://twitter.com/thejericbrual/status/1563659103511236609",
     "studios": [
@@ -2557,6 +2585,7 @@
     "episodes": 24,
     "averageScore": 88,
     "year": 2023,
+    "season": "FALL",
     "url": "https://anilist.co/anime/161645",
     "notes": "Review - https://animejb.substack.com/i/150383017/the-apothecary-diaries-season-olm-toho-animation-studio",
     "studios": [
@@ -2609,10 +2638,6 @@
         "rank": 84
       },
       {
-        "name": "Demons",
-        "rank": 80
-      },
-      {
         "name": "Philosophy",
         "rank": 79
       },
@@ -2621,8 +2646,12 @@
         "rank": 79
       },
       {
+        "name": "Demons",
+        "rank": 77
+      },
+      {
         "name": "Primarily Adult Cast",
-        "rank": 75
+        "rank": 72
       },
       {
         "name": "Rural",
@@ -2670,6 +2699,7 @@
     "episodes": 10,
     "averageScore": 88,
     "year": 2026,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/182255",
     "notes": "",
     "studios": [
@@ -2781,6 +2811,7 @@
     "episodes": 24,
     "averageScore": 88,
     "year": 2025,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/176301",
     "notes": "Review - https://animejb.substack.com/i/161512736/the-apothecary-diaries-season-2-olm-toho-animation-studio",
     "studios": [
@@ -2865,6 +2896,7 @@
     "episodes": 13,
     "averageScore": 87,
     "year": 2026,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/177385",
     "notes": "",
     "studios": [
@@ -2937,6 +2969,7 @@
     "episodes": 6,
     "averageScore": 86,
     "year": 2025,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/185407",
     "notes": "Review - https://animejb.substack.com/i/173630024/takopis-original-sin-enishiya",
     "studios": [],
@@ -3044,6 +3077,7 @@
     "episodes": 12,
     "averageScore": 85,
     "year": 2020,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/112641",
     "notes": "Score adjusted from 10/10 to 9/10 (6/24/2022).",
     "studios": [
@@ -3112,6 +3146,7 @@
     "episodes": 1,
     "averageScore": 83,
     "year": 2024,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/165253",
     "notes": "Review - https://animejb.substack.com/i/148872535/bocchi-the-rock-movie-cloverworks",
     "studios": [
@@ -3176,6 +3211,7 @@
     "episodes": 1,
     "averageScore": 83,
     "year": 2024,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/171099",
     "notes": "Review - https://animejb.substack.com/i/148872535/bocchi-the-rock-movie-cloverworks",
     "studios": [
@@ -3256,6 +3292,7 @@
     "episodes": 13,
     "averageScore": 83,
     "year": 2024,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/164212",
     "notes": "Review - https://animejb.substack.com/i/150383017/girls-band-cry-toei-animation",
     "studios": [
@@ -3355,6 +3392,7 @@
     "episodes": 12,
     "averageScore": 83,
     "year": 2025,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/185660",
     "notes": "Watched the first three episodes in theaters",
     "studios": [
@@ -3439,6 +3477,7 @@
     "episodes": 13,
     "averageScore": 83,
     "year": 2025,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/165171",
     "notes": "Review - https://animejb.substack.com/i/161512736/medalist-engi",
     "studios": [
@@ -3528,6 +3567,7 @@
     "episodes": 12,
     "averageScore": 82,
     "year": 2020,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/108489",
     "notes": "",
     "studios": [
@@ -3622,6 +3662,7 @@
     "episodes": 11,
     "averageScore": 82,
     "year": 2024,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/136804",
     "notes": "Review - https://animejb.substack.com/i/143365291/konosuba-season-drive",
     "studios": [
@@ -3731,6 +3772,7 @@
     "episodes": 10,
     "averageScore": 81,
     "year": 2017,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/21699",
     "notes": "",
     "studios": [
@@ -3807,6 +3849,7 @@
     "episodes": 13,
     "averageScore": 81,
     "year": 2021,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/124080",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1378455495258861572",
     "studios": [
@@ -3935,6 +3978,7 @@
     "episodes": 12,
     "averageScore": 81,
     "year": 2021,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/107717",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1440864424261267456",
     "studios": [
@@ -4014,6 +4058,7 @@
     "episodes": 13,
     "averageScore": 81,
     "year": 2022,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/143270",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1575873762955853824\n\nScore adjusted from 8/10 to 9/10 (9/26/2022).",
     "studios": [
@@ -4094,6 +4139,7 @@
     "episodes": 13,
     "averageScore": 81,
     "year": 2023,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/163132",
     "notes": "Review - https://animejb.substack.com/i/134904824/horimiya-the-missing-pieces-cloverworks",
     "studios": [
@@ -4236,6 +4282,7 @@
     "episodes": 1,
     "averageScore": 81,
     "year": 2023,
+    "season": "FALL",
     "url": "https://anilist.co/anime/158928",
     "notes": "Review - https://animejb.substack.com/i/143365291/spy-x-family-code-white-wit-studio-cloverworks",
     "studios": [
@@ -4330,6 +4377,7 @@
     "episodes": 12,
     "averageScore": 80,
     "year": 2021,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/109261",
     "notes": "",
     "studios": [
@@ -4420,6 +4468,7 @@
     "episodes": 20,
     "averageScore": 80,
     "year": 2022,
+    "season": "FALL",
     "url": "https://anilist.co/anime/138565",
     "notes": "Review - https://animejb.substack.com/p/review-to-your-eternity-season-2\n\nScore adjusted from 8/10 to 9/10 (3/12/2023).",
     "studios": [
@@ -4517,6 +4566,7 @@
     "episodes": 12,
     "averageScore": 80,
     "year": 2022,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/132405",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1507878943667466241",
     "studios": [
@@ -4662,6 +4712,7 @@
     "episodes": 12,
     "averageScore": 80,
     "year": 2023,
+    "season": "FALL",
     "url": "https://anilist.co/anime/158927",
     "notes": "Review - https://animejb.substack.com/i/139904839/spy-x-family-season-wit-studio-cloverworks",
     "studios": [
@@ -4758,6 +4809,7 @@
     "episodes": 13,
     "averageScore": 80,
     "year": 2023,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/143653",
     "notes": "Review - https://animejb.substack.com/i/129052785/insomniacs-after-school-lidenfilms",
     "studios": [
@@ -4879,6 +4931,7 @@
     "episodes": 10,
     "averageScore": 79,
     "year": 2016,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/21202",
     "notes": "",
     "studios": [
@@ -4947,6 +5000,7 @@
     "episodes": 12,
     "averageScore": 79,
     "year": 2017,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/98202",
     "notes": "",
     "studios": [
@@ -5044,6 +5098,7 @@
     "episodes": 12,
     "averageScore": 79,
     "year": 2022,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/141774",
     "notes": "Review - https://animejb.substack.com/i/140949852/ya-boy-kongming-pa-works",
     "studios": [
@@ -5123,6 +5178,7 @@
     "episodes": 5,
     "averageScore": 79,
     "year": 2026,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/199112",
     "notes": "",
     "studios": [
@@ -5182,6 +5238,7 @@
     "episodes": 12,
     "averageScore": 78,
     "year": 2023,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/143338",
     "notes": "Review - https://animejb.substack.com/i/109902923/the-angel-next-door-spoils-me-rotten-great\n\nScore adjusted from 8/10 to 9/10 (4/10/2023).",
     "studios": [
@@ -5258,6 +5315,7 @@
     "episodes": 12,
     "averageScore": 77,
     "year": 2020,
+    "season": "FALL",
     "url": "https://anilist.co/anime/116267",
     "notes": "",
     "studios": [
@@ -5372,6 +5430,7 @@
     "episodes": 23,
     "averageScore": 77,
     "year": 2007,
+    "season": "FALL",
     "url": "https://anilist.co/anime/2167",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1340524835554938884",
     "studios": [
@@ -5505,6 +5564,7 @@
     "episodes": 13,
     "averageScore": 77,
     "year": 2017,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/21776",
     "notes": "",
     "studios": [
@@ -5576,6 +5636,7 @@
     "episodes": 12,
     "averageScore": 77,
     "year": 2025,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/185939",
     "notes": "Review - https://animejb.substack.com/i/173630024/food-for-the-soul-pa-works",
     "studios": [
@@ -5662,6 +5723,7 @@
     "episodes": 12,
     "averageScore": 76,
     "year": 2024,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/151380",
     "notes": "Review - https://animejb.substack.com/i/143365291/date-a-live-season-geek-toys",
     "studios": [
@@ -5758,6 +5820,7 @@
     "episodes": 12,
     "averageScore": 76,
     "year": 2023,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/147103",
     "notes": "Review - https://animejb.substack.com/i/134904824/my-happy-marriage-kinema-citrus",
     "studios": [
@@ -5862,6 +5925,7 @@
     "episodes": 12,
     "averageScore": 76,
     "year": 2023,
+    "season": "FALL",
     "url": "https://anilist.co/anime/162694",
     "notes": "Review - https://animejb.substack.com/i/139904839/hyakkano-the-girlfriends-bibury-animation-studios",
     "studios": [
@@ -5961,6 +6025,7 @@
     "episodes": 12,
     "averageScore": 76,
     "year": 2026,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/176370",
     "notes": "",
     "studios": [
@@ -6024,6 +6089,7 @@
     "episodes": 24,
     "averageScore": 75,
     "year": 2013,
+    "season": "FALL",
     "url": "https://anilist.co/anime/17895",
     "notes": "",
     "studios": [
@@ -6105,6 +6171,7 @@
     "episodes": 13,
     "averageScore": 75,
     "year": 2012,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/11887",
     "notes": "",
     "studios": [
@@ -6155,6 +6222,7 @@
     "episodes": 12,
     "averageScore": 74,
     "year": 2019,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/102882",
     "notes": "",
     "studios": [
@@ -6261,6 +6329,7 @@
     "episodes": 12,
     "averageScore": 74,
     "year": 2020,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/106479",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1428884730007760899",
     "studios": [
@@ -6330,6 +6399,7 @@
     "episodes": 13,
     "averageScore": 74,
     "year": 2013,
+    "season": "FALL",
     "url": "https://anilist.co/anime/18245",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1544071790888099841\n\nScore adjusted from 8/10 to 10/10 (7/4/2022).\nScore adjusted from 10/10 to 9/10 (10/24/2022).",
     "studios": [
@@ -6390,6 +6460,7 @@
     "episodes": 12,
     "averageScore": 74,
     "year": 2025,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/179696",
     "notes": "Review - https://animejb.substack.com/i/160456882/i-have-a-crush-at-work-blade",
     "studios": [
@@ -6493,6 +6564,7 @@
     "episodes": 154,
     "averageScore": 73,
     "year": 2008,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/3972",
     "notes": "",
     "studios": [
@@ -6597,6 +6669,7 @@
     "episodes": 12,
     "averageScore": 73,
     "year": 2023,
+    "season": "FALL",
     "url": "https://anilist.co/anime/158704",
     "notes": "Review - https://animejb.substack.com/i/139904839/wataoshi-im-in-love-with-the-villainess-platinum-vision",
     "studios": [
@@ -6714,6 +6787,7 @@
     "episodes": 12,
     "averageScore": 72,
     "year": 2015,
+    "season": "FALL",
     "url": "https://anilist.co/anime/21092",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1414177659580465160",
     "studios": [
@@ -6796,6 +6870,7 @@
     "episodes": 24,
     "averageScore": 72,
     "year": 2024,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/158559",
     "notes": "Review - https://animejb.substack.com/i/150383017/nigoriri-dimensional-seduction-season-jc-staff",
     "studios": [
@@ -6906,6 +6981,7 @@
     "episodes": 12,
     "averageScore": 71,
     "year": 2015,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/20745",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1371918532938764288",
     "studios": [
@@ -7002,6 +7078,7 @@
     "episodes": 13,
     "averageScore": 70,
     "year": 2021,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/114232",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1409558108633014285",
     "studios": [
@@ -7094,6 +7171,7 @@
     "episodes": 12,
     "averageScore": 68,
     "year": 2022,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/127911",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1546022049642156032\n\nScore adjusted from 8/10 to 9/10 (7/10/2022).",
     "studios": [
@@ -7174,6 +7252,7 @@
     "episodes": 1,
     "averageScore": 88,
     "year": 2016,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/20954",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1341639782213029890",
     "studios": [
@@ -7275,6 +7354,7 @@
     "episodes": 24,
     "averageScore": 88,
     "year": 2008,
+    "season": "FALL",
     "url": "https://anilist.co/anime/4181",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1383875970281590796",
     "studios": [
@@ -7355,6 +7435,7 @@
     "episodes": 1,
     "averageScore": 86,
     "year": 2024,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/174788",
     "notes": "Review - https://animejb.substack.com/i/148872535/look-back-studio-durian",
     "studios": [],
@@ -7413,6 +7494,7 @@
     "episodes": 1,
     "averageScore": 86,
     "year": 2024,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/153658",
     "notes": "Review - https://animejb.substack.com/i/150383017/haikyu-movie-the-dumpster-battle-production-ig",
     "studios": [
@@ -7500,6 +7582,7 @@
     "episodes": 10,
     "averageScore": 86,
     "year": 2025,
+    "season": "FALL",
     "url": "https://anilist.co/anime/195240",
     "notes": "",
     "studios": [
@@ -7596,7 +7679,7 @@
       },
       {
         "name": "Dragons",
-        "rank": 46
+        "rank": 44
       },
       {
         "name": "Twins",
@@ -7608,6 +7691,7 @@
     "episodes": 13,
     "averageScore": 86,
     "year": 2026,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/147105",
     "notes": "",
     "studios": [
@@ -7688,6 +7772,7 @@
     "episodes": 13,
     "averageScore": 85,
     "year": 2025,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/181444",
     "notes": "Review - https://animejb.substack.com/i/173630024/the-fragrant-flower-blooms-with-dignity-cloverworks",
     "studios": [
@@ -7755,6 +7840,7 @@
     "episodes": 1,
     "averageScore": 85,
     "year": 2016,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/21399",
     "notes": "Review - https://animejb.substack.com/i/160456882/the-kizumonogatari-trilogy-shaft",
     "studios": [
@@ -7844,6 +7930,7 @@
     "episodes": 22,
     "averageScore": 84,
     "year": 2014,
+    "season": "FALL",
     "url": "https://anilist.co/anime/20665",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1304194358124707845",
     "studios": [
@@ -7904,6 +7991,7 @@
     "episodes": 1,
     "averageScore": 84,
     "year": 2018,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/99750",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1380345377363202048",
     "studios": [],
@@ -7997,6 +8085,7 @@
     "episodes": 13,
     "averageScore": 84,
     "year": 2021,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/104459",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1523807631646855169",
     "studios": [
@@ -8105,6 +8194,7 @@
     "episodes": 13,
     "averageScore": 84,
     "year": 2018,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/99426",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1406467061237403648",
     "studios": [
@@ -8232,6 +8322,7 @@
     "episodes": 1,
     "averageScore": 84,
     "year": 2026,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/201903",
     "notes": "",
     "studios": [
@@ -8326,6 +8417,7 @@
     "episodes": 12,
     "averageScore": 83,
     "year": 2019,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/101921",
     "notes": "Score adjusted from 10/10 to 8/10 (6/24/2022).",
     "studios": [
@@ -8439,6 +8531,7 @@
     "episodes": 12,
     "averageScore": 83,
     "year": 2021,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/108511",
     "notes": "",
     "studios": [
@@ -8522,6 +8615,7 @@
     "episodes": 1,
     "averageScore": 83,
     "year": 2022,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/104460",
     "notes": "Review - https://animejb.substack.com/i/140949852/laid-back-camp-the-movie-c-station",
     "studios": [
@@ -8653,6 +8747,7 @@
     "episodes": 13,
     "averageScore": 83,
     "year": 2020,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/108632",
     "notes": "Review - https://www.twitlonger.com/show/n_1ss6457",
     "studios": [
@@ -8724,6 +8819,7 @@
     "episodes": 12,
     "averageScore": 83,
     "year": 2021,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/109403",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1579289896577282048",
     "studios": [
@@ -8873,6 +8969,7 @@
     "episodes": 12,
     "averageScore": 83,
     "year": 2022,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/140960",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1540752066036899842",
     "studios": [
@@ -8942,6 +9039,7 @@
     "episodes": 9,
     "averageScore": 83,
     "year": 2026,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/189275",
     "notes": "",
     "studios": [
@@ -9063,6 +9161,7 @@
     "episodes": 12,
     "averageScore": 82,
     "year": 2021,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/116742",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1440459632191832067",
     "studios": [
@@ -9172,6 +9271,7 @@
     "episodes": 13,
     "averageScore": 82,
     "year": 2025,
+    "season": "FALL",
     "url": "https://anilist.co/anime/177937",
     "notes": "",
     "studios": [
@@ -9266,6 +9366,7 @@
     "episodes": 13,
     "averageScore": 81,
     "year": 2015,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/20698",
     "notes": "",
     "studios": [
@@ -9355,6 +9456,7 @@
     "episodes": 1,
     "averageScore": 81,
     "year": 2019,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/106286",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1222379049634484224",
     "studios": [
@@ -9454,6 +9556,7 @@
     "episodes": 12,
     "averageScore": 81,
     "year": 2018,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/98444",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1403831509589630979",
     "studios": [
@@ -9552,6 +9655,7 @@
     "episodes": 20,
     "averageScore": 81,
     "year": 2021,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/114535",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1432438820423745546",
     "studios": [
@@ -9627,6 +9731,7 @@
     "episodes": 1,
     "averageScore": 81,
     "year": 2018,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/98779",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1541257165243138048",
     "studios": [
@@ -9764,6 +9869,7 @@
     "episodes": 13,
     "averageScore": 81,
     "year": 2022,
+    "season": "FALL",
     "url": "https://anilist.co/anime/142838",
     "notes": "Review - http://www.twitlonger.com/show/n_1ss7556",
     "studios": [
@@ -9850,6 +9956,7 @@
     "episodes": 1,
     "averageScore": 81,
     "year": 2022,
+    "season": "FALL",
     "url": "https://anilist.co/anime/142770",
     "notes": "Review - https://animejb.substack.com/p/suzume-closure-reimagined",
     "studios": [
@@ -9926,6 +10033,7 @@
     "episodes": 12,
     "averageScore": 81,
     "year": 2023,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/141911",
     "notes": "Review - https://animejb.substack.com/i/129052785/skip-and-loafer-pa-works",
     "studios": [
@@ -9994,6 +10102,7 @@
     "episodes": 12,
     "averageScore": 81,
     "year": 2023,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/153152",
     "notes": "Review - https://animejb.substack.com/i/129052785/the-dangers-in-my-heart-shin-ei-animation",
     "studios": [
@@ -10106,6 +10215,7 @@
     "episodes": 12,
     "averageScore": 81,
     "year": 2024,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/171457",
     "notes": "Review - https://animejb.substack.com/i/148872535/makeine-too-many-losing-heroines-a-pictures",
     "studios": [
@@ -10213,6 +10323,7 @@
     "episodes": 13,
     "averageScore": 81,
     "year": 2025,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/179966",
     "notes": "Review - https://animejb.substack.com/i/173630024/secrets-of-the-silent-witch-studio-gokumi",
     "studios": [
@@ -10278,6 +10389,7 @@
     "episodes": 11,
     "averageScore": 80,
     "year": 2011,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/9989",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1411175048237420547",
     "studios": [
@@ -10415,6 +10527,7 @@
     "episodes": 24,
     "averageScore": 80,
     "year": 2018,
+    "season": "FALL",
     "url": "https://anilist.co/anime/101280",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1346605104179376129",
     "studios": [
@@ -10516,6 +10629,7 @@
     "episodes": 12,
     "averageScore": 80,
     "year": 2025,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/180675",
     "notes": "Review - https://animejb.substack.com/i/173630024/apocalypse-hotel-cygamespictures",
     "studios": [
@@ -10600,6 +10714,7 @@
     "episodes": 12,
     "averageScore": 79,
     "year": 2016,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/21258",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1394296703512195072",
     "studios": [
@@ -10727,6 +10842,7 @@
     "episodes": 24,
     "averageScore": 79,
     "year": 2014,
+    "season": "FALL",
     "url": "https://anilist.co/anime/20770",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1421994270630846467",
     "studios": [
@@ -10848,6 +10964,7 @@
     "episodes": 25,
     "averageScore": 79,
     "year": 2024,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/145728",
     "notes": "Review - https://animejb.substack.com/i/148872535/spice-and-wolf-merchant-meets-the-wise-wolf-passione",
     "studios": [
@@ -10939,6 +11056,7 @@
     "episodes": 11,
     "averageScore": 79,
     "year": 2025,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/184237",
     "notes": "Review - https://animejb.substack.com/i/173630024/sakamoto-days-season-1-pt-2-tms-entertainment",
     "studios": [
@@ -11040,6 +11158,7 @@
     "episodes": 13,
     "averageScore": 78,
     "year": 2013,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/14813",
     "notes": "",
     "studios": [
@@ -11157,6 +11276,7 @@
     "episodes": 24,
     "averageScore": 78,
     "year": 2012,
+    "season": "FALL",
     "url": "https://anilist.co/anime/13759",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1304193206071046145",
     "studios": [
@@ -11261,6 +11381,7 @@
     "episodes": 13,
     "averageScore": 78,
     "year": 2018,
+    "season": "FALL",
     "url": "https://anilist.co/anime/101573",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1386047086735527942",
     "studios": [
@@ -11346,6 +11467,7 @@
     "episodes": 13,
     "averageScore": 78,
     "year": 2016,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/21049",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1393650535253872649",
     "studios": [
@@ -11454,6 +11576,7 @@
     "episodes": 12,
     "averageScore": 78,
     "year": 2022,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/142984",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1540149974763175937\n\nScore adjusted from 7/10 to 8/10 (6/23/2022).",
     "studios": [
@@ -11527,6 +11650,7 @@
     "episodes": 20,
     "averageScore": 78,
     "year": 2024,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/170503",
     "notes": "Review - https://animejb.substack.com/i/150383017/yatagarasu-the-raven-does-not-choose-its-master-pierrot",
     "studios": [
@@ -11598,6 +11722,7 @@
     "episodes": 12,
     "averageScore": 78,
     "year": 2025,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/186043",
     "notes": "",
     "studios": [
@@ -11685,6 +11810,7 @@
     "episodes": 13,
     "averageScore": 78,
     "year": 2026,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/178005",
     "notes": "",
     "studios": [
@@ -11761,6 +11887,7 @@
     "episodes": 12,
     "averageScore": 77,
     "year": 2015,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/21058",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1389457064154603523",
     "studios": [
@@ -11833,6 +11960,7 @@
     "episodes": 13,
     "averageScore": 77,
     "year": 2023,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/154965",
     "notes": "Review - https://animejb.substack.com/i/129052785/my-love-story-with-yamada-kun-at-lv-madhouse",
     "studios": [
@@ -11913,6 +12041,7 @@
     "episodes": 13,
     "averageScore": 77,
     "year": 2025,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/179694",
     "notes": "Review - https://animejb.substack.com/i/161512736/rock-is-a-ladys-modesty-bandai-namco-pictures",
     "studios": [
@@ -11993,6 +12122,7 @@
     "episodes": 12,
     "averageScore": 76,
     "year": 2017,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/21180",
     "notes": "",
     "studios": [
@@ -12090,6 +12220,7 @@
     "episodes": 12,
     "averageScore": 76,
     "year": 2019,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/103572",
     "notes": "",
     "studios": [
@@ -12163,6 +12294,7 @@
     "episodes": 1,
     "averageScore": 76,
     "year": 2013,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/15039",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1521322256974196736",
     "studios": [
@@ -12260,6 +12392,7 @@
     "episodes": 12,
     "averageScore": 76,
     "year": 2022,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/122808",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1508544355262418948",
     "studios": [
@@ -12367,6 +12500,7 @@
     "episodes": 12,
     "averageScore": 76,
     "year": 2022,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/116605",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1540393434493640704",
     "studios": [
@@ -12456,6 +12590,7 @@
     "episodes": 2,
     "averageScore": 76,
     "year": 2018,
+    "season": "FALL",
     "url": "https://anilist.co/anime/100049",
     "notes": "Review thread (The Frozen Bond) - https://twitter.com/thejericbrual/status/1576662363993841664\n\nMemory Snow - 9/10\nThe Frozen Bond - 7/10",
     "studios": [
@@ -12559,6 +12694,7 @@
     "episodes": 12,
     "averageScore": 76,
     "year": 2017,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/98292",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1498426342311960582",
     "studios": [
@@ -12624,6 +12760,7 @@
     "episodes": 12,
     "averageScore": 76,
     "year": 2022,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/141014",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1539314421046005760",
     "studios": [
@@ -12700,6 +12837,7 @@
     "episodes": 12,
     "averageScore": 76,
     "year": 2024,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/163623",
     "notes": "Review - https://animejb.substack.com/i/148872535/pseudo-harem-nomad",
     "studios": [
@@ -12784,6 +12922,7 @@
     "episodes": 12,
     "averageScore": 76,
     "year": 2024,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/163078",
     "notes": "Watched the first episode at Anime Boston 2024\nReview - https://animejb.substack.com/i/143365291/yorukura-jellyfish-cant-swim-in-the-night-doga-kobo",
     "studios": [
@@ -12881,6 +13020,7 @@
     "episodes": 13,
     "averageScore": 75,
     "year": 2013,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/15809",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1395081075236483072",
     "studios": [
@@ -12989,6 +13129,7 @@
     "episodes": 12,
     "averageScore": 75,
     "year": 2023,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/147864",
     "notes": "Review - https://animejb.substack.com/i/109902923/onimai-im-now-your-sister-very-good",
     "studios": [
@@ -13084,6 +13225,7 @@
     "episodes": 13,
     "averageScore": 75,
     "year": 2015,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/20997",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1557681710099316736",
     "studios": [
@@ -13155,6 +13297,7 @@
     "episodes": 12,
     "averageScore": 75,
     "year": 2023,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/153629",
     "notes": "Review - https://animejb.substack.com/i/140949852/magirevo-the-magical-revolution-of-the-reincarnated-princess-and-the-genius-young-lady-diomedea",
     "studios": [
@@ -13247,6 +13390,7 @@
     "episodes": 12,
     "averageScore": 75,
     "year": 2024,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/162804",
     "notes": "Review - https://animejb.substack.com/i/148872535/roshidere-alya-sometimes-hides-her-feelings-in-russian-doga-kobo",
     "studios": [
@@ -13354,6 +13498,7 @@
     "episodes": 12,
     "averageScore": 75,
     "year": 2024,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/168374",
     "notes": "Review - https://animejb.substack.com/i/140949852/th-time-loop-the-villainess-enjoys-a-carefree-life-married-to-her-worst-enemy-studio-kai-hornets",
     "studios": [
@@ -13457,6 +13602,7 @@
     "episodes": 12,
     "averageScore": 75,
     "year": 2025,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/177120",
     "notes": "Review - https://animejb.substack.com/i/173630024/ninkoro-a-ninja-and-an-assassin-under-one-roof-shaft",
     "studios": [
@@ -13554,6 +13700,7 @@
     "episodes": 12,
     "averageScore": 74,
     "year": 2021,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/116741",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1407470390881013760",
     "studios": [
@@ -13624,6 +13771,7 @@
     "episodes": 12,
     "averageScore": 74,
     "year": 2022,
+    "season": "FALL",
     "url": "https://anilist.co/anime/131516",
     "notes": "Review - http://www.twitlonger.com/show/n_1ss72rs",
     "studios": [
@@ -13727,6 +13875,7 @@
     "episodes": 12,
     "averageScore": 74,
     "year": 2016,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/21455",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1432324806469427204",
     "studios": [
@@ -13819,6 +13968,7 @@
     "episodes": 12,
     "averageScore": 74,
     "year": 2022,
+    "season": "FALL",
     "url": "https://anilist.co/anime/151379",
     "notes": "Review - http://www.twitlonger.com/show/n_1ss757l",
     "studios": [
@@ -13915,6 +14065,7 @@
     "episodes": 12,
     "averageScore": 74,
     "year": 2023,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/150075",
     "notes": "Review - https://animejb.substack.com/i/129052785/konosuba-an-explosion-on-this-wonderful-world-drive",
     "studios": [
@@ -13971,6 +14122,7 @@
     "episodes": 12,
     "averageScore": 74,
     "year": 2023,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/148969",
     "notes": "Review - https://animejb.substack.com/i/129052785/kubo-wont-let-me-be-invisible-pine-jam",
     "studios": [
@@ -14051,6 +14203,7 @@
     "episodes": 27,
     "averageScore": 74,
     "year": 2024,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/158898",
     "notes": "Review - https://animejb.substack.com/i/148872535/mission-yozakura-family-silver-link",
     "studios": [
@@ -14120,6 +14273,7 @@
     "episodes": 12,
     "averageScore": 74,
     "year": 2024,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/159039",
     "notes": "Review - https://animejb.substack.com/i/143365291/the-many-sides-of-voice-actor-radio-connect",
     "studios": [
@@ -14208,6 +14362,7 @@
     "episodes": 12,
     "averageScore": 74,
     "year": 2025,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/179979",
     "notes": "",
     "studios": [
@@ -14306,6 +14461,7 @@
     "episodes": 13,
     "averageScore": 74,
     "year": 2025,
+    "season": "FALL",
     "url": "https://anilist.co/anime/183385",
     "notes": "",
     "studios": [
@@ -14362,6 +14518,7 @@
     "episodes": 1,
     "averageScore": 73,
     "year": 2016,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/21265",
     "notes": "",
     "studios": [
@@ -14425,6 +14582,7 @@
     "episodes": 12,
     "averageScore": 73,
     "year": 2020,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/111501",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1418750960361525250",
     "studios": [],
@@ -14496,6 +14654,7 @@
     "episodes": 12,
     "averageScore": 73,
     "year": 2015,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/20966",
     "notes": "",
     "studios": [
@@ -14580,6 +14739,7 @@
     "episodes": 24,
     "averageScore": 73,
     "year": 2021,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/128545",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1471968447349276674",
     "studios": [
@@ -14625,6 +14785,7 @@
     "episodes": 13,
     "averageScore": 73,
     "year": 2018,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/100179",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1513329444202631174",
     "studios": [
@@ -14682,6 +14843,7 @@
     "episodes": 12,
     "averageScore": 73,
     "year": 2014,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/20527",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1521942103240192002",
     "studios": [
@@ -14763,6 +14925,7 @@
     "episodes": 12,
     "averageScore": 73,
     "year": 2022,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/132010",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1540407618119909376",
     "studios": [
@@ -14836,6 +14999,7 @@
     "episodes": 13,
     "averageScore": 73,
     "year": 2018,
+    "season": "FALL",
     "url": "https://anilist.co/anime/101316",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1540859509954039809",
     "studios": [
@@ -14903,6 +15067,7 @@
     "episodes": 12,
     "averageScore": 73,
     "year": 2024,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/152681",
     "notes": "Review - https://animejb.substack.com/i/148872535/days-with-my-stepsister-studio-deen",
     "studios": [
@@ -14992,6 +15157,7 @@
     "episodes": 12,
     "averageScore": 73,
     "year": 2024,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/166477",
     "notes": "Review - https://animejb.substack.com/i/148872535/the-cafe-terrace-and-its-goddesses-season-tezuka-productions",
     "studios": [
@@ -15055,6 +15221,7 @@
     "episodes": 12,
     "averageScore": 73,
     "year": 2025,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/180425",
     "notes": "",
     "studios": [],
@@ -15121,6 +15288,7 @@
     "episodes": 3,
     "averageScore": 72,
     "year": 2007,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/1689",
     "notes": "",
     "studios": [
@@ -15209,6 +15377,7 @@
     "episodes": 12,
     "averageScore": 72,
     "year": 2020,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/109019",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1428233294542409729",
     "studios": [
@@ -15285,6 +15454,7 @@
     "episodes": 12,
     "averageScore": 72,
     "year": 2024,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/163133",
     "notes": "Review - https://animejb.substack.com/i/148872535/senpai-is-an-otokonoko-project-no",
     "studios": [
@@ -15339,6 +15509,7 @@
     "episodes": 1,
     "averageScore": 71,
     "year": 2007,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/2847",
     "notes": "",
     "studios": [
@@ -15465,6 +15636,7 @@
     "episodes": 12,
     "averageScore": 71,
     "year": 2013,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/15451",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1371918532938764288",
     "studios": [
@@ -15558,6 +15730,7 @@
     "episodes": 12,
     "averageScore": 71,
     "year": 2019,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/105914",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1553912766053982208",
     "studios": [
@@ -15649,6 +15822,7 @@
     "episodes": 12,
     "averageScore": 71,
     "year": 2022,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/127549",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1507431913828589575",
     "studios": [
@@ -15753,6 +15927,7 @@
     "episodes": 12,
     "averageScore": 71,
     "year": 2022,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/137281",
     "notes": "Review - https://www.twitlonger.com/show/n_1ss5ugh",
     "studios": [
@@ -15842,6 +16017,7 @@
     "episodes": 11,
     "averageScore": 71,
     "year": 2024,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/168138",
     "notes": "Review - https://animejb.substack.com/i/143365291/grandpa-and-grandma-turn-young-again-gekkou",
     "studios": [
@@ -15962,6 +16138,7 @@
     "episodes": 12,
     "averageScore": 71,
     "year": 2024,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/166522",
     "notes": "Review - https://animejb.substack.com/i/150383017/tis-time-for-torture-princess-season-pine-jam",
     "studios": [
@@ -16033,6 +16210,7 @@
     "episodes": 12,
     "averageScore": 70,
     "year": 2020,
+    "season": "FALL",
     "url": "https://anilist.co/anime/109287",
     "notes": "",
     "studios": [
@@ -16110,6 +16288,7 @@
     "episodes": 12,
     "averageScore": 70,
     "year": 2021,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/112443",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1375482934195544070",
     "studios": [
@@ -16214,6 +16393,7 @@
     "episodes": 12,
     "averageScore": 70,
     "year": 2019,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/100722",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1400927826958819330",
     "studios": [
@@ -16275,6 +16455,7 @@
     "episodes": 1,
     "averageScore": 70,
     "year": 2015,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/20741",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1396531718325166081",
     "studios": [
@@ -16347,6 +16528,7 @@
     "episodes": 12,
     "averageScore": 70,
     "year": 2013,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/16732",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1456799142618009600",
     "studios": [
@@ -16424,6 +16606,7 @@
     "episodes": 12,
     "averageScore": 70,
     "year": 2017,
+    "season": "FALL",
     "url": "https://anilist.co/anime/98596",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1524511998804905984",
     "studios": [
@@ -16509,6 +16692,7 @@
     "episodes": 12,
     "averageScore": 70,
     "year": 2020,
+    "season": "FALL",
     "url": "https://anilist.co/anime/114340",
     "notes": "Review - https://animejb.substack.com/p/review-kuma-kuma-kuma-bear-fall-2020",
     "studios": [
@@ -16611,6 +16795,7 @@
     "episodes": 13,
     "averageScore": 69,
     "year": 2018,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/97767",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1371918532938764288",
     "studios": [
@@ -16676,6 +16861,7 @@
     "episodes": 1,
     "averageScore": 68,
     "year": 2009,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/6178",
     "notes": "",
     "studios": [
@@ -16789,6 +16975,7 @@
     "episodes": 20,
     "averageScore": 68,
     "year": 2021,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/132456",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1472685822264713228",
     "studios": [
@@ -16868,6 +17055,7 @@
     "episodes": 12,
     "averageScore": 68,
     "year": 2024,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/160488",
     "notes": "Review - https://animejb.substack.com/i/148872535/vtuber-legend-how-i-went-viral-after-forgetting-to-turn-off-my-stream-tnk",
     "studios": [
@@ -17000,6 +17188,7 @@
     "episodes": 12,
     "averageScore": 67,
     "year": 2024,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/175977",
     "notes": "Review - https://animejb.substack.com/i/148872535/my-deer-friend-nokotan-wit-studio",
     "studios": [
@@ -17060,6 +17249,7 @@
     "episodes": 1,
     "averageScore": 66,
     "year": 2010,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/7695",
     "notes": "",
     "studios": [
@@ -17141,6 +17331,7 @@
     "episodes": 13,
     "averageScore": 66,
     "year": 2022,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/146625",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1575874469524037637",
     "studios": [
@@ -17194,6 +17385,7 @@
     "episodes": 12,
     "averageScore": 65,
     "year": 2018,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/100526",
     "notes": "",
     "studios": [
@@ -17256,6 +17448,7 @@
     "episodes": 20,
     "averageScore": 63,
     "year": 2023,
+    "season": "FALL",
     "url": "https://anilist.co/anime/160514",
     "notes": "Review - https://animejb.substack.com/i/140949852/dog-signal-fugaku",
     "studios": [
@@ -17399,6 +17592,7 @@
     "episodes": 13,
     "averageScore": 89,
     "year": 2021,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/124194",
     "notes": "Review - https://animejb.substack.com/i/150383017/fruits-basket-season-tms-entertainment",
     "studios": [
@@ -17486,6 +17680,7 @@
     "episodes": 1,
     "averageScore": 87,
     "year": 2017,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/21400",
     "notes": "Review - https://animejb.substack.com/i/160456882/the-kizumonogatari-trilogy-shaft",
     "studios": [
@@ -17583,6 +17778,7 @@
     "episodes": 1,
     "averageScore": 86,
     "year": 2001,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/199",
     "notes": "Probably worth re-watching in the future but dubbed instead of subbed.",
     "studios": [
@@ -17670,6 +17866,7 @@
     "episodes": 25,
     "averageScore": 86,
     "year": 2024,
+    "season": "FALL",
     "url": "https://anilist.co/anime/151514",
     "notes": "Review - https://animejb.substack.com/i/161512736/orb-on-the-movements-of-the-earth-madhouse",
     "studios": [
@@ -17753,6 +17950,7 @@
     "episodes": 13,
     "averageScore": 85,
     "year": 2025,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/180516",
     "notes": "",
     "studios": [
@@ -17837,6 +18035,7 @@
     "episodes": 1,
     "averageScore": 83,
     "year": 2019,
+    "season": "FALL",
     "url": "https://anilist.co/anime/100675",
     "notes": "",
     "studios": [
@@ -17902,6 +18101,7 @@
     "episodes": 1,
     "averageScore": 83,
     "year": 2023,
+    "season": "FALL",
     "url": "https://anilist.co/anime/161474",
     "notes": "Review - https://animejb.substack.com/i/140949852/aobuta-rascal-does-not-dream-double-feature-cloverworks",
     "studios": [
@@ -17981,6 +18181,7 @@
     "episodes": 1,
     "averageScore": 83,
     "year": 2016,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/9260",
     "notes": "Review - https://animejb.substack.com/i/160456882/the-kizumonogatari-trilogy-shaft",
     "studios": [
@@ -18053,6 +18254,7 @@
     "episodes": 1,
     "averageScore": 83,
     "year": 2020,
+    "season": "FALL",
     "url": "https://anilist.co/anime/113596",
     "notes": "Review - https://animejb.substack.com/i/173630024/josee-the-tiger-and-the-fish-bones",
     "studios": [
@@ -18120,6 +18322,7 @@
     "episodes": 1,
     "averageScore": 83,
     "year": 2025,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/177687",
     "notes": "",
     "studios": [
@@ -18322,6 +18525,7 @@
     "episodes": 25,
     "averageScore": 82,
     "year": 2019,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/105334",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1538953926107594755",
     "studios": [
@@ -18345,7 +18549,7 @@
     "tags": [
       {
         "name": "Youkai",
-        "rank": 92
+        "rank": 93
       },
       {
         "name": "Ensemble Cast",
@@ -18477,6 +18681,7 @@
     "episodes": 15,
     "averageScore": 82,
     "year": 2009,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/5081",
     "notes": "Review - https://animejb.substack.com/i/160456882/bakemonogatari-shaft",
     "studios": [
@@ -18565,6 +18770,7 @@
     "episodes": 13,
     "averageScore": 82,
     "year": 2023,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/163571",
     "notes": "",
     "studios": [
@@ -18635,6 +18841,7 @@
     "episodes": 13,
     "averageScore": 82,
     "year": 2025,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/171046",
     "notes": "",
     "studios": [
@@ -18712,6 +18919,7 @@
     "episodes": 1,
     "averageScore": 81,
     "year": 1988,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/523",
     "notes": "",
     "studios": [
@@ -18841,6 +19049,7 @@
     "episodes": 25,
     "averageScore": 81,
     "year": 2016,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/21355",
     "notes": "Director’s Cut (subbed)\n\nEmotional trigger warning\n\nReview thread - https://twitter.com/thejericbrual/status/1376292497601728521",
     "studios": [
@@ -18915,6 +19124,7 @@
     "episodes": 12,
     "averageScore": 81,
     "year": 2015,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/20694",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1448085566457847813",
     "studios": [
@@ -18995,6 +19205,7 @@
     "episodes": 25,
     "averageScore": 81,
     "year": 2024,
+    "season": "FALL",
     "url": "https://anilist.co/anime/170942",
     "notes": "Review - https://animejb.substack.com/i/160456882/blue-box-season-telecom-animation-film",
     "studios": [
@@ -19076,6 +19287,7 @@
     "episodes": 12,
     "averageScore": 81,
     "year": 2026,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/167152",
     "notes": "",
     "studios": [
@@ -19171,6 +19383,7 @@
     "episodes": 12,
     "averageScore": 80,
     "year": 2024,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/155908",
     "notes": "Review - https://animejb.substack.com/i/143365291/laid-back-camp-season-bit",
     "studios": [
@@ -19274,6 +19487,7 @@
     "episodes": 13,
     "averageScore": 80,
     "year": 2025,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/181841",
     "notes": "Review - https://animejb.substack.com/i/173630024/city-the-animation-kyoto-animation",
     "studios": [
@@ -19350,6 +19564,7 @@
     "episodes": 13,
     "averageScore": 79,
     "year": 2022,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/145545",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1527800080916414466",
     "studios": [
@@ -19439,6 +19654,7 @@
     "episodes": 1,
     "averageScore": 79,
     "year": 2023,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/154967",
     "notes": "Review - https://animejb.substack.com/i/140949852/aobuta-rascal-does-not-dream-double-feature-cloverworks",
     "studios": [
@@ -19595,6 +19811,7 @@
     "episodes": 8,
     "averageScore": 79,
     "year": 2025,
+    "season": "FALL",
     "url": "https://anilist.co/anime/198188",
     "notes": "",
     "studios": [
@@ -19685,6 +19902,7 @@
     "episodes": 12,
     "averageScore": 78,
     "year": 2013,
+    "season": "FALL",
     "url": "https://anilist.co/anime/17549",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1426017711017037828",
     "studios": [
@@ -19780,6 +19998,7 @@
     "episodes": 12,
     "averageScore": 78,
     "year": 2022,
+    "season": "FALL",
     "url": "https://anilist.co/anime/153930",
     "notes": "Review - http://www.twitlonger.com/show/n_1ss5vo0",
     "studios": [
@@ -19870,6 +20089,7 @@
     "episodes": 1,
     "averageScore": 78,
     "year": 2024,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/158166",
     "notes": "Review - https://animejb.substack.com/i/160456882/the-colors-within-science-saru",
     "studios": [
@@ -19974,6 +20194,7 @@
     "episodes": 12,
     "averageScore": 78,
     "year": 2024,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/166610",
     "notes": "Review - https://animejb.substack.com/i/160456882/mashle-magic-and-muscles-season-a-pictures",
     "studios": [
@@ -20067,6 +20288,7 @@
     "episodes": 23,
     "averageScore": 78,
     "year": 2024,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/155645",
     "notes": "Review - https://animejb.substack.com/i/160456882/urusei-yatsura-season-david-production",
     "studios": [
@@ -20163,6 +20385,7 @@
     "episodes": 12,
     "averageScore": 77,
     "year": 2014,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/20668",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1351666167216304128",
     "studios": [
@@ -20248,6 +20471,7 @@
     "episodes": 26,
     "averageScore": 77,
     "year": 2013,
+    "season": "FALL",
     "url": "https://anilist.co/anime/16067",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1487950993866248193",
     "studios": [
@@ -20353,6 +20577,7 @@
     "episodes": 13,
     "averageScore": 77,
     "year": 2010,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/6547",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1577496446223482880",
     "studios": [
@@ -20449,6 +20674,7 @@
     "episodes": 12,
     "averageScore": 77,
     "year": 2024,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/162896",
     "notes": "Review - https://animejb.substack.com/i/160456882/nigewaka-the-elusive-samurai-season-cloverworks",
     "studios": [
@@ -20573,6 +20799,7 @@
     "episodes": 12,
     "averageScore": 76,
     "year": 2021,
+    "season": "FALL",
     "url": "https://anilist.co/anime/133965",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1474102008001052678",
     "studios": [
@@ -20645,6 +20872,7 @@
     "episodes": 12,
     "averageScore": 76,
     "year": 2023,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/141208",
     "notes": "Review - https://animejb.substack.com/i/129052785/tonikawa-over-the-moon-for-you-season",
     "studios": [
@@ -20732,6 +20960,7 @@
     "episodes": 12,
     "averageScore": 76,
     "year": 2017,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/98659",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1527800080916414466",
     "studios": [
@@ -20813,6 +21042,7 @@
     "episodes": 12,
     "averageScore": 76,
     "year": 2022,
+    "season": "FALL",
     "url": "https://anilist.co/anime/141949",
     "notes": "Review - http://www.twitlonger.com/show/n_1ss769p",
     "studios": [
@@ -20914,6 +21144,7 @@
     "episodes": 12,
     "averageScore": 76,
     "year": 2024,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/165598",
     "notes": "Review - https://animejb.substack.com/i/150383017/brave-bang-bravern-cygamespictures",
     "studios": [
@@ -21009,6 +21240,7 @@
     "episodes": 11,
     "averageScore": 76,
     "year": 2025,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/177709",
     "notes": "Review - https://animejb.substack.com/i/161512736/sakamoto-days-season-1-pt-1-tms-entertainment",
     "studios": [
@@ -21118,6 +21350,7 @@
     "episodes": 12,
     "averageScore": 76,
     "year": 2024,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/167087",
     "notes": "Review - https://animejb.substack.com/i/150383017/cherimaho-years-of-virginity-can-make-you-a-wizard-satelight",
     "studios": [
@@ -21189,6 +21422,7 @@
     "episodes": 12,
     "averageScore": 76,
     "year": 2025,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/184591",
     "notes": "",
     "studios": [
@@ -21276,6 +21510,7 @@
     "episodes": 12,
     "averageScore": 76,
     "year": 2025,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/178886",
     "notes": "",
     "studios": [
@@ -21336,6 +21571,7 @@
     "episodes": 12,
     "averageScore": 75,
     "year": 2014,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/20596",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1400297768472690691",
     "studios": [
@@ -21405,6 +21641,7 @@
     "episodes": 12,
     "averageScore": 74,
     "year": 2017,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/98291",
     "notes": "",
     "studios": [
@@ -21489,6 +21726,7 @@
     "episodes": 13,
     "averageScore": 74,
     "year": 2025,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/169441",
     "notes": "",
     "studios": [
@@ -21573,6 +21811,7 @@
     "episodes": 13,
     "averageScore": 73,
     "year": 2015,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/20657",
     "notes": "",
     "studios": [
@@ -21650,6 +21889,7 @@
     "episodes": 10,
     "averageScore": 73,
     "year": 2017,
+    "season": "FALL",
     "url": "https://anilist.co/anime/99726",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1431352243043852292",
     "studios": [
@@ -21705,6 +21945,7 @@
     "episodes": 12,
     "averageScore": 73,
     "year": 2015,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/20654",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1526270657046233089",
     "studios": [
@@ -21812,6 +22053,7 @@
     "episodes": 24,
     "averageScore": 73,
     "year": 2024,
+    "season": "FALL",
     "url": "https://anilist.co/anime/164172",
     "notes": "Review - https://animejb.substack.com/i/173630024/tying-the-knot-with-an-amagami-sister-drive",
     "studios": [
@@ -21948,6 +22190,7 @@
     "episodes": 12,
     "averageScore": 73,
     "year": 2025,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/176273",
     "notes": "Review - https://animejb.substack.com/i/161512736/zenshu-mappa",
     "studios": [
@@ -22018,6 +22261,7 @@
     "episodes": 1,
     "averageScore": 73,
     "year": 2025,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/166527",
     "notes": "",
     "studios": [],
@@ -22097,6 +22341,7 @@
     "episodes": 13,
     "averageScore": 72,
     "year": 2019,
+    "season": "FALL",
     "url": "https://anilist.co/anime/110229",
     "notes": "",
     "studios": [
@@ -22165,6 +22410,7 @@
     "episodes": 12,
     "averageScore": 72,
     "year": 2020,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/107067",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1378396327453847561",
     "studios": [
@@ -22249,6 +22495,7 @@
     "episodes": 12,
     "averageScore": 72,
     "year": 2021,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/114065",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1441934847262351367",
     "studios": [
@@ -22338,6 +22585,7 @@
     "episodes": 12,
     "averageScore": 72,
     "year": 2023,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/151252",
     "notes": "Review - https://animejb.substack.com/i/109902923/the-ice-guy-and-his-cool-female-colleague-good",
     "studios": [
@@ -22420,6 +22668,7 @@
     "episodes": 12,
     "averageScore": 72,
     "year": 2023,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/127550",
     "notes": "Review - https://animejb.substack.com/i/129052785/kuma-kuma-kuma-bear-punch-emt-squared",
     "studios": [
@@ -22515,6 +22764,7 @@
     "episodes": 12,
     "averageScore": 72,
     "year": 2024,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/174044",
     "notes": "Review - https://animejb.substack.com/i/148872535/mayonaka-punch-pa-works",
     "studios": [
@@ -22612,6 +22862,7 @@
     "episodes": 12,
     "averageScore": 72,
     "year": 2024,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/155657",
     "notes": "Review - https://animejb.substack.com/i/143365291/train-to-the-end-of-the-world-emt-squared",
     "studios": [
@@ -22700,6 +22951,7 @@
     "episodes": 1,
     "averageScore": 72,
     "year": 2023,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/151300",
     "notes": "Review - https://animejb.substack.com/i/150383017/gold-kingdom-and-water-kingdom-madhouse",
     "studios": [
@@ -22833,6 +23085,7 @@
     "episodes": 23,
     "averageScore": 72,
     "year": 2022,
+    "season": "FALL",
     "url": "https://anilist.co/anime/143277",
     "notes": "Review - https://animejb.substack.com/i/160456882/urusei-yatsura-season-david-production",
     "studios": [
@@ -22968,6 +23221,7 @@
     "episodes": 25,
     "averageScore": 72,
     "year": 2025,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/180367",
     "notes": "Review - https://animejb.substack.com/i/173630024/witch-watch-bibury-animation-studios",
     "studios": [
@@ -23033,6 +23287,7 @@
     "episodes": 12,
     "averageScore": 72,
     "year": 2025,
+    "season": "FALL",
     "url": "https://anilist.co/anime/183965",
     "notes": "",
     "studios": [
@@ -23114,6 +23369,7 @@
     "episodes": 13,
     "averageScore": 71,
     "year": 2022,
+    "season": "FALL",
     "url": "https://anilist.co/anime/124395",
     "notes": "Review - http://www.twitlonger.com/show/n_1ss7502",
     "studios": [
@@ -23199,6 +23455,7 @@
     "episodes": 13,
     "averageScore": 71,
     "year": 2019,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/103900",
     "notes": "",
     "studios": [
@@ -23301,6 +23558,7 @@
     "episodes": 24,
     "averageScore": 71,
     "year": 2008,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/3470",
     "notes": "",
     "studios": [
@@ -23380,6 +23638,7 @@
     "episodes": 12,
     "averageScore": 71,
     "year": 2019,
+    "season": "FALL",
     "url": "https://anilist.co/anime/104464",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1380737034826973185",
     "studios": [
@@ -23454,6 +23713,7 @@
     "episodes": 12,
     "averageScore": 71,
     "year": 2012,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/11433",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1512190030529404933",
     "studios": [
@@ -23544,6 +23804,7 @@
     "episodes": 12,
     "averageScore": 71,
     "year": 2023,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/116867",
     "notes": "Review - https://animejb.substack.com/p/review-bofuri-season-2-winter-2023",
     "studios": [
@@ -23611,6 +23872,7 @@
     "episodes": 12,
     "averageScore": 71,
     "year": 2022,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/125124",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1537906700069396485\n\nScore adjusted from 8/10 to 7/10 (6/17/2022).",
     "studios": [
@@ -23695,6 +23957,7 @@
     "episodes": 12,
     "averageScore": 71,
     "year": 2019,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/100876",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1555035363588116480",
     "studios": [
@@ -23755,6 +24018,7 @@
     "episodes": 6,
     "averageScore": 71,
     "year": 2022,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/141351",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1555725893410111492",
     "studios": [
@@ -23854,6 +24118,7 @@
     "episodes": 12,
     "averageScore": 71,
     "year": 2023,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/135778",
     "notes": "Review - https://animejb.substack.com/i/109902923/high-card-good",
     "studios": [
@@ -23947,6 +24212,7 @@
     "episodes": 12,
     "averageScore": 71,
     "year": 2023,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/154412",
     "notes": "Review - https://animejb.substack.com/i/129052785/the-cafe-terrace-and-its-goddesses-tezuka-productions",
     "studios": [
@@ -24032,6 +24298,7 @@
     "episodes": 26,
     "averageScore": 71,
     "year": 2025,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/143200",
     "notes": "",
     "studios": [
@@ -24110,6 +24377,7 @@
     "episodes": 1,
     "averageScore": 70,
     "year": 2002,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/1120",
     "notes": "",
     "studios": [
@@ -24230,6 +24498,7 @@
     "episodes": 12,
     "averageScore": 70,
     "year": 2017,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/98314",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1528454666182344707",
     "studios": [
@@ -24289,6 +24558,7 @@
     "episodes": 24,
     "averageScore": 70,
     "year": 2023,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/147369",
     "notes": "Review - https://animejb.substack.com/i/134904824/blue-orchestra-nippon-animation",
     "studios": [
@@ -24385,6 +24655,7 @@
     "episodes": 12,
     "averageScore": 70,
     "year": 2023,
+    "season": "FALL",
     "url": "https://anilist.co/anime/155419",
     "notes": "Review - https://animejb.substack.com/i/139904839/stardust-telepath-studio-gokumi",
     "studios": [
@@ -24457,6 +24728,7 @@
     "episodes": 13,
     "averageScore": 70,
     "year": 2024,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/154963",
     "notes": "Review - https://animejb.substack.com/i/148872535/atri-my-dear-moments-troyca",
     "studios": [
@@ -24544,6 +24816,7 @@
     "episodes": 12,
     "averageScore": 70,
     "year": 2024,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/163151",
     "notes": "Review - https://animejb.substack.com/i/140949852/high-card-season-studio-hibari",
     "studios": [
@@ -24633,6 +24906,7 @@
     "episodes": 12,
     "averageScore": 70,
     "year": 2025,
+    "season": "FALL",
     "url": "https://anilist.co/anime/186161",
     "notes": "",
     "studios": [
@@ -24753,6 +25027,7 @@
     "episodes": 13,
     "averageScore": 69,
     "year": 2020,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/107871",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1427148966739824643",
     "studios": [
@@ -24879,6 +25154,7 @@
     "episodes": 12,
     "averageScore": 69,
     "year": 2012,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/11617",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1371918532938764288",
     "studios": [
@@ -25002,6 +25278,7 @@
     "episodes": 10,
     "averageScore": 69,
     "year": 2014,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/19163",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1396335042608209926",
     "studios": [
@@ -25072,6 +25349,7 @@
     "episodes": 12,
     "averageScore": 69,
     "year": 2021,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/126546",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1440130305277538304",
     "studios": [
@@ -25133,6 +25411,7 @@
     "episodes": 12,
     "averageScore": 69,
     "year": 2022,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/128223",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1575872872299393024\n\nScore adjusted from 8/10 to 7/10 (9/26/2022).",
     "studios": [
@@ -25245,6 +25524,7 @@
     "episodes": 12,
     "averageScore": 68,
     "year": 2013,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/15583",
     "notes": "",
     "studios": [
@@ -25305,6 +25585,7 @@
     "episodes": 12,
     "averageScore": 68,
     "year": 2021,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/114840",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1404526652915433476",
     "studios": [
@@ -25387,6 +25668,7 @@
     "episodes": 12,
     "averageScore": 68,
     "year": 2014,
+    "season": "FALL",
     "url": "https://anilist.co/anime/20646",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1510830947574427649",
     "studios": [
@@ -25456,6 +25738,7 @@
     "episodes": 12,
     "averageScore": 68,
     "year": 2023,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/151189",
     "notes": "Review - https://animejb.substack.com/i/129052785/my-home-hero-tezuka-productions",
     "studios": [
@@ -25520,6 +25803,7 @@
     "episodes": 1,
     "averageScore": 68,
     "year": 2024,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/171291",
     "notes": "",
     "studios": [
@@ -25580,6 +25864,7 @@
     "episodes": 1,
     "averageScore": 67,
     "year": 2008,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/4026",
     "notes": "",
     "studios": [
@@ -25643,6 +25928,7 @@
     "episodes": 1,
     "averageScore": 67,
     "year": 2004,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/1122",
     "notes": "",
     "studios": [
@@ -25703,6 +25989,7 @@
     "episodes": 1,
     "averageScore": 67,
     "year": 2007,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/1723",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1383973867710914560",
     "studios": [
@@ -25790,6 +26077,7 @@
     "episodes": 12,
     "averageScore": 67,
     "year": 2020,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/108092",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1510350414570528776",
     "studios": [
@@ -25886,6 +26174,7 @@
     "episodes": 12,
     "averageScore": 67,
     "year": 2020,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/109020",
     "notes": "Review - http://www.twitlonger.com/show/n_1ss5ja1",
     "studios": [
@@ -25945,6 +26234,7 @@
     "episodes": 12,
     "averageScore": 67,
     "year": 2023,
+    "season": "FALL",
     "url": "https://anilist.co/anime/154459",
     "notes": "Review - https://animejb.substack.com/i/139904839/kimizero-engi",
     "studios": [
@@ -26033,6 +26323,7 @@
     "episodes": 12,
     "averageScore": 66,
     "year": 2020,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/113813",
     "notes": "",
     "studios": [
@@ -26107,6 +26398,7 @@
     "episodes": 1,
     "averageScore": 66,
     "year": 2001,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/1119",
     "notes": "",
     "studios": [
@@ -26162,6 +26454,7 @@
     "episodes": 12,
     "averageScore": 66,
     "year": 2012,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/12175",
     "notes": "Review - http://www.twitlonger.com/show/n_1ss5lqm",
     "studios": [
@@ -26229,6 +26522,7 @@
     "episodes": 12,
     "averageScore": 66,
     "year": 2022,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/136934",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1575870768512057346",
     "studios": [
@@ -26293,6 +26587,7 @@
     "episodes": 12,
     "averageScore": 66,
     "year": 2023,
+    "season": "FALL",
     "url": "https://anilist.co/anime/155389",
     "notes": "Review - https://animejb.substack.com/i/139904839/shy-season-bit",
     "studios": [
@@ -26374,6 +26669,7 @@
     "episodes": 12,
     "averageScore": 65,
     "year": 2017,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/97766",
     "notes": "",
     "studios": [
@@ -26483,6 +26779,7 @@
     "episodes": 12,
     "averageScore": 65,
     "year": 2022,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/130592",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1575886636122263552",
     "studios": [
@@ -26562,6 +26859,7 @@
     "episodes": 12,
     "averageScore": 65,
     "year": 2015,
+    "season": "FALL",
     "url": "https://anilist.co/anime/21131",
     "notes": "Review - http://www.twitlonger.com/show/n_1ss5nau\n\nScore adjusted from 8/10 to 7/10 (10/25/2022).",
     "studios": [
@@ -26623,6 +26921,7 @@
     "episodes": 12,
     "averageScore": 65,
     "year": 2024,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/175450",
     "notes": "Review - https://animejb.substack.com/i/148872535/bokutsuma-my-wife-has-no-emotion-tezuka-productions",
     "studios": [
@@ -26683,6 +26982,7 @@
     "episodes": 148,
     "averageScore": 64,
     "year": 2014,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/20552",
     "notes": "",
     "studios": [
@@ -26759,6 +27059,7 @@
     "episodes": 12,
     "averageScore": 64,
     "year": 2019,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/103139",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1166375481492594688",
     "studios": [
@@ -26811,6 +27112,7 @@
     "episodes": 12,
     "averageScore": 63,
     "year": 2017,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/97979",
     "notes": "",
     "studios": [
@@ -26884,6 +27186,7 @@
     "episodes": 120,
     "averageScore": 63,
     "year": 2017,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/98231",
     "notes": "",
     "studios": [
@@ -26925,6 +27228,7 @@
     "episodes": 1,
     "averageScore": 63,
     "year": 2011,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/9917",
     "notes": "",
     "studios": [
@@ -27024,6 +27328,7 @@
     "episodes": 12,
     "averageScore": 63,
     "year": 2021,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/126192",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1439053527377227777",
     "studios": [
@@ -27101,6 +27406,7 @@
     "episodes": 12,
     "averageScore": 63,
     "year": 2022,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/127090",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1575871652713623552\n\nScore adjusted from 8/10 to 7/10 (9/25/2022).",
     "studios": [
@@ -27174,6 +27480,7 @@
     "episodes": 12,
     "averageScore": 62,
     "year": 2019,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/107961",
     "notes": "",
     "studios": [
@@ -27268,6 +27575,7 @@
     "episodes": 10,
     "averageScore": 62,
     "year": 2021,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/117989",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1439032801655992320",
     "studios": [
@@ -27357,159 +27665,11 @@
     "episodes": 12,
     "averageScore": 61,
     "year": 2017,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/21887",
     "notes": "",
     "studios": [
       "diomedéa"
-    ],
-    "requiresPrereq": false
-  },
-  {
-    "id": 13161,
-    "title": "Aesthetica of a Rogue Hero",
-    "titleRomaji": "Hagure Yuusha no Estetica",
-    "score": 7,
-    "genres": [
-      "Action",
-      "Ecchi",
-      "Fantasy"
-    ],
-    "tags": [
-      {
-        "name": "Magic",
-        "rank": 100
-      },
-      {
-        "name": "School",
-        "rank": 93
-      },
-      {
-        "name": "Male Protagonist",
-        "rank": 85
-      },
-      {
-        "name": "Super Power",
-        "rank": 76
-      },
-      {
-        "name": "Primarily Female Cast",
-        "rank": 74
-      },
-      {
-        "name": "Isekai",
-        "rank": 73
-      },
-      {
-        "name": "Female Harem",
-        "rank": 70
-      },
-      {
-        "name": "Nudity",
-        "rank": 70
-      },
-      {
-        "name": "Battle Royale",
-        "rank": 60
-      },
-      {
-        "name": "Large Breasts",
-        "rank": 60
-      },
-      {
-        "name": "LGBTQ+ Themes",
-        "rank": 53
-      },
-      {
-        "name": "Demons",
-        "rank": 45
-      }
-    ],
-    "description": "Hero defeats bad guy. Good triumphs over evil. The end. Or, at least that's how it usually goes. But what happens after the hero goes home? Our hero, Akatsuki Ousawa, is about to find out that sometimes the greatest adventure starts once happily ever after ends.",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx13161-m4znwxInGXfd.jpg",
-    "episodes": 12,
-    "averageScore": 61,
-    "year": 2012,
-    "url": "https://anilist.co/anime/13161",
-    "notes": "Review thread - https://twitter.com/thejericbrual/status/1395956099153600517",
-    "studios": [
-      "ARMS"
-    ],
-    "requiresPrereq": false
-  },
-  {
-    "id": 146323,
-    "title": "Spy Classroom",
-    "titleRomaji": "Spy Kyoushitsu",
-    "score": 7,
-    "genres": [
-      "Action",
-      "Comedy",
-      "Drama",
-      "Mystery"
-    ],
-    "tags": [
-      {
-        "name": "Espionage",
-        "rank": 96
-      },
-      {
-        "name": "Primarily Female Cast",
-        "rank": 90
-      },
-      {
-        "name": "Ensemble Cast",
-        "rank": 82
-      },
-      {
-        "name": "Crime",
-        "rank": 80
-      },
-      {
-        "name": "Achronological Order",
-        "rank": 80
-      },
-      {
-        "name": "Urban Fantasy",
-        "rank": 79
-      },
-      {
-        "name": "Guns",
-        "rank": 76
-      },
-      {
-        "name": "Female Protagonist",
-        "rank": 76
-      },
-      {
-        "name": "Cute Girls Doing Cute Things",
-        "rank": 71
-      },
-      {
-        "name": "Male Protagonist",
-        "rank": 63
-      },
-      {
-        "name": "Heterosexual",
-        "rank": 57
-      },
-      {
-        "name": "Nudity",
-        "rank": 46
-      },
-      {
-        "name": "Crossdressing",
-        "rank": 40
-      }
-    ],
-    "description": "Conflict-ravaged nations now deploy covert operatives instead of missiles. Lily is recruited into spy-training… but her practical skills are absolutely abysmal. Desperate to pass, she leaps at the chance to join the mysterious “Tomoshibi” team. Too bad the team is filled with even more hopeless spies. Together they must conquer the Impassible Mission and best their genius instructor, but the true purpose behind their classroom is more harrowing than they can imagine…",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx146323-vyj1w1VRgDN7.png",
-    "episodes": 12,
-    "averageScore": 61,
-    "year": 2023,
-    "url": "https://anilist.co/anime/146323",
-    "notes": "Review - https://animejb.substack.com/i/109902923/spy-classroom-good",
-    "studios": [
-      "feel."
     ],
     "requiresPrereq": false
   },
@@ -27587,12 +27747,164 @@
     "description": "The Hidden Dungeon is a place of legend where rare treasures and items are hidden. Noir, the third son of an impoverished noble family who's lost the one job offer he had, was lucky enough to hear about this dungeon. He then acquires a skill that allows him to create, bestow, and edit skills... and in order to use it, he needs to accumulate points by carrying out such tasks as eating delicious meals and doing sexual things with alluring members of the opposite sex.",
     "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx118375-95ClbAh2EQMD.jpg",
     "episodes": 12,
-    "averageScore": 60,
+    "averageScore": 61,
     "year": 2021,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/118375",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1384343145853472770",
     "studios": [
       "Okuruto Noboru"
+    ],
+    "requiresPrereq": false
+  },
+  {
+    "id": 13161,
+    "title": "Aesthetica of a Rogue Hero",
+    "titleRomaji": "Hagure Yuusha no Estetica",
+    "score": 7,
+    "genres": [
+      "Action",
+      "Ecchi",
+      "Fantasy"
+    ],
+    "tags": [
+      {
+        "name": "Magic",
+        "rank": 100
+      },
+      {
+        "name": "School",
+        "rank": 93
+      },
+      {
+        "name": "Male Protagonist",
+        "rank": 85
+      },
+      {
+        "name": "Super Power",
+        "rank": 76
+      },
+      {
+        "name": "Primarily Female Cast",
+        "rank": 74
+      },
+      {
+        "name": "Isekai",
+        "rank": 73
+      },
+      {
+        "name": "Female Harem",
+        "rank": 70
+      },
+      {
+        "name": "Nudity",
+        "rank": 70
+      },
+      {
+        "name": "Battle Royale",
+        "rank": 60
+      },
+      {
+        "name": "Large Breasts",
+        "rank": 60
+      },
+      {
+        "name": "LGBTQ+ Themes",
+        "rank": 53
+      },
+      {
+        "name": "Demons",
+        "rank": 45
+      }
+    ],
+    "description": "Hero defeats bad guy. Good triumphs over evil. The end. Or, at least that's how it usually goes. But what happens after the hero goes home? Our hero, Akatsuki Ousawa, is about to find out that sometimes the greatest adventure starts once happily ever after ends.",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx13161-m4znwxInGXfd.jpg",
+    "episodes": 12,
+    "averageScore": 61,
+    "year": 2012,
+    "season": "SUMMER",
+    "url": "https://anilist.co/anime/13161",
+    "notes": "Review thread - https://twitter.com/thejericbrual/status/1395956099153600517",
+    "studios": [
+      "ARMS"
+    ],
+    "requiresPrereq": false
+  },
+  {
+    "id": 146323,
+    "title": "Spy Classroom",
+    "titleRomaji": "Spy Kyoushitsu",
+    "score": 7,
+    "genres": [
+      "Action",
+      "Comedy",
+      "Drama",
+      "Mystery"
+    ],
+    "tags": [
+      {
+        "name": "Espionage",
+        "rank": 96
+      },
+      {
+        "name": "Primarily Female Cast",
+        "rank": 90
+      },
+      {
+        "name": "Ensemble Cast",
+        "rank": 82
+      },
+      {
+        "name": "Crime",
+        "rank": 80
+      },
+      {
+        "name": "Achronological Order",
+        "rank": 80
+      },
+      {
+        "name": "Urban Fantasy",
+        "rank": 79
+      },
+      {
+        "name": "Guns",
+        "rank": 76
+      },
+      {
+        "name": "Female Protagonist",
+        "rank": 76
+      },
+      {
+        "name": "Cute Girls Doing Cute Things",
+        "rank": 71
+      },
+      {
+        "name": "Male Protagonist",
+        "rank": 63
+      },
+      {
+        "name": "Heterosexual",
+        "rank": 57
+      },
+      {
+        "name": "Nudity",
+        "rank": 46
+      },
+      {
+        "name": "Crossdressing",
+        "rank": 40
+      }
+    ],
+    "description": "Conflict-ravaged nations now deploy covert operatives instead of missiles. Lily is recruited into spy-training… but her practical skills are absolutely abysmal. Desperate to pass, she leaps at the chance to join the mysterious “Tomoshibi” team. Too bad the team is filled with even more hopeless spies. Together they must conquer the Impassible Mission and best their genius instructor, but the true purpose behind their classroom is more harrowing than they can imagine…",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx146323-vyj1w1VRgDN7.png",
+    "episodes": 12,
+    "averageScore": 61,
+    "year": 2023,
+    "season": "WINTER",
+    "url": "https://anilist.co/anime/146323",
+    "notes": "Review - https://animejb.substack.com/i/109902923/spy-classroom-good",
+    "studios": [
+      "feel."
     ],
     "requiresPrereq": false
   },
@@ -27649,6 +27961,7 @@
     "episodes": 12,
     "averageScore": 60,
     "year": 2012,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/13367",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1398496036839170061",
     "studios": [
@@ -27707,6 +28020,7 @@
     "episodes": 12,
     "averageScore": 59,
     "year": 2017,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/97730",
     "notes": "",
     "studios": [
@@ -27756,6 +28070,7 @@
     "episodes": 92,
     "averageScore": 57,
     "year": 2020,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/114072",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1508216985989140489",
     "studios": [
@@ -27800,6 +28115,7 @@
     "episodes": 151,
     "averageScore": 51,
     "year": 2022,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/142842",
     "notes": "Review - https://animejb.substack.com/i/160456882/yu-gi-oh-go-rush-bridge",
     "studios": [
@@ -27951,6 +28267,7 @@
     "episodes": 25,
     "averageScore": 85,
     "year": 2020,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/111762",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1551709290804781057",
     "studios": [
@@ -28060,6 +28377,7 @@
     "episodes": 1,
     "averageScore": 85,
     "year": 2004,
+    "season": "FALL",
     "url": "https://anilist.co/anime/431",
     "notes": "Review - https://animejb.substack.com/i/148872535/howls-moving-castle-studio-ghibli",
     "studios": [
@@ -28141,6 +28459,7 @@
     "episodes": 5,
     "averageScore": 84,
     "year": 2024,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/168872",
     "notes": "Review - https://animejb.substack.com/i/160456882/kimi-ni-todoke-from-me-to-you-season-production-ig",
     "studios": [
@@ -28220,6 +28539,7 @@
     "episodes": 20,
     "averageScore": 84,
     "year": 2026,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/202955",
     "notes": "",
     "studios": [
@@ -28308,6 +28628,7 @@
     "episodes": 13,
     "averageScore": 81,
     "year": 2025,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/169295",
     "notes": "",
     "studios": [
@@ -28430,6 +28751,7 @@
     "episodes": 12,
     "averageScore": 79,
     "year": 2024,
+    "season": "FALL",
     "url": "https://anilist.co/anime/178533",
     "notes": "Review - https://animejb.substack.com/i/150383017/ranma-season-mappa",
     "studios": [
@@ -28530,6 +28852,7 @@
     "episodes": 11,
     "averageScore": 78,
     "year": 2018,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/99578",
     "notes": "",
     "studios": [
@@ -28625,6 +28948,7 @@
     "episodes": 13,
     "averageScore": 78,
     "year": 2024,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/146066",
     "notes": "Review - https://animejb.substack.com/i/140949852/classroom-of-the-elite-season-lerche",
     "studios": [
@@ -28678,6 +29002,7 @@
     "episodes": 1,
     "averageScore": 78,
     "year": 2015,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/21120",
     "notes": "Review - https://animejb.substack.com/i/150383017/haikyu-the-movie-endings-and-beginnings-madhouse",
     "studios": [
@@ -28767,6 +29092,7 @@
     "episodes": 1,
     "averageScore": 77,
     "year": 2023,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/109979",
     "notes": "Review - https://open.substack.com/pub/animejb/p/review-the-boy-and-the-heron-how",
     "studios": [
@@ -28867,6 +29193,7 @@
     "episodes": 12,
     "averageScore": 76,
     "year": 2023,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/151801",
     "notes": "Review - https://animejb.substack.com/i/160456882/mashle-magic-and-muscles-season-a-pictures",
     "studios": [
@@ -28970,6 +29297,7 @@
     "episodes": 12,
     "averageScore": 76,
     "year": 2025,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/176246",
     "notes": "Review - https://animejb.substack.com/i/173630024/mono-soigne",
     "studios": [
@@ -29034,6 +29362,7 @@
     "episodes": 12,
     "averageScore": 74,
     "year": 2018,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/99468",
     "notes": "Review - https://animejb.substack.com/i/134904824/teasing-master-takagi-san-season-shin-ei-animation",
     "studios": [
@@ -29123,6 +29452,7 @@
     "episodes": 12,
     "averageScore": 74,
     "year": 2024,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/170938",
     "notes": "Review - https://animejb.substack.com/i/150383017/mahoaku-bones",
     "studios": [
@@ -29179,6 +29509,7 @@
     "episodes": 13,
     "averageScore": 72,
     "year": 2012,
+    "season": "FALL",
     "url": "https://anilist.co/anime/14227",
     "notes": "",
     "studios": [
@@ -29255,6 +29586,7 @@
     "episodes": 1,
     "averageScore": 72,
     "year": 2025,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/182158",
     "notes": "",
     "studios": [
@@ -29317,6 +29649,7 @@
     "episodes": 12,
     "averageScore": 72,
     "year": 2025,
+    "season": "FALL",
     "url": "https://anilist.co/anime/186621",
     "notes": "",
     "studios": [
@@ -29397,6 +29730,7 @@
     "episodes": 12,
     "averageScore": 71,
     "year": 2024,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/166828",
     "notes": "Review - https://animejb.substack.com/i/143365291/hensara-a-salad-bowl-of-eccentrics-synergysp-studio-comet",
     "studios": [
@@ -29457,6 +29791,7 @@
     "episodes": 1,
     "averageScore": 71,
     "year": 2024,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/173935",
     "notes": "",
     "studios": [
@@ -29533,6 +29868,7 @@
     "episodes": 12,
     "averageScore": 70,
     "year": 2023,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/148098",
     "notes": "Review - https://animejb.substack.com/i/129052785/a-galaxy-next-door-asahi-production",
     "studios": [
@@ -29617,6 +29953,7 @@
     "episodes": 12,
     "averageScore": 70,
     "year": 2024,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/155963",
     "notes": "Review - https://animejb.substack.com/i/140949852/hokkaido-gals-are-super-adorable-silver-link-blade",
     "studios": [
@@ -29697,6 +30034,7 @@
     "episodes": 12,
     "averageScore": 70,
     "year": 2024,
+    "season": "FALL",
     "url": "https://anilist.co/anime/165790",
     "notes": "Review - https://animejb.substack.com/i/150383017/days-to-the-wedding-ashi-productions",
     "studios": [
@@ -29760,6 +30098,7 @@
     "episodes": 12,
     "averageScore": 70,
     "year": 2025,
+    "season": "FALL",
     "url": "https://anilist.co/anime/183291",
     "notes": "",
     "studios": [
@@ -29837,6 +30176,7 @@
     "episodes": 12,
     "averageScore": 69,
     "year": 2023,
+    "season": "FALL",
     "url": "https://anilist.co/anime/154692",
     "notes": "Review - https://animejb.substack.com/i/139904839/girlfriend-girlfriend-season-synergysp",
     "studios": [
@@ -29900,6 +30240,7 @@
     "episodes": 13,
     "averageScore": 69,
     "year": 2023,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/160188",
     "notes": "Review - https://animejb.substack.com/i/134904824/the-girl-i-like-forgot-her-glasses-gohands",
     "studios": [
@@ -30008,6 +30349,7 @@
     "episodes": 12,
     "averageScore": 69,
     "year": 2024,
+    "season": "FALL",
     "url": "https://anilist.co/anime/172190",
     "notes": "Review - https://animejb.substack.com/i/150383017/you-are-ms-servant-felix-film",
     "studios": [
@@ -30067,6 +30409,7 @@
     "episodes": 12,
     "averageScore": 69,
     "year": 2025,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/178022",
     "notes": "",
     "studios": [
@@ -30128,6 +30471,7 @@
     "episodes": 1,
     "averageScore": 68,
     "year": 2000,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/1118",
     "notes": "",
     "studios": [
@@ -30209,6 +30553,7 @@
     "episodes": 12,
     "averageScore": 68,
     "year": 2017,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/21701",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1521291662043009024",
     "studios": [
@@ -30274,6 +30619,7 @@
     "episodes": 12,
     "averageScore": 68,
     "year": 2024,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/169927",
     "notes": "Review - https://animejb.substack.com/i/143365291/studio-apartment-good-lighting-angel-included-okuruto-noboru",
     "studios": [
@@ -30325,6 +30671,7 @@
     "episodes": 12,
     "averageScore": 68,
     "year": 2024,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/171748",
     "notes": "Review - https://animejb.substack.com/i/148872535/shy-season-bit",
     "studios": [
@@ -30410,6 +30757,7 @@
     "episodes": 12,
     "averageScore": 67,
     "year": 2020,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/115113",
     "notes": "",
     "studios": [
@@ -30497,6 +30845,7 @@
     "episodes": 12,
     "averageScore": 67,
     "year": 2016,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/21390",
     "notes": "Review - https://animejb.substack.com/i/134904824/the-asterisk-war-season-a-pictures",
     "studios": [
@@ -30568,6 +30917,7 @@
     "episodes": 12,
     "averageScore": 67,
     "year": 2022,
+    "season": "FALL",
     "url": "https://anilist.co/anime/144533",
     "notes": "Review - http://www.twitlonger.com/show/n_1ss73j5\n\nScore adjusted from 7/10 to 6/10 (12/22/2022).",
     "studios": [
@@ -30689,6 +31039,7 @@
     "episodes": 12,
     "averageScore": 66,
     "year": 2015,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/21093",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1430234635145973764",
     "studios": [
@@ -30761,6 +31112,7 @@
     "episodes": 13,
     "averageScore": 66,
     "year": 2013,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/14749",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1392366112701095938",
     "studios": [
@@ -30849,6 +31201,7 @@
     "episodes": 12,
     "averageScore": 65,
     "year": 2022,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/124410",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1575868396775743488\n\nScore adjusted from 7/10 to 6/10 (9/26/2022).",
     "studios": [
@@ -30935,6 +31288,7 @@
     "episodes": 12,
     "averageScore": 65,
     "year": 2020,
+    "season": "FALL",
     "url": "https://anilist.co/anime/118419",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1381460473909014529",
     "studios": [
@@ -30997,6 +31351,7 @@
     "episodes": 12,
     "averageScore": 65,
     "year": 2022,
+    "season": "FALL",
     "url": "https://anilist.co/anime/146676",
     "notes": "Review - http://www.twitlonger.com/show/n_1ss78f2\n\nScore adjusted from 7/10 to 6/10 (12/28/2022).",
     "studios": [
@@ -31069,6 +31424,7 @@
     "episodes": 12,
     "averageScore": 64,
     "year": 2024,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/160181",
     "notes": "Watched the first episode at Anime Boston 2024\nReview - https://animejb.substack.com/i/150383017/sasakoi-whisper-me-a-love-song-yokohama-animation-lab-cloud-hearts",
     "studios": [
@@ -31133,6 +31489,7 @@
     "episodes": 12,
     "averageScore": 63,
     "year": 2023,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/148116",
     "notes": "Review - https://animejb.substack.com/i/109902923/the-iceblade-sorcerer-shall-rule-the-world-fine\n\nScore adjusted from 7/10 to 6/10 (4/8/2023).",
     "studios": [
@@ -31185,6 +31542,7 @@
     "episodes": 12,
     "averageScore": 62,
     "year": 2025,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/159483",
     "notes": "",
     "studios": [
@@ -31276,6 +31634,7 @@
     "episodes": 12,
     "averageScore": 61,
     "year": 2014,
+    "season": "FALL",
     "url": "https://anilist.co/anime/20565",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1375277372472238081",
     "studios": [
@@ -31349,6 +31708,7 @@
     "episodes": 12,
     "averageScore": 58,
     "year": 2009,
+    "season": "FALL",
     "url": "https://anilist.co/anime/6205",
     "notes": "",
     "studios": [
@@ -31474,6 +31834,7 @@
     "episodes": 12,
     "averageScore": 58,
     "year": 2021,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/113425",
     "notes": "",
     "studios": [
@@ -31546,6 +31907,7 @@
     "episodes": 10,
     "averageScore": 58,
     "year": 2017,
+    "season": "FALL",
     "url": "https://anilist.co/anime/98951",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1520633207963672577",
     "studios": [
@@ -31655,6 +32017,7 @@
     "episodes": 12,
     "averageScore": 56,
     "year": 2010,
+    "season": "FALL",
     "url": "https://anilist.co/anime/8861",
     "notes": "Review - https://animejb.substack.com/i/140949852/yosuga-no-sora-feel",
     "studios": [
@@ -31737,6 +32100,7 @@
     "episodes": 25,
     "averageScore": 78,
     "year": 2008,
+    "season": "FALL",
     "url": "https://anilist.co/anime/4224",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1379256300689838080",
     "studios": [
@@ -31837,6 +32201,7 @@
     "episodes": 26,
     "averageScore": 78,
     "year": 2010,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/7054",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1439585105534664704\n\nScore adjusted from 6/10 to 5/10 (10/1/2022).",
     "studios": [
@@ -31898,6 +32263,7 @@
     "episodes": 13,
     "averageScore": 70,
     "year": 2024,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/143866",
     "notes": "Review - https://animejb.substack.com/i/140949852/bottom-tier-character-tomozaki-season-project-no",
     "studios": [
@@ -31975,6 +32341,7 @@
     "episodes": 10,
     "averageScore": 67,
     "year": 2013,
+    "season": "FALL",
     "url": "https://anilist.co/anime/19221",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1380020962020712449",
     "studios": [
@@ -32034,6 +32401,7 @@
     "episodes": 24,
     "averageScore": 67,
     "year": 2022,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/132052",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1576341789669462016",
     "studios": [
@@ -32095,6 +32463,7 @@
     "episodes": 12,
     "averageScore": 67,
     "year": 2024,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/164244",
     "notes": "Review - https://animejb.substack.com/i/140949852/kanaten-the-foolish-angel-dances-with-the-devil-childrens-playground-entertainment",
     "studios": [
@@ -32155,6 +32524,7 @@
     "episodes": 12,
     "averageScore": 67,
     "year": 2024,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/168623",
     "notes": "Review - https://animejb.substack.com/i/148872535/dahlia-in-bloom-crafting-a-fresh-start-with-magical-tools-typhoon-graphics-imagica-infos",
     "studios": [
@@ -32218,6 +32588,7 @@
     "episodes": 12,
     "averageScore": 66,
     "year": 2024,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/165855",
     "notes": "Review - https://animejb.substack.com/i/143365291/a-condition-called-love-east-fish-studio",
     "studios": [
@@ -32278,6 +32649,7 @@
     "episodes": 12,
     "averageScore": 65,
     "year": 2023,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/157397",
     "notes": "Review - https://animejb.substack.com/i/134904824/the-dreaming-boy-is-a-realist-studio-gokumi-axsiz",
     "studios": [
@@ -32330,6 +32702,7 @@
     "episodes": 1,
     "averageScore": 63,
     "year": 2004,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/1894",
     "notes": "",
     "studios": [
@@ -32422,6 +32795,7 @@
     "episodes": 12,
     "averageScore": 62,
     "year": 2019,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/104325",
     "notes": "Review - https://animejb.substack.com/i/140949852/nankoko-why-the-hell-are-you-here-teacher-tear-studio",
     "studios": [
@@ -32520,6 +32894,7 @@
     "episodes": 12,
     "averageScore": 61,
     "year": 2021,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/128712",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1439737397839863809",
     "studios": [
@@ -32591,6 +32966,7 @@
     "episodes": 12,
     "averageScore": 61,
     "year": 2023,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/131863",
     "notes": "Review - https://animejb.substack.com/i/134904824/liar-liar-geek-toys",
     "studios": [
@@ -32701,6 +33077,7 @@
     "episodes": 12,
     "averageScore": 60,
     "year": 2017,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/21685",
     "notes": "",
     "studios": [
@@ -32794,6 +33171,7 @@
     "episodes": 10,
     "averageScore": 59,
     "year": 2017,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/97863",
     "notes": "",
     "studios": [
@@ -32861,6 +33239,7 @@
     "episodes": 12,
     "averageScore": 58,
     "year": 2021,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/124675",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1410358997522210816\n\nScore adjusted from 7/10 to 6/10 (6/17/2022).\nScore adjusted from 6/10 to 5/10 (8/4/2022).",
     "studios": [
@@ -32958,6 +33337,7 @@
     "episodes": 12,
     "averageScore": 58,
     "year": 2025,
+    "season": "FALL",
     "url": "https://anilist.co/anime/187331",
     "notes": "",
     "studios": [
@@ -33018,6 +33398,7 @@
     "episodes": 24,
     "averageScore": 78,
     "year": 2007,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/2034",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1576423081085734912\n\nScore adjusted from 6/10 to 4/10 (10/1/2022).",
     "studios": [
@@ -33114,6 +33495,7 @@
     "episodes": 20,
     "averageScore": 73,
     "year": 2014,
+    "season": "WINTER",
     "url": "https://anilist.co/anime/18897",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1387948209385967619\n\nScore adjusted from 6/10 to 4/10 (10/1/2022).",
     "studios": [
@@ -33206,6 +33588,7 @@
     "episodes": 12,
     "averageScore": 71,
     "year": 2015,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/20876",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1411876891485687811\n\nScore adjusted from 6/10 to 4/10 (10/1/2022).",
     "studios": [
@@ -33286,6 +33669,7 @@
     "episodes": 13,
     "averageScore": 69,
     "year": 2011,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/10110",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1430747101839904768\n\nScore adjusted from 5/10 to 4/10 (10/1/2022).",
     "studios": [
@@ -33343,6 +33727,7 @@
     "episodes": 12,
     "averageScore": 66,
     "year": 2014,
+    "season": "FALL",
     "url": "https://anilist.co/anime/20701",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1560479044239560704",
     "studios": [
@@ -33414,6 +33799,7 @@
     "episodes": 12,
     "averageScore": 62,
     "year": 2017,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/98320",
     "notes": "Review thread - https://twitter.com/thejericbrual/status/1419896102313250830\n\nScore adjusted from 6/10 to 4/10 (10/1/2022).",
     "studios": [
@@ -33476,6 +33862,7 @@
     "episodes": 12,
     "averageScore": 61,
     "year": 2024,
+    "season": "SUMMER",
     "url": "https://anilist.co/anime/167144",
     "notes": "Review - https://animejb.substack.com/i/148872535/futakire-love-is-indivisible-by-twins-roll",
     "studios": [
@@ -33546,6 +33933,7 @@
     "episodes": 13,
     "averageScore": 60,
     "year": 2024,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/144176",
     "notes": "Review - https://animejb.substack.com/i/143365291/gods-games-we-play-lidenfilms",
     "studios": [
@@ -33607,6 +33995,7 @@
     "episodes": 12,
     "averageScore": 59,
     "year": 2010,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/7593",
     "notes": "",
     "studios": [
@@ -33661,6 +34050,7 @@
     "episodes": 12,
     "averageScore": 57,
     "year": 2023,
+    "season": "FALL",
     "url": "https://anilist.co/anime/166896",
     "notes": "Review - https://animejb.substack.com/i/139904839/protocol-rain-quad",
     "studios": [
@@ -33726,6 +34116,7 @@
     "episodes": 12,
     "averageScore": 47,
     "year": 2023,
+    "season": "SPRING",
     "url": "https://anilist.co/anime/156896",
     "notes": "Review - https://animejb.substack.com/i/129052785/kizuna-no-allele-wit-studio-signalmd",
     "studios": [
