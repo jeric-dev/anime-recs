@@ -181,24 +181,41 @@ h1 {
   line-height: 1.4;
 }
 
-.collapsible-label {
+.filter-group.collapsed {
+  display: none;
+}
+
+.category-toggles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.category-toggle {
   display: flex;
   align-items: center;
   gap: 6px;
-  background: none;
-  border: none;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  color: var(--text-muted);
+  padding: 5px 12px;
+  font-size: 0.78rem;
   font-family: inherit;
+  font-weight: 500;
   cursor: pointer;
-  padding: 5px 0 0;
+  transition: all var(--transition);
 }
 
-.collapsible-label:hover {
+.category-toggle:hover {
+  border-color: var(--accent);
   color: var(--accent);
 }
 
-.collapsible-label .label-text {
-  flex: 1;
-  text-align: left;
+.category-toggle.expanded {
+  background: rgba(192, 132, 252, 0.14);
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .group-badge {
@@ -210,26 +227,14 @@ h1 {
   padding: 1px 6px;
   min-width: 8px;
   text-align: center;
-  letter-spacing: normal;
-  text-transform: none;
 }
 
 .group-badge.hidden {
   display: none;
 }
 
-.collapse-chevron {
-  font-size: 0.7rem;
-  transition: transform var(--transition);
-  flex-shrink: 0;
-}
-
-.filter-group.collapsible.collapsed .collapse-chevron {
-  transform: rotate(-90deg);
-}
-
-.filter-group.collapsible.collapsed .filter-chips {
-  display: none;
+.category-toggle .collapse-chevron {
+  font-size: 0.65rem;
 }
 
 .filter-chips {
@@ -892,10 +897,6 @@ main {
   .filter-group-label {
     min-width: unset;
     padding-top: 0;
-  }
-
-  .collapsible-label {
-    width: 100%;
   }
 
   main {

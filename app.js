@@ -611,40 +611,57 @@ function makeFilterChip(label, type, extraClass, value) {
 
 const collapsibleGroups = [];
 
-function makeGroup(label, extraClass, collapsible) {
+function makeGroup(label, extraClass) {
   const group = document.createElement('div');
   group.className = 'filter-group' + (extraClass ? ` ${extraClass}` : '');
+  const labelEl = document.createElement('div');
+  labelEl.className = 'filter-group-label';
+  labelEl.textContent = label;
   const chips = document.createElement('div');
   chips.className = 'filter-chips';
+  group.appendChild(labelEl);
+  group.appendChild(chips);
+  return { group, chips };
+}
 
-  if (collapsible) {
-    group.classList.add('collapsible', 'collapsed');
-    const labelEl = document.createElement('button');
-    labelEl.type = 'button';
-    labelEl.className = 'filter-group-label collapsible-label';
-    const text = document.createElement('span');
-    text.className = 'label-text';
-    text.textContent = label;
-    const badge = document.createElement('span');
-    badge.className = 'group-badge hidden';
-    const chevron = document.createElement('span');
-    chevron.className = 'collapse-chevron';
-    chevron.textContent = '▾';
-    labelEl.appendChild(text);
-    labelEl.appendChild(badge);
-    labelEl.appendChild(chevron);
-    labelEl.addEventListener('click', () => group.classList.toggle('collapsed'));
-    group.appendChild(labelEl);
-    group.appendChild(chips);
-    collapsibleGroups.push({ chips, badge });
-  } else {
-    const labelEl = document.createElement('div');
-    labelEl.className = 'filter-group-label';
-    labelEl.textContent = label;
-    group.appendChild(labelEl);
-    group.appendChild(chips);
-  }
+// Collapsible groups render their name as a small pill in a shared, wrapping
+// nav row instead of a full-width label — clicking a pill reveals the group's
+// content (label + chips) below the nav, keeping the panel compact when
+// nothing is expanded instead of stacking empty full-width rows.
+function makeCollapsibleGroup(label, categoryNav, extraClass) {
+  const group = document.createElement('div');
+  group.className = 'filter-group collapsed' + (extraClass ? ` ${extraClass}` : '');
+  const labelEl = document.createElement('div');
+  labelEl.className = 'filter-group-label';
+  labelEl.textContent = label;
+  const chips = document.createElement('div');
+  chips.className = 'filter-chips';
+  group.appendChild(labelEl);
+  group.appendChild(chips);
 
+  const toggleBtn = document.createElement('button');
+  toggleBtn.type = 'button';
+  toggleBtn.className = 'category-toggle';
+  const text = document.createElement('span');
+  text.className = 'label-text';
+  text.textContent = label;
+  const badge = document.createElement('span');
+  badge.className = 'group-badge hidden';
+  const chevron = document.createElement('span');
+  chevron.className = 'collapse-chevron';
+  chevron.textContent = '▾';
+  toggleBtn.appendChild(text);
+  toggleBtn.appendChild(badge);
+  toggleBtn.appendChild(chevron);
+  if (extraClass) toggleBtn.classList.add(extraClass);
+  toggleBtn.addEventListener('click', () => {
+    const collapsed = group.classList.toggle('collapsed');
+    toggleBtn.classList.toggle('expanded', !collapsed);
+    chevron.textContent = collapsed ? '▾' : '▴';
+  });
+  categoryNav.appendChild(toggleBtn);
+
+  collapsibleGroups.push({ chips, badge });
   return { group, chips };
 }
 
@@ -891,14 +908,20 @@ function buildFilterUI() {
   genreChips.appendChild(makeFilterChip('Ecchi', 'genre', 'nsfw-chip'));
   panel.appendChild(genreGroup);
 
+  // Shared compact nav row for every collapsible group's toggle pill —
+  // expanded content renders below this, in group order, only for open ones.
+  const categoryNav = document.createElement('div');
+  categoryNav.className = 'category-toggles';
+  panel.appendChild(categoryNav);
+
   // Demographic
-  const { group: demoGroup, chips: demoChips } = makeGroup('Demographic', '', true);
+  const { group: demoGroup, chips: demoChips } = makeCollapsibleGroup('Demographic', categoryNav);
   DEMOGRAPHICS.forEach(d => demoChips.appendChild(makeFilterChip(d, 'tag')));
   panel.appendChild(demoGroup);
 
   // Tag groups
   FILTER_GROUPS.forEach(({ label, items }) => {
-    const { group, chips } = makeGroup(label, '', true);
+    const { group, chips } = makeCollapsibleGroup(label, categoryNav);
     items.forEach(item => chips.appendChild(makeFilterChip(item, 'tag')));
     panel.appendChild(group);
   });
@@ -913,13 +936,13 @@ function buildFilterUI() {
     .sort(([a], [b]) => a.localeCompare(b))
     .map(([name]) => name);
   if (qualifiedStudios.length) {
-    const { group: studioGroup, chips: studioChips } = makeGroup('Studio', '', true);
+    const { group: studioGroup, chips: studioChips } = makeCollapsibleGroup('Studio', categoryNav);
     qualifiedStudios.forEach(s => studioChips.appendChild(makeFilterChip(s, 'studio')));
     panel.appendChild(studioGroup);
   }
 
   // NSFW group
-  const { group: nsfwGroup, chips: nsfwChips } = makeGroup(NSFW_GROUP.label, 'nsfw-group', true);
+  const { group: nsfwGroup, chips: nsfwChips } = makeCollapsibleGroup(NSFW_GROUP.label, categoryNav, 'nsfw-group');
   NSFW_GROUP.items.forEach(item => nsfwChips.appendChild(makeFilterChip(item, 'tag')));
   panel.appendChild(nsfwGroup);
 }
