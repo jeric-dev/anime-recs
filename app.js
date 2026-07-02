@@ -100,6 +100,12 @@ const AWARD_META = {
     label: () => '5ch AOTY Winner',
     hover: () => 'This anime was crowned Anime of the Year by members of 5ch!',
   },
+  fourchanAOTY: {
+    emoji: '🥇',
+    className: 'award-gold',
+    label: () => '4chan AOTY Winner',
+    hover: () => 'This anime was crowned Anime of the Year by members of /a/!',
+  },
   jury: {
     emoji: '🥇',
     className: 'award-gold',
@@ -148,7 +154,7 @@ const SPECIAL_TITLES_META = {
   },
 };
 
-const MEDALIST_AWARDS = ['gold', 'fivechAOTY', 'jury', 'public', 'motyJury', 'motyPublic'];
+const MEDALIST_AWARDS = ['gold', 'fivechAOTY', 'fourchanAOTY', 'jury', 'public', 'motyJury', 'motyPublic'];
 
 function animeHasSpecialTitle(anime, key) {
   const awards = anime.specialAwards || [];

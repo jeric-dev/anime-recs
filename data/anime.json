@@ -312,7 +312,8 @@
       "fresh",
       "gold",
       "public",
-      "fivechAOTY"
+      "fivechAOTY",
+      "fourchanAOTY"
     ]
   },
   {
@@ -2350,7 +2351,8 @@
     "requiresPrereq": false,
     "specialAwards": [
       "fresh",
-      "public"
+      "public",
+      "fourchanAOTY"
     ]
   },
   {
@@ -8524,7 +8526,8 @@
     "specialAwards": [
       "fresh",
       "public",
-      "fivechAOTY"
+      "fivechAOTY",
+      "fourchanAOTY"
     ]
   },
   {
@@ -20080,7 +20083,9 @@
       "Kyoto Animation"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [
+      "fourchanAOTY"
+    ]
   },
   {
     "id": 145545,
