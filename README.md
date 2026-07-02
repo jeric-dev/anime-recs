@@ -68,7 +68,8 @@ Results are sorted by **my personal rating first**, then by **total match score*
 
 Shown on the detail view next to the season badge, and filterable via the "Special Titles" group:
 
-- 🥇🥈🥉 **AOTY Winner / First Runner-Up / Second Runner-Up** — my own personal picks for a given year
+- 🥇 **AOTY Winner** — my own personal pick for a given year
+- 🥇 **5ch AOTY Winner** — crowned Anime of the Year by members of 5ch
 - 🥇 **r/anime AOTY/MOTY Jury/Public Winner** — community award wins
 - 🍅 **Certified Fresh** / 🗑️ **Certified Rotten** — my own quality call, independent of score, for shows that are either a great starting point regardless of genre or a rough watch
 

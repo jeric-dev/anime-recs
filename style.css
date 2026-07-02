@@ -736,18 +736,6 @@ main {
   color: #facc15;
 }
 
-.award-chip.award-silver {
-  background: rgba(203, 213, 225, 0.15);
-  border: 1px solid rgba(203, 213, 225, 0.45);
-  color: #cbd5e1;
-}
-
-.award-chip.award-bronze {
-  background: rgba(217, 119, 6, 0.15);
-  border: 1px solid rgba(217, 119, 6, 0.45);
-  color: #d97706;
-}
-
 .award-chip.award-fresh {
   background: rgba(74, 222, 128, 0.15);
   border: 1px solid rgba(74, 222, 128, 0.45);

@@ -94,17 +94,11 @@ const AWARD_META = {
     label: () => 'AOTY Winner',
     hover: () => 'This anime is my favorite from this year!',
   },
-  silver: {
-    emoji: '🥈',
-    className: 'award-silver',
-    label: () => 'AOTY First Runner-Up',
-    hover: () => 'This anime is my second favorite from this year!',
-  },
-  bronze: {
-    emoji: '🥉',
-    className: 'award-bronze',
-    label: () => 'AOTY Second Runner-Up',
-    hover: () => 'This anime is my third favorite from this year!',
+  fivechAOTY: {
+    emoji: '🥇',
+    className: 'award-gold',
+    label: () => '5ch AOTY Winner',
+    hover: () => 'This anime was crowned Anime of the Year by members of 5ch!',
   },
   jury: {
     emoji: '🥇',
@@ -144,17 +138,17 @@ const AWARD_META = {
   },
 };
 
-// Filter chips for anime.specialAwards — "medalist" covers any AOTY placement (gold/silver/bronze)
+// Filter chips for anime.specialAwards — "medalist" covers any AOTY/MOTY win
 const SPECIAL_TITLES_META = {
   fresh: { label: `${AWARD_META.fresh.emoji} Certified Fresh`, hover: AWARD_META.fresh.hover() },
   rotten: { label: `${AWARD_META.rotten.emoji} Certified Rotten`, hover: AWARD_META.rotten.hover() },
   medalist: {
-    label: '🥇🥈🥉 Medalists',
+    label: '🥇 Medalists',
     hover: 'Anime recognized for outstanding achievement in their year of release.',
   },
 };
 
-const MEDALIST_AWARDS = ['gold', 'silver', 'bronze', 'jury', 'public', 'motyJury', 'motyPublic'];
+const MEDALIST_AWARDS = ['gold', 'fivechAOTY', 'jury', 'public', 'motyJury', 'motyPublic'];
 
 function animeHasSpecialTitle(anime, key) {
   const awards = anime.specialAwards || [];

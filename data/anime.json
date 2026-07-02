@@ -311,7 +311,8 @@
     "specialAwards": [
       "fresh",
       "gold",
-      "public"
+      "public",
+      "fivechAOTY"
     ]
   },
   {
@@ -693,8 +694,7 @@
     ],
     "requiresPrereq": false,
     "specialAwards": [
-      "fresh",
-      "silver"
+      "fresh"
     ]
   },
   {
@@ -1048,8 +1048,7 @@
     ],
     "requiresPrereq": false,
     "specialAwards": [
-      "fresh",
-      "bronze"
+      "fresh"
     ]
   },
   {
@@ -1670,9 +1669,7 @@
       "Ajiado"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "silver"
-    ]
+    "specialAwards": []
   },
   {
     "id": 21875,
@@ -2216,9 +2213,7 @@
       "Asahi Production"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "bronze"
-    ]
+    "specialAwards": []
   },
   {
     "id": 154587,
@@ -3402,7 +3397,9 @@
       "Toei Animation"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [
+      "fivechAOTY"
+    ]
   },
   {
     "id": 185660,
@@ -3592,7 +3589,7 @@
     ],
     "requiresPrereq": false,
     "specialAwards": [
-      "silver"
+      "fivechAOTY"
     ]
   },
   {
@@ -5051,9 +5048,7 @@
       "LIDENFILMS"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "silver"
-    ]
+    "specialAwards": []
   },
   {
     "id": 21202,
@@ -5897,9 +5892,7 @@
       "P.A.WORKS"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "bronze"
-    ]
+    "specialAwards": []
   },
   {
     "id": 151380,
@@ -6194,9 +6187,7 @@
       "Bibury Animation Studios"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "bronze"
-    ]
+    "specialAwards": []
   },
   {
     "id": 176370,
@@ -8532,7 +8523,8 @@
     "requiresPrereq": false,
     "specialAwards": [
       "fresh",
-      "public"
+      "public",
+      "fivechAOTY"
     ]
   },
   {
@@ -19258,7 +19250,8 @@
     ],
     "requiresPrereq": false,
     "specialAwards": [
-      "fresh"
+      "fresh",
+      "fivechAOTY"
     ]
   },
   {
@@ -19351,7 +19344,8 @@
     ],
     "requiresPrereq": false,
     "specialAwards": [
-      "jury"
+      "jury",
+      "fivechAOTY"
     ]
   },
   {
