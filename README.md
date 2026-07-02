@@ -62,7 +62,7 @@ Every tag shown as a filter appears in at least 5 of my completed anime at ≥75
 - **Genres & Studios:** +10 pts flat per match
 - **Tags & Demographics:** `(rank / 100) × 5` pts if the tag's rank is ≥75% — a tag at 96% confidence scores 4.8 pts, one at 75% scores 3.75 pts
 
-Results are sorted by **my personal rating first**, then by **total match score** (tag/genre/studio relevance) as a tiebreaker, then by **Anilist's community average score** as the final tiebreaker.
+Results are sorted by **my personal rating first**, then by **total match score** (tag/genre/studio relevance), then by **Anilist's community average score**, then **alphabetically by title** as the final tiebreaker.
 
 ## Special award badges
 

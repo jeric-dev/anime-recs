@@ -17,15 +17,14 @@ const FILTER_GROUPS = [
     label: 'Fantasy & Supernatural',
     items: [
       'Aliens', 'Animals', 'Creature Taming', 'Demons', 'Gods', 'Henshin',
-      'Kemonomimi', 'Magic', 'Mythology', 'Shapeshifting', 'Super Power',
-      'Witch', 'Youkai',
+      'Magic', 'Mythology', 'Super Power', 'Witch', 'Youkai',
     ],
   },
   {
     label: 'Hobbies & Activities',
     items: [
       'Acting', 'Athletics', 'Band', 'Card Battle', 'Drawing',
-      'Outdoor Activities', 'Rock Music', 'Video Games', 'Writing',
+      'Outdoor Activities', 'Rock Music', 'Video Games',
     ],
   },
   {
@@ -55,7 +54,7 @@ const FILTER_GROUPS = [
     label: 'Tone',
     items: [
       'Cute Girls Doing Cute Things', 'Episodic', 'Iyashikei', 'Meta',
-      'Parody', 'Satire', 'Slapstick', 'Surreal Comedy',
+      'Parody', 'Slapstick', 'Surreal Comedy',
     ],
   },
   {
@@ -69,9 +68,9 @@ const FILTER_GROUPS = [
   {
     label: 'Characters',
     items: [
-      'Age Regression', 'Anti-Hero', 'Disability', 'Gyaru', 'Hikikomori',
+      'Anti-Hero', 'Disability', 'Hikikomori',
       'Idol', 'Kuudere', 'Maids', 'Office Lady', 'Ojou-sama', 'Orphan',
-      'Teacher', 'Tsundere', 'Twins',
+      'Tsundere',
     ],
   },
 ];
@@ -355,7 +354,8 @@ function recommend() {
     .sort((a, b) => {
       if ((b.score || 0) !== (a.score || 0)) return (b.score || 0) - (a.score || 0);
       if (b._score !== a._score) return b._score - a._score;
-      return (b.averageScore || 0) - (a.averageScore || 0);
+      if ((b.averageScore || 0) !== (a.averageScore || 0)) return (b.averageScore || 0) - (a.averageScore || 0);
+      return (a.title || a.titleRomaji || '').localeCompare(b.title || b.titleRomaji || '');
     });
 
   renderResults(results);
@@ -702,6 +702,23 @@ function updateGroupBadges() {
 function buildFilterUI() {
   const panel = document.getElementById('filter-panel');
 
+  // Mature Content tag qualification is computed first (before Genres/Studio
+  // below use isMatureAnime) — only tags appearing in ≥5 non-prerequisite
+  // anime, same qualification bar as Genres/Studio.
+  const matureTagCounts = new Map();
+  animeData
+    .filter(a => !a.requiresPrereq)
+    .forEach(a => {
+      const tagMap = new Map(a.tags.map(t => [t.name.toLowerCase(), t.rank]));
+      NSFW_GROUP.items.forEach(item => {
+        const rank = tagMap.get(item.toLowerCase());
+        if (rank !== undefined && rank >= 75) {
+          matureTagCounts.set(item, (matureTagCounts.get(item) || 0) + 1);
+        }
+      });
+    });
+  qualifiedMatureTags = NSFW_GROUP.items.filter(item => (matureTagCounts.get(item) || 0) >= 5);
+
   // Length (total watch time = episodes × episode duration)
   const { group: lengthGroup, chips: lengthChips } = makeGroup('Length');
   [['short', 'Short (< 5 hrs)'], ['medium', 'Medium (5–10 hrs)'], ['long', 'Long (> 10 hrs)']].forEach(([val, label]) => {
@@ -928,11 +945,12 @@ function buildFilterUI() {
   });
   panel.appendChild(specialGroup);
 
-  // Genres (only ones appearing in ≥5 non-prerequisite anime — same
-  // qualification bar as tags and studios)
+  // Genres (only ones appearing in ≥5 anime that are visible with Mature
+  // Content off — otherwise a genre could "qualify" purely off mature
+  // anime and then show fewer than 5 results whenever the toggle is off)
   const genreCounts = new Map();
   animeData
-    .filter(a => !a.requiresPrereq)
+    .filter(a => !a.requiresPrereq && !isMatureAnime(a))
     .forEach(a => [...new Set(a.genres || [])].forEach(g => genreCounts.set(g, (genreCounts.get(g) || 0) + 1)));
   const qualifiedGenres = ALL_GENRES.filter(g => (genreCounts.get(g) || 0) >= 5);
   const { group: genreGroup, chips: genreChips } = makeGroup('Genres');
@@ -960,10 +978,11 @@ function buildFilterUI() {
     panel.appendChild(group);
   });
 
-  // Studio (dynamic — only studios with ≥5 anime)
+  // Studio (dynamic — only studios with ≥5 anime visible with Mature
+  // Content off, same reasoning as Genres above)
   const studioCounts = new Map();
   animeData
-    .filter(a => !a.requiresPrereq)
+    .filter(a => !a.requiresPrereq && !isMatureAnime(a))
     .forEach(a => [...new Set(a.studios || [])].forEach(s => studioCounts.set(s, (studioCounts.get(s) || 0) + 1)));
   const qualifiedStudios = [...studioCounts.entries()]
     .filter(([, n]) => n >= 5)
@@ -975,22 +994,7 @@ function buildFilterUI() {
     panel.appendChild(studioGroup);
   }
 
-  // Mature Content group (only tags appearing in ≥5 non-prerequisite anime,
-  // same qualification bar as Genres/Studio)
-  const matureTagCounts = new Map();
-  animeData
-    .filter(a => !a.requiresPrereq)
-    .forEach(a => {
-      const tagMap = new Map(a.tags.map(t => [t.name.toLowerCase(), t.rank]));
-      NSFW_GROUP.items.forEach(item => {
-        const rank = tagMap.get(item.toLowerCase());
-        if (rank !== undefined && rank >= 75) {
-          matureTagCounts.set(item, (matureTagCounts.get(item) || 0) + 1);
-        }
-      });
-    });
-  qualifiedMatureTags = NSFW_GROUP.items.filter(item => (matureTagCounts.get(item) || 0) >= 5);
-
+  // Mature Content group
   const { group: nsfwGroup, chips: nsfwChips } = makeCollapsibleGroup(NSFW_GROUP.label, categoryNav, 'nsfw-group');
   qualifiedMatureTags.forEach(item => nsfwChips.appendChild(makeFilterChip(item, 'tag')));
   panel.appendChild(nsfwGroup);
