@@ -77,7 +77,7 @@ const FILTER_GROUPS = [
 ];
 
 const NSFW_GROUP = {
-  label: '18+ Content',
+  label: 'Mature Content',
   items: ['Inseki', 'Large Breasts', 'Nudity'],
 };
 
@@ -181,6 +181,11 @@ const state = {
 };
 
 let andMode = false;
+let matureEnabled = false;
+// Populated in buildFilterUI once anime data is loaded — only Mature Content
+// tags that clear the ≥5-anime qualification bar are ever shown as chips or
+// used to decide whether an anime counts as "mature" for hiding purposes.
+let qualifiedMatureTags = [];
 
 // ── Data ───────────────────────────────────────────────────────────────────
 
@@ -242,6 +247,15 @@ function matchesSpecialTitleFilter(anime) {
   return andMode ? selected.every(key => animeHasSpecialTitle(anime, key)) : selected.some(key => animeHasSpecialTitle(anime, key));
 }
 
+function isMatureAnime(anime) {
+  if ((anime.genres || []).some(g => g.toLowerCase() === 'ecchi')) return true;
+  const tagMap = new Map(anime.tags.map(t => [t.name.toLowerCase(), t.rank]));
+  return qualifiedMatureTags.some(name => {
+    const rank = tagMap.get(name.toLowerCase());
+    return rank !== undefined && rank >= 75;
+  });
+}
+
 function isExcluded(anime) {
   const genres = new Set(anime.genres.map(g => g.toLowerCase()));
   const tags = new Set(anime.tags.map(t => t.name.toLowerCase()));
@@ -280,11 +294,13 @@ function scoreAnime(anime) {
     }
   }
 
+  // Studio matches aren't pushed into `matched` — the studio name is already
+  // shown under the title on every card, so listing it again there would be
+  // redundant.
   const animeStudios = new Set((anime.studios || []).map(s => s.toLowerCase()));
   for (const studio of state.studios) {
     if (animeStudios.has(studio.toLowerCase())) {
       score += 10;
-      matched.push(studio);
     }
   }
 
@@ -325,6 +341,7 @@ function recommend() {
 
   const results = animeData
     .filter(a => !a.requiresPrereq)
+    .filter(a => matureEnabled || !isMatureAnime(a))
     .filter(matchesLengthFilter)
     .filter(matchesYearFilter)
     .filter(matchesScoreFilter)
@@ -357,7 +374,7 @@ function escapeHtml(str) {
 function renderCard(anime) {
   const title = anime.title || anime.titleRomaji;
   const score = anime.score > 0 ? `★ ${anime.score}` : '—';
-  const genres = (anime.genres || []).slice(0, 3);
+  const studios = (anime.studios || []).join(', ');
   const matched = anime.matched || [];
 
   return `
@@ -368,9 +385,7 @@ function renderCard(anime) {
       </div>
       <div class="card-body">
         <h3 class="card-title">${escapeHtml(title)}</h3>
-        <div class="card-genres">
-          ${genres.map(g => `<span class="genre-pill">${escapeHtml(g)}</span>`).join('')}
-        </div>
+        ${studios ? `<div class="card-studio">${escapeHtml(studios)}</div>` : ''}
         ${matched.length ? `<div class="card-matched">↳ ${matched.map(escapeHtml).join(', ')}</div>` : ''}
       </div>
     </div>
@@ -464,6 +479,7 @@ function renderDefault() {
   const status = document.getElementById('status-bar');
   const top = animeData
     .filter(a => !a.requiresPrereq && a.score >= 9)
+    .filter(a => matureEnabled || !isMatureAnime(a))
     .sort((a, b) => {
       if (b.score !== a.score) return b.score - a.score;
       if ((b.averageScore || 0) !== (a.averageScore || 0)) return (b.averageScore || 0) - (a.averageScore || 0);
@@ -912,17 +928,25 @@ function buildFilterUI() {
   });
   panel.appendChild(specialGroup);
 
-  // Genres
+  // Genres (only ones appearing in ≥5 non-prerequisite anime — same
+  // qualification bar as tags and studios)
+  const genreCounts = new Map();
+  animeData
+    .filter(a => !a.requiresPrereq)
+    .forEach(a => [...new Set(a.genres || [])].forEach(g => genreCounts.set(g, (genreCounts.get(g) || 0) + 1)));
+  const qualifiedGenres = ALL_GENRES.filter(g => (genreCounts.get(g) || 0) >= 5);
   const { group: genreGroup, chips: genreChips } = makeGroup('Genres');
-  ALL_GENRES.forEach(g => genreChips.appendChild(makeFilterChip(g, 'genre')));
+  qualifiedGenres.forEach(g => genreChips.appendChild(makeFilterChip(g, 'genre')));
   genreChips.appendChild(makeFilterChip('Ecchi', 'genre', 'nsfw-chip'));
   panel.appendChild(genreGroup);
 
   // Shared compact nav row for every collapsible group's toggle pill —
   // expanded content renders below this, in group order, only for open ones.
-  const categoryNav = document.createElement('div');
-  categoryNav.className = 'category-toggles';
-  panel.appendChild(categoryNav);
+  // Wrapped in a filter-group so its label/pills line up with Genres above.
+  const { group: additionalGroup, chips: categoryNav } = makeGroup('Additional Filters');
+  categoryNav.classList.remove('filter-chips');
+  categoryNav.classList.add('category-toggles');
+  panel.appendChild(additionalGroup);
 
   // Demographic
   const { group: demoGroup, chips: demoChips } = makeCollapsibleGroup('Demographic', categoryNav);
@@ -951,13 +975,29 @@ function buildFilterUI() {
     panel.appendChild(studioGroup);
   }
 
-  // NSFW group
+  // Mature Content group (only tags appearing in ≥5 non-prerequisite anime,
+  // same qualification bar as Genres/Studio)
+  const matureTagCounts = new Map();
+  animeData
+    .filter(a => !a.requiresPrereq)
+    .forEach(a => {
+      const tagMap = new Map(a.tags.map(t => [t.name.toLowerCase(), t.rank]));
+      NSFW_GROUP.items.forEach(item => {
+        const rank = tagMap.get(item.toLowerCase());
+        if (rank !== undefined && rank >= 75) {
+          matureTagCounts.set(item, (matureTagCounts.get(item) || 0) + 1);
+        }
+      });
+    });
+  qualifiedMatureTags = NSFW_GROUP.items.filter(item => (matureTagCounts.get(item) || 0) >= 5);
+
   const { group: nsfwGroup, chips: nsfwChips } = makeCollapsibleGroup(NSFW_GROUP.label, categoryNav, 'nsfw-group');
-  NSFW_GROUP.items.forEach(item => nsfwChips.appendChild(makeFilterChip(item, 'tag')));
+  qualifiedMatureTags.forEach(item => nsfwChips.appendChild(makeFilterChip(item, 'tag')));
   panel.appendChild(nsfwGroup);
 }
 
 function toggle18plus(enabled) {
+  matureEnabled = enabled;
   document.body.classList.toggle('show-18plus', enabled);
   if (!enabled) {
     document.querySelectorAll('.nsfw-chip, .nsfw-group .filter-chip').forEach(btn => {
@@ -971,8 +1011,8 @@ function toggle18plus(enabled) {
       }
       btn.classList.remove('active', 'excluded');
     });
-    recommend();
   }
+  recommend();
 }
 
 function clearAllFilters() {

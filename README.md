@@ -10,9 +10,11 @@ A personal anime recommendation site built on top of my [Anilist](https://anilis
 - Lets visitors filter using structured chips — genres, demographics, studios, themes, tone, cast/characters, and more
 - Tag chips show Anilist's own description on hover (desktop) or long-press (mobile)
 - Ranks results by my personal rating first, tiebroken by tag relevance, then Anilist's community average
+- Result cards show the animation studio(s) under the title (genres were dropped from the card front to save space and avoid repeating what's already filterable via chips)
 - Clicking a card opens a detail view with the full description, studio, season, any special award badges, and a link to my review where one exists
 - Default view (no filters) shows my ★9 and ★10 rated picks
 - Anime that need prior series/season context are excluded from results entirely (hand-curated, not just "has a prequel")
+- Mature content (Ecchi genre, or tags like Nudity/Large Breasts at ≥75% rank) is hidden from every view — default and filtered — until the "Mature Content" toggle is switched on
 
 ## How filtering works
 
@@ -26,7 +28,7 @@ By default, selecting multiple chips uses OR logic within each group and AND log
 
 Toggling **Match All (AND)** switches every group to strict AND logic, including within a single group — so Action + Comedy now requires *both* genres, and picking two Length buckets (like Short + Medium) correctly returns nothing, since a show can't be both at once.
 
-Length, Year Range, My Score, Special Titles, and Genres are always expanded. Everything after that (Demographic, Fantasy & Supernatural, Setting, Studio, 18+ Content, etc.) collapses into a single row of small category pills instead of stacking full-width empty sections — clicking a pill reveals that group's chips below the row. A badge on a pill shows how many chips are active inside it, so selections in a collapsed category aren't invisible.
+Length, Year Range, My Score, Special Titles, and Genres are always expanded. Everything after that (Demographic, Fantasy & Supernatural, Setting, Studio, Mature Content, etc.) lives under an "Additional Filters" row — a single line of small category pills, aligned with the Genres row above it, instead of stacking full-width empty sections. Clicking a pill reveals that group's chips below the row. A badge on a pill shows how many chips are active inside it, so selections in a collapsed category aren't invisible.
 
 ### Filter groups
 
@@ -38,7 +40,7 @@ Roughly ordered from "facts about the entry" → "broad classification" → "wha
 | Year Range | Dual-handle slider |
 | My Score | Dual-handle slider, 1–10, same mechanics as Year Range |
 | Special Titles | Certified Fresh, Certified Rotten, Medalists (any AOTY/MOTY placement or r/anime award) |
-| Genres | 17 standard Anilist genres |
+| Genres | Anilist genres that clear the same ≥5-anime qualification bar as tags (currently 14 of 17 — Horror, Mahou Shoujo, Mecha, and Thriller are excluded for too few results) |
 | Demographic | Shounen, Shoujo, Seinen, Josei |
 | Fantasy & Supernatural | Magic, Demons, Youkai, Aliens, and more |
 | Hobbies & Activities | Band, Video Games, Athletics, Card Battle, and more |
@@ -49,7 +51,7 @@ Roughly ordered from "facts about the entry" → "broad classification" → "wha
 | Cast | Female/Male Protagonist, Ensemble Cast, Primarily Teen/Adult/Child Cast |
 | Characters | Tsundere, Kuudere, Anti-Hero, and more |
 | Studio | Only studios with 5+ non-prerequisite anime from my list, per Anilist's own Studios (not Producers) credit |
-| 18+ Content | Hidden behind a toggle — explicit/mature tags |
+| Mature Content | Hidden behind a toggle — explicit/mature tags. Anime matching Ecchi or a qualifying mature tag are excluded from every view until the toggle is on |
 
 Length, Year Range, My Score, and hard-filter tags (Special Titles) are pass/fail — they don't contribute to the ranking score, only include/exclude anime from the results.
 

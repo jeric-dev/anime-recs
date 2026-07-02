@@ -518,15 +518,14 @@ main {
   color: var(--text);
   line-height: 1.35;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
-.card-genres {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
+.card-studio {
+  font-size: 0.74rem;
+  color: var(--text-muted);
 }
 
 .genre-pill {
