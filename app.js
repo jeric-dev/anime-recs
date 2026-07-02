@@ -91,7 +91,7 @@ const AWARD_META = {
   gold: {
     emoji: '🥇',
     className: 'award-gold',
-    label: () => 'AOTY Winner',
+    label: () => "Jeric's AOTY Winner",
     hover: () => 'This anime is my favorite from this year!',
   },
   fivechAOTY: {
