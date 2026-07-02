@@ -325,6 +325,10 @@ body.show-18plus .nsfw-group {
   display: flex;
 }
 
+.nsfw-group-wrapper {
+  width: 100%;
+}
+
 /* ── Year range slider ── */
 .year-range-chips {
   flex-direction: column;

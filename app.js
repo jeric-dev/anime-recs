@@ -629,8 +629,12 @@ function makeGroup(label, extraClass) {
 // content (label + chips) below the nav, keeping the panel compact when
 // nothing is expanded instead of stacking empty full-width rows.
 function makeCollapsibleGroup(label, categoryNav, extraClass) {
+  // extraClass (e.g. nsfw-group) controls a separate show/hide concern (the
+  // 18+ toggle) that must not compete with the collapsed/expanded state on
+  // the same element — both would otherwise fight over `display` via CSS
+  // specificity. Put extraClass on an outer wrapper instead.
   const group = document.createElement('div');
-  group.className = 'filter-group collapsed' + (extraClass ? ` ${extraClass}` : '');
+  group.className = 'filter-group collapsed';
   const labelEl = document.createElement('div');
   labelEl.className = 'filter-group-label';
   labelEl.textContent = label;
@@ -638,6 +642,12 @@ function makeCollapsibleGroup(label, categoryNav, extraClass) {
   chips.className = 'filter-chips';
   group.appendChild(labelEl);
   group.appendChild(chips);
+
+  const outer = extraClass ? document.createElement('div') : group;
+  if (extraClass) {
+    outer.className = `${extraClass} nsfw-group-wrapper`;
+    outer.appendChild(group);
+  }
 
   const toggleBtn = document.createElement('button');
   toggleBtn.type = 'button';
@@ -662,7 +672,7 @@ function makeCollapsibleGroup(label, categoryNav, extraClass) {
   categoryNav.appendChild(toggleBtn);
 
   collapsibleGroups.push({ chips, badge });
-  return { group, chips };
+  return { group: outer, chips };
 }
 
 function updateGroupBadges() {
