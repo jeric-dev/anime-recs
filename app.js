@@ -89,46 +89,52 @@ const SEASON_META = {
 
 const AWARD_META = {
   gold: {
-    emoji: '🥇',
+    emoji: '🏆',
     className: 'award-gold',
     label: () => "Jeric's AOTY Winner",
     hover: () => 'This anime is my favorite from this year',
   },
   fivechAOTY: {
-    emoji: '🥇',
+    emoji: '🏆',
     className: 'award-gold',
     label: () => '5ch AOTY Winner',
     hover: () => 'This anime was crowned Anime of the Year by members of 5ch',
   },
   fourchanAOTY: {
-    emoji: '🥇',
+    emoji: '🏆',
     className: 'award-gold',
     label: () => '4chan AOTY Winner',
     hover: () => 'This anime was crowned Anime of the Year by members of /a/',
   },
   jury: {
-    emoji: '🥇',
+    emoji: '🏆',
     className: 'award-gold',
     label: () => 'r/anime AOTY Jury Winner',
     hover: () => 'This anime won the r/anime Anime of the Year award among the jury',
   },
   public: {
-    emoji: '🥇',
+    emoji: '🏆',
     className: 'award-gold',
     label: () => 'r/anime AOTY Public Winner',
     hover: () => 'This anime won the r/anime Anime of the Year award among the public',
   },
   motyJury: {
-    emoji: '🥇',
+    emoji: '🏆',
     className: 'award-gold',
     label: () => 'r/anime MOTY Jury Winner',
     hover: () => 'This anime won the r/anime Movie of the Year award among the jury',
   },
   motyPublic: {
-    emoji: '🥇',
+    emoji: '🏆',
     className: 'award-gold',
     label: () => 'r/anime MOTY Public Winner',
     hover: () => 'This anime won the r/anime Movie of the Year award among the public',
+  },
+  crunchyroll: {
+    emoji: '🏆',
+    className: 'award-gold',
+    label: () => 'Crunchyroll AOTY Winner',
+    hover: () => 'This anime won the Crunchyroll Anime Award for Anime of the Year',
   },
   fresh: {
     emoji: '🍅',
@@ -149,12 +155,12 @@ const SPECIAL_TITLES_META = {
   fresh: { label: `${AWARD_META.fresh.emoji} Certified Fresh`, hover: AWARD_META.fresh.hover() },
   rotten: { label: `${AWARD_META.rotten.emoji} Certified Rotten`, hover: AWARD_META.rotten.hover() },
   medalist: {
-    label: '🥇 Medalists',
+    label: '🏆 Award Winning',
     hover: 'Anime recognized for outstanding achievement in their year of release.',
   },
 };
 
-const MEDALIST_AWARDS = ['gold', 'fivechAOTY', 'fourchanAOTY', 'jury', 'public', 'motyJury', 'motyPublic'];
+const MEDALIST_AWARDS = ['gold', 'fivechAOTY', 'fourchanAOTY', 'crunchyroll', 'jury', 'public', 'motyJury', 'motyPublic'];
 
 function animeHasSpecialTitle(anime, key) {
   const awards = anime.specialAwards || [];
@@ -918,7 +924,7 @@ function buildFilterUI() {
   scoreChips.appendChild(scoreSliderWrapper);
   panel.appendChild(scoreGroup);
 
-  // Special Titles (Certified Fresh/Rotten, Medalists — derived from specialAwards)
+  // Special Titles (Certified Fresh/Rotten, Award Winning — derived from specialAwards)
   // Include-only toggle, same as Length — no exclude state.
   const { group: specialGroup, chips: specialChips } = makeGroup('Special Titles');
   Object.entries(SPECIAL_TITLES_META).forEach(([key, meta]) => {

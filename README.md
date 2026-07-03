@@ -39,7 +39,7 @@ Roughly ordered from "facts about the entry" → "broad classification" → "wha
 | Length | Short (< 5 hrs), Medium (5–10 hrs), Long (> 10 hrs) — based on total runtime (episodes × episode length), not episode count |
 | Year Range | Dual-handle slider |
 | My Score | Dual-handle slider, 1–10, same mechanics as Year Range |
-| Special Titles | Certified Fresh, Certified Rotten, Medalists (any AOTY/MOTY placement or r/anime award) |
+| Special Titles | Certified Fresh, Certified Rotten, Award Winning (any AOTY/MOTY placement or community award) |
 | Genres | Anilist genres that clear the same ≥5-anime qualification bar as tags (currently 14 of 17 — Horror, Mahou Shoujo, Mecha, and Thriller are excluded for too few results) |
 | Demographic | Shounen, Shoujo, Seinen, Josei |
 | Fantasy & Supernatural | Magic, Demons, Youkai, Aliens, and more |
@@ -68,10 +68,11 @@ Results are sorted by **my personal rating first**, then by **total match score*
 
 Shown on the detail view next to the season badge, and filterable via the "Special Titles" group:
 
-- 🥇 **Jeric's AOTY Winner** — my own personal pick for a given year
-- 🥇 **5ch AOTY Winner** — crowned Anime of the Year by members of 5ch
-- 🥇 **4chan AOTY Winner** — crowned Anime of the Year by members of /a/
-- 🥇 **r/anime AOTY/MOTY Jury/Public Winner** — community award wins
+- 🏆 **Jeric's AOTY Winner** — my own personal pick for a given year
+- 🏆 **5ch AOTY Winner** — crowned Anime of the Year by members of 5ch
+- 🏆 **4chan AOTY Winner** — crowned Anime of the Year by members of /a/
+- 🏆 **Crunchyroll AOTY Winner** — won the Crunchyroll Anime Award for Anime of the Year
+- 🏆 **r/anime AOTY/MOTY Jury/Public Winner** — community award wins
 - 🍅 **Certified Fresh** / 🗑️ **Certified Rotten** — my own quality call, independent of score, for shows that are either a great starting point regardless of genre or a rough watch
 
 ## Stack
