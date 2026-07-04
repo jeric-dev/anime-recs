@@ -24,9 +24,9 @@ Filters are multi-select chips grouped by category. Clicking a chip cycles throu
 
 (Length and Special Titles chips are include-only — no exclude state, since excluding a length bucket or a "Certified Fresh" tag isn't a meaningful thing to do.)
 
-By default, selecting multiple chips uses OR logic within each group and AND logic across groups — so selecting Action + Comedy finds anime with at least one of those genres, while adding Kyoto Animation as a studio further narrows to anime matching both genre and studio criteria.
+By default, every selected filter must match — both within a single group and across groups — so selecting Action + Comedy requires *both* genres, and adding Kyoto Animation as a studio narrows further to anime matching all three. Picking two Length buckets (like Short + Medium) correctly returns nothing by default, since a show can't be both at once.
 
-Toggling **Match All (AND)** switches every group to strict AND logic, including within a single group — so Action + Comedy now requires *both* genres, and picking two Length buckets (like Short + Medium) correctly returns nothing, since a show can't be both at once.
+Toggling **Match Any (OR)** switches everything to loose OR logic instead — Action + Comedy now finds anime with at least one of those genres, and adding Kyoto Animation as a studio widens the results further rather than narrowing them.
 
 Length, Year Range, My Score, Special Titles, and Genres are always expanded. Everything after that (Demographic, Fantasy & Supernatural, Setting, Studio, Mature Content, etc.) lives under an "Additional Filters" row — a single line of small category pills, aligned with the Genres row above it, instead of stacking full-width empty sections. Clicking a pill reveals that group's chips below the row. A badge on a pill shows how many chips are active inside it, so selections in a collapsed category aren't invisible.
 
@@ -53,7 +53,7 @@ Roughly ordered from "facts about the entry" → "broad classification" → "wha
 | Studio | Only studios with 5+ non-prerequisite anime from my list, per Anilist's own Studios (not Producers) credit |
 | Mature Content | Hidden behind a toggle — explicit/mature tags. Anime matching Ecchi or a qualifying mature tag are excluded from every view until the toggle is on |
 
-Length, Year Range, My Score, and hard-filter tags (Special Titles) are pass/fail — they don't contribute to the ranking score, only include/exclude anime from the results.
+Length, Year Range, My Score, and Special Titles don't contribute to the ranking score the way Genres/Tags/Studios do — they only include/exclude anime from the results — but they still count as active filters under the AND/OR toggle just like every other group.
 
 Every tag shown as a filter appears in at least 5 of my completed anime at ≥75% Anilist rank confidence — this keeps the chip list free of one-off or barely-relevant tags.
 

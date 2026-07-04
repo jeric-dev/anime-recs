@@ -185,7 +185,9 @@ const state = {
   scoreMax: null,
 };
 
-let andMode = false;
+// Default is AND (every selected filter, within and across groups, must
+// match). Toggling this on switches everything to OR (any one match is enough).
+let orMode = false;
 let matureEnabled = false;
 // Populated in buildFilterUI once anime data is loaded — only Mature Content
 // tags that clear the ≥5-anime qualification bar are ever shown as chips or
@@ -214,8 +216,11 @@ async function loadData() {
 
 // ── Engine ─────────────────────────────────────────────────────────────────
 
-function matchesLengthFilter(anime) {
-  if (state.lengths.size === 0) return true;
+// Length/Genres/Tags/Studios/Special Titles all take a `requireAll` flag —
+// true (the default) means every selection of that type must match, false
+// (when the OR toggle is on) means any one of them is enough. Year/Score are
+// single range checks with no internal multi-select, so they don't need it.
+function lengthMatches(anime, requireAll) {
   const minutes = anime.lengthMinutes;
   if (!minutes) return true;
   const hours = minutes / 60;
@@ -225,7 +230,7 @@ function matchesLengthFilter(anime) {
     long: hours > 10,
   };
   const selected = [...state.lengths];
-  return andMode ? selected.every(k => bucketMatch[k]) : selected.some(k => bucketMatch[k]);
+  return requireAll ? selected.every(k => bucketMatch[k]) : selected.some(k => bucketMatch[k]);
 }
 
 function matchesYearFilter(anime) {
@@ -246,10 +251,35 @@ function matchesScoreFilter(anime) {
   return true;
 }
 
-function matchesSpecialTitleFilter(anime) {
-  if (state.specialTitles.size === 0) return true;
+function specialTitleMatches(anime, requireAll) {
   const selected = [...state.specialTitles];
-  return andMode ? selected.every(key => animeHasSpecialTitle(anime, key)) : selected.some(key => animeHasSpecialTitle(anime, key));
+  return requireAll ? selected.every(key => animeHasSpecialTitle(anime, key)) : selected.some(key => animeHasSpecialTitle(anime, key));
+}
+
+function genreMatches(anime, requireAll) {
+  const animeGenres = new Set(anime.genres.map(g => g.toLowerCase()));
+  const selected = [...state.genres];
+  return requireAll
+    ? selected.every(g => animeGenres.has(g.toLowerCase()))
+    : selected.some(g => animeGenres.has(g.toLowerCase()));
+}
+
+function tagMatches(anime, requireAll) {
+  const animeTagsMap = new Map(anime.tags.map(t => [t.name.toLowerCase(), t.rank]));
+  const selected = [...state.tags];
+  const tagQualifies = t => {
+    const rank = animeTagsMap.get(t.toLowerCase());
+    return rank !== undefined && rank >= 75;
+  };
+  return requireAll ? selected.every(tagQualifies) : selected.some(tagQualifies);
+}
+
+function studioMatches(anime, requireAll) {
+  const animeStudios = new Set((anime.studios || []).map(s => s.toLowerCase()));
+  const selected = [...state.studios];
+  return requireAll
+    ? selected.every(s => animeStudios.has(s.toLowerCase()))
+    : selected.some(s => animeStudios.has(s.toLowerCase()));
 }
 
 function isMatureAnime(anime) {
@@ -312,21 +342,23 @@ function scoreAnime(anime) {
   return { score, matched };
 }
 
-function matchesAllFilters(anime) {
-  const animeGenres = new Set(anime.genres.map(g => g.toLowerCase()));
-  const animeTagsMap = new Map(anime.tags.map(t => [t.name.toLowerCase(), t.rank]));
-  const animeStudios = new Set((anime.studios || []).map(s => s.toLowerCase()));
-  for (const g of state.genres) {
-    if (!animeGenres.has(g.toLowerCase())) return false;
-  }
-  for (const t of state.tags) {
-    const rank = animeTagsMap.get(t.toLowerCase());
-    if (rank === undefined || rank < 75) return false;
-  }
-  for (const s of state.studios) {
-    if (!animeStudios.has(s.toLowerCase())) return false;
-  }
-  return true;
+// Every active filter type (one with at least one selection/range set)
+// becomes one boolean check per anime. Default (orMode off) requires ALL
+// active checks to pass — both within a single group's multi-selections and
+// across every group. Turning the OR toggle on flips both to "any one is
+// enough" instead.
+function passesFilters(anime, requireAll) {
+  const checks = [];
+  if (state.lengths.size > 0) checks.push(lengthMatches(anime, requireAll));
+  if (state.yearMin !== null || state.yearMax !== null) checks.push(matchesYearFilter(anime));
+  if (state.scoreMin !== null || state.scoreMax !== null) checks.push(matchesScoreFilter(anime));
+  if (state.specialTitles.size > 0) checks.push(specialTitleMatches(anime, requireAll));
+  if (state.genres.size > 0) checks.push(genreMatches(anime, requireAll));
+  if (state.tags.size > 0) checks.push(tagMatches(anime, requireAll));
+  if (state.studios.size > 0) checks.push(studioMatches(anime, requireAll));
+
+  if (checks.length === 0) return true;
+  return requireAll ? checks.every(Boolean) : checks.some(Boolean);
 }
 
 function recommend() {
@@ -342,21 +374,17 @@ function recommend() {
     return;
   }
 
-  const noScoringFilters = state.genres.size === 0 && state.tags.size === 0 && state.studios.size === 0;
+  const requireAll = !orMode;
 
   const results = animeData
     .filter(a => !a.requiresPrereq)
     .filter(a => matureEnabled || !isMatureAnime(a))
-    .filter(matchesLengthFilter)
-    .filter(matchesYearFilter)
-    .filter(matchesScoreFilter)
-    .filter(matchesSpecialTitleFilter)
     .filter(a => !isExcluded(a))
     .map(a => {
       const { score, matched } = scoreAnime(a);
       return { ...a, _score: score, matched };
     })
-    .filter(a => noScoringFilters || (andMode ? matchesAllFilters(a) : a._score > 0))
+    .filter(a => passesFilters(a, requireAll))
     .sort((a, b) => {
       if ((b.score || 0) !== (a.score || 0)) return (b.score || 0) - (a.score || 0);
       if (b._score !== a._score) return b._score - a._score;
@@ -1127,7 +1155,7 @@ async function init() {
   buildFilterUI();
 
   document.getElementById('toggle-18plus').addEventListener('change', e => toggle18plus(e.target.checked));
-  document.getElementById('toggle-and-mode').addEventListener('change', e => { andMode = e.target.checked; recommend(); });
+  document.getElementById('toggle-or-mode').addEventListener('change', e => { orMode = e.target.checked; recommend(); });
   document.getElementById('clear-filters').addEventListener('click', clearAllFilters);
 
   renderDefault();
