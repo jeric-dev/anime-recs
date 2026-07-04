@@ -21,7 +21,7 @@ const FILTER_GROUPS = [
     ],
   },
   {
-    label: 'Hobbies & Activities',
+    label: 'Activities & Hobbies',
     items: [
       'Acting', 'Athletics', 'Band', 'Card Battle', 'Drawing',
       'Outdoor Activities', 'Rock Music', 'Video Games',
@@ -152,12 +152,12 @@ const AWARD_META = {
 
 // Filter chips for anime.specialAwards — "medalist" covers any AOTY/MOTY win
 const SPECIAL_TITLES_META = {
-  fresh: { label: `${AWARD_META.fresh.emoji} Certified Fresh`, hover: AWARD_META.fresh.hover() },
-  rotten: { label: `${AWARD_META.rotten.emoji} Certified Rotten`, hover: AWARD_META.rotten.hover() },
   medalist: {
     label: '🏆 Award Winning',
     hover: 'Anime recognized for outstanding achievement in their year of release.',
   },
+  fresh: { label: `${AWARD_META.fresh.emoji} Certified Fresh`, hover: AWARD_META.fresh.hover() },
+  rotten: { label: `${AWARD_META.rotten.emoji} Certified Rotten`, hover: AWARD_META.rotten.hover() },
 };
 
 const MEDALIST_AWARDS = ['gold', 'fivechAOTY', 'fourchanAOTY', 'crunchyroll', 'jury', 'public', 'motyJury', 'motyPublic'];
@@ -178,7 +178,9 @@ const state = {
   excludedGenres: new Set(),
   excludedTags: new Set(),
   excludedStudios: new Set(),
+  excludedSpecialTitles: new Set(),
   lengths: new Set(),
+  excludedLengths: new Set(),
   yearMin: null,
   yearMax: null,
   scoreMin: null,
@@ -304,6 +306,23 @@ function isExcluded(anime) {
   for (const s of state.excludedStudios) {
     if (studios.has(s.toLowerCase())) return true;
   }
+  for (const key of state.excludedSpecialTitles) {
+    if (animeHasSpecialTitle(anime, key)) return true;
+  }
+  if (state.excludedLengths.size > 0) {
+    const minutes = anime.lengthMinutes;
+    if (minutes) {
+      const hours = minutes / 60;
+      const bucketMatch = {
+        short: hours < 5,
+        medium: hours >= 5 && hours <= 10,
+        long: hours > 10,
+      };
+      for (const bucket of state.excludedLengths) {
+        if (bucketMatch[bucket]) return true;
+      }
+    }
+  }
   return false;
 }
 
@@ -366,6 +385,7 @@ function recommend() {
   const hasFilters =
     state.genres.size > 0 || state.tags.size > 0 || state.studios.size > 0 || state.specialTitles.size > 0 ||
     state.excludedGenres.size > 0 || state.excludedTags.size > 0 || state.excludedStudios.size > 0 ||
+    state.excludedSpecialTitles.size > 0 || state.excludedLengths.size > 0 ||
     state.lengths.size > 0 || state.yearMin !== null || state.yearMax !== null ||
     state.scoreMin !== null || state.scoreMax !== null;
 
@@ -508,6 +528,23 @@ function renderResults(results) {
   grid.innerHTML = results.map(renderCard).join('');
 }
 
+function renderHeroCollage() {
+  const collage = document.getElementById('hero-collage');
+  if (!collage) return;
+
+  const covers = animeData.filter(a => !a.requiresPrereq && !isMatureAnime(a) && a.cover).map(a => a.cover);
+  const shuffled = [...covers];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+
+  const tileCount = 32;
+  collage.innerHTML = shuffled.slice(0, tileCount)
+    .map(url => `<img src="${escapeHtml(url)}" alt="" loading="lazy">`)
+    .join('');
+}
+
 function renderDefault() {
   const grid = document.getElementById('results');
   const status = document.getElementById('status-bar');
@@ -535,6 +572,7 @@ function updateFilterCount() {
   const count =
     state.genres.size + state.tags.size + state.studios.size + state.specialTitles.size +
     state.excludedGenres.size + state.excludedTags.size + state.excludedStudios.size +
+    state.excludedSpecialTitles.size + state.excludedLengths.size +
     state.lengths.size +
     (state.yearMin !== null || state.yearMax !== null ? 1 : 0) +
     (state.scoreMin !== null || state.scoreMax !== null ? 1 : 0);
@@ -614,7 +652,17 @@ function attachHoverTooltip(el, text, { suppressClick = false } = {}) {
 
 // ── Filter UI ──────────────────────────────────────────────────────────────
 
-function makeFilterChip(label, type, extraClass, value) {
+// Every chip type gets its own include/exclude Set pair so the same
+// Unselected → Include → Exclude → Unselected cycle works everywhere.
+const CHIP_SETS = {
+  genre: ['genres', 'excludedGenres'],
+  studio: ['studios', 'excludedStudios'],
+  tag: ['tags', 'excludedTags'],
+  length: ['lengths', 'excludedLengths'],
+  specialTitle: ['specialTitles', 'excludedSpecialTitles'],
+};
+
+function makeFilterChip(label, type, extraClass, value, hoverText) {
   value = value !== undefined ? value : label;
 
   const btn = document.createElement('button');
@@ -623,7 +671,9 @@ function makeFilterChip(label, type, extraClass, value) {
   btn.dataset.type = type;
   btn.dataset.value = value;
 
-  if (type === 'tag' && tagDescriptions[label]) {
+  if (hoverText) {
+    attachHoverTooltip(btn, hoverText, { suppressClick: true });
+  } else if (type === 'tag' && tagDescriptions[label]) {
     attachHoverTooltip(btn, tagDescriptions[label], { suppressClick: true });
   }
 
@@ -633,8 +683,9 @@ function makeFilterChip(label, type, extraClass, value) {
       return;
     }
     hideTooltip();
-    const includeSet = type === 'genre' ? state.genres : type === 'studio' ? state.studios : state.tags;
-    const excludeSet = type === 'genre' ? state.excludedGenres : type === 'studio' ? state.excludedStudios : state.excludedTags;
+    const [includeKey, excludeKey] = CHIP_SETS[type];
+    const includeSet = state[includeKey];
+    const excludeSet = state[excludeKey];
 
     if (!includeSet.has(value) && !excludeSet.has(value)) {
       // Unselected → Include
@@ -756,20 +807,7 @@ function buildFilterUI() {
   // Length (total watch time = episodes × episode duration)
   const { group: lengthGroup, chips: lengthChips } = makeGroup('Length');
   [['short', 'Short (< 5 hrs)'], ['medium', 'Medium (5–10 hrs)'], ['long', 'Long (> 10 hrs)']].forEach(([val, label]) => {
-    const btn = document.createElement('button');
-    btn.className = 'filter-chip';
-    btn.textContent = label;
-    btn.addEventListener('click', () => {
-      if (state.lengths.has(val)) {
-        state.lengths.delete(val);
-        btn.classList.remove('active');
-      } else {
-        state.lengths.add(val);
-        btn.classList.add('active');
-      }
-      recommend();
-    });
-    lengthChips.appendChild(btn);
+    lengthChips.appendChild(makeFilterChip(label, 'length', null, val));
   });
   panel.appendChild(lengthGroup);
 
@@ -953,29 +991,9 @@ function buildFilterUI() {
   panel.appendChild(scoreGroup);
 
   // Special Titles (Certified Fresh/Rotten, Award Winning — derived from specialAwards)
-  // Include-only toggle, same as Length — no exclude state.
   const { group: specialGroup, chips: specialChips } = makeGroup('Special Titles');
   Object.entries(SPECIAL_TITLES_META).forEach(([key, meta]) => {
-    const btn = document.createElement('button');
-    btn.className = 'filter-chip';
-    btn.textContent = meta.label;
-    attachHoverTooltip(btn, meta.hover, { suppressClick: true });
-    btn.addEventListener('click', () => {
-      if (btn._suppressClick) {
-        btn._suppressClick = false;
-        return;
-      }
-      hideTooltip();
-      if (state.specialTitles.has(key)) {
-        state.specialTitles.delete(key);
-        btn.classList.remove('active');
-      } else {
-        state.specialTitles.add(key);
-        btn.classList.add('active');
-      }
-      recommend();
-    });
-    specialChips.appendChild(btn);
+    specialChips.appendChild(makeFilterChip(meta.label, 'specialTitle', null, key, meta.hover));
   });
   panel.appendChild(specialGroup);
 
@@ -1000,18 +1018,6 @@ function buildFilterUI() {
   categoryNav.classList.add('category-toggles');
   panel.appendChild(additionalGroup);
 
-  // Demographic
-  const { group: demoGroup, chips: demoChips } = makeCollapsibleGroup('Demographic', categoryNav);
-  DEMOGRAPHICS.forEach(d => demoChips.appendChild(makeFilterChip(d, 'tag')));
-  panel.appendChild(demoGroup);
-
-  // Tag groups
-  FILTER_GROUPS.forEach(({ label, items }) => {
-    const { group, chips } = makeCollapsibleGroup(label, categoryNav);
-    items.forEach(item => chips.appendChild(makeFilterChip(item, 'tag')));
-    panel.appendChild(group);
-  });
-
   // Studio (dynamic — only studios with ≥5 anime visible with Mature
   // Content off, same reasoning as Genres above)
   const studioCounts = new Map();
@@ -1022,16 +1028,21 @@ function buildFilterUI() {
     .filter(([, n]) => n >= 5)
     .sort(([a], [b]) => a.localeCompare(b))
     .map(([name]) => name);
-  if (qualifiedStudios.length) {
-    const { group: studioGroup, chips: studioChips } = makeCollapsibleGroup('Studio', categoryNav);
-    qualifiedStudios.forEach(s => studioChips.appendChild(makeFilterChip(s, 'studio')));
-    panel.appendChild(studioGroup);
-  }
 
-  // Mature Content group
-  const { group: nsfwGroup, chips: nsfwChips } = makeCollapsibleGroup(NSFW_GROUP.label, categoryNav, 'nsfw-group');
-  qualifiedMatureTags.forEach(item => nsfwChips.appendChild(makeFilterChip(item, 'tag')));
-  panel.appendChild(nsfwGroup);
+  // Every collapsible pill in "Additional Filters", rendered alphabetically
+  // by label rather than in source-definition order.
+  const additionalGroups = [
+    { label: 'Demographic', items: DEMOGRAPHICS, type: 'tag' },
+    ...FILTER_GROUPS.map(({ label, items }) => ({ label, items, type: 'tag' })),
+    ...(qualifiedStudios.length ? [{ label: 'Studio', items: qualifiedStudios, type: 'studio' }] : []),
+    { label: NSFW_GROUP.label, items: qualifiedMatureTags, type: 'tag', extraClass: 'nsfw-group' },
+  ].sort((a, b) => a.label.localeCompare(b.label));
+
+  additionalGroups.forEach(({ label, items, type, extraClass }) => {
+    const { group, chips } = makeCollapsibleGroup(label, categoryNav, extraClass);
+    items.forEach(item => chips.appendChild(makeFilterChip(item, type)));
+    panel.appendChild(group);
+  });
 }
 
 function toggle18plus(enabled) {
@@ -1061,7 +1072,9 @@ function clearAllFilters() {
   state.excludedGenres.clear();
   state.excludedTags.clear();
   state.excludedStudios.clear();
+  state.excludedSpecialTitles.clear();
   state.lengths.clear();
+  state.excludedLengths.clear();
   state.yearMin = null;
   state.yearMax = null;
   state.scoreMin = null;
@@ -1153,6 +1166,7 @@ async function init() {
   }
 
   buildFilterUI();
+  renderHeroCollage();
 
   document.getElementById('toggle-18plus').addEventListener('change', e => toggle18plus(e.target.checked));
   document.getElementById('toggle-or-mode').addEventListener('change', e => { orMode = e.target.checked; recommend(); });

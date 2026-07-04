@@ -15,6 +15,7 @@ A personal anime recommendation site built on top of my [Anilist](https://anilis
 - Default view (no filters) shows my ★9 and ★10 rated picks
 - Anime that need prior series/season context are excluded from results entirely (hand-curated, not just "has a prequel")
 - Mature content (Ecchi genre, or tags like Nudity/Large Breasts at ≥75% rank) is hidden from every view — default and filtered — until the "Mature Content" toggle is switched on
+- The header shows a randomized, blurred collage of covers from my list behind the title — a fresh mix every page load
 
 ## How filtering works
 
@@ -22,7 +23,7 @@ Filters are multi-select chips grouped by category. Clicking a chip cycles throu
 
 - **Unselected** → **Include** (purple) → **Exclude** (red/strikethrough) → Unselected
 
-(Length and Special Titles chips are include-only — no exclude state, since excluding a length bucket or a "Certified Fresh" tag isn't a meaningful thing to do.)
+Every filter chip — including Length and Special Titles — supports all three states.
 
 By default, every selected filter must match — both within a single group and across groups — so selecting Action + Comedy requires *both* genres, and adding Kyoto Animation as a studio narrows further to anime matching all three. Picking two Length buckets (like Short + Medium) correctly returns nothing by default, since a show can't be both at once.
 
@@ -32,26 +33,26 @@ Length, Year Range, My Score, Special Titles, and Genres are always expanded. Ev
 
 ### Filter groups
 
-Roughly ordered from "facts about the entry" → "broad classification" → "what it's about" (alphabetical) → "who's involved":
+Length, Year Range, My Score, Special Titles, and Genres come first as "facts about the entry"; everything under the "Additional Filters" pill row is alphabetized by group name:
 
 | Group | Notes |
 |---|---|
 | Length | Short (< 5 hrs), Medium (5–10 hrs), Long (> 10 hrs) — based on total runtime (episodes × episode length), not episode count |
 | Year Range | Dual-handle slider |
 | My Score | Dual-handle slider, 1–10, same mechanics as Year Range |
-| Special Titles | Certified Fresh, Certified Rotten, Award Winning (any AOTY/MOTY placement or community award) |
+| Special Titles | Award Winning (any AOTY/MOTY placement or community award), Certified Fresh, Certified Rotten |
 | Genres | Anilist genres that clear the same ≥5-anime qualification bar as tags (currently 14 of 17 — Horror, Mahou Shoujo, Mecha, and Thriller are excluded for too few results) |
-| Demographic | Shounen, Shoujo, Seinen, Josei |
-| Fantasy & Supernatural | Magic, Demons, Youkai, Aliens, and more |
-| Hobbies & Activities | Band, Video Games, Athletics, Card Battle, and more |
-| Relationships & Romance | Heterosexual, Female Harem, Love Triangle, and more |
-| Setting | School, Isekai, Urban Fantasy, Historical, Medieval, and more |
-| Themes | Coming of Age, War, Revenge, Found Family, and more |
-| Tone | Iyashikei, Parody, Slapstick, Episodic, and more |
+| Activities & Hobbies | Band, Video Games, Athletics, Card Battle, and more |
 | Cast | Female/Male Protagonist, Ensemble Cast, Primarily Teen/Adult/Child Cast |
 | Characters | Tsundere, Kuudere, Anti-Hero, and more |
-| Studio | Only studios with 5+ non-prerequisite anime from my list, per Anilist's own Studios (not Producers) credit |
+| Demographic | Shounen, Shoujo, Seinen, Josei |
+| Fantasy & Supernatural | Magic, Demons, Youkai, Aliens, and more |
 | Mature Content | Hidden behind a toggle — explicit/mature tags. Anime matching Ecchi or a qualifying mature tag are excluded from every view until the toggle is on |
+| Relationships & Romance | Heterosexual, Female Harem, Love Triangle, and more |
+| Setting | School, Isekai, Urban Fantasy, Historical, Medieval, and more |
+| Studio | Only studios with 5+ non-prerequisite anime from my list, per Anilist's own Studios (not Producers) credit |
+| Themes | Coming of Age, War, Revenge, Found Family, and more |
+| Tone | Iyashikei, Parody, Slapstick, Episodic, and more |
 
 Length, Year Range, My Score, and Special Titles don't contribute to the ranking score the way Genres/Tags/Studios do — they only include/exclude anime from the results — but they still count as active filters under the AND/OR toggle just like every other group.
 
