@@ -187,6 +187,10 @@ const MEDALIST_AWARDS = ['gold', 'fivechAOTY', 'fourchanAOTY', 'crunchyroll', 'j
 // the same metricRankings population the Scoring Metrics chips are colored
 // from, so the two stay consistent with each other.
 function getFreshRottenStatus(anime) {
+  // Prereq anime never carry the Fresh/Rotten title, even if their Weighted
+  // Score would otherwise qualify — someone has to watch something else
+  // first, so it's not a title worth surfacing on its own.
+  if (anime.requiresPrereq) return null;
   const list = metricRankings.adjustedScore;
   if (!list) return null;
   const rank = list.findIndex(x => x.id === anime.id) + 1;
