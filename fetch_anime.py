@@ -104,7 +104,32 @@ def load_existing_awards_map(path):
         existing = json.load(f)
     return {a["id"]: a["specialAwards"] for a in existing if "specialAwards" in a}
 
-def fetch_anime_list(existing_prereq_map, existing_awards_map):
+def load_existing_mal_id_map(path):
+    if not os.path.exists(path):
+        return {}
+    with open(path, encoding="utf-8") as f:
+        existing = json.load(f)
+    return {a["id"]: a["malId"] for a in existing if "malId" in a}
+
+# MAL-derived stats (malScore, malMembers, malTomatometer, adjustedScore, or
+# malStats — a per-malId breakdown used when one Anilist entry bundles
+# multiple MAL entries, e.g. the Re:ZERO OVAs) are populated by a separate
+# scraping pass, not this script — preserved here so a re-fetch from Anilist
+# doesn't wipe them out.
+MAL_STAT_FIELDS = ["malScore", "malMembers", "malTomatometer", "adjustedScore", "malStats"]
+
+def load_existing_mal_stats_map(path):
+    if not os.path.exists(path):
+        return {}
+    with open(path, encoding="utf-8") as f:
+        existing = json.load(f)
+    return {
+        a["id"]: {field: a[field] for field in MAL_STAT_FIELDS if field in a}
+        for a in existing
+        if any(field in a for field in MAL_STAT_FIELDS)
+    }
+
+def fetch_anime_list(existing_prereq_map, existing_awards_map, existing_mal_id_map, existing_mal_stats_map):
     response = requests.post(
         ANILIST_API,
         json={"query": QUERY, "variables": {"username": USERNAME}},
@@ -162,6 +187,10 @@ def fetch_anime_list(existing_prereq_map, existing_awards_map):
                 "requiresPrereq": requires_prereq,
                 "specialAwards": existing_awards_map.get(media["id"], []),
             })
+            if media["id"] in existing_mal_id_map:
+                entries[-1]["malId"] = existing_mal_id_map[media["id"]]
+            if media["id"] in existing_mal_stats_map:
+                entries[-1].update(existing_mal_stats_map[media["id"]])
 
     entries.sort(key=lambda x: (x["score"] or 0, x["averageScore"] or 0), reverse=True)
     return entries, new_ids
@@ -171,8 +200,10 @@ if __name__ == "__main__":
     out = os.path.join("data", "anime.json")
     existing_prereq_map = load_existing_prereq_map(out)
     existing_awards_map = load_existing_awards_map(out)
+    existing_mal_id_map = load_existing_mal_id_map(out)
+    existing_mal_stats_map = load_existing_mal_stats_map(out)
     print(f"Fetching completed anime for {USERNAME}...")
-    anime, new_ids = fetch_anime_list(existing_prereq_map, existing_awards_map)
+    anime, new_ids = fetch_anime_list(existing_prereq_map, existing_awards_map, existing_mal_id_map, existing_mal_stats_map)
     with open(out, "w", encoding="utf-8") as f:
         json.dump(anime, f, ensure_ascii=False, indent=2)
     print(f"Saved {len(anime)} anime to {out}")

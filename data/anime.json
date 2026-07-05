@@ -113,7 +113,12 @@
       "A-1 Pictures"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 43608,
+    "malScore": 8.95,
+    "malMembers": 772960,
+    "malTomatometer": 89.6,
+    "adjustedScore": 8.70417506062515
   },
   {
     "id": 151384,
@@ -201,7 +206,12 @@
       "A-1 Pictures"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 52198,
+    "malScore": 8.71,
+    "malMembers": 286447,
+    "malTomatometer": 87.3,
+    "adjustedScore": 8.291543783105363
   },
   {
     "id": 130003,
@@ -309,12 +319,16 @@
     ],
     "requiresPrereq": false,
     "specialAwards": [
-      "fresh",
       "gold",
       "public",
       "fivechAOTY",
       "fourchanAOTY"
-    ]
+    ],
+    "malId": 47917,
+    "malScore": 8.73,
+    "malMembers": 562388,
+    "malTomatometer": 86.2,
+    "adjustedScore": 8.464562711523254
   },
   {
     "id": 21519,
@@ -401,9 +415,12 @@
       "CoMix Wave"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "fresh"
-    ]
+    "specialAwards": [],
+    "malId": 32281,
+    "malScore": 8.82,
+    "malMembers": 2642404,
+    "malTomatometer": 85.9,
+    "adjustedScore": 8.745436358064879
   },
   {
     "id": 166216,
@@ -482,7 +499,12 @@
       "Shin-Ei Animation"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 55690,
+    "malScore": 8.68,
+    "malMembers": 221114,
+    "malTomatometer": 85.4,
+    "adjustedScore": 8.204683123506427
   },
   {
     "id": 182587,
@@ -570,7 +592,12 @@
       "Doga Kobo"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 60058,
+    "malScore": 8.69,
+    "malMembers": 142847,
+    "malTomatometer": 87.9,
+    "adjustedScore": 8.090335995445356
   },
   {
     "id": 120377,
@@ -695,9 +722,13 @@
     ],
     "requiresPrereq": false,
     "specialAwards": [
-      "fresh",
       "crunchyroll"
-    ]
+    ],
+    "malId": 42310,
+    "malScore": 8.62,
+    "malMembers": 887592,
+    "malTomatometer": 84.2,
+    "adjustedScore": 8.45386496415167
   },
   {
     "id": 166531,
@@ -773,7 +804,12 @@
       "Doga Kobo"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 55791,
+    "malScore": 8.51,
+    "malMembers": 326501,
+    "malTomatometer": 83.6,
+    "adjustedScore": 8.193780929277269
   },
   {
     "id": 104157,
@@ -853,7 +889,12 @@
       "CloverWorks"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 38329,
+    "malScore": 8.59,
+    "malMembers": 661850,
+    "malTomatometer": 83.7,
+    "adjustedScore": 8.384911240208082
   },
   {
     "id": 150672,
@@ -962,9 +1003,13 @@
     ],
     "requiresPrereq": false,
     "specialAwards": [
-      "fresh",
       "gold"
-    ]
+    ],
+    "malId": 52034,
+    "malScore": 8.53,
+    "malMembers": 689747,
+    "malTomatometer": 81.9,
+    "adjustedScore": 8.343429898757533
   },
   {
     "id": 129201,
@@ -1049,9 +1094,12 @@
       "OLM"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "fresh"
-    ]
+    "specialAwards": [],
+    "malId": 47194,
+    "malScore": 8.46,
+    "malMembers": 333630,
+    "malTomatometer": 81.6,
+    "adjustedScore": 8.165134553475951
   },
   {
     "id": 171018,
@@ -1170,9 +1218,13 @@
     ],
     "requiresPrereq": false,
     "specialAwards": [
-      "fresh",
       "gold"
-    ]
+    ],
+    "malId": 57334,
+    "malScore": 8.4,
+    "malMembers": 728403,
+    "malTomatometer": 81.2,
+    "adjustedScore": 8.246056741982265
   },
   {
     "id": 184951,
@@ -1255,7 +1307,12 @@
       "Lapin Track"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 60371,
+    "malScore": 8.28,
+    "malMembers": 116539,
+    "malTomatometer": 77.8,
+    "adjustedScore": 7.86852692012987
   },
   {
     "id": 102976,
@@ -1361,7 +1418,12 @@
       "J.C.STAFF"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 38040,
+    "malScore": 8.4,
+    "malMembers": 740084,
+    "malTomatometer": 81.1,
+    "adjustedScore": 8.248032615854244
   },
   {
     "id": 154768,
@@ -1489,7 +1551,12 @@
       "CloverWorks"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 53065,
+    "malScore": 8.17,
+    "malMembers": 270267,
+    "malTomatometer": 75.1,
+    "adjustedScore": 7.944675174762344
   },
   {
     "id": 101291,
@@ -1587,9 +1654,12 @@
       "CloverWorks"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "fresh"
-    ]
+    "specialAwards": [],
+    "malId": 37450,
+    "malScore": 8.23,
+    "malMembers": 1529574,
+    "malTomatometer": 74.5,
+    "adjustedScore": 8.165629113629118
   },
   {
     "id": 166794,
@@ -1671,7 +1741,12 @@
       "Ajiado"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 55866,
+    "malScore": 8.19,
+    "malMembers": 195831,
+    "malTomatometer": 72.9,
+    "adjustedScore": 7.9095341979413805
   },
   {
     "id": 21875,
@@ -1768,7 +1843,12 @@
       "MADHOUSE"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 33674,
+    "malScore": 8.16,
+    "malMembers": 711564,
+    "malTomatometer": 71.3,
+    "adjustedScore": 8.049397610572905
   },
   {
     "id": 172258,
@@ -1871,7 +1951,12 @@
       "Bibury Animation Studios"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 57616,
+    "malScore": 7.87,
+    "malMembers": 107508,
+    "malTomatometer": 64.2,
+    "adjustedScore": 7.696300197353205
   },
   {
     "id": 19815,
@@ -1999,7 +2084,12 @@
       "MADHOUSE"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 19815,
+    "malScore": 8.03,
+    "malMembers": 2084346,
+    "malTomatometer": 68.4,
+    "adjustedScore": 7.996552124282205
   },
   {
     "id": 20872,
@@ -2083,7 +2173,12 @@
       "Doga Kobo"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 27775,
+    "malScore": 7.92,
+    "malMembers": 640560,
+    "malTomatometer": 64.6,
+    "adjustedScore": 7.850044555822016
   },
   {
     "id": 162780,
@@ -2215,7 +2310,12 @@
       "Asahi Production"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 54722,
+    "malScore": 7.6,
+    "malMembers": 113559,
+    "malTomatometer": 54.6,
+    "adjustedScore": 7.591877934282083
   },
   {
     "id": 154587,
@@ -2351,10 +2451,14 @@
     ],
     "requiresPrereq": false,
     "specialAwards": [
-      "fresh",
       "public",
       "fourchanAOTY"
-    ]
+    ],
+    "malId": 52991,
+    "malScore": 9.26,
+    "malMembers": 966239,
+    "malTomatometer": 90.4,
+    "adjustedScore": 9.00960982255238
   },
   {
     "id": 5114,
@@ -2534,9 +2638,12 @@
       "bones"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "fresh"
-    ]
+    "specialAwards": [],
+    "malId": 5114,
+    "malScore": 9.11,
+    "malMembers": 2679071,
+    "malTomatometer": 90,
+    "adjustedScore": 9.01909209183172
   },
   {
     "id": 161645,
@@ -2671,9 +2778,12 @@
       "TOHO animation STUDIO"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "fresh"
-    ]
+    "specialAwards": [],
+    "malId": 54492,
+    "malScore": 8.85,
+    "malMembers": 579267,
+    "malTomatometer": 90.7,
+    "adjustedScore": 8.563315700767674
   },
   {
     "id": 182255,
@@ -2788,7 +2898,12 @@
       "MADHOUSE"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 59978,
+    "malScore": 8.86,
+    "malMembers": 282823,
+    "malTomatometer": 88.1,
+    "adjustedScore": 8.381881430861712
   },
   {
     "id": 176301,
@@ -2903,7 +3018,12 @@
       "OLM"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 58514,
+    "malScore": 8.91,
+    "malMembers": 319112,
+    "malTomatometer": 92.1,
+    "adjustedScore": 8.449976355450476
   },
   {
     "id": 177385,
@@ -2989,7 +3109,12 @@
       "Shuka"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 58788,
+    "malScore": 8.73,
+    "malMembers": 44866,
+    "malTomatometer": 87,
+    "adjustedScore": 7.825235705821736
   },
   {
     "id": 185407,
@@ -3065,9 +3190,13 @@
     ],
     "requiresPrereq": false,
     "specialAwards": [
-      "fresh",
       "gold"
-    ]
+    ],
+    "malId": 60489,
+    "malScore": 8.75,
+    "malMembers": 211676,
+    "malTomatometer": 86.9,
+    "adjustedScore": 8.231751315689468
   },
   {
     "id": 112641,
@@ -3179,7 +3308,12 @@
       "A-1 Pictures"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 40591,
+    "malScore": 8.61,
+    "malMembers": 1196570,
+    "malTomatometer": 86.7,
+    "adjustedScore": 8.482671663483826
   },
   {
     "id": 165253,
@@ -3250,7 +3384,12 @@
       "CloverWorks"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 55357,
+    "malScore": 8.31,
+    "malMembers": 12506,
+    "malTomatometer": 77.7,
+    "adjustedScore": 7.636032651896887
   },
   {
     "id": 171099,
@@ -3317,7 +3456,12 @@
       "CloverWorks"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 55357,
+    "malScore": 8.31,
+    "malMembers": 12506,
+    "malTomatometer": 77.7,
+    "adjustedScore": 7.636032651896887
   },
   {
     "id": 164212,
@@ -3402,7 +3546,12 @@
     "requiresPrereq": false,
     "specialAwards": [
       "fivechAOTY"
-    ]
+    ],
+    "malId": 55102,
+    "malScore": 8.36,
+    "malMembers": 61877,
+    "malTomatometer": 78.3,
+    "adjustedScore": 7.7928756848117455
   },
   {
     "id": 185660,
@@ -3504,7 +3653,12 @@
       "Science SARU"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 60543,
+    "malScore": 8.39,
+    "malMembers": 380357,
+    "malTomatometer": 82.5,
+    "adjustedScore": 8.14179186449358
   },
   {
     "id": 165171,
@@ -3593,7 +3747,12 @@
     "requiresPrereq": false,
     "specialAwards": [
       "fivechAOTY"
-    ]
+    ],
+    "malId": 55318,
+    "malScore": 8.38,
+    "malMembers": 46212,
+    "malTomatometer": 81.8,
+    "adjustedScore": 7.7560610658385905
   },
   {
     "id": 108489,
@@ -3685,7 +3844,12 @@
       "feel."
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 39547,
+    "malScore": 8.35,
+    "malMembers": 574542,
+    "malTomatometer": 77.9,
+    "adjustedScore": 8.175660493520974
   },
   {
     "id": 136804,
@@ -3782,7 +3946,12 @@
       "Drive"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 49458,
+    "malScore": 8.33,
+    "malMembers": 311792,
+    "malTomatometer": 79.3,
+    "adjustedScore": 8.067639718316396
   },
   {
     "id": 181839,
@@ -3882,7 +4051,12 @@
       "Kyoto Animation"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 59897,
+    "malScore": 8.32,
+    "malMembers": 18740,
+    "malTomatometer": 78.9,
+    "adjustedScore": 7.659286400164741
   },
   {
     "id": 21699,
@@ -3994,7 +4168,12 @@
       "Studio DEEN"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 32937,
+    "malScore": 8.24,
+    "malMembers": 1423059,
+    "malTomatometer": 76.7,
+    "adjustedScore": 8.170258022563567
   },
   {
     "id": 124080,
@@ -4073,7 +4252,12 @@
       "CloverWorks"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 42897,
+    "malScore": 8.18,
+    "malMembers": 1220639,
+    "malTomatometer": 72.9,
+    "adjustedScore": 8.10744120880192
   },
   {
     "id": 107717,
@@ -4204,7 +4388,12 @@
       "Kyoto Animation"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 39247,
+    "malScore": 8.2,
+    "malMembers": 387732,
+    "malTomatometer": 75.6,
+    "adjustedScore": 8.012987089080585
   },
   {
     "id": 143270,
@@ -4286,7 +4475,12 @@
       "A-1 Pictures"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 50709,
+    "malScore": 8.14,
+    "malMembers": 348894,
+    "malTomatometer": 73.1,
+    "adjustedScore": 7.958646804871695
   },
   {
     "id": 163132,
@@ -4369,7 +4563,12 @@
       "CloverWorks"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 54856,
+    "malScore": 8.12,
+    "malMembers": 285045,
+    "malTomatometer": 70.7,
+    "adjustedScore": 7.920672274537887
   },
   {
     "id": 158928,
@@ -4515,7 +4714,12 @@
       "CloverWorks"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 53888,
+    "malScore": 8.1,
+    "malMembers": 165353,
+    "malTomatometer": 72.1,
+    "adjustedScore": 7.839668096504558
   },
   {
     "id": 109261,
@@ -4611,7 +4815,12 @@
       "Bibury Animation Studios"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 39783,
+    "malScore": 8,
+    "malMembers": 627076,
+    "malTomatometer": 68.7,
+    "adjustedScore": 7.911798768457579
   },
   {
     "id": 138565,
@@ -4704,7 +4913,12 @@
       "Drive"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 49709,
+    "malScore": 8.11,
+    "malMembers": 169353,
+    "malTomatometer": 71.8,
+    "adjustedScore": 7.847727131238248
   },
   {
     "id": 132405,
@@ -4804,7 +5018,12 @@
       "CloverWorks"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 48736,
+    "malScore": 8.13,
+    "malMembers": 1018676,
+    "malTomatometer": 72.3,
+    "adjustedScore": 8.052263859257774
   },
   {
     "id": 158927,
@@ -4953,7 +5172,12 @@
       "CloverWorks"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 53887,
+    "malScore": 8.05,
+    "malMembers": 456387,
+    "malTomatometer": 71.4,
+    "adjustedScore": 7.9241942523824624
   },
   {
     "id": 143653,
@@ -5051,7 +5275,12 @@
       "LIDENFILMS"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 50796,
+    "malScore": 8.08,
+    "malMembers": 127822,
+    "malTomatometer": 71.4,
+    "adjustedScore": 7.798277747000199
   },
   {
     "id": 21202,
@@ -5175,7 +5404,12 @@
       "Studio DEEN"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 30831,
+    "malScore": 8.09,
+    "malMembers": 1757734,
+    "malTomatometer": 72,
+    "adjustedScore": 8.045593933170807
   },
   {
     "id": 98202,
@@ -5246,7 +5480,12 @@
       "feel."
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 34822,
+    "malScore": 8.02,
+    "malMembers": 332299,
+    "malTomatometer": 67.8,
+    "adjustedScore": 7.8732685017630795
   },
   {
     "id": 141774,
@@ -5346,7 +5585,12 @@
       "P.A.WORKS"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 50380,
+    "malScore": 8.09,
+    "malMembers": 184068,
+    "malTomatometer": 72.1,
+    "adjustedScore": 7.848229817908123
   },
   {
     "id": 199112,
@@ -5428,7 +5672,12 @@
       "studio MOTHER"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 62543,
+    "malScore": 8.02,
+    "malMembers": 22627,
+    "malTomatometer": 69.8,
+    "adjustedScore": 7.637379262341692
   },
   {
     "id": 143338,
@@ -5490,7 +5739,12 @@
       "project No.9"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 50739,
+    "malScore": 7.85,
+    "malMembers": 309056,
+    "malTomatometer": 62.3,
+    "adjustedScore": 7.756476310007793
   },
   {
     "id": 116267,
@@ -5569,7 +5823,12 @@
       "Seven Arcs"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 41389,
+    "malScore": 7.84,
+    "malMembers": 574826,
+    "malTomatometer": 61.9,
+    "adjustedScore": 7.782129994343771
   },
   {
     "id": 2167,
@@ -5686,7 +5945,12 @@
       "Kyoto Animation"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 2167,
+    "malScore": 7.99,
+    "malMembers": 963540,
+    "malTomatometer": 66.2,
+    "adjustedScore": 7.929478902524034
   },
   {
     "id": 21776,
@@ -5821,7 +6085,12 @@
       "Kyoto Animation"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 33206,
+    "malScore": 7.9,
+    "malMembers": 997509,
+    "malTomatometer": 65.7,
+    "adjustedScore": 7.854344604767152
   },
   {
     "id": 185939,
@@ -5895,7 +6164,12 @@
       "P.A.WORKS"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 60658,
+    "malScore": 7.76,
+    "malMembers": 22212,
+    "malTomatometer": 58.4,
+    "adjustedScore": 7.606507581041211
   },
   {
     "id": 151380,
@@ -5984,7 +6258,12 @@
       "GEEKTOYS"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 52196,
+    "malScore": 7.71,
+    "malMembers": 66462,
+    "malTomatometer": 57.3,
+    "adjustedScore": 7.621177758655062
   },
   {
     "id": 147103,
@@ -6083,7 +6362,12 @@
       "Kinema Citrus"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 51552,
+    "malScore": 7.67,
+    "malMembers": 245794,
+    "malTomatometer": 56.7,
+    "adjustedScore": 7.63584105390432
   },
   {
     "id": 162694,
@@ -6190,7 +6474,12 @@
       "Bibury Animation Studios"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 54714,
+    "malScore": 7.67,
+    "malMembers": 210569,
+    "malTomatometer": 57,
+    "adjustedScore": 7.6326793437381735
   },
   {
     "id": 176370,
@@ -6292,7 +6581,12 @@
       "PINE JAM"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 58524,
+    "malScore": 7.66,
+    "malMembers": 11144,
+    "malTomatometer": 55.5,
+    "adjustedScore": 7.590977096492807
   },
   {
     "id": 17895,
@@ -6358,7 +6652,12 @@
       "J.C.STAFF"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 17895,
+    "malScore": 7.74,
+    "malMembers": 726257,
+    "malTomatometer": 59.5,
+    "adjustedScore": 7.710875446626463
   },
   {
     "id": 11887,
@@ -6442,7 +6741,12 @@
       "SILVER LINK."
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 11887,
+    "malScore": 7.72,
+    "malMembers": 549436,
+    "malTomatometer": 59.8,
+    "adjustedScore": 7.688443218253038
   },
   {
     "id": 102882,
@@ -6494,7 +6798,12 @@
       "Hoods Entertainment"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 37956,
+    "malScore": 7.67,
+    "malMembers": 147345,
+    "malTomatometer": 56.6,
+    "adjustedScore": 7.625244025168486
   },
   {
     "id": 106479,
@@ -6603,7 +6912,12 @@
       "SILVER LINK."
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 38790,
+    "malScore": 7.49,
+    "malMembers": 437598,
+    "malTomatometer": 50.5,
+    "adjustedScore": 7.516986453489139
   },
   {
     "id": 18245,
@@ -6675,7 +6989,12 @@
       "Satelight"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 18245,
+    "malScore": 7.59,
+    "malMembers": 145273,
+    "malTomatometer": 56.4,
+    "adjustedScore": 7.588087102819122
   },
   {
     "id": 179696,
@@ -6738,7 +7057,12 @@
       "BLADE"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 59361,
+    "malScore": 7.5,
+    "malMembers": 54470,
+    "malTomatometer": 48.2,
+    "adjustedScore": 7.565473850256574
   },
   {
     "id": 3972,
@@ -6844,7 +7168,12 @@
       "Studio Gallop"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 3972,
+    "malScore": 7.49,
+    "malMembers": 103742,
+    "malTomatometer": 49.1,
+    "adjustedScore": 7.549899157480742
   },
   {
     "id": 158704,
@@ -6951,7 +7280,12 @@
       "Platinum Vision"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 53833,
+    "malScore": 7.37,
+    "malMembers": 91497,
+    "malTomatometer": 45,
+    "adjustedScore": 7.510716395090931
   },
   {
     "id": 21092,
@@ -7072,7 +7406,12 @@
       "Nexus"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 30296,
+    "malScore": 7.41,
+    "malMembers": 805603,
+    "malTomatometer": 48.9,
+    "adjustedScore": 7.440747050969598
   },
   {
     "id": 158559,
@@ -7156,7 +7495,12 @@
       "J.C.STAFF"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 53802,
+    "malScore": 7.41,
+    "malMembers": 57733,
+    "malTomatometer": 45.7,
+    "adjustedScore": 7.541719668063449
   },
   {
     "id": 20745,
@@ -7269,7 +7613,12 @@
       "TNK"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 24703,
+    "malScore": 7.41,
+    "malMembers": 739840,
+    "malTomatometer": 49.1,
+    "adjustedScore": 7.442969439865354
   },
   {
     "id": 114232,
@@ -7368,7 +7717,12 @@
       "project No.9"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 40938,
+    "malScore": 7.25,
+    "malMembers": 419635,
+    "malTomatometer": 45.4,
+    "adjustedScore": 7.347003934920914
   },
   {
     "id": 127911,
@@ -7463,9 +7817,12 @@
       "Doga Kobo"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 45613,
+    "malScore": 6.94,
+    "malMembers": 304350,
+    "malTomatometer": 33.8,
+    "adjustedScore": 7.171678961035298
   },
   {
     "id": 20954,
@@ -7549,9 +7906,13 @@
     ],
     "requiresPrereq": false,
     "specialAwards": [
-      "fresh",
       "motyPublic"
-    ]
+    ],
+    "malId": 28851,
+    "malScore": 8.93,
+    "malMembers": 2271125,
+    "malTomatometer": 88.7,
+    "adjustedScore": 8.836435317801051
   },
   {
     "id": 4181,
@@ -7655,7 +8016,12 @@
       "Kyoto Animation"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 4181,
+    "malScore": 8.93,
+    "malMembers": 867212,
+    "malTomatometer": 86.2,
+    "adjustedScore": 8.709791320546902
   },
   {
     "id": 174788,
@@ -7739,7 +8105,12 @@
     "requiresPrereq": false,
     "specialAwards": [
       "motyPublic"
-    ]
+    ],
+    "malId": 58125,
+    "malScore": 8.61,
+    "malMembers": 172035,
+    "malTomatometer": 84.2,
+    "adjustedScore": 8.101271113093961
   },
   {
     "id": 153658,
@@ -7802,7 +8173,12 @@
       "Production I.G"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 52742,
+    "malScore": 8.62,
+    "malMembers": 147386,
+    "malTomatometer": 86,
+    "adjustedScore": 8.066405686347517
   },
   {
     "id": 195240,
@@ -7892,7 +8268,12 @@
       "CygamesPictures"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 61930,
+    "malScore": 8.67,
+    "malMembers": 42056,
+    "malTomatometer": 87.7,
+    "adjustedScore": 7.801346979887827
   },
   {
     "id": 147105,
@@ -8003,7 +8384,12 @@
       "BUG FILMS"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 51553,
+    "malScore": 8.55,
+    "malMembers": 119163,
+    "malTomatometer": 84.9,
+    "adjustedScore": 7.983526817632592
   },
   {
     "id": 181444,
@@ -8086,7 +8472,12 @@
       "CloverWorks"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 59845,
+    "malScore": 8.49,
+    "malMembers": 270489,
+    "malTomatometer": 80.4,
+    "adjustedScore": 8.14128962395677
   },
   {
     "id": 21399,
@@ -8156,7 +8547,12 @@
       "Shaft"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 31757,
+    "malScore": 8.56,
+    "malMembers": 380614,
+    "malTomatometer": 85.3,
+    "adjustedScore": 8.259420855930095
   },
   {
     "id": 20665,
@@ -8248,9 +8644,12 @@
       "A-1 Pictures"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "fresh"
-    ]
+    "specialAwards": [],
+    "malId": 23273,
+    "malScore": 8.64,
+    "malMembers": 1786421,
+    "malTomatometer": 82.1,
+    "adjustedScore": 8.548453709690856
   },
   {
     "id": 99750,
@@ -8313,9 +8712,12 @@
       "Studio VOLN"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "fresh"
-    ]
+    "specialAwards": [],
+    "malId": 36098,
+    "malScore": 8.55,
+    "malMembers": 846659,
+    "malTomatometer": 82.5,
+    "adjustedScore": 8.388880996644001
   },
   {
     "id": 104459,
@@ -8413,7 +8815,12 @@
       "C-Station"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 38474,
+    "malScore": 8.5,
+    "malMembers": 134184,
+    "malTomatometer": 82.4,
+    "adjustedScore": 7.989443610338128
   },
   {
     "id": 99426,
@@ -8525,11 +8932,15 @@
     ],
     "requiresPrereq": false,
     "specialAwards": [
-      "fresh",
       "public",
       "fivechAOTY",
       "fourchanAOTY"
-    ]
+    ],
+    "malId": 35839,
+    "malScore": 8.5,
+    "malMembers": 269285,
+    "malTomatometer": 80.3,
+    "adjustedScore": 8.146463947476224
   },
   {
     "id": 201903,
@@ -8660,7 +9071,12 @@
       "Studio Chromato"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 62896,
+    "malScore": 8.47,
+    "malMembers": 58959,
+    "malTomatometer": 79.9,
+    "adjustedScore": 7.8139738781488965
   },
   {
     "id": 101921,
@@ -8756,9 +9172,12 @@
       "A-1 Pictures"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "fresh"
-    ]
+    "specialAwards": [],
+    "malId": 37999,
+    "malScore": 8.4,
+    "malMembers": 1503473,
+    "malTomatometer": 81.3,
+    "adjustedScore": 8.317355652088258
   },
   {
     "id": 108511,
@@ -8874,7 +9293,12 @@
       "8-bit"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 39551,
+    "malScore": 8.33,
+    "malMembers": 884400,
+    "malTomatometer": 78.8,
+    "adjustedScore": 8.210118470378502
   },
   {
     "id": 104460,
@@ -8960,7 +9384,12 @@
       "C-Station"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 38475,
+    "malScore": 8.37,
+    "malMembers": 45131,
+    "malTomatometer": 79.9,
+    "adjustedScore": 7.7508280311396
   },
   {
     "id": 108632,
@@ -9094,7 +9523,12 @@
       "WHITE FOX"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 39587,
+    "malScore": 8.33,
+    "malMembers": 967224,
+    "malTomatometer": 78.3,
+    "adjustedScore": 8.218849439659287
   },
   {
     "id": 109403,
@@ -9168,7 +9602,12 @@
       "SILVER LINK."
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 39808,
+    "malScore": 8.35,
+    "malMembers": 66538,
+    "malTomatometer": 78.2,
+    "adjustedScore": 7.801237920195034
   },
   {
     "id": 140960,
@@ -9321,9 +9760,12 @@
       "WIT STUDIO"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "fresh"
-    ]
+    "specialAwards": [],
+    "malId": 50265,
+    "malScore": 8.41,
+    "malMembers": 1415725,
+    "malTomatometer": 79.9,
+    "adjustedScore": 8.321710362873192
   },
   {
     "id": 189275,
@@ -9394,7 +9836,12 @@
       "ENGI"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 61335,
+    "malScore": 8.44,
+    "malMembers": 24344,
+    "malTomatometer": 85.4,
+    "adjustedScore": 7.693369875926672
   },
   {
     "id": 116742,
@@ -9518,7 +9965,12 @@
       "8-bit"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 41487,
+    "malScore": 8.29,
+    "malMembers": 734655,
+    "malTomatometer": 77.7,
+    "adjustedScore": 8.157791495285046
   },
   {
     "id": 177937,
@@ -9631,7 +10083,12 @@
       "CloverWorks"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 59027,
+    "malScore": 8.21,
+    "malMembers": 179893,
+    "malTomatometer": 78.1,
+    "adjustedScore": 7.907041424570064
   },
   {
     "id": 20698,
@@ -9727,7 +10184,12 @@
       "feel."
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 23847,
+    "malScore": 8.2,
+    "malMembers": 968061,
+    "malTomatometer": 75.4,
+    "adjustedScore": 8.10835018084891
   },
   {
     "id": 106286,
@@ -9819,7 +10281,12 @@
       "CoMix Wave"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 38826,
+    "malScore": 8.27,
+    "malMembers": 864998,
+    "malTomatometer": 75.7,
+    "adjustedScore": 8.157726271130082
   },
   {
     "id": 98444,
@@ -9921,7 +10388,12 @@
       "C-Station"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 34798,
+    "malScore": 8.26,
+    "malMembers": 279929,
+    "malTomatometer": 75.5,
+    "adjustedScore": 8.005508547275445
   },
   {
     "id": 114535,
@@ -10022,7 +10494,12 @@
       "Brain's Base"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 41025,
+    "malScore": 8.35,
+    "malMembers": 449879,
+    "malTomatometer": 78.3,
+    "adjustedScore": 8.140599318846249
   },
   {
     "id": 98779,
@@ -10100,7 +10577,12 @@
       "SILVER LINK."
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 36990,
+    "malScore": 8.24,
+    "malMembers": 53332,
+    "malTomatometer": 76.5,
+    "adjustedScore": 7.742520530721496
   },
   {
     "id": 142838,
@@ -10241,7 +10723,12 @@
       "CloverWorks"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 50602,
+    "malScore": 8.2,
+    "malMembers": 796040,
+    "malTomatometer": 75.4,
+    "adjustedScore": 8.092030262895006
   },
   {
     "id": 142770,
@@ -10329,7 +10816,12 @@
       "CoMix Wave"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 50594,
+    "malScore": 8.24,
+    "malMembers": 360481,
+    "malTomatometer": 75,
+    "adjustedScore": 8.030561613266249
   },
   {
     "id": 141911,
@@ -10408,7 +10900,12 @@
       "P.A.WORKS"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 50416,
+    "malScore": 8.1,
+    "malMembers": 193167,
+    "malTomatometer": 72.4,
+    "adjustedScore": 7.859606228448876
   },
   {
     "id": 153152,
@@ -10479,7 +10976,12 @@
       "Shin-Ei Animation"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 52578,
+    "malScore": 8.2,
+    "malMembers": 288576,
+    "malTomatometer": 74.3,
+    "adjustedScore": 7.972550057497761
   },
   {
     "id": 171457,
@@ -10594,7 +11096,12 @@
       "A-1 Pictures"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 57524,
+    "malScore": 8.07,
+    "malMembers": 208621,
+    "malTomatometer": 72.1,
+    "adjustedScore": 7.85288820526884
   },
   {
     "id": 179966,
@@ -10704,7 +11211,12 @@
       "Studio Gokumi"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 59459,
+    "malScore": 8.11,
+    "malMembers": 136516,
+    "malTomatometer": 72.5,
+    "adjustedScore": 7.819629889360076
   },
   {
     "id": 9989,
@@ -10772,9 +11284,12 @@
       "A-1 Pictures"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "fresh"
-    ]
+    "specialAwards": [],
+    "malId": 9989,
+    "malScore": 8.28,
+    "malMembers": 1285055,
+    "malTomatometer": 75.2,
+    "adjustedScore": 8.198970014993998
   },
   {
     "id": 101280,
@@ -10914,7 +11429,12 @@
       "8-bit"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 37430,
+    "malScore": 8.13,
+    "malMembers": 1277806,
+    "malTomatometer": 72.1,
+    "adjustedScore": 8.066177164044834
   },
   {
     "id": 180675,
@@ -11017,7 +11537,12 @@
       "CygamesPictures"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 59675,
+    "malScore": 8.02,
+    "malMembers": 31325,
+    "malTomatometer": 68.8,
+    "adjustedScore": 7.6539099225982525
   },
   {
     "id": 21258,
@@ -11104,7 +11629,12 @@
       "bones"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 31173,
+    "malScore": 7.97,
+    "malMembers": 294898,
+    "malTomatometer": 66.2,
+    "adjustedScore": 7.829747547133119
   },
   {
     "id": 20770,
@@ -11234,7 +11764,12 @@
       "Studio Pierrot"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 25013,
+    "malScore": 8.04,
+    "malMembers": 582821,
+    "malTomatometer": 68.1,
+    "adjustedScore": 7.937581118442622
   },
   {
     "id": 145728,
@@ -11358,7 +11893,12 @@
       "Passione"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 51122,
+    "malScore": 8.13,
+    "malMembers": 89180,
+    "malTomatometer": 71.7,
+    "adjustedScore": 7.773479107828896
   },
   {
     "id": 184237,
@@ -11452,7 +11992,12 @@
       "TMS Entertainment"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 60285,
+    "malScore": 7.91,
+    "malMembers": 160416,
+    "malTomatometer": 66.2,
+    "adjustedScore": 7.743533833613062
   },
   {
     "id": 14813,
@@ -11556,7 +12101,12 @@
       "Brain's Base"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 14813,
+    "malScore": 8,
+    "malMembers": 1182129,
+    "malTomatometer": 68.9,
+    "adjustedScore": 7.948005637899263
   },
   {
     "id": 13759,
@@ -11676,7 +12226,12 @@
       "J.C.STAFF"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 13759,
+    "malScore": 8.04,
+    "malMembers": 926640,
+    "malTomatometer": 68.2,
+    "adjustedScore": 7.969691526086129
   },
   {
     "id": 101573,
@@ -11783,7 +12338,12 @@
       "TROYCA"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 37786,
+    "malScore": 7.88,
+    "malMembers": 193498,
+    "malTomatometer": 63.3,
+    "adjustedScore": 7.742714279492853
   },
   {
     "id": 21049,
@@ -11871,7 +12431,12 @@
       "TMS Entertainment"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 30015,
+    "malScore": 7.96,
+    "malMembers": 808262,
+    "malTomatometer": 67.3,
+    "adjustedScore": 7.895085810516092
   },
   {
     "id": 142984,
@@ -11982,7 +12547,12 @@
       "OLM"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 50631,
+    "malScore": 7.97,
+    "malMembers": 365207,
+    "malTomatometer": 67.9,
+    "adjustedScore": 7.848172212185366
   },
   {
     "id": 170503,
@@ -12058,7 +12628,12 @@
       "Studio Pierrot"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 56980,
+    "malScore": 8.05,
+    "malMembers": 22137,
+    "malTomatometer": 71.1,
+    "adjustedScore": 7.639859918532574
   },
   {
     "id": 186043,
@@ -12132,7 +12707,12 @@
       "WIT STUDIO"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 60726,
+    "malScore": 7.93,
+    "malMembers": 3756,
+    "malTomatometer": 64.9,
+    "adjustedScore": 7.593878744717266
   },
   {
     "id": 178005,
@@ -12222,7 +12802,12 @@
       "J.C.STAFF"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 59047,
+    "malScore": 7.83,
+    "malMembers": 42791,
+    "malTomatometer": 61.1,
+    "adjustedScore": 7.63542840236238
   },
   {
     "id": 21058,
@@ -12301,7 +12886,12 @@
       "bones"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 30123,
+    "malScore": 7.76,
+    "malMembers": 472313,
+    "malTomatometer": 58.4,
+    "adjustedScore": 7.714067433116087
   },
   {
     "id": 154965,
@@ -12376,7 +12966,12 @@
       "MADHOUSE"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 53126,
+    "malScore": 7.74,
+    "malMembers": 370184,
+    "malTomatometer": 57.9,
+    "adjustedScore": 7.691677419485014
   },
   {
     "id": 179694,
@@ -12458,7 +13053,12 @@
       "Bandai Namco Pictures"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 59360,
+    "malScore": 7.89,
+    "malMembers": 37979,
+    "malTomatometer": 64.8,
+    "adjustedScore": 7.641883195741364
   },
   {
     "id": 21180,
@@ -12541,7 +13141,12 @@
       "A-1 Pictures"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 30727,
+    "malScore": 7.76,
+    "malMembers": 264534,
+    "malTomatometer": 61,
+    "adjustedScore": 7.692104081998401
   },
   {
     "id": 103572,
@@ -12641,7 +13246,12 @@
       "Tezuka Productions"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 38101,
+    "malScore": 7.62,
+    "malMembers": 870653,
+    "malTomatometer": 54.6,
+    "adjustedScore": 7.6145197055763
   },
   {
     "id": 15039,
@@ -12717,7 +13327,12 @@
       "A-1 Pictures"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 15039,
+    "malScore": 7.83,
+    "malMembers": 208156,
+    "malTomatometer": 63.3,
+    "adjustedScore": 7.720513214565134
   },
   {
     "id": 122808,
@@ -12817,7 +13432,12 @@
       "CygamesPictures"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 42670,
+    "malScore": 7.72,
+    "malMembers": 67659,
+    "malTomatometer": 58.1,
+    "adjustedScore": 7.6244720173319465
   },
   {
     "id": 116605,
@@ -12927,7 +13547,12 @@
       "GEEKTOYS"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 41461,
+    "malScore": 7.73,
+    "malMembers": 143305,
+    "malTomatometer": 58.4,
+    "adjustedScore": 7.652110771188117
   },
   {
     "id": 100049,
@@ -13019,7 +13644,27 @@
       "WHITE FOX"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": [
+      36286,
+      38414
+    ],
+    "malStats": [
+      {
+        "malId": 36286,
+        "malScore": 7.58,
+        "malMembers": 244416,
+        "malTomatometer": 52.5,
+        "adjustedScore": 7.582646893862914
+      },
+      {
+        "malId": 38414,
+        "malScore": 7.58,
+        "malMembers": 237740,
+        "malTomatometer": 53.1,
+        "adjustedScore": 7.58269023192989
+      }
+    ]
   },
   {
     "id": 98292,
@@ -13125,7 +13770,12 @@
       "Doga Kobo"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 34914,
+    "malScore": 7.69,
+    "malMembers": 180962,
+    "malTomatometer": 57.6,
+    "adjustedScore": 7.6398433310930915
   },
   {
     "id": 141014,
@@ -13193,7 +13843,12 @@
       "Okuruto Noboru"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 50273,
+    "malScore": 7.7,
+    "malMembers": 331682,
+    "malTomatometer": 58.6,
+    "adjustedScore": 7.661523266067137
   },
   {
     "id": 163623,
@@ -13272,7 +13927,12 @@
       "Nomad"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 54968,
+    "malScore": 7.82,
+    "malMembers": 110068,
+    "malTomatometer": 59.3,
+    "adjustedScore": 7.6782376964419115
   },
   {
     "id": 163078,
@@ -13359,7 +14019,12 @@
       "Doga Kobo"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 54839,
+    "malScore": 7.74,
+    "malMembers": 56033,
+    "malTomatometer": 60.2,
+    "adjustedScore": 7.62451648726997
   },
   {
     "id": 15809,
@@ -13459,7 +14124,12 @@
       "WHITE FOX"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 15809,
+    "malScore": 7.7,
+    "malMembers": 1309408,
+    "malTomatometer": 58.2,
+    "adjustedScore": 7.686952155975291
   },
   {
     "id": 147864,
@@ -13570,7 +14240,12 @@
       "Studio Bind"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 51815,
+    "malScore": 7.54,
+    "malMembers": 125328,
+    "malTomatometer": 50.3,
+    "adjustedScore": 7.566739473287643
   },
   {
     "id": 20997,
@@ -13667,7 +14342,12 @@
       "P.A.WORKS"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 28999,
+    "malScore": 7.76,
+    "malMembers": 1373223,
+    "malTomatometer": 60.3,
+    "adjustedScore": 7.740882163606357
   },
   {
     "id": 153629,
@@ -13741,7 +14421,12 @@
       "diomedéa"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 52173,
+    "malScore": 7.3,
+    "malMembers": 131498,
+    "malTomatometer": 41.1,
+    "adjustedScore": 7.4615165446108875
   },
   {
     "id": 162804,
@@ -13836,7 +14521,12 @@
       "Doga Kobo"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 54744,
+    "malScore": 7.54,
+    "malMembers": 330959,
+    "malTomatometer": 52.5,
+    "adjustedScore": 7.555763595757524
   },
   {
     "id": 168374,
@@ -13947,7 +14637,12 @@
       "Studio KAI"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 56352,
+    "malScore": 7.54,
+    "malMembers": 159413,
+    "malTomatometer": 50.3,
+    "adjustedScore": 7.563972688288238
   },
   {
     "id": 177120,
@@ -14052,7 +14747,12 @@
       "Shaft"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 58725,
+    "malScore": 7.58,
+    "malMembers": 27821,
+    "malTomatometer": 53.4,
+    "adjustedScore": 7.58554498848501
   },
   {
     "id": 116741,
@@ -14152,7 +14852,12 @@
       "8-bit"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 41488,
+    "malScore": 7.59,
+    "malMembers": 237379,
+    "malTomatometer": 51.1,
+    "adjustedScore": 7.588519597640264
   },
   {
     "id": 131516,
@@ -14225,7 +14930,12 @@
       "PINE JAM"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 48542,
+    "malScore": 7.46,
+    "malMembers": 53266,
+    "malTomatometer": 47.6,
+    "adjustedScore": 7.556283872900904
   },
   {
     "id": 21455,
@@ -14331,7 +15041,12 @@
       "Doga Kobo"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 31953,
+    "malScore": 7.55,
+    "malMembers": 271680,
+    "malTomatometer": 51.9,
+    "adjustedScore": 7.564030327764655
   },
   {
     "id": 151379,
@@ -14426,7 +15141,12 @@
       "P.A.WORKS"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 52193,
+    "malScore": 7.58,
+    "malMembers": 89712,
+    "malTomatometer": 53.8,
+    "adjustedScore": 7.58422358291913
   },
   {
     "id": 150075,
@@ -14525,7 +15245,12 @@
       "Drive"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 51958,
+    "malScore": 7.52,
+    "malMembers": 206948,
+    "malTomatometer": 49.7,
+    "adjustedScore": 7.549969425934327
   },
   {
     "id": 148969,
@@ -14584,7 +15309,12 @@
       "PINE JAM"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 52736,
+    "malScore": 7.46,
+    "malMembers": 136005,
+    "malTomatometer": 49.7,
+    "adjustedScore": 7.530250208875977
   },
   {
     "id": 158898,
@@ -14667,7 +15397,12 @@
       "SILVER LINK."
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 53865,
+    "malScore": 7.58,
+    "malMembers": 58811,
+    "malTomatometer": 50.2,
+    "adjustedScore": 7.584793979166619
   },
   {
     "id": 159039,
@@ -14738,7 +15473,12 @@
       "CONNECT"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 53912,
+    "malScore": 6.94,
+    "malMembers": 23766,
+    "malTomatometer": 30.5,
+    "adjustedScore": 7.5071630480429645
   },
   {
     "id": 179979,
@@ -14829,7 +15569,12 @@
       "Felix Film"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 59466,
+    "malScore": 7.48,
+    "malMembers": 42116,
+    "malTomatometer": 47.6,
+    "adjustedScore": 7.565316124983938
   },
   {
     "id": 183385,
@@ -14930,7 +15675,12 @@
       "Studio Lings"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 60168,
+    "malScore": 7.44,
+    "malMembers": 28553,
+    "malTomatometer": 47.4,
+    "adjustedScore": 7.565391785402856
   },
   {
     "id": 21265,
@@ -14990,7 +15740,12 @@
       "Studio Gallop"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 28771,
+    "malScore": 7.53,
+    "malMembers": 71927,
+    "malTomatometer": 52.2,
+    "adjustedScore": 7.569668640404308
   },
   {
     "id": 111501,
@@ -15056,7 +15811,12 @@
       "Ezo’la"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 40392,
+    "malScore": 7.55,
+    "malMembers": 69124,
+    "malTomatometer": 52.8,
+    "adjustedScore": 7.575915069867906
   },
   {
     "id": 20966,
@@ -15132,7 +15892,12 @@
       "LIDENFILMS"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 28677,
+    "malScore": 7.52,
+    "malMembers": 631773,
+    "malTomatometer": 51.2,
+    "adjustedScore": 7.534089917179917
   },
   {
     "id": 128545,
@@ -15219,7 +15984,12 @@
       "P.A.WORKS"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 46093,
+    "malScore": 7.52,
+    "malMembers": 53490,
+    "malTomatometer": 49.6,
+    "adjustedScore": 7.570547743375959
   },
   {
     "id": 100179,
@@ -15266,7 +16036,12 @@
       "Doga Kobo"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 36470,
+    "malScore": 7.57,
+    "malMembers": 176334,
+    "malTomatometer": 52.4,
+    "adjustedScore": 7.578075774157586
   },
   {
     "id": 20527,
@@ -15326,7 +16101,12 @@
       "Brain's Base"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 21327,
+    "malScore": 7.52,
+    "malMembers": 191569,
+    "malTomatometer": 52.2,
+    "adjustedScore": 7.551244147499076
   },
   {
     "id": 132010,
@@ -15410,7 +16190,12 @@
       "project No.9"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 48643,
+    "malScore": 7.37,
+    "malMembers": 144510,
+    "malTomatometer": 44.3,
+    "adjustedScore": 7.48699759997168
   },
   {
     "id": 101316,
@@ -15486,7 +16271,12 @@
       "P.A.WORKS"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 37497,
+    "malScore": 7.52,
+    "malMembers": 169365,
+    "malTomatometer": 51.8,
+    "adjustedScore": 7.553288392047185
   },
   {
     "id": 152681,
@@ -15556,7 +16346,12 @@
       "Studio DEEN"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 52481,
+    "malScore": 7.31,
+    "malMembers": 103607,
+    "malTomatometer": 45.4,
+    "adjustedScore": 7.48176795610892
   },
   {
     "id": 166477,
@@ -15648,7 +16443,12 @@
       "Tezuka Productions"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 55749,
+    "malScore": 7.4,
+    "malMembers": 46781,
+    "malTomatometer": 45.6,
+    "adjustedScore": 7.546216297401955
   },
   {
     "id": 180425,
@@ -15714,7 +16514,12 @@
       "Lesprit"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 59619,
+    "malScore": 7.52,
+    "malMembers": 21740,
+    "malTomatometer": 48.4,
+    "adjustedScore": 7.578917884463822
   },
   {
     "id": 1689,
@@ -15785,7 +16590,12 @@
       "CoMix Wave"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 1689,
+    "malScore": 7.55,
+    "malMembers": 759166,
+    "malTomatometer": 55,
+    "adjustedScore": 7.556669330525539
   },
   {
     "id": 109019,
@@ -15876,7 +16686,12 @@
       "Doga Kobo"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 39730,
+    "malScore": 7.46,
+    "malMembers": 35026,
+    "malTomatometer": 46.4,
+    "adjustedScore": 7.564849702804001
   },
   {
     "id": 163133,
@@ -15955,7 +16770,12 @@
       "project No.9"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 54855,
+    "malScore": 7.28,
+    "malMembers": 31447,
+    "malTomatometer": 42.6,
+    "adjustedScore": 7.538613507111514
   },
   {
     "id": 2847,
@@ -16012,7 +16832,12 @@
       "OLM"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 2847,
+    "malScore": 7.33,
+    "malMembers": 118219,
+    "malTomatometer": 44.3,
+    "adjustedScore": 7.481263154639677
   },
   {
     "id": 15451,
@@ -16141,7 +16966,12 @@
       "TNK"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 15451,
+    "malScore": 7.46,
+    "malMembers": 858559,
+    "malTomatometer": 50.7,
+    "adjustedScore": 7.480900031176716
   },
   {
     "id": 105914,
@@ -16237,7 +17067,12 @@
       "Doga Kobo"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 38759,
+    "malScore": 7.31,
+    "malMembers": 232513,
+    "malTomatometer": 42.9,
+    "adjustedScore": 7.426758751064172
   },
   {
     "id": 127549,
@@ -16331,7 +17166,12 @@
       "CONNECT"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 45425,
+    "malScore": 7.27,
+    "malMembers": 29235,
+    "malTomatometer": 39.5,
+    "adjustedScore": 7.540017392361248
   },
   {
     "id": 137281,
@@ -16438,7 +17278,12 @@
       "Felix Film"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 49520,
+    "malScore": 7.27,
+    "malMembers": 200435,
+    "malTomatometer": 41.1,
+    "adjustedScore": 7.415226328956749
   },
   {
     "id": 168138,
@@ -16530,7 +17375,12 @@
       "Gekkou"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 56230,
+    "malScore": 7.45,
+    "malMembers": 59403,
+    "malTomatometer": 44.6,
+    "adjustedScore": 7.551118621670568
   },
   {
     "id": 166522,
@@ -16653,7 +17503,12 @@
       "PINE JAM"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 55774,
+    "malScore": 7.26,
+    "malMembers": 34049,
+    "malTomatometer": 39.9,
+    "adjustedScore": 7.531978373660705
   },
   {
     "id": 109287,
@@ -16727,7 +17582,12 @@
       "Tezuka Productions"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 39790,
+    "malScore": 7.09,
+    "malMembers": 96492,
+    "malTomatometer": 38,
+    "adjustedScore": 7.4066958676699235
   },
   {
     "id": 112443,
@@ -16807,7 +17667,12 @@
       "project No.9"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 40530,
+    "malScore": 7.1,
+    "malMembers": 276204,
+    "malTomatometer": 36.2,
+    "adjustedScore": 7.2853343205508985
   },
   {
     "id": 100722,
@@ -16914,7 +17779,12 @@
       "J.C.STAFF"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 36633,
+    "malScore": 7.19,
+    "malMembers": 316876,
+    "malTomatometer": 41.8,
+    "adjustedScore": 7.32842726929874
   },
   {
     "id": 20741,
@@ -16977,7 +17847,12 @@
       "Production IMS"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 24655,
+    "malScore": 7.32,
+    "malMembers": 175028,
+    "malTomatometer": 46.1,
+    "adjustedScore": 7.4512847512871225
   },
   {
     "id": 16732,
@@ -17051,7 +17926,12 @@
       "Studio Gokumi"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 16732,
+    "malScore": 7.23,
+    "malMembers": 87230,
+    "malTomatometer": 41.6,
+    "adjustedScore": 7.4655748363996945
   },
   {
     "id": 98596,
@@ -17131,7 +18011,12 @@
       "SILVER LINK."
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 35413,
+    "malScore": 7.24,
+    "malMembers": 204801,
+    "malTomatometer": 42.8,
+    "adjustedScore": 7.397141830376903
   },
   {
     "id": 114340,
@@ -17219,7 +18104,12 @@
       "EMT Squared"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 40974,
+    "malScore": 7.23,
+    "malMembers": 123798,
+    "malTomatometer": 40.4,
+    "adjustedScore": 7.436253668054558
   },
   {
     "id": 97767,
@@ -17324,7 +18214,12 @@
       "Passione"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 34281,
+    "malScore": 7.23,
+    "malMembers": 416989,
+    "malTomatometer": 43.8,
+    "adjustedScore": 7.333233476550827
   },
   {
     "id": 6178,
@@ -17392,7 +18287,12 @@
       "OLM"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 6178,
+    "malScore": 7.06,
+    "malMembers": 89403,
+    "malTomatometer": 36.1,
+    "adjustedScore": 7.405011103060078
   },
   {
     "id": 132456,
@@ -17508,7 +18408,12 @@
       "SILVER LINK."
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 48753,
+    "malScore": 7,
+    "malMembers": 94660,
+    "malTomatometer": 32.8,
+    "adjustedScore": 7.376698084965968
   },
   {
     "id": 160488,
@@ -17590,7 +18495,12 @@
       "TNK"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 54284,
+    "malScore": 7,
+    "malMembers": 27104,
+    "malTomatometer": 34.2,
+    "adjustedScore": 7.5058086856029975
   },
   {
     "id": 175977,
@@ -17725,7 +18635,12 @@
       "WIT STUDIO"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 58426,
+    "malScore": 6.94,
+    "malMembers": 108304,
+    "malTomatometer": 33.9,
+    "adjustedScore": 7.334880832352727
   },
   {
     "id": 7695,
@@ -17788,7 +18703,12 @@
       "OLM"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 7695,
+    "malScore": 6.89,
+    "malMembers": 74721,
+    "malTomatometer": 31.6,
+    "adjustedScore": 7.373803658726031
   },
   {
     "id": 146625,
@@ -17872,7 +18792,12 @@
       "A-1 Pictures"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 51417,
+    "malScore": 6.78,
+    "malMembers": 127042,
+    "malTomatometer": 28.5,
+    "adjustedScore": 7.2415405066189065
   },
   {
     "id": 100526,
@@ -17928,9 +18853,12 @@
       "Hoods Entertainment"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 36793,
+    "malScore": 6.86,
+    "malMembers": 229172,
+    "malTomatometer": 33.1,
+    "adjustedScore": 7.169382710127698
   },
   {
     "id": 160514,
@@ -17995,7 +18923,12 @@
       "Fugaku"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 54294,
+    "malScore": 7.11,
+    "malMembers": 1922,
+    "malTomatometer": 37.1,
+    "adjustedScore": 7.581125947622138
   },
   {
     "id": 124194,
@@ -18141,7 +19074,12 @@
       "TMS Entertainment"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 42938,
+    "malScore": 8.93,
+    "malMembers": 348927,
+    "malTomatometer": 87.4,
+    "adjustedScore": 8.489855076276804
   },
   {
     "id": 21400,
@@ -18231,7 +19169,12 @@
       "Shaft"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 31758,
+    "malScore": 8.78,
+    "malMembers": 380587,
+    "malTomatometer": 87.8,
+    "adjustedScore": 8.411478613129429
   },
   {
     "id": 199,
@@ -18331,9 +19274,12 @@
       "Studio Ghibli"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "fresh"
-    ]
+    "specialAwards": [],
+    "malId": 199,
+    "malScore": 8.77,
+    "malMembers": 1845086,
+    "malTomatometer": 86.3,
+    "adjustedScore": 8.67015161395945
   },
   {
     "id": 151514,
@@ -18422,7 +19368,12 @@
       "MADHOUSE"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 52215,
+    "malScore": 8.72,
+    "malMembers": 127782,
+    "malTomatometer": 85.6,
+    "adjustedScore": 8.07287195051109
   },
   {
     "id": 180516,
@@ -18508,7 +19459,12 @@
       "CygamesPictures"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 59636,
+    "malScore": 8.57,
+    "malMembers": 62290,
+    "malTomatometer": 86.2,
+    "adjustedScore": 7.850196802131357
   },
   {
     "id": 100675,
@@ -18595,7 +19551,12 @@
       "CloverWorks"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 36885,
+    "malScore": 8.42,
+    "malMembers": 121099,
+    "malTomatometer": 79.9,
+    "adjustedScore": 7.933213426247061
   },
   {
     "id": 161474,
@@ -18663,7 +19624,12 @@
       "CloverWorks"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 54870,
+    "malScore": 8.28,
+    "malMembers": 113158,
+    "malTomatometer": 78.1,
+    "adjustedScore": 7.863613795715089
   },
   {
     "id": 9260,
@@ -18745,7 +19711,12 @@
       "Shaft"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 9260,
+    "malScore": 8.36,
+    "malMembers": 399950,
+    "malTomatometer": 79.9,
+    "adjustedScore": 8.129272594380371
   },
   {
     "id": 113596,
@@ -18820,7 +19791,12 @@
       "bones"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 40787,
+    "malScore": 8.38,
+    "malMembers": 349402,
+    "malTomatometer": 79.7,
+    "adjustedScore": 8.120272303855383
   },
   {
     "id": 177687,
@@ -18890,7 +19866,12 @@
       "ROCK'N ROLL MOUNTAIN"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 58919,
+    "malScore": 8.34,
+    "malMembers": 54298,
+    "malTomatometer": 80.4,
+    "adjustedScore": 7.768871033924034
   },
   {
     "id": 105334,
@@ -19095,7 +20076,12 @@
       "TMS Entertainment"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 38680,
+    "malScore": 8.2,
+    "malMembers": 545943,
+    "malTomatometer": 72.4,
+    "adjustedScore": 8.0543137025812
   },
   {
     "id": 5081,
@@ -19254,9 +20240,13 @@
     ],
     "requiresPrereq": false,
     "specialAwards": [
-      "fresh",
       "fivechAOTY"
-    ]
+    ],
+    "malId": 5081,
+    "malScore": 8.32,
+    "malMembers": 911804,
+    "malTomatometer": 77,
+    "adjustedScore": 8.204726729765367
   },
   {
     "id": 163571,
@@ -19350,7 +20340,12 @@
     "specialAwards": [
       "jury",
       "fivechAOTY"
-    ]
+    ],
+    "malId": 54959,
+    "malScore": 8.24,
+    "malMembers": 24087,
+    "malTomatometer": 75.1,
+    "adjustedScore": 7.667560399032873
   },
   {
     "id": 171046,
@@ -19423,7 +20418,12 @@
       "CloverWorks"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 57433,
+    "malScore": 8.17,
+    "malMembers": 86608,
+    "malTomatometer": 74.3,
+    "adjustedScore": 7.783406110359354
   },
   {
     "id": 523,
@@ -19503,7 +20503,12 @@
       "Studio Ghibli"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 523,
+    "malScore": 8.25,
+    "malMembers": 1017893,
+    "malTomatometer": 73.9,
+    "adjustedScore": 8.15503935553715
   },
   {
     "id": 21355,
@@ -19635,9 +20640,13 @@
     ],
     "requiresPrereq": false,
     "specialAwards": [
-      "fresh",
       "public"
-    ]
+    ],
+    "malId": 31240,
+    "malScore": 8.25,
+    "malMembers": 1930769,
+    "malTomatometer": 75.6,
+    "adjustedScore": 8.196303908315047
   },
   {
     "id": 20694,
@@ -19714,7 +20723,12 @@
       "SILVER LINK."
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 23623,
+    "malScore": 8.18,
+    "malMembers": 135969,
+    "malTomatometer": 74.1,
+    "adjustedScore": 7.850217947462303
   },
   {
     "id": 170942,
@@ -19797,7 +20811,12 @@
       "Telecom Animation Film"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 57181,
+    "malScore": 8.15,
+    "malMembers": 170844,
+    "malTomatometer": 74.1,
+    "adjustedScore": 7.868923951036525
   },
   {
     "id": 167152,
@@ -19880,7 +20899,12 @@
       "Studio KAI"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 56009,
+    "malScore": 8.14,
+    "malMembers": 152593,
+    "malTomatometer": 74.6,
+    "adjustedScore": 7.848291609449348
   },
   {
     "id": 155908,
@@ -19978,7 +21002,12 @@
       "8-bit"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 53410,
+    "malScore": 8.04,
+    "malMembers": 46343,
+    "malTomatometer": 69.9,
+    "adjustedScore": 7.683607212468594
   },
   {
     "id": 181841,
@@ -20086,7 +21115,12 @@
     "requiresPrereq": false,
     "specialAwards": [
       "fourchanAOTY"
-    ]
+    ],
+    "malId": 59898,
+    "malScore": 8.09,
+    "malMembers": 29078,
+    "malTomatometer": 68.7,
+    "adjustedScore": 7.660002286375658
   },
   {
     "id": 145545,
@@ -20165,7 +21199,12 @@
       "Lerche"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 51096,
+    "malScore": 8.04,
+    "malMembers": 618295,
+    "malTomatometer": 70.3,
+    "adjustedScore": 7.9421900623080095
   },
   {
     "id": 154967,
@@ -20256,7 +21295,12 @@
       "CloverWorks"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 53129,
+    "malScore": 7.76,
+    "malMembers": 122074,
+    "malTomatometer": 58.6,
+    "adjustedScore": 7.658987637266902
   },
   {
     "id": 198188,
@@ -20420,7 +21464,12 @@
       "GRAPH77"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 62405,
+    "malScore": 8.04,
+    "malMembers": 46202,
+    "malTomatometer": 72.7,
+    "adjustedScore": 7.68337478453989
   },
   {
     "id": 17549,
@@ -20509,7 +21558,12 @@
       "SILVER LINK."
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 16067,
+    "malScore": 7.93,
+    "malMembers": 319566,
+    "malTomatometer": 64.4,
+    "adjustedScore": 7.810704369108748
   },
   {
     "id": 153930,
@@ -20607,7 +21661,12 @@
       "domerica"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 52865,
+    "malScore": 7.9,
+    "malMembers": 204460,
+    "malTomatometer": 64.7,
+    "adjustedScore": 7.757653461430041
   },
   {
     "id": 158166,
@@ -20702,7 +21761,12 @@
     "requiresPrereq": false,
     "specialAwards": [
       "motyJury"
-    ]
+    ],
+    "malId": 53747,
+    "malScore": 7.61,
+    "malMembers": 12716,
+    "malTomatometer": 55.5,
+    "adjustedScore": 7.588091218979691
   },
   {
     "id": 166610,
@@ -20809,7 +21873,12 @@
       "A-1 Pictures"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 55813,
+    "malScore": 7.77,
+    "malMembers": 378855,
+    "malTomatometer": 60.4,
+    "adjustedScore": 7.713148764550004
   },
   {
     "id": 155645,
@@ -20905,7 +21974,12 @@
       "david production"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 54829,
+    "malScore": 7.85,
+    "malMembers": 22385,
+    "malTomatometer": 62.5,
+    "adjustedScore": 7.617117577602688
   },
   {
     "id": 20668,
@@ -21004,7 +22078,12 @@
       "Doga Kobo"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 23289,
+    "malScore": 7.81,
+    "malMembers": 690240,
+    "malTomatometer": 60,
+    "adjustedScore": 7.765822695023591
   },
   {
     "id": 16067,
@@ -21092,7 +22171,12 @@
       "P.A.WORKS"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 17549,
+    "malScore": 7.94,
+    "malMembers": 225647,
+    "malTomatometer": 65.1,
+    "adjustedScore": 7.788089117741556
   },
   {
     "id": 6547,
@@ -21200,7 +22284,12 @@
       "P.A.WORKS"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 6547,
+    "malScore": 8.05,
+    "malMembers": 1677281,
+    "malTomatometer": 68.4,
+    "adjustedScore": 8.007341040787566
   },
   {
     "id": 162896,
@@ -21299,7 +22388,12 @@
       "CloverWorks"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 54724,
+    "malScore": 7.78,
+    "malMembers": 99407,
+    "malTomatometer": 62.5,
+    "adjustedScore": 7.657868485848894
   },
   {
     "id": 133965,
@@ -21426,7 +22520,12 @@
       "OLM"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 48926,
+    "malScore": 7.78,
+    "malMembers": 648872,
+    "malTomatometer": 61.1,
+    "adjustedScore": 7.7398190134320055
   },
   {
     "id": 141208,
@@ -21501,7 +22600,12 @@
       "Seven Arcs"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 50307,
+    "malScore": 7.64,
+    "malMembers": 135549,
+    "malTomatometer": 53.6,
+    "adjustedScore": 7.61020744681571
   },
   {
     "id": 98659,
@@ -21591,7 +22695,12 @@
       "Lerche"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 35507,
+    "malScore": 7.82,
+    "malMembers": 1197693,
+    "malTomatometer": 63,
+    "adjustedScore": 7.790970762566667
   },
   {
     "id": 141949,
@@ -21675,7 +22784,12 @@
       "studio MOTHER"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 50425,
+    "malScore": 7.6,
+    "malMembers": 307448,
+    "malTomatometer": 54.4,
+    "adjustedScore": 7.595176260382478
   },
   {
     "id": 165598,
@@ -21779,7 +22893,12 @@
       "CygamesPictures"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 55528,
+    "malScore": 7.56,
+    "malMembers": 13180,
+    "malTomatometer": 53.6,
+    "adjustedScore": 7.584549160209047
   },
   {
     "id": 177709,
@@ -21877,7 +22996,12 @@
       "TMS Entertainment"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 58939,
+    "malScore": 7.59,
+    "malMembers": 289386,
+    "malTomatometer": 52.2,
+    "adjustedScore": 7.588687193704407
   },
   {
     "id": 167087,
@@ -21989,7 +23113,12 @@
       "Satelight"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 55973,
+    "malScore": 7.64,
+    "malMembers": 59154,
+    "malTomatometer": 53.1,
+    "adjustedScore": 7.600275252306717
   },
   {
     "id": 184591,
@@ -22063,7 +23192,12 @@
       "studio MOTHER"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 60326,
+    "malScore": 7.7,
+    "malMembers": 46159,
+    "malTomatometer": 57.3,
+    "adjustedScore": 7.610699601529861
   },
   {
     "id": 178886,
@@ -22153,7 +23287,12 @@
       "P.A.WORKS"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 59207,
+    "malScore": 7.62,
+    "malMembers": 68833,
+    "malTomatometer": 53.5,
+    "adjustedScore": 7.596121035062547
   },
   {
     "id": 20596,
@@ -22216,7 +23355,12 @@
       "Production I.G"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 21995,
+    "malScore": 7.63,
+    "malMembers": 716735,
+    "malTomatometer": 54.9,
+    "adjustedScore": 7.621651299618367
   },
   {
     "id": 98291,
@@ -22288,7 +23432,12 @@
       "Studio Gokumi"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 34902,
+    "malScore": 7.53,
+    "malMembers": 536565,
+    "malTomatometer": 51.6,
+    "adjustedScore": 7.543582494416074
   },
   {
     "id": 169441,
@@ -22375,7 +23524,12 @@
       "Kinema Citrus"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 56701,
+    "malScore": 7.41,
+    "malMembers": 66286,
+    "malTomatometer": 46.8,
+    "adjustedScore": 7.536951724465661
   },
   {
     "id": 20657,
@@ -22462,7 +23616,12 @@
       "A-1 Pictures"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 23277,
+    "malScore": 7.47,
+    "malMembers": 427964,
+    "malTomatometer": 50.2,
+    "adjustedScore": 7.503107202385249
   },
   {
     "id": 99726,
@@ -22542,7 +23701,12 @@
       "Signal.MD"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 36038,
+    "malScore": 7.51,
+    "malMembers": 343791,
+    "malTomatometer": 51.3,
+    "adjustedScore": 7.5352961129468845
   },
   {
     "id": 20654,
@@ -22600,7 +23764,12 @@
       "Studio Gokumi"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 23269,
+    "malScore": 7.5,
+    "malMembers": 51155,
+    "malTomatometer": 50.4,
+    "adjustedScore": 7.56645526968458
   },
   {
     "id": 164172,
@@ -22709,7 +23878,12 @@
       "Drive"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 55071,
+    "malScore": 7.54,
+    "malMembers": 47739,
+    "malTomatometer": 49.5,
+    "adjustedScore": 7.5762678030444395
   },
   {
     "id": 176273,
@@ -22848,7 +24022,12 @@
       "MAPPA"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 58502,
+    "malScore": 7.57,
+    "malMembers": 84340,
+    "malTomatometer": 52.1,
+    "adjustedScore": 7.5809967569674175
   },
   {
     "id": 166527,
@@ -22921,7 +24100,12 @@
       "Sasayuri"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 55779,
+    "malScore": 7.43,
+    "malMembers": 2785,
+    "malTomatometer": 52.7,
+    "adjustedScore": 7.583930695182413
   },
   {
     "id": 110229,
@@ -23006,7 +24190,12 @@
       "Arvo Animation"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 40004,
+    "malScore": 7.33,
+    "malMembers": 241315,
+    "malTomatometer": 44.1,
+    "adjustedScore": 7.43599398312022
   },
   {
     "id": 107067,
@@ -23076,7 +24265,12 @@
       "Zero-G"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 38992,
+    "malScore": 7.34,
+    "malMembers": 200957,
+    "malTomatometer": 43.4,
+    "adjustedScore": 7.452942780880515
   },
   {
     "id": 114065,
@@ -23163,7 +24357,12 @@
       "feel."
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 40904,
+    "malScore": 7.38,
+    "malMembers": 212764,
+    "malTomatometer": 47.7,
+    "adjustedScore": 7.471693354565981
   },
   {
     "id": 151252,
@@ -23256,7 +24455,12 @@
       "Liber"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 41514,
+    "malScore": 7.23,
+    "malMembers": 138898,
+    "malTomatometer": 39.7,
+    "adjustedScore": 7.426171277143565
   },
   {
     "id": 127550,
@@ -23340,7 +24544,12 @@
       "EMT Squared"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 45486,
+    "malScore": 7.29,
+    "malMembers": 54031,
+    "malTomatometer": 40.7,
+    "adjustedScore": 7.514955096246024
   },
   {
     "id": 174044,
@@ -23438,7 +24647,12 @@
       "P.A.WORKS"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 57947,
+    "malScore": 7.34,
+    "malMembers": 23593,
+    "malTomatometer": 44.1,
+    "adjustedScore": 7.556417510793744
   },
   {
     "id": 155657,
@@ -23538,7 +24752,12 @@
       "EMT Squared"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 53356,
+    "malScore": 7.36,
+    "malMembers": 38756,
+    "malTomatometer": 45,
+    "adjustedScore": 7.54441105964424
   },
   {
     "id": 151300,
@@ -23629,7 +24848,12 @@
       "MADHOUSE"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 52186,
+    "malScore": 7.5,
+    "malMembers": 3852,
+    "malTomatometer": 52.1,
+    "adjustedScore": 7.584536934674857
   },
   {
     "id": 143277,
@@ -23765,7 +24989,12 @@
       "david production"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 50710,
+    "malScore": 7.4,
+    "malMembers": 51620,
+    "malTomatometer": 44.7,
+    "adjustedScore": 7.543023712512829
   },
   {
     "id": 180367,
@@ -23903,7 +25132,12 @@
       "Bibury Animation Studios"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 59597,
+    "malScore": 7.36,
+    "malMembers": 65207,
+    "malTomatometer": 43.4,
+    "adjustedScore": 7.523672489199272
   },
   {
     "id": 183965,
@@ -23970,7 +25204,12 @@
       "Ajiado"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 60254,
+    "malScore": 7.29,
+    "malMembers": 27042,
+    "malTomatometer": 39.7,
+    "adjustedScore": 7.545767375316395
   },
   {
     "id": 124395,
@@ -24054,7 +25293,12 @@
       "ENGI"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 42962,
+    "malScore": 7.23,
+    "malMembers": 133966,
+    "malTomatometer": 39.7,
+    "adjustedScore": 7.4293542539859505
   },
   {
     "id": 103900,
@@ -24143,7 +25387,12 @@
       "Arvo Animation"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 38186,
+    "malScore": 7.26,
+    "malMembers": 317677,
+    "malTomatometer": 41.4,
+    "adjustedScore": 7.373798508371511
   },
   {
     "id": 3470,
@@ -24248,7 +25497,12 @@
       "AIC"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 3470,
+    "malScore": 7.5,
+    "malMembers": 259530,
+    "malTomatometer": 49.9,
+    "adjustedScore": 7.534216271662267
   },
   {
     "id": 104464,
@@ -24329,7 +25583,12 @@
       "CONNECT"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 38483,
+    "malScore": 7.29,
+    "malMembers": 334222,
+    "malTomatometer": 45.5,
+    "adjustedScore": 7.389949853768961
   },
   {
     "id": 11433,
@@ -24406,7 +25665,12 @@
       "J.C.STAFF"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 11433,
+    "malScore": 7.4,
+    "malMembers": 239184,
+    "malTomatometer": 48.4,
+    "adjustedScore": 7.477463720886186
   },
   {
     "id": 116867,
@@ -24499,7 +25763,12 @@
       "SILVER LINK."
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 51678,
+    "malScore": 7.64,
+    "malMembers": 104604,
+    "malTomatometer": 55.3,
+    "adjustedScore": 7.606850137532932
   },
   {
     "id": 125124,
@@ -24569,7 +25838,12 @@
       "Zero-G"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 43470,
+    "malScore": 7.3,
+    "malMembers": 77095,
+    "malTomatometer": 43.2,
+    "adjustedScore": 7.497077703584019
   },
   {
     "id": 100876,
@@ -24656,7 +25930,12 @@
       "MAPPA"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 37086,
+    "malScore": 7.18,
+    "malMembers": 663163,
+    "malTomatometer": 41.7,
+    "adjustedScore": 7.262933249756762
   },
   {
     "id": 141351,
@@ -24719,7 +25998,12 @@
       "MAPPA"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 50339,
+    "malScore": 7.18,
+    "malMembers": 85413,
+    "malTomatometer": 38.3,
+    "adjustedScore": 7.450530142033073
   },
   {
     "id": 135778,
@@ -24821,7 +26105,12 @@
       "Studio Hibari"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 49154,
+    "malScore": 7.16,
+    "malMembers": 58750,
+    "malTomatometer": 37.5,
+    "adjustedScore": 7.476926405102048
   },
   {
     "id": 154412,
@@ -24916,7 +26205,12 @@
       "Tezuka Productions"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 52973,
+    "malScore": 7.32,
+    "malMembers": 94072,
+    "malTomatometer": 41.9,
+    "adjustedScore": 7.491532442542539
   },
   {
     "id": 143200,
@@ -25004,7 +26298,12 @@
       "feel."
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 50694,
+    "malScore": 7.39,
+    "malMembers": 19033,
+    "malTomatometer": 46.8,
+    "adjustedScore": 7.566672407289167
   },
   {
     "id": 1120,
@@ -25086,7 +26385,12 @@
       "Shogakukan-Shueisha Productions"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 1120,
+    "malScore": 7.18,
+    "malMembers": 122448,
+    "malTomatometer": 39.2,
+    "adjustedScore": 7.416270773495094
   },
   {
     "id": 98314,
@@ -25209,7 +26513,12 @@
       "MAPPA"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 34933,
+    "malScore": 7.21,
+    "malMembers": 1259629,
+    "malTomatometer": 44,
+    "adjustedScore": 7.254764701308587
   },
   {
     "id": 147369,
@@ -25271,7 +26580,12 @@
       "Nippon Animation"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 51614,
+    "malScore": 7.21,
+    "malMembers": 21149,
+    "malTomatometer": 39.8,
+    "adjustedScore": 7.544801203077669
   },
   {
     "id": 155419,
@@ -25370,7 +26684,12 @@
       "Studio Gokumi"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 53262,
+    "malScore": 7.17,
+    "malMembers": 18627,
+    "malTomatometer": 37.4,
+    "adjustedScore": 7.545327578592106
   },
   {
     "id": 154963,
@@ -25445,7 +26764,12 @@
       "TROYCA"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 53128,
+    "malScore": 7.21,
+    "malMembers": 28063,
+    "malTomatometer": 40,
+    "adjustedScore": 7.533113934289055
   },
   {
     "id": 163151,
@@ -25535,7 +26859,12 @@
       "Studio Hibari"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 54869,
+    "malScore": 7.12,
+    "malMembers": 23325,
+    "malTomatometer": 36.3,
+    "adjustedScore": 7.5301741376805555
   },
   {
     "id": 186161,
@@ -25626,7 +26955,12 @@
       "Millepensee"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 60765,
+    "malScore": 7.13,
+    "malMembers": 15968,
+    "malTomatometer": 39.6,
+    "adjustedScore": 7.547259502533195
   },
   {
     "id": 107871,
@@ -25749,7 +27083,12 @@
       "CygamesPictures"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 39292,
+    "malScore": 7.03,
+    "malMembers": 159834,
+    "malTomatometer": 35,
+    "adjustedScore": 7.316801588578173
   },
   {
     "id": 11617,
@@ -25878,7 +27217,12 @@
       "TNK"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 11617,
+    "malScore": 7.31,
+    "malMembers": 1246940,
+    "malTomatometer": 47.2,
+    "adjustedScore": 7.343167893606711
   },
   {
     "id": 19163,
@@ -26004,7 +27348,12 @@
       "Production IMS"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 19163,
+    "malScore": 7.18,
+    "malMembers": 574124,
+    "malTomatometer": 42.1,
+    "adjustedScore": 7.272856721684952
   },
   {
     "id": 126546,
@@ -26077,7 +27426,12 @@
       "WAO World"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 44203,
+    "malScore": 7.06,
+    "malMembers": 327275,
+    "malTomatometer": 36.8,
+    "adjustedScore": 7.239974692407809
   },
   {
     "id": 128223,
@@ -26140,7 +27494,12 @@
       "SILVER LINK."
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 45653,
+    "malScore": 7,
+    "malMembers": 71152,
+    "malTomatometer": 30.8,
+    "adjustedScore": 7.413419400075858
   },
   {
     "id": 15583,
@@ -26255,7 +27614,12 @@
       "AIC Plus+"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 15583,
+    "malScore": 7.14,
+    "malMembers": 824070,
+    "malTomatometer": 41.9,
+    "adjustedScore": 7.216349668702499
   },
   {
     "id": 114840,
@@ -26318,7 +27682,12 @@
       "Nomad"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 41103,
+    "malScore": 7.11,
+    "malMembers": 143220,
+    "malTomatometer": 38.6,
+    "adjustedScore": 7.368594327204819
   },
   {
     "id": 20646,
@@ -26403,7 +27772,12 @@
       "TRIGGER"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 25159,
+    "malScore": 7.04,
+    "malMembers": 274581,
+    "malTomatometer": 35.6,
+    "adjustedScore": 7.248953858053072
   },
   {
     "id": 151189,
@@ -26475,7 +27849,12 @@
       "Tezuka Productions"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 52092,
+    "malScore": 7.1,
+    "malMembers": 60536,
+    "malTomatometer": 37.1,
+    "adjustedScore": 7.458715841200911
   },
   {
     "id": 171291,
@@ -26541,7 +27920,12 @@
       "CloverWorks"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 57508,
+    "malScore": 6.93,
+    "malMembers": 4524,
+    "malTomatometer": 36.2,
+    "adjustedScore": 7.569435923810441
   },
   {
     "id": 4026,
@@ -26604,7 +27988,12 @@
       "OLM"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 4026,
+    "malScore": 6.91,
+    "malMembers": 93694,
+    "malTomatometer": 32.2,
+    "adjustedScore": 7.346099855010327
   },
   {
     "id": 1122,
@@ -26670,7 +28059,12 @@
       "OLM"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 1122,
+    "malScore": 6.99,
+    "malMembers": 117387,
+    "malTomatometer": 33.8,
+    "adjustedScore": 7.342823597334233
   },
   {
     "id": 1723,
@@ -26733,7 +28127,12 @@
       "Toei Animation"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 1723,
+    "malScore": 7.25,
+    "malMembers": 131021,
+    "malTomatometer": 47.5,
+    "adjustedScore": 7.440009717485136
   },
   {
     "id": 108092,
@@ -26823,7 +28222,12 @@
       "Doga Kobo"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 39388,
+    "malScore": 6.89,
+    "malMembers": 39851,
+    "malTomatometer": 30.7,
+    "adjustedScore": 7.4541951440169125
   },
   {
     "id": 109020,
@@ -26922,9 +28326,12 @@
       "Doga Kobo"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 39710,
+    "malScore": 6.87,
+    "malMembers": 176036,
+    "malTomatometer": 34.1,
+    "adjustedScore": 7.221977583740111
   },
   {
     "id": 154459,
@@ -26985,7 +28392,12 @@
       "ENGI"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 52990,
+    "malScore": 6.75,
+    "malMembers": 131590,
+    "malTomatometer": 28.2,
+    "adjustedScore": 7.221490815899378
   },
   {
     "id": 113813,
@@ -27076,9 +28488,12 @@
       "TMS Entertainment"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 40839,
+    "malScore": 6.82,
+    "malMembers": 834310,
+    "malTomatometer": 37.3,
+    "adjustedScore": 6.949737745484057
   },
   {
     "id": 1119,
@@ -27155,7 +28570,12 @@
       "OLM"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 1119,
+    "malScore": 6.92,
+    "malMembers": 159178,
+    "malTomatometer": 32.6,
+    "adjustedScore": 7.264181309708101
   },
   {
     "id": 12175,
@@ -27213,7 +28633,12 @@
       "AIC Build"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 12175,
+    "malScore": 6.96,
+    "malMembers": 142002,
+    "malTomatometer": 34.4,
+    "adjustedScore": 7.301334078522231
   },
   {
     "id": 136934,
@@ -27283,9 +28708,12 @@
       "project No.9"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 44524,
+    "malScore": 6.52,
+    "malMembers": 178881,
+    "malTomatometer": 27,
+    "adjustedScore": 7.0396525897572335
   },
   {
     "id": 155389,
@@ -27352,7 +28780,12 @@
       "8-bit"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 53237,
+    "malScore": 6.72,
+    "malMembers": 30098,
+    "malTomatometer": 25.7,
+    "adjustedScore": 7.456123875136649
   },
   {
     "id": 97766,
@@ -27436,9 +28869,12 @@
       "PINE JAM"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 34280,
+    "malScore": 6.72,
+    "malMembers": 498946,
+    "malTomatometer": 30.1,
+    "adjustedScore": 6.940192534475268
   },
   {
     "id": 130592,
@@ -27550,7 +28986,12 @@
       "Studio 3Hz"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 48413,
+    "malScore": 6.65,
+    "malMembers": 223700,
+    "malTomatometer": 25.7,
+    "adjustedScore": 7.0543609732463635
   },
   {
     "id": 21131,
@@ -27632,9 +29073,12 @@
       "A-1 Pictures"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 30544,
+    "malScore": 6.8,
+    "malMembers": 541290,
+    "malTomatometer": 32.6,
+    "adjustedScore": 6.987964002259407
   },
   {
     "id": 175450,
@@ -27698,7 +29142,12 @@
       "Tezuka Productions"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 58272,
+    "malScore": 6.73,
+    "malMembers": 28454,
+    "malTomatometer": 26.7,
+    "adjustedScore": 7.463655734664422
   },
   {
     "id": 20552,
@@ -27760,7 +29209,12 @@
       "Studio Gallop"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 21639,
+    "malScore": 6.74,
+    "malMembers": 38685,
+    "malTomatometer": 33.2,
+    "adjustedScore": 7.429541247176813
   },
   {
     "id": 103139,
@@ -27839,9 +29293,12 @@
       "diomedéa"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 37982,
+    "malScore": 6.61,
+    "malMembers": 608366,
+    "malTomatometer": 32.5,
+    "adjustedScore": 6.823263317214644
   },
   {
     "id": 97979,
@@ -27897,7 +29354,12 @@
       "Double Eagle"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 34580,
+    "malScore": 6.66,
+    "malMembers": 40156,
+    "malTomatometer": 24.2,
+    "adjustedScore": 7.40942859193691
   },
   {
     "id": 98231,
@@ -27972,7 +29434,12 @@
       "Studio Gallop"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 34866,
+    "malScore": 6.73,
+    "malMembers": 18902,
+    "malTomatometer": 29.7,
+    "adjustedScore": 7.500753698569063
   },
   {
     "id": 9917,
@@ -28016,7 +29483,12 @@
       "OLM"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 9917,
+    "malScore": 6.67,
+    "malMembers": 57208,
+    "malTomatometer": 26.8,
+    "adjustedScore": 7.355701714583524
   },
   {
     "id": 126192,
@@ -28116,9 +29588,12 @@
       "Tezuka Productions"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 43969,
+    "malScore": 6.51,
+    "malMembers": 234103,
+    "malTomatometer": 25.4,
+    "adjustedScore": 6.962847207684906
   },
   {
     "id": 127090,
@@ -28198,9 +29673,12 @@
       "Passione"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 49470,
+    "malScore": 6.72,
+    "malMembers": 200386,
+    "malTomatometer": 26.7,
+    "adjustedScore": 7.117684888648851
   },
   {
     "id": 107961,
@@ -28277,9 +29755,12 @@
       "Seven"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 39326,
+    "malScore": 6.46,
+    "malMembers": 224177,
+    "malTomatometer": 23.6,
+    "adjustedScore": 6.945814532981613
   },
   {
     "id": 117989,
@@ -28375,9 +29856,12 @@
       "Asread"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 41812,
+    "malScore": 6.48,
+    "malMembers": 117125,
+    "malTomatometer": 24.4,
+    "adjustedScore": 7.135104624003807
   },
   {
     "id": 21887,
@@ -28469,9 +29953,12 @@
       "diomedéa"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 33743,
+    "malScore": 6.51,
+    "malMembers": 195122,
+    "malTomatometer": 27.8,
+    "adjustedScore": 7.011193889075687
   },
   {
     "id": 118375,
@@ -28557,9 +30044,12 @@
       "Okuruto Noboru"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 41899,
+    "malScore": 6.27,
+    "malMembers": 297779,
+    "malTomatometer": 21.1,
+    "adjustedScore": 6.748424459343179
   },
   {
     "id": 13161,
@@ -28634,9 +30124,12 @@
       "ARMS"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 13161,
+    "malScore": 6.68,
+    "malMembers": 327592,
+    "malTomatometer": 30.4,
+    "adjustedScore": 6.98968527461674
   },
   {
     "id": 146323,
@@ -28716,7 +30209,12 @@
       "feel."
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 51252,
+    "malScore": 6.42,
+    "malMembers": 50401,
+    "malTomatometer": 21.3,
+    "adjustedScore": 7.319709689008186
   },
   {
     "id": 13367,
@@ -28779,9 +30277,12 @@
       "Studio Gokumi"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 13367,
+    "malScore": 6.49,
+    "malMembers": 140234,
+    "malTomatometer": 25,
+    "adjustedScore": 7.090826844146978
   },
   {
     "id": 97730,
@@ -28842,9 +30343,12 @@
       "Studio Gokumi"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 33836,
+    "malScore": 6.29,
+    "malMembers": 112225,
+    "malTomatometer": 20.1,
+    "adjustedScore": 7.070926265097328
   },
   {
     "id": 114072,
@@ -28895,7 +30399,12 @@
       "Bridge"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 40145,
+    "malScore": 6.29,
+    "malMembers": 3501,
+    "malTomatometer": 21.1,
+    "adjustedScore": 7.560291901297936
   },
   {
     "id": 142842,
@@ -28942,7 +30451,12 @@
       "Bridge"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 50607,
+    "malScore": 6.18,
+    "malMembers": 995,
+    "malTomatometer": 24.1,
+    "adjustedScore": 7.578268459119233
   },
   {
     "id": 111762,
@@ -29096,7 +30610,12 @@
       "TMS Entertainment"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 40417,
+    "malScore": 8.52,
+    "malMembers": 381040,
+    "malTomatometer": 81.7,
+    "adjustedScore": 8.231993530718446
   },
   {
     "id": 431,
@@ -29208,9 +30727,12 @@
       "Studio Ghibli"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "fresh"
-    ]
+    "specialAwards": [],
+    "malId": 431,
+    "malScore": 8.67,
+    "malMembers": 1347499,
+    "malTomatometer": 84.2,
+    "adjustedScore": 8.548614032145716
   },
   {
     "id": 168872,
@@ -29294,7 +30816,12 @@
       "Production I.G"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 56538,
+    "malScore": 8.42,
+    "malMembers": 58281,
+    "malTomatometer": 79.5,
+    "adjustedScore": 7.799260276444791
   },
   {
     "id": 202955,
@@ -29376,7 +30903,12 @@
       "WIT STUDIO"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 63019,
+    "malScore": 8.46,
+    "malMembers": 26908,
+    "malTomatometer": 78.8,
+    "adjustedScore": 7.705825030811816
   },
   {
     "id": 169295,
@@ -29467,7 +30999,12 @@
       "SANZIGEN"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 56653,
+    "malScore": 8.08,
+    "malMembers": 17146,
+    "malTomatometer": 70.5,
+    "adjustedScore": 7.6316704346718245
   },
   {
     "id": 178533,
@@ -29592,7 +31129,12 @@
       "MAPPA"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 59145,
+    "malScore": 7.97,
+    "malMembers": 104422,
+    "malTomatometer": 68.5,
+    "adjustedScore": 7.7323984781362025
   },
   {
     "id": 99578,
@@ -29695,7 +31237,12 @@
       "A-1 Pictures"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 35968,
+    "malScore": 7.91,
+    "malMembers": 747251,
+    "malTomatometer": 65,
+    "adjustedScore": 7.85003485977894
   },
   {
     "id": 146066,
@@ -29793,7 +31340,12 @@
       "Lerche"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 51180,
+    "malScore": 7.92,
+    "malMembers": 367332,
+    "malTomatometer": 66.2,
+    "adjustedScore": 7.814472905330583
   },
   {
     "id": 21120,
@@ -29848,7 +31400,12 @@
       "Production I.G"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 29755,
+    "malScore": 8.12,
+    "malMembers": 90647,
+    "malTomatometer": 69.4,
+    "adjustedScore": 7.772007946253336
   },
   {
     "id": 109979,
@@ -29940,7 +31497,12 @@
       "Studio Ghibli"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 36699,
+    "malScore": 7.6,
+    "malMembers": 120012,
+    "malTomatometer": 54.8,
+    "adjustedScore": 7.592058656769696
   },
   {
     "id": 151801,
@@ -30043,7 +31605,12 @@
       "A-1 Pictures"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 52211,
+    "malScore": 7.61,
+    "malMembers": 587746,
+    "malTomatometer": 53.5,
+    "adjustedScore": 7.604717115190438
   },
   {
     "id": 176246,
@@ -30149,7 +31716,12 @@
       "Soigne"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 58492,
+    "malScore": 7.72,
+    "malMembers": 21733,
+    "malTomatometer": 58.5,
+    "adjustedScore": 7.601590102731888
   },
   {
     "id": 99468,
@@ -30216,7 +31788,12 @@
       "Shin-Ei Animation"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 35860,
+    "malScore": 7.67,
+    "malMembers": 386632,
+    "malTomatometer": 56.1,
+    "adjustedScore": 7.644483887320695
   },
   {
     "id": 170938,
@@ -30308,7 +31885,12 @@
       "bones"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 57217,
+    "malScore": 7.55,
+    "malMembers": 47345,
+    "malTomatometer": 50.6,
+    "adjustedScore": 7.578511882799664
   },
   {
     "id": 14227,
@@ -30367,7 +31949,12 @@
       "Brain's Base"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 14227,
+    "malScore": 7.45,
+    "malMembers": 864798,
+    "malTomatometer": 49,
+    "adjustedScore": 7.472416853499034
   },
   {
     "id": 182158,
@@ -30446,7 +32033,12 @@
       "project No.9"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 59957,
+    "malScore": 7.28,
+    "malMembers": 4911,
+    "malTomatometer": 43,
+    "adjustedScore": 7.5778481351492655
   },
   {
     "id": 186621,
@@ -30511,7 +32103,12 @@
       "Studio KAI"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 60969,
+    "malScore": 7.31,
+    "malMembers": 19616,
+    "malTomatometer": 41.8,
+    "adjustedScore": 7.557853109268696
   },
   {
     "id": 166828,
@@ -30595,7 +32192,12 @@
       "Studio Comet"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 55877,
+    "malScore": 7.27,
+    "malMembers": 36551,
+    "malTomatometer": 40.7,
+    "adjustedScore": 7.530453423934491
   },
   {
     "id": 173935,
@@ -30657,7 +32259,12 @@
       "Hurray!"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 57915,
+    "malScore": 7.22,
+    "malMembers": 1552,
+    "malTomatometer": 42.8,
+    "adjustedScore": 7.583137213014673
   },
   {
     "id": 148098,
@@ -30735,7 +32342,12 @@
       "Asahi Production"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 51705,
+    "malScore": 7.16,
+    "malMembers": 88169,
+    "malTomatometer": 37,
+    "adjustedScore": 7.440811852573676
   },
   {
     "id": 155963,
@@ -30823,7 +32435,12 @@
       "SILVER LINK."
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 53421,
+    "malScore": 7.06,
+    "malMembers": 131087,
+    "malTomatometer": 33.7,
+    "adjustedScore": 7.357246029111496
   },
   {
     "id": 165790,
@@ -30905,7 +32522,12 @@
       "Ashi Productions"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 55887,
+    "malScore": 7.11,
+    "malMembers": 64195,
+    "malTomatometer": 34.2,
+    "adjustedScore": 7.455852452729961
   },
   {
     "id": 183291,
@@ -30971,7 +32593,12 @@
       "Asahi Production"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 60162,
+    "malScore": 7.12,
+    "malMembers": 37181,
+    "malTomatometer": 34.6,
+    "adjustedScore": 7.50274221655023
   },
   {
     "id": 154692,
@@ -31051,7 +32678,12 @@
       "SynergySP"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 53040,
+    "malScore": 7,
+    "malMembers": 73988,
+    "malTomatometer": 34.3,
+    "adjustedScore": 7.408614010390237
   },
   {
     "id": 160188,
@@ -31117,7 +32749,12 @@
       "GoHands"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 54234,
+    "malScore": 7.16,
+    "malMembers": 108600,
+    "malTomatometer": 38.5,
+    "adjustedScore": 7.420218647405216
   },
   {
     "id": 172190,
@@ -31228,7 +32865,12 @@
       "Felix Film"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 57611,
+    "malScore": 7.05,
+    "malMembers": 63629,
+    "malTomatometer": 32.7,
+    "adjustedScore": 7.440349293825223
   },
   {
     "id": 178022,
@@ -31290,7 +32932,12 @@
       "Studio Bind"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 59055,
+    "malScore": 7.09,
+    "malMembers": 13461,
+    "malTomatometer": 34.8,
+    "adjustedScore": 7.550026464300823
   },
   {
     "id": 1118,
@@ -31354,7 +33001,12 @@
       "OLM"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 1118,
+    "malScore": 7.1,
+    "malMembers": 183332,
+    "malTomatometer": 37.4,
+    "adjustedScore": 7.334048756317269
   },
   {
     "id": 21701,
@@ -31438,7 +33090,12 @@
       "Lerche"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 32949,
+    "malScore": 7.07,
+    "malMembers": 432389,
+    "malTomatometer": 42.6,
+    "adjustedScore": 7.215747872499487
   },
   {
     "id": 169927,
@@ -31506,7 +33163,12 @@
       "Okuruto Noboru"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 56838,
+    "malScore": 7.04,
+    "malMembers": 45842,
+    "malTomatometer": 32.3,
+    "adjustedScore": 7.470393135567189
   },
   {
     "id": 171748,
@@ -31560,7 +33222,12 @@
       "8-bit"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 57567,
+    "malScore": 6.92,
+    "malMembers": 14094,
+    "malTomatometer": 30.1,
+    "adjustedScore": 7.535429699865793
   },
   {
     "id": 115113,
@@ -31648,9 +33315,12 @@
       "ENGI"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 41226,
+    "malScore": 6.95,
+    "malMembers": 355285,
+    "malTomatometer": 34,
+    "adjustedScore": 7.155977545841006
   },
   {
     "id": 21390,
@@ -31740,7 +33410,12 @@
       "A-1 Pictures"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 31737,
+    "malScore": 6.98,
+    "malMembers": 380191,
+    "malTomatometer": 36,
+    "adjustedScore": 7.167383863362167
   },
   {
     "id": 144533,
@@ -31814,7 +33489,12 @@
       "MADHOUSE"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 50923,
+    "malScore": 6.88,
+    "malMembers": 39787,
+    "malTomatometer": 30.9,
+    "adjustedScore": 7.45247072109851
   },
   {
     "id": 21093,
@@ -31939,9 +33619,12 @@
       "Seva"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 30307,
+    "malScore": 6.92,
+    "malMembers": 597521,
+    "malTomatometer": 35.1,
+    "adjustedScore": 7.067614091558529
   },
   {
     "id": 14749,
@@ -32015,9 +33698,12 @@
       "A-1 Pictures"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 14749,
+    "malScore": 6.88,
+    "malMembers": 398879,
+    "malTomatometer": 32.5,
+    "adjustedScore": 7.091111528404271
   },
   {
     "id": 124410,
@@ -32108,7 +33794,12 @@
       "TMS Entertainment"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 42963,
+    "malScore": 6.68,
+    "malMembers": 249874,
+    "malTomatometer": 30.3,
+    "adjustedScore": 7.047007519320304
   },
   {
     "id": 118419,
@@ -32197,9 +33888,12 @@
       "P.A.WORKS"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 41930,
+    "malScore": 6.81,
+    "malMembers": 147844,
+    "malTomatometer": 34.5,
+    "adjustedScore": 7.225288365258093
   },
   {
     "id": 146676,
@@ -32264,7 +33958,12 @@
       "Passione"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 51403,
+    "malScore": 6.7,
+    "malMembers": 86624,
+    "malTomatometer": 30,
+    "adjustedScore": 7.2872284555111495
   },
   {
     "id": 160181,
@@ -32340,7 +34039,12 @@
       "Yokohama Animation Lab"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 54233,
+    "malScore": 6.72,
+    "malMembers": 21628,
+    "malTomatometer": 30.7,
+    "adjustedScore": 7.48866071329395
   },
   {
     "id": 148116,
@@ -32407,9 +34111,12 @@
       "CLOUDHEARTS"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 51711,
+    "malScore": 6.36,
+    "malMembers": 143977,
+    "malTomatometer": 20.1,
+    "adjustedScore": 7.024051555263899
   },
   {
     "id": 159483,
@@ -32464,7 +34171,12 @@
       "BAKKEN RECORD"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 54028,
+    "malScore": 6.56,
+    "malMembers": 6686,
+    "malTomatometer": 26.8,
+    "adjustedScore": 7.547610309628908
   },
   {
     "id": 20565,
@@ -32557,9 +34269,12 @@
       "Production IMS"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 24705,
+    "malScore": 6.42,
+    "malMembers": 88020,
+    "malTomatometer": 24.3,
+    "adjustedScore": 7.188533118235382
   },
   {
     "id": 6205,
@@ -32635,9 +34350,12 @@
       "Nomad"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 6205,
+    "malScore": 6.35,
+    "malMembers": 202364,
+    "malTomatometer": 25,
+    "adjustedScore": 6.914493117398817
   },
   {
     "id": 113425,
@@ -32765,9 +34483,12 @@
       "TNK"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 40750,
+    "malScore": 6.31,
+    "malMembers": 428785,
+    "malTomatometer": 30.3,
+    "adjustedScore": 6.672395375914716
   },
   {
     "id": 98951,
@@ -32843,9 +34564,12 @@
       "Studio Blanc"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 35712,
+    "malScore": 6.2,
+    "malMembers": 170019,
+    "malTomatometer": 19.9,
+    "adjustedScore": 6.893187484132043
   },
   {
     "id": 8861,
@@ -32956,9 +34680,12 @@
       "feel."
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 8861,
+    "malScore": 5.99,
+    "malMembers": 362458,
+    "malTomatometer": 25.1,
+    "adjustedScore": 6.49970577053419
   },
   {
     "id": 4224,
@@ -33042,7 +34769,12 @@
       "J.C.STAFF"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 4224,
+    "malScore": 8.04,
+    "malMembers": 1821741,
+    "malTomatometer": 67.9,
+    "adjustedScore": 8.001288598852506
   },
   {
     "id": 7054,
@@ -33145,7 +34877,12 @@
       "J.C.STAFF"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 7054,
+    "malScore": 7.99,
+    "malMembers": 1001193,
+    "malTomatometer": 66,
+    "adjustedScore": 7.9314246116285645
   },
   {
     "id": 143866,
@@ -33209,7 +34946,12 @@
       "project No.9"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 50803,
+    "malScore": 7.04,
+    "malMembers": 80333,
+    "malTomatometer": 35.2,
+    "adjustedScore": 7.411093364307115
   },
   {
     "id": 19221,
@@ -33289,7 +35031,12 @@
       "diomedéa"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 19221,
+    "malScore": 7.12,
+    "malMembers": 294111,
+    "malTomatometer": 41.2,
+    "adjustedScore": 7.290857650792791
   },
   {
     "id": 132052,
@@ -33352,7 +35099,12 @@
       "SynergySP"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 48675,
+    "malScore": 6.85,
+    "malMembers": 155350,
+    "malTomatometer": 30.9,
+    "adjustedScore": 7.234806870038707
   },
   {
     "id": 164244,
@@ -33415,7 +35167,12 @@
       "Children's Playground Entertainment"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 55129,
+    "malScore": 6.9,
+    "malMembers": 71813,
+    "malTomatometer": 28.4,
+    "adjustedScore": 7.382591569382512
   },
   {
     "id": 168623,
@@ -33479,7 +35236,12 @@
       "TYPHOON GRAPHICS"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 56449,
+    "malScore": 6.79,
+    "malMembers": 41847,
+    "malTomatometer": 25.6,
+    "adjustedScore": 7.429125950176747
   },
   {
     "id": 165855,
@@ -33545,7 +35307,12 @@
       "East Fish Studio"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 55597,
+    "malScore": 6.77,
+    "malMembers": 61541,
+    "malTomatometer": 29.1,
+    "adjustedScore": 7.369448543312386
   },
   {
     "id": 157397,
@@ -33609,9 +35376,12 @@
       "AXsiZ"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 53632,
+    "malScore": 6.61,
+    "malMembers": 139741,
+    "malTomatometer": 24.7,
+    "adjustedScore": 7.145921673808418
   },
   {
     "id": 1894,
@@ -33665,7 +35435,12 @@
       "Studio Gallop"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 1894,
+    "malScore": 6.59,
+    "malMembers": 72653,
+    "malTomatometer": 27.6,
+    "adjustedScore": 7.288103527123478
   },
   {
     "id": 104325,
@@ -33760,9 +35535,12 @@
       "Tear-Studio"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 38397,
+    "malScore": 6.49,
+    "malMembers": 254785,
+    "malTomatometer": 26,
+    "adjustedScore": 6.928802959537396
   },
   {
     "id": 128712,
@@ -33863,9 +35641,12 @@
       "ENGI"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 46471,
+    "malScore": 6.44,
+    "malMembers": 162563,
+    "malTomatometer": 27.4,
+    "adjustedScore": 7.026045095717483
   },
   {
     "id": 131863,
@@ -33939,9 +35720,12 @@
       "GEEKTOYS"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 48633,
+    "malScore": 6.29,
+    "malMembers": 82225,
+    "malTomatometer": 19.9,
+    "adjustedScore": 7.163810745037539
   },
   {
     "id": 21685,
@@ -34054,9 +35838,12 @@
       "A-1 Pictures"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 32901,
+    "malScore": 6.31,
+    "malMembers": 542638,
+    "malTomatometer": 26.8,
+    "adjustedScore": 6.614498097445116
   },
   {
     "id": 97863,
@@ -34152,9 +35939,12 @@
       "NAZ"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 34403,
+    "malScore": 6.26,
+    "malMembers": 428243,
+    "malTomatometer": 22.2,
+    "adjustedScore": 6.63693197441022
   },
   {
     "id": 124675,
@@ -34224,9 +36014,12 @@
       "Doga Kobo"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 43007,
+    "malScore": 6.06,
+    "malMembers": 145115,
+    "malTomatometer": 18.4,
+    "adjustedScore": 6.883499088164934
   },
   {
     "id": 187331,
@@ -34326,7 +36119,12 @@
       "Quad"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 61142,
+    "malScore": 6.12,
+    "malMembers": 20385,
+    "malTomatometer": 16,
+    "adjustedScore": 7.429435696967162
   },
   {
     "id": 2034,
@@ -34389,7 +36187,12 @@
       "Toei Animation"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 2034,
+    "malScore": 8.03,
+    "malMembers": 407372,
+    "malTomatometer": 67.2,
+    "adjustedScore": 7.899402941547379
   },
   {
     "id": 18897,
@@ -34488,7 +36291,12 @@
       "Shaft"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 18897,
+    "malScore": 7.55,
+    "malMembers": 886819,
+    "malTomatometer": 53.4,
+    "adjustedScore": 7.555863743145319
   },
   {
     "id": 20876,
@@ -34583,7 +36391,12 @@
       "Shaft"
     ],
     "requiresPrereq": true,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 27787,
+    "malScore": 7.35,
+    "malMembers": 606240,
+    "malTomatometer": 46.4,
+    "adjustedScore": 7.401784132700058
   },
   {
     "id": 10110,
@@ -34666,7 +36479,12 @@
       "feel."
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 10110,
+    "malScore": 7.2,
+    "malMembers": 376868,
+    "malTomatometer": 41.4,
+    "adjustedScore": 7.320133039722737
   },
   {
     "id": 20701,
@@ -34725,9 +36543,12 @@
       "TYO Animations"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 23673,
+    "malScore": 6.98,
+    "malMembers": 367640,
+    "malTomatometer": 38.5,
+    "adjustedScore": 7.171758267924807
   },
   {
     "id": 98320,
@@ -34801,9 +36622,12 @@
       "LIDENFILMS"
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 34934,
+    "malScore": 6.47,
+    "malMembers": 263455,
+    "malTomatometer": 26.3,
+    "adjustedScore": 6.907869940748389
   },
   {
     "id": 167144,
@@ -34868,7 +36692,12 @@
       "ROLL2"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 55996,
+    "malScore": 6.23,
+    "malMembers": 28753,
+    "malTomatometer": 17.9,
+    "adjustedScore": 7.3902185384225305
   },
   {
     "id": 144176,
@@ -34941,7 +36770,12 @@
       "LIDENFILMS"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 50869,
+    "malScore": 6.27,
+    "malMembers": 44093,
+    "malTomatometer": 17.4,
+    "adjustedScore": 7.315325700359624
   },
   {
     "id": 7593,
@@ -35005,9 +36839,12 @@
       "feel."
     ],
     "requiresPrereq": false,
-    "specialAwards": [
-      "rotten"
-    ]
+    "specialAwards": [],
+    "malId": 7593,
+    "malScore": 6.55,
+    "malMembers": 455999,
+    "malTomatometer": 31.9,
+    "adjustedScore": 6.8314651703390785
   },
   {
     "id": 166896,
@@ -35064,7 +36901,12 @@
       "Quad"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 55894,
+    "malScore": 6.09,
+    "malMembers": 15475,
+    "malTomatometer": 17.7,
+    "adjustedScore": 7.461596792921381
   },
   {
     "id": 156896,
@@ -35131,6 +36973,11 @@
       "WIT STUDIO"
     ],
     "requiresPrereq": false,
-    "specialAwards": []
+    "specialAwards": [],
+    "malId": 51139,
+    "malScore": 5.32,
+    "malMembers": 4041,
+    "malTomatometer": 14,
+    "adjustedScore": 7.533828437937572
   }
 ]
