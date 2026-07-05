@@ -1418,7 +1418,9 @@
       "J.C.STAFF"
     ],
     "requiresPrereq": true,
-    "specialAwards": [],
+    "specialAwards": [
+      "motyPublic"
+    ],
     "malId": 38040,
     "malScore": 8.4,
     "malMembers": 565402,
@@ -1551,7 +1553,9 @@
       "CloverWorks"
     ],
     "requiresPrereq": true,
-    "specialAwards": [],
+    "specialAwards": [
+      "jury"
+    ],
     "malId": 53065,
     "malScore": 8.17,
     "malMembers": 220158,
@@ -3018,7 +3022,9 @@
       "OLM"
     ],
     "requiresPrereq": true,
-    "specialAwards": [],
+    "specialAwards": [
+      "public"
+    ],
     "malId": 58514,
     "malScore": 8.91,
     "malMembers": 275455,
@@ -8547,7 +8553,9 @@
       "Shaft"
     ],
     "requiresPrereq": true,
-    "specialAwards": [],
+    "specialAwards": [
+      "motyPublic"
+    ],
     "malId": 31757,
     "malScore": 8.56,
     "malMembers": 298634,
@@ -9523,7 +9531,9 @@
       "WHITE FOX"
     ],
     "requiresPrereq": true,
-    "specialAwards": [],
+    "specialAwards": [
+      "public"
+    ],
     "malId": 39587,
     "malScore": 8.33,
     "malMembers": 769998,
@@ -10577,7 +10587,9 @@
       "SILVER LINK."
     ],
     "requiresPrereq": true,
-    "specialAwards": [],
+    "specialAwards": [
+      "motyJury"
+    ],
     "malId": 36990,
     "malScore": 8.24,
     "malMembers": 41416,
@@ -19711,7 +19723,9 @@
       "Shaft"
     ],
     "requiresPrereq": true,
-    "specialAwards": [],
+    "specialAwards": [
+      "motyPublic"
+    ],
     "malId": 9260,
     "malScore": 8.36,
     "malMembers": 314823,
