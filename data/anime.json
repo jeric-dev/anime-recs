@@ -116,9 +116,9 @@
     "specialAwards": [],
     "malId": 43608,
     "malScore": 8.95,
-    "malMembers": 772960,
+    "malMembers": 642969,
     "malTomatometer": 89.6,
-    "adjustedScore": 8.703829572856343
+    "adjustedScore": 8.707280039827559
   },
   {
     "id": 151384,
@@ -209,9 +209,9 @@
     "specialAwards": [],
     "malId": 52198,
     "malScore": 8.71,
-    "malMembers": 286447,
+    "malMembers": 221323,
     "malTomatometer": 87.3,
-    "adjustedScore": 8.290830050412465
+    "adjustedScore": 8.275835418399373
   },
   {
     "id": 130003,
@@ -326,9 +326,9 @@
     ],
     "malId": 47917,
     "malScore": 8.73,
-    "malMembers": 562388,
+    "malMembers": 487123,
     "malTomatometer": 86.2,
-    "adjustedScore": 8.464117891091359
+    "adjustedScore": 8.475705740667436
   },
   {
     "id": 21519,
@@ -418,9 +418,9 @@
     "specialAwards": [],
     "malId": 32281,
     "malScore": 8.82,
-    "malMembers": 2642404,
+    "malMembers": 2095598,
     "malTomatometer": 85.9,
-    "adjustedScore": 8.745320520814442
+    "adjustedScore": 8.743149718859463
   },
   {
     "id": 166216,
@@ -502,9 +502,9 @@
     "specialAwards": [],
     "malId": 55690,
     "malScore": 8.68,
-    "malMembers": 221114,
+    "malMembers": 181158,
     "malTomatometer": 85.4,
-    "adjustedScore": 8.20385016650035
+    "adjustedScore": 8.2043926919331
   },
   {
     "id": 182587,
@@ -595,9 +595,9 @@
     "specialAwards": [],
     "malId": 60058,
     "malScore": 8.69,
-    "malMembers": 142847,
+    "malMembers": 120658,
     "malTomatometer": 87.9,
-    "adjustedScore": 8.089294652084304
+    "adjustedScore": 8.098223568940366
   },
   {
     "id": 120377,
@@ -726,9 +726,9 @@
     ],
     "malId": 42310,
     "malScore": 8.62,
-    "malMembers": 887592,
+    "malMembers": 733280,
     "malTomatometer": 84.2,
-    "adjustedScore": 8.453556923672473
+    "adjustedScore": 8.454996234539273
   },
   {
     "id": 166531,
@@ -807,9 +807,9 @@
     "specialAwards": [],
     "malId": 55791,
     "malScore": 8.51,
-    "malMembers": 326501,
+    "malMembers": 267914,
     "malTomatometer": 83.6,
-    "adjustedScore": 8.193124775218212
+    "adjustedScore": 8.193865670544433
   },
   {
     "id": 104157,
@@ -892,9 +892,9 @@
     "specialAwards": [],
     "malId": 38329,
     "malScore": 8.59,
-    "malMembers": 661850,
+    "malMembers": 524630,
     "malTomatometer": 83.7,
-    "adjustedScore": 8.384519605722929
+    "adjustedScore": 8.379401497014777
   },
   {
     "id": 150672,
@@ -1007,9 +1007,9 @@
     ],
     "malId": 52034,
     "malScore": 8.53,
-    "malMembers": 689747,
+    "malMembers": 629386,
     "malTomatometer": 81.9,
-    "adjustedScore": 8.343050971995968
+    "adjustedScore": 8.358966841488416
   },
   {
     "id": 129201,
@@ -1097,9 +1097,9 @@
     "specialAwards": [],
     "malId": 47194,
     "malScore": 8.46,
-    "malMembers": 333630,
+    "malMembers": 295074,
     "malTomatometer": 81.6,
-    "adjustedScore": 8.164487687430492
+    "adjustedScore": 8.179657283006856
   },
   {
     "id": 171018,
@@ -1222,9 +1222,9 @@
     ],
     "malId": 57334,
     "malScore": 8.4,
-    "malMembers": 728403,
+    "malMembers": 609944,
     "malTomatometer": 81.2,
-    "adjustedScore": 8.245694119477138
+    "adjustedScore": 8.248654259148772
   },
   {
     "id": 184951,
@@ -1310,9 +1310,9 @@
     "specialAwards": [],
     "malId": 60371,
     "malScore": 8.28,
-    "malMembers": 116539,
+    "malMembers": 104051,
     "malTomatometer": 77.8,
-    "adjustedScore": 7.867389967929734
+    "adjustedScore": 7.882266666106773
   },
   {
     "id": 102976,
@@ -1421,9 +1421,9 @@
     "specialAwards": [],
     "malId": 38040,
     "malScore": 8.4,
-    "malMembers": 740084,
+    "malMembers": 565402,
     "malTomatometer": 81.1,
-    "adjustedScore": 8.247674647637602
+    "adjustedScore": 8.239084096104095
   },
   {
     "id": 154768,
@@ -1554,9 +1554,9 @@
     "specialAwards": [],
     "malId": 53065,
     "malScore": 8.17,
-    "malMembers": 270267,
+    "malMembers": 220158,
     "malTomatometer": 75.1,
-    "adjustedScore": 7.943935212088615
+    "adjustedScore": 7.943415921304599
   },
   {
     "id": 101291,
@@ -1657,9 +1657,9 @@
     "specialAwards": [],
     "malId": 37450,
     "malScore": 8.23,
-    "malMembers": 1529574,
+    "malMembers": 1248783,
     "malTomatometer": 74.5,
-    "adjustedScore": 8.165437429626847
+    "adjustedScore": 8.16535049461185
   },
   {
     "id": 166794,
@@ -1744,9 +1744,9 @@
     "specialAwards": [],
     "malId": 55866,
     "malScore": 8.19,
-    "malMembers": 195831,
+    "malMembers": 164291,
     "malTomatometer": 72.9,
-    "adjustedScore": 7.908643674321253
+    "adjustedScore": 7.91251242359291
   },
   {
     "id": 21875,
@@ -1846,9 +1846,9 @@
     "specialAwards": [],
     "malId": 33674,
     "malScore": 8.16,
-    "malMembers": 711564,
+    "malMembers": 512265,
     "malTomatometer": 71.3,
-    "adjustedScore": 8.049028061514102
+    "adjustedScore": 8.037178284513857
   },
   {
     "id": 172258,
@@ -1954,9 +1954,9 @@
     "specialAwards": [],
     "malId": 57616,
     "malScore": 7.87,
-    "malMembers": 107609,
+    "malMembers": 88840,
     "malTomatometer": 64.1,
-    "adjustedScore": 7.695189867837924
+    "adjustedScore": 7.695844959023513
   },
   {
     "id": 19815,
@@ -2087,9 +2087,9 @@
     "specialAwards": [],
     "malId": 19815,
     "malScore": 8.03,
-    "malMembers": 2084346,
+    "malMembers": 1630815,
     "malTomatometer": 68.4,
-    "adjustedScore": 7.996407611795446
+    "adjustedScore": 7.995013583602759
   },
   {
     "id": 20872,
@@ -2176,9 +2176,9 @@
     "specialAwards": [],
     "malId": 27775,
     "malScore": 7.92,
-    "malMembers": 640560,
+    "malMembers": 515941,
     "malTomatometer": 64.6,
-    "adjustedScore": 7.849642634747111
+    "adjustedScore": 7.848803534156385
   },
   {
     "id": 162780,
@@ -2313,9 +2313,9 @@
     "specialAwards": [],
     "malId": 54722,
     "malScore": 7.6,
-    "malMembers": 113559,
+    "malMembers": 96144,
     "malTomatometer": 54.6,
-    "adjustedScore": 7.590729033536647
+    "adjustedScore": 7.5908588586734815
   },
   {
     "id": 154587,
@@ -2456,9 +2456,9 @@
     ],
     "malId": 52991,
     "malScore": 9.26,
-    "malMembers": 966239,
+    "malMembers": 908354,
     "malTomatometer": 90.4,
-    "adjustedScore": 9.009323103696158
+    "adjustedScore": 9.037640144081102
   },
   {
     "id": 5114,
@@ -2641,9 +2641,9 @@
     "specialAwards": [],
     "malId": 5114,
     "malScore": 9.11,
-    "malMembers": 2679071,
+    "malMembers": 2325009,
     "malTomatometer": 90,
-    "adjustedScore": 9.01897774538459
+    "adjustedScore": 9.023945328715891
   },
   {
     "id": 161645,
@@ -2781,9 +2781,9 @@
     "specialAwards": [],
     "malId": 54492,
     "malScore": 8.85,
-    "malMembers": 579267,
+    "malMembers": 489709,
     "malTomatometer": 90.7,
-    "adjustedScore": 8.562880900961364
+    "adjustedScore": 8.57022114438304
   },
   {
     "id": 182255,
@@ -2901,9 +2901,9 @@
     "specialAwards": [],
     "malId": 59978,
     "malScore": 8.86,
-    "malMembers": 282823,
+    "malMembers": 262595,
     "malTomatometer": 88.1,
-    "adjustedScore": 8.381161986075394
+    "adjustedScore": 8.418536623872102
   },
   {
     "id": 176301,
@@ -3021,9 +3021,9 @@
     "specialAwards": [],
     "malId": 58514,
     "malScore": 8.91,
-    "malMembers": 319112,
+    "malMembers": 275455,
     "malTomatometer": 92.1,
-    "adjustedScore": 8.449310288892152
+    "adjustedScore": 8.46546564877711
   },
   {
     "id": 177385,
@@ -3112,9 +3112,9 @@
     "specialAwards": [],
     "malId": 58788,
     "malScore": 8.73,
-    "malMembers": 44866,
+    "malMembers": 42387,
     "malTomatometer": 87,
-    "adjustedScore": 7.823719499691054
+    "adjustedScore": 7.852211158814674
   },
   {
     "id": 185407,
@@ -3194,9 +3194,9 @@
     ],
     "malId": 60489,
     "malScore": 8.75,
-    "malMembers": 211676,
+    "malMembers": 186569,
     "malTomatometer": 86.9,
-    "adjustedScore": 8.230897761506142
+    "adjustedScore": 8.252411210723125
   },
   {
     "id": 112641,
@@ -3311,9 +3311,9 @@
     "specialAwards": [],
     "malId": 40591,
     "malScore": 8.61,
-    "malMembers": 1196570,
+    "malMembers": 966952,
     "malTomatometer": 86.7,
-    "adjustedScore": 8.482433270173221
+    "adjustedScore": 8.481116029867405
   },
   {
     "id": 165253,
@@ -3387,9 +3387,9 @@
     "specialAwards": [],
     "malId": 55357,
     "malScore": 8.31,
-    "malMembers": 12506,
+    "malMembers": 9040,
     "malTomatometer": 77.7,
-    "adjustedScore": 7.634247608410782
+    "adjustedScore": 7.628836229829216
   },
   {
     "id": 171099,
@@ -3459,9 +3459,9 @@
     "specialAwards": [],
     "malId": 55357,
     "malScore": 8.31,
-    "malMembers": 12506,
+    "malMembers": 9040,
     "malTomatometer": 77.7,
-    "adjustedScore": 7.634247608410782
+    "adjustedScore": 7.628836229829216
   },
   {
     "id": 164212,
@@ -3549,9 +3549,9 @@
     ],
     "malId": 55102,
     "malScore": 8.36,
-    "malMembers": 61877,
+    "malMembers": 55963,
     "malTomatometer": 78.3,
-    "adjustedScore": 7.791470710853677
+    "adjustedScore": 7.807128508814069
   },
   {
     "id": 185660,
@@ -3656,9 +3656,9 @@
     "specialAwards": [],
     "malId": 60543,
     "malScore": 8.39,
-    "malMembers": 380357,
+    "malMembers": 307379,
     "malTomatometer": 82.5,
-    "adjustedScore": 8.141199919362556
+    "adjustedScore": 8.139182903908825
   },
   {
     "id": 165171,
@@ -3750,9 +3750,9 @@
     ],
     "malId": 55318,
     "malScore": 8.38,
-    "malMembers": 46212,
+    "malMembers": 40200,
     "malTomatometer": 81.8,
-    "adjustedScore": 7.754554298654183
+    "adjustedScore": 7.762982787187038
   },
   {
     "id": 108489,
@@ -3847,9 +3847,9 @@
     "specialAwards": [],
     "malId": 39547,
     "malScore": 8.35,
-    "malMembers": 574542,
+    "malMembers": 461466,
     "malTomatometer": 77.9,
-    "adjustedScore": 8.175222934395398
+    "adjustedScore": 8.17280514710894
   },
   {
     "id": 136804,
@@ -3949,9 +3949,9 @@
     "specialAwards": [],
     "malId": 49458,
     "malScore": 8.33,
-    "malMembers": 311792,
+    "malMembers": 246207,
     "malTomatometer": 79.3,
-    "adjustedScore": 8.0669635320234
+    "adjustedScore": 8.061003111220506
   },
   {
     "id": 181839,
@@ -4054,9 +4054,9 @@
     "specialAwards": [],
     "malId": 59897,
     "malScore": 8.31,
-    "malMembers": 18740,
+    "malMembers": 14686,
     "malTomatometer": 78.9,
-    "adjustedScore": 7.656567415601453
+    "adjustedScore": 7.653860309097232
   },
   {
     "id": 21699,
@@ -4171,9 +4171,9 @@
     "specialAwards": [],
     "malId": 32937,
     "malScore": 8.24,
-    "malMembers": 1423059,
+    "malMembers": 1099124,
     "malTomatometer": 76.7,
-    "adjustedScore": 8.170053522198875
+    "adjustedScore": 8.166413279658514
   },
   {
     "id": 124080,
@@ -4255,9 +4255,9 @@
     "specialAwards": [],
     "malId": 42897,
     "malScore": 8.18,
-    "malMembers": 1220639,
+    "malMembers": 1010174,
     "malTomatometer": 72.9,
-    "adjustedScore": 8.107206941571908
+    "adjustedScore": 8.107974802304888
   },
   {
     "id": 107717,
@@ -4391,9 +4391,9 @@
     "specialAwards": [],
     "malId": 39247,
     "malScore": 8.2,
-    "malMembers": 387732,
+    "malMembers": 311765,
     "malTomatometer": 75.6,
-    "adjustedScore": 8.012402971356526
+    "adjustedScore": 8.010212672820465
   },
   {
     "id": 143270,
@@ -4478,9 +4478,9 @@
     "specialAwards": [],
     "malId": 50709,
     "malScore": 8.14,
-    "malMembers": 348894,
+    "malMembers": 293430,
     "malTomatometer": 73.1,
-    "adjustedScore": 7.958018967304726
+    "adjustedScore": 7.961452062678163
   },
   {
     "id": 163132,
@@ -4566,9 +4566,9 @@
     "specialAwards": [],
     "malId": 54856,
     "malScore": 8.12,
-    "malMembers": 285045,
+    "malMembers": 214443,
     "malTomatometer": 70.7,
-    "adjustedScore": 7.919956342824596
+    "adjustedScore": 7.909415876008062
   },
   {
     "id": 158928,
@@ -4717,9 +4717,9 @@
     "specialAwards": [],
     "malId": 53888,
     "malScore": 8.1,
-    "malMembers": 165353,
+    "malMembers": 122247,
     "malTomatometer": 72.1,
-    "adjustedScore": 7.838696639125393
+    "adjustedScore": 7.825740450469928
   },
   {
     "id": 109261,
@@ -4818,9 +4818,9 @@
     "specialAwards": [],
     "malId": 39783,
     "malScore": 8,
-    "malMembers": 627076,
+    "malMembers": 503959,
     "malTomatometer": 68.7,
-    "adjustedScore": 7.911390048151767
+    "adjustedScore": 7.910181699710117
   },
   {
     "id": 138565,
@@ -4916,9 +4916,9 @@
     "specialAwards": [],
     "malId": 49709,
     "malScore": 8.11,
-    "malMembers": 169399,
+    "malMembers": 139540,
     "malTomatometer": 71.8,
-    "adjustedScore": 7.846802801483264
+    "adjustedScore": 7.8477773944995945
   },
   {
     "id": 132405,
@@ -5021,9 +5021,9 @@
     "specialAwards": [],
     "malId": 48736,
     "malScore": 8.13,
-    "malMembers": 1018676,
+    "malMembers": 824949,
     "malTomatometer": 72.3,
-    "adjustedScore": 8.051989788656135
+    "adjustedScore": 8.051344921218776
   },
   {
     "id": 158927,
@@ -5175,9 +5175,9 @@
     "specialAwards": [],
     "malId": 53887,
     "malScore": 8.05,
-    "malMembers": 456387,
+    "malMembers": 344370,
     "malTomatometer": 71.4,
-    "adjustedScore": 7.923674156744342
+    "adjustedScore": 7.916149151713837
   },
   {
     "id": 143653,
@@ -5278,9 +5278,9 @@
     "specialAwards": [],
     "malId": 50796,
     "malScore": 8.08,
-    "malMembers": 127822,
+    "malMembers": 109988,
     "malTomatometer": 71.4,
-    "adjustedScore": 7.797183868285815
+    "adjustedScore": 7.8034023947496145
   },
   {
     "id": 21202,
@@ -5407,9 +5407,9 @@
     "specialAwards": [],
     "malId": 30831,
     "malScore": 8.09,
-    "malMembers": 1757734,
+    "malMembers": 1392975,
     "malTomatometer": 72,
-    "adjustedScore": 8.045424936231148
+    "adjustedScore": 8.044137969264458
   },
   {
     "id": 98202,
@@ -5483,9 +5483,9 @@
     "specialAwards": [],
     "malId": 34822,
     "malScore": 8.02,
-    "malMembers": 332299,
+    "malMembers": 278528,
     "malTomatometer": 67.8,
-    "adjustedScore": 7.872619921641529
+    "adjustedScore": 7.8750289213272335
   },
   {
     "id": 141774,
@@ -5588,9 +5588,9 @@
     "specialAwards": [],
     "malId": 50380,
     "malScore": 8.09,
-    "malMembers": 184068,
+    "malMembers": 161017,
     "malTomatometer": 72.1,
-    "adjustedScore": 7.847309708927716
+    "adjustedScore": 7.8558149886970305
   },
   {
     "id": 199112,
@@ -5675,9 +5675,9 @@
     "specialAwards": [],
     "malId": 62543,
     "malScore": 8.03,
-    "malMembers": 22627,
+    "malMembers": 18097,
     "malTomatometer": 69.8,
-    "adjustedScore": 7.636862662142992
+    "adjustedScore": 7.635851897005781
   },
   {
     "id": 143338,
@@ -5742,9 +5742,9 @@
     "specialAwards": [],
     "malId": 50739,
     "malScore": 7.85,
-    "malMembers": 309056,
+    "malMembers": 250780,
     "malTomatometer": 62.3,
-    "adjustedScore": 7.755796261857942
+    "adjustedScore": 7.755332534927183
   },
   {
     "id": 116267,
@@ -5826,9 +5826,9 @@
     "specialAwards": [],
     "malId": 41389,
     "malScore": 7.84,
-    "malMembers": 574826,
+    "malMembers": 474447,
     "malTomatometer": 61.9,
-    "adjustedScore": 7.781692602058223
+    "adjustedScore": 7.782114828932112
   },
   {
     "id": 2167,
@@ -5948,9 +5948,9 @@
     "specialAwards": [],
     "malId": 2167,
     "malScore": 7.99,
-    "malMembers": 963540,
+    "malMembers": 800042,
     "malTomatometer": 66.2,
-    "adjustedScore": 7.929191500979778
+    "adjustedScore": 7.929981934209458
   },
   {
     "id": 21776,
@@ -6088,9 +6088,9 @@
     "specialAwards": [],
     "malId": 33206,
     "malScore": 7.9,
-    "malMembers": 997509,
+    "malMembers": 798394,
     "malTomatometer": 65.7,
-    "adjustedScore": 7.854065565250989
+    "adjustedScore": 7.8532219274541095
   },
   {
     "id": 185939,
@@ -6167,9 +6167,9 @@
     "specialAwards": [],
     "malId": 60658,
     "malScore": 7.76,
-    "malMembers": 22212,
+    "malMembers": 19490,
     "malTomatometer": 58.4,
-    "adjustedScore": 7.604812675694641
+    "adjustedScore": 7.606113417022633
   },
   {
     "id": 151380,
@@ -6261,9 +6261,9 @@
     "specialAwards": [],
     "malId": 52196,
     "malScore": 7.71,
-    "malMembers": 66462,
+    "malMembers": 51871,
     "malTomatometer": 57.3,
-    "adjustedScore": 7.619800027152854
+    "adjustedScore": 7.618632089023043
   },
   {
     "id": 147103,
@@ -6365,9 +6365,9 @@
     "specialAwards": [],
     "malId": 51552,
     "malScore": 7.67,
-    "malMembers": 245794,
+    "malMembers": 198860,
     "malTomatometer": 56.7,
-    "adjustedScore": 7.635057538157401
+    "adjustedScore": 7.634839032332675
   },
   {
     "id": 162694,
@@ -6477,9 +6477,9 @@
     "specialAwards": [],
     "malId": 54714,
     "malScore": 7.67,
-    "malMembers": 210569,
+    "malMembers": 175714,
     "malTomatometer": 57,
-    "adjustedScore": 7.631823306734438
+    "adjustedScore": 7.632253078871347
   },
   {
     "id": 176370,
@@ -6584,9 +6584,9 @@
     "specialAwards": [],
     "malId": 58524,
     "malScore": 7.66,
-    "malMembers": 11144,
+    "malMembers": 9213,
     "malTomatometer": 55.5,
-    "adjustedScore": 7.589178631478924
+    "adjustedScore": 7.5892269602795785
   },
   {
     "id": 17895,
@@ -6655,9 +6655,9 @@
     "specialAwards": [],
     "malId": 17895,
     "malScore": 7.74,
-    "malMembers": 726257,
+    "malMembers": 598469,
     "malTomatometer": 59.5,
-    "adjustedScore": 7.710511955857102
+    "adjustedScore": 7.710697772332013
   },
   {
     "id": 11887,
@@ -6744,9 +6744,9 @@
     "specialAwards": [],
     "malId": 11887,
     "malScore": 7.72,
-    "malMembers": 549436,
+    "malMembers": 444804,
     "malTomatometer": 59.8,
-    "adjustedScore": 7.687990389722808
+    "adjustedScore": 7.687746907290661
   },
   {
     "id": 102882,
@@ -6801,9 +6801,9 @@
     "specialAwards": [],
     "malId": 37956,
     "malScore": 7.67,
-    "malMembers": 147345,
+    "malMembers": 112099,
     "malTomatometer": 56.6,
-    "adjustedScore": 7.624217441650628
+    "adjustedScore": 7.622690036455411
   },
   {
     "id": 106479,
@@ -6915,9 +6915,9 @@
     "specialAwards": [],
     "malId": 38790,
     "malScore": 7.49,
-    "malMembers": 437598,
+    "malMembers": 335793,
     "malTomatometer": 50.5,
-    "adjustedScore": 7.516450274722133
+    "adjustedScore": 7.517676304123938
   },
   {
     "id": 18245,
@@ -6992,9 +6992,9 @@
     "specialAwards": [],
     "malId": 18245,
     "malScore": 7.59,
-    "malMembers": 145273,
+    "malMembers": 119464,
     "malTomatometer": 56.4,
-    "adjustedScore": 7.587053772510231
+    "adjustedScore": 7.58706154614924
   },
   {
     "id": 179696,
@@ -7060,9 +7060,9 @@
     "specialAwards": [],
     "malId": 59361,
     "malScore": 7.5,
-    "malMembers": 54470,
+    "malMembers": 46604,
     "malTomatometer": 48.2,
-    "adjustedScore": 7.5640225153500165
+    "adjustedScore": 7.56330960250812
   },
   {
     "id": 3972,
@@ -7171,9 +7171,9 @@
     "specialAwards": [],
     "malId": 3972,
     "malScore": 7.49,
-    "malMembers": 103742,
+    "malMembers": 89337,
     "malTomatometer": 49.1,
-    "adjustedScore": 7.548709054586502
+    "adjustedScore": 7.547548778620711
   },
   {
     "id": 158704,
@@ -7283,9 +7283,9 @@
     "specialAwards": [],
     "malId": 53833,
     "malScore": 7.37,
-    "malMembers": 91497,
+    "malMembers": 74318,
     "malTomatometer": 45,
-    "adjustedScore": 7.509470563794682
+    "adjustedScore": 7.5097937139103
   },
   {
     "id": 21092,
@@ -7409,9 +7409,9 @@
     "specialAwards": [],
     "malId": 30296,
     "malScore": 7.41,
-    "malMembers": 805603,
+    "malMembers": 601446,
     "malTomatometer": 48.9,
-    "adjustedScore": 7.44041312298201
+    "adjustedScore": 7.442764732963535
   },
   {
     "id": 158559,
@@ -7498,9 +7498,9 @@
     "specialAwards": [],
     "malId": 53802,
     "malScore": 7.41,
-    "malMembers": 57733,
+    "malMembers": 56084,
     "malTomatometer": 45.7,
-    "adjustedScore": 7.540289128148395
+    "adjustedScore": 7.534359329642191
   },
   {
     "id": 20745,
@@ -7616,9 +7616,9 @@
     "specialAwards": [],
     "malId": 24703,
     "malScore": 7.41,
-    "malMembers": 739840,
+    "malMembers": 537992,
     "malTomatometer": 49.1,
-    "adjustedScore": 7.442611375649145
+    "adjustedScore": 7.445835749113605
   },
   {
     "id": 114232,
@@ -7720,9 +7720,9 @@
     "specialAwards": [],
     "malId": 40938,
     "malScore": 7.25,
-    "malMembers": 419635,
+    "malMembers": 363016,
     "malTomatometer": 45.4,
-    "adjustedScore": 7.34645142167717
+    "adjustedScore": 7.3426275566195445
   },
   {
     "id": 127911,
@@ -7820,9 +7820,9 @@
     "specialAwards": [],
     "malId": 45613,
     "malScore": 6.94,
-    "malMembers": 304350,
+    "malMembers": 280290,
     "malTomatometer": 33.8,
-    "adjustedScore": 7.1709921661655285
+    "adjustedScore": 7.153671958462919
   },
   {
     "id": 20954,
@@ -7910,9 +7910,9 @@
     ],
     "malId": 28851,
     "malScore": 8.93,
-    "malMembers": 2271125,
+    "malMembers": 1813296,
     "malTomatometer": 88.7,
-    "adjustedScore": 8.836301862469401
+    "adjustedScore": 8.834205364075896
   },
   {
     "id": 4181,
@@ -8019,9 +8019,9 @@
     "specialAwards": [],
     "malId": 4181,
     "malScore": 8.93,
-    "malMembers": 867212,
+    "malMembers": 703087,
     "malTomatometer": 86.2,
-    "adjustedScore": 8.709477227433368
+    "adjustedScore": 8.70790954552667
   },
   {
     "id": 174788,
@@ -8108,9 +8108,9 @@
     ],
     "malId": 58125,
     "malScore": 8.61,
-    "malMembers": 172035,
+    "malMembers": 145167,
     "malTomatometer": 84.2,
-    "adjustedScore": 8.1003186341182
+    "adjustedScore": 8.108395364218637
   },
   {
     "id": 153658,
@@ -8176,9 +8176,9 @@
     "specialAwards": [],
     "malId": 52742,
     "malScore": 8.62,
-    "malMembers": 147386,
+    "malMembers": 111883,
     "malTomatometer": 86,
-    "adjustedScore": 8.065379235443965
+    "adjustedScore": 8.046308340795978
   },
   {
     "id": 195240,
@@ -8271,9 +8271,9 @@
     "specialAwards": [],
     "malId": 61930,
     "malScore": 8.67,
-    "malMembers": 42056,
+    "malMembers": 36380,
     "malTomatometer": 87.7,
-    "adjustedScore": 7.799810682181207
+    "adjustedScore": 7.809699597809997
   },
   {
     "id": 147105,
@@ -8387,9 +8387,9 @@
     "specialAwards": [],
     "malId": 51553,
     "malScore": 8.55,
-    "malMembers": 119455,
+    "malMembers": 134720,
     "malTomatometer": 84.9,
-    "adjustedScore": 7.982972773041123
+    "adjustedScore": 8.059719843138673
   },
   {
     "id": 181444,
@@ -8475,9 +8475,9 @@
     "specialAwards": [],
     "malId": 59845,
     "malScore": 8.49,
-    "malMembers": 270489,
+    "malMembers": 239047,
     "malTomatometer": 80.4,
-    "adjustedScore": 8.140550034213382
+    "adjustedScore": 8.157079795538431
   },
   {
     "id": 21399,
@@ -8550,9 +8550,9 @@
     "specialAwards": [],
     "malId": 31757,
     "malScore": 8.56,
-    "malMembers": 380614,
+    "malMembers": 298634,
     "malTomatometer": 85.3,
-    "adjustedScore": 8.258829187090445
+    "adjustedScore": 8.25017607284607
   },
   {
     "id": 20665,
@@ -8647,9 +8647,9 @@
     "specialAwards": [],
     "malId": 23273,
     "malScore": 8.64,
-    "malMembers": 1786421,
+    "malMembers": 1481275,
     "malTomatometer": 82.1,
-    "adjustedScore": 8.548287190753227
+    "adjustedScore": 8.54945396026225
   },
   {
     "id": 99750,
@@ -8715,9 +8715,9 @@
     "specialAwards": [],
     "malId": 36098,
     "malScore": 8.55,
-    "malMembers": 846659,
+    "malMembers": 675374,
     "malTomatometer": 82.5,
-    "adjustedScore": 8.388560553755605
+    "adjustedScore": 8.385211482026584
   },
   {
     "id": 104459,
@@ -8818,9 +8818,9 @@
     "specialAwards": [],
     "malId": 38474,
     "malScore": 8.5,
-    "malMembers": 134184,
+    "malMembers": 114287,
     "malTomatometer": 82.4,
-    "adjustedScore": 7.988372610066993
+    "adjustedScore": 7.997607518206293
   },
   {
     "id": 99426,
@@ -8938,9 +8938,9 @@
     ],
     "malId": 35839,
     "malScore": 8.5,
-    "malMembers": 269285,
+    "malMembers": 237191,
     "malTomatometer": 80.3,
-    "adjustedScore": 8.145722330652351
+    "adjustedScore": 8.161742347541322
   },
   {
     "id": 201903,
@@ -9074,9 +9074,9 @@
     "specialAwards": [],
     "malId": 62896,
     "malScore": 8.47,
-    "malMembers": 58959,
+    "malMembers": 50107,
     "malTomatometer": 79.9,
-    "adjustedScore": 7.812550998303706
+    "adjustedScore": 7.819154264326107
   },
   {
     "id": 101921,
@@ -9175,9 +9175,9 @@
     "specialAwards": [],
     "malId": 37999,
     "malScore": 8.4,
-    "malMembers": 1503473,
+    "malMembers": 1221932,
     "malTomatometer": 81.3,
-    "adjustedScore": 8.317160978408745
+    "adjustedScore": 8.316711867649463
   },
   {
     "id": 108511,
@@ -9296,9 +9296,9 @@
     "specialAwards": [],
     "malId": 39551,
     "malScore": 8.33,
-    "malMembers": 884400,
+    "malMembers": 655318,
     "malTomatometer": 78.8,
-    "adjustedScore": 8.209809497364017
+    "adjustedScore": 8.199549116932912
   },
   {
     "id": 104460,
@@ -9387,9 +9387,9 @@
     "specialAwards": [],
     "malId": 38475,
     "malScore": 8.37,
-    "malMembers": 45143,
+    "malMembers": 35715,
     "malTomatometer": 79.9,
-    "adjustedScore": 7.749348312613556
+    "adjustedScore": 7.745099536181308
   },
   {
     "id": 108632,
@@ -9526,9 +9526,9 @@
     "specialAwards": [],
     "malId": 39587,
     "malScore": 8.33,
-    "malMembers": 967224,
+    "malMembers": 769998,
     "malTomatometer": 78.3,
-    "adjustedScore": 8.218562969142946
+    "adjustedScore": 8.216006916917218
   },
   {
     "id": 109403,
@@ -9605,9 +9605,9 @@
     "specialAwards": [],
     "malId": 39808,
     "malScore": 8.35,
-    "malMembers": 66538,
+    "malMembers": 54306,
     "malTomatometer": 78.2,
-    "adjustedScore": 7.799860631359943
+    "adjustedScore": 7.7995800206093815
   },
   {
     "id": 140960,
@@ -9763,9 +9763,9 @@
     "specialAwards": [],
     "malId": 50265,
     "malScore": 8.41,
-    "malMembers": 1415725,
+    "malMembers": 1175766,
     "malTomatometer": 79.9,
-    "adjustedScore": 8.321504916691493
+    "adjustedScore": 8.322730109741137
   },
   {
     "id": 189275,
@@ -9839,9 +9839,9 @@
     "specialAwards": [],
     "malId": 61335,
     "malScore": 8.44,
-    "malMembers": 24344,
+    "malMembers": 20493,
     "malTomatometer": 85.4,
-    "adjustedScore": 7.6916935640957185
+    "adjustedScore": 7.6944532704502215
   },
   {
     "id": 116742,
@@ -9968,9 +9968,9 @@
     "specialAwards": [],
     "malId": 41487,
     "malScore": 8.29,
-    "malMembers": 734655,
+    "malMembers": 535654,
     "malTomatometer": 77.7,
-    "adjustedScore": 8.157431378835708
+    "adjustedScore": 8.144652185363041
   },
   {
     "id": 177937,
@@ -10086,9 +10086,9 @@
     "specialAwards": [],
     "malId": 59027,
     "malScore": 8.21,
-    "malMembers": 179893,
+    "malMembers": 141321,
     "malTomatometer": 78.1,
-    "adjustedScore": 7.906110336647542
+    "adjustedScore": 7.899857397283533
   },
   {
     "id": 20698,
@@ -10187,9 +10187,9 @@
     "specialAwards": [],
     "malId": 23847,
     "malScore": 8.2,
-    "malMembers": 968061,
+    "malMembers": 751525,
     "malTomatometer": 75.4,
-    "adjustedScore": 8.108063921020593
+    "adjustedScore": 8.10393365201866
   },
   {
     "id": 106286,
@@ -10284,9 +10284,9 @@
     "specialAwards": [],
     "malId": 38826,
     "malScore": 8.27,
-    "malMembers": 864998,
+    "malMembers": 684051,
     "malTomatometer": 75.7,
-    "adjustedScore": 8.15741150612911
+    "adjustedScore": 8.1542362325833
   },
   {
     "id": 98444,
@@ -10391,9 +10391,9 @@
     "specialAwards": [],
     "malId": 34798,
     "malScore": 8.26,
-    "malMembers": 279929,
+    "malMembers": 241021,
     "malTomatometer": 75.5,
-    "adjustedScore": 8.004784474929641
+    "adjustedScore": 8.01293606264895
   },
   {
     "id": 114535,
@@ -10497,9 +10497,9 @@
     "specialAwards": [],
     "malId": 41025,
     "malScore": 8.35,
-    "malMembers": 449879,
+    "malMembers": 429233,
     "malTomatometer": 78.3,
-    "adjustedScore": 8.140073762815998
+    "adjustedScore": 8.1627537743565
   },
   {
     "id": 98779,
@@ -10580,9 +10580,9 @@
     "specialAwards": [],
     "malId": 36990,
     "malScore": 8.24,
-    "malMembers": 53332,
+    "malMembers": 41416,
     "malTomatometer": 76.5,
-    "adjustedScore": 7.741061800461279
+    "adjustedScore": 7.735003300505039
   },
   {
     "id": 142838,
@@ -10726,9 +10726,9 @@
     "specialAwards": [],
     "malId": 50602,
     "malScore": 8.2,
-    "malMembers": 796040,
+    "malMembers": 626955,
     "malTomatometer": 75.4,
-    "adjustedScore": 8.091693029295492
+    "adjustedScore": 8.088310038401625
   },
   {
     "id": 142770,
@@ -10819,9 +10819,9 @@
     "specialAwards": [],
     "malId": 50594,
     "malScore": 8.24,
-    "malMembers": 360481,
+    "malMembers": 285503,
     "malTomatometer": 75,
-    "adjustedScore": 8.02994748920436
+    "adjustedScore": 8.025373755813074
   },
   {
     "id": 141911,
@@ -10903,9 +10903,9 @@
     "specialAwards": [],
     "malId": 50416,
     "malScore": 8.1,
-    "malMembers": 193200,
+    "malMembers": 162191,
     "malTomatometer": 72.4,
-    "adjustedScore": 7.858731095871746
+    "adjustedScore": 7.862112797075334
   },
   {
     "id": 153152,
@@ -10979,9 +10979,9 @@
     "specialAwards": [],
     "malId": 52578,
     "malScore": 8.2,
-    "malMembers": 288576,
+    "malMembers": 234564,
     "malTomatometer": 74.3,
-    "adjustedScore": 7.971839638403706
+    "adjustedScore": 7.97099108978359
   },
   {
     "id": 171457,
@@ -11099,9 +11099,9 @@
     "specialAwards": [],
     "malId": 57524,
     "malScore": 8.07,
-    "malMembers": 208621,
+    "malMembers": 179947,
     "malTomatometer": 72.1,
-    "adjustedScore": 7.852027763966126
+    "adjustedScore": 7.858430414657976
   },
   {
     "id": 179966,
@@ -11214,9 +11214,9 @@
     "specialAwards": [],
     "malId": 59459,
     "malScore": 8.11,
-    "malMembers": 136516,
+    "malMembers": 113756,
     "malTomatometer": 72.5,
-    "adjustedScore": 7.818567037350801
+    "adjustedScore": 7.821027692572747
   },
   {
     "id": 9989,
@@ -11287,9 +11287,9 @@
     "specialAwards": [],
     "malId": 9989,
     "malScore": 8.28,
-    "malMembers": 1285055,
+    "malMembers": 1038691,
     "malTomatometer": 75.2,
-    "adjustedScore": 8.198746118889401
+    "adjustedScore": 8.197916087890556
   },
   {
     "id": 101280,
@@ -11432,9 +11432,9 @@
     "specialAwards": [],
     "malId": 37430,
     "malScore": 8.13,
-    "malMembers": 1277806,
+    "malMembers": 1002814,
     "malTomatometer": 72.1,
-    "adjustedScore": 8.065952146917901
+    "adjustedScore": 8.063597342004844
   },
   {
     "id": 180675,
@@ -11540,9 +11540,9 @@
     "specialAwards": [],
     "malId": 59675,
     "malScore": 8.02,
-    "malMembers": 31325,
+    "malMembers": 28382,
     "malTomatometer": 68.8,
-    "adjustedScore": 7.652291737343193
+    "adjustedScore": 7.658375186483118
   },
   {
     "id": 21258,
@@ -11632,9 +11632,9 @@
     "specialAwards": [],
     "malId": 31173,
     "malScore": 7.97,
-    "malMembers": 294898,
+    "malMembers": 216728,
     "malTomatometer": 66.2,
-    "adjustedScore": 7.829046788802313
+    "adjustedScore": 7.81938075007848
   },
   {
     "id": 20770,
@@ -11767,9 +11767,9 @@
     "specialAwards": [],
     "malId": 25013,
     "malScore": 8.04,
-    "malMembers": 582821,
+    "malMembers": 455887,
     "malTomatometer": 68.1,
-    "adjustedScore": 7.937148371286956
+    "adjustedScore": 7.933577293610243
   },
   {
     "id": 145728,
@@ -11896,9 +11896,9 @@
     "specialAwards": [],
     "malId": 51122,
     "malScore": 8.13,
-    "malMembers": 89180,
+    "malMembers": 87419,
     "malTomatometer": 71.7,
-    "adjustedScore": 7.772222139133492
+    "adjustedScore": 7.7951363863629695
   },
   {
     "id": 184237,
@@ -11995,9 +11995,9 @@
     "specialAwards": [],
     "malId": 60285,
     "malScore": 7.91,
-    "malMembers": 160416,
+    "malMembers": 121733,
     "malTomatometer": 66.2,
-    "adjustedScore": 7.742547860940809
+    "adjustedScore": 7.73649114405893
   },
   {
     "id": 14813,
@@ -12104,9 +12104,9 @@
     "specialAwards": [],
     "malId": 14813,
     "malScore": 8,
-    "malMembers": 1182129,
+    "malMembers": 928440,
     "malTomatometer": 68.9,
-    "adjustedScore": 7.9477646985018575
+    "adjustedScore": 7.945899081413398
   },
   {
     "id": 13759,
@@ -12229,9 +12229,9 @@
     "specialAwards": [],
     "malId": 13759,
     "malScore": 8.04,
-    "malMembers": 926640,
+    "malMembers": 747505,
     "malTomatometer": 68.2,
-    "adjustedScore": 7.969394453987286
+    "adjustedScore": 7.968585304610708
   },
   {
     "id": 101573,
@@ -12341,9 +12341,9 @@
     "specialAwards": [],
     "malId": 37786,
     "malScore": 7.88,
-    "malMembers": 193498,
+    "malMembers": 162541,
     "malTomatometer": 63.3,
-    "adjustedScore": 7.741818040321042
+    "adjustedScore": 7.743801325404894
   },
   {
     "id": 21049,
@@ -12434,9 +12434,9 @@
     "specialAwards": [],
     "malId": 30015,
     "malScore": 7.96,
-    "malMembers": 808262,
+    "malMembers": 636800,
     "malTomatometer": 67.3,
-    "adjustedScore": 7.894752790173408
+    "adjustedScore": 7.892728171518326
   },
   {
     "id": 142984,
@@ -12550,9 +12550,9 @@
     "specialAwards": [],
     "malId": 50631,
     "malScore": 7.97,
-    "malMembers": 365207,
+    "malMembers": 285011,
     "malTomatometer": 67.9,
-    "adjustedScore": 7.8475635109791515
+    "adjustedScore": 7.84363656948503
   },
   {
     "id": 170503,
@@ -12631,9 +12631,9 @@
     "specialAwards": [],
     "malId": 56980,
     "malScore": 8.05,
-    "malMembers": 22137,
+    "malMembers": 19584,
     "malTomatometer": 71.1,
-    "adjustedScore": 7.638164351585682
+    "adjustedScore": 7.642017577207771
   },
   {
     "id": 186043,
@@ -12710,9 +12710,9 @@
     "specialAwards": [],
     "malId": 60726,
     "malScore": 7.93,
-    "malMembers": 3756,
+    "malMembers": 3103,
     "malTomatometer": 64.9,
-    "adjustedScore": 7.592003810059039
+    "adjustedScore": 7.592079727126924
   },
   {
     "id": 178005,
@@ -12805,9 +12805,9 @@
     "specialAwards": [],
     "malId": 59047,
     "malScore": 7.82,
-    "malMembers": 42791,
+    "malMembers": 39088,
     "malTomatometer": 61.1,
-    "adjustedScore": 7.6318864708592855
+    "adjustedScore": 7.636217350208421
   },
   {
     "id": 21058,
@@ -12889,9 +12889,9 @@
     "specialAwards": [],
     "malId": 30123,
     "malScore": 7.76,
-    "malMembers": 472313,
+    "malMembers": 362810,
     "malTomatometer": 58.4,
-    "adjustedScore": 7.713560233127179
+    "adjustedScore": 7.711396973882381
   },
   {
     "id": 154965,
@@ -12969,9 +12969,9 @@
     "specialAwards": [],
     "malId": 53126,
     "malScore": 7.74,
-    "malMembers": 370184,
+    "malMembers": 296289,
     "malTomatometer": 57.9,
-    "adjustedScore": 7.691074326563944
+    "adjustedScore": 7.6903560059269065
   },
   {
     "id": 179694,
@@ -13056,9 +13056,9 @@
     "specialAwards": [],
     "malId": 59360,
     "malScore": 7.89,
-    "malMembers": 37979,
+    "malMembers": 33262,
     "malTomatometer": 64.8,
-    "adjustedScore": 7.640316782081932
+    "adjustedScore": 7.64351798692641
   },
   {
     "id": 21180,
@@ -13144,9 +13144,9 @@
     "specialAwards": [],
     "malId": 30727,
     "malScore": 7.76,
-    "malMembers": 264534,
+    "malMembers": 204817,
     "malTomatometer": 61,
-    "adjustedScore": 7.6913543566685645
+    "adjustedScore": 7.689062598603086
   },
   {
     "id": 103572,
@@ -13249,9 +13249,9 @@
     "specialAwards": [],
     "malId": 38101,
     "malScore": 7.62,
-    "malMembers": 870653,
+    "malMembers": 695608,
     "malTomatometer": 54.6,
-    "adjustedScore": 7.61420665103605
+    "adjustedScore": 7.614093652905217
   },
   {
     "id": 15039,
@@ -13330,9 +13330,9 @@
     "specialAwards": [],
     "malId": 15039,
     "malScore": 7.83,
-    "malMembers": 208156,
+    "malMembers": 150537,
     "malTomatometer": 63.3,
-    "adjustedScore": 7.719651715219692
+    "adjustedScore": 7.71215846494202
   },
   {
     "id": 122808,
@@ -13435,9 +13435,9 @@
     "specialAwards": [],
     "malId": 42670,
     "malScore": 7.72,
-    "malMembers": 67659,
+    "malMembers": 53196,
     "malTomatometer": 58.1,
-    "adjustedScore": 7.62310122495095
+    "adjustedScore": 7.622029779308193
   },
   {
     "id": 116605,
@@ -13550,9 +13550,9 @@
     "specialAwards": [],
     "malId": 41461,
     "malScore": 7.73,
-    "malMembers": 143305,
+    "malMembers": 108655,
     "malTomatometer": 58.4,
-    "adjustedScore": 7.651070950098524
+    "adjustedScore": 7.648356243418939
   },
   {
     "id": 100049,
@@ -13653,16 +13653,16 @@
       {
         "malId": 36286,
         "malScore": 7.58,
-        "malMembers": 244416,
+        "malMembers": 179088,
         "malTomatometer": 52.5,
-        "adjustedScore": 7.58186077279984
+        "adjustedScore": 7.581982204496608
       },
       {
         "malId": 38414,
         "malScore": 7.58,
-        "malMembers": 237740,
+        "malMembers": 174312,
         "malTomatometer": 53.1,
-        "adjustedScore": 7.581891239565945
+        "adjustedScore": 7.582012420411338
       }
     ]
   },
@@ -13773,9 +13773,9 @@
     "specialAwards": [],
     "malId": 34914,
     "malScore": 7.69,
-    "malMembers": 180962,
+    "malMembers": 139781,
     "malTomatometer": 57.6,
-    "adjustedScore": 7.638915079184124
+    "adjustedScore": 7.637415768879219
   },
   {
     "id": 141014,
@@ -13846,9 +13846,9 @@
     "specialAwards": [],
     "malId": 50273,
     "malScore": 7.7,
-    "malMembers": 331682,
+    "malMembers": 261919,
     "malTomatometer": 58.6,
-    "adjustedScore": 7.66087388828106
+    "adjustedScore": 7.659968261578816
   },
   {
     "id": 163623,
@@ -13930,9 +13930,9 @@
     "specialAwards": [],
     "malId": 54968,
     "malScore": 7.82,
-    "malMembers": 110068,
+    "malMembers": 99342,
     "malTomatometer": 59.3,
-    "adjustedScore": 7.677074474844032
+    "adjustedScore": 7.682678484966633
   },
   {
     "id": 163078,
@@ -14022,9 +14022,9 @@
     "specialAwards": [],
     "malId": 54839,
     "malScore": 7.74,
-    "malMembers": 56033,
+    "malMembers": 51235,
     "malTomatometer": 60.2,
-    "adjustedScore": 7.623075188227464
+    "adjustedScore": 7.626406368249361
   },
   {
     "id": 15809,
@@ -14127,9 +14127,9 @@
     "specialAwards": [],
     "malId": 15809,
     "malScore": 7.7,
-    "malMembers": 1309408,
+    "malMembers": 1006487,
     "malTomatometer": 58.2,
-    "adjustedScore": 7.686731945494832
+    "adjustedScore": 7.685988942226247
   },
   {
     "id": 147864,
@@ -14243,9 +14243,9 @@
     "specialAwards": [],
     "malId": 51815,
     "malScore": 7.54,
-    "malMembers": 125328,
+    "malMembers": 104973,
     "malTomatometer": 50.3,
-    "adjustedScore": 7.565636356934046
+    "adjustedScore": 7.565373772769598
   },
   {
     "id": 20997,
@@ -14345,9 +14345,9 @@
     "specialAwards": [],
     "malId": 28999,
     "malScore": 7.76,
-    "malMembers": 1373223,
+    "malMembers": 1074996,
     "malTomatometer": 60.3,
-    "adjustedScore": 7.7406710592186725
+    "adjustedScore": 7.739909748849186
   },
   {
     "id": 153629,
@@ -14424,9 +14424,9 @@
     "specialAwards": [],
     "malId": 52173,
     "malScore": 7.3,
-    "malMembers": 131498,
+    "malMembers": 108500,
     "malTomatometer": 41.1,
-    "adjustedScore": 7.460436002960611
+    "adjustedScore": 7.459800062480474
   },
   {
     "id": 162804,
@@ -14524,9 +14524,9 @@
     "specialAwards": [],
     "malId": 54744,
     "malScore": 7.54,
-    "malMembers": 330959,
+    "malMembers": 281713,
     "malTomatometer": 52.5,
-    "adjustedScore": 7.5551132807687225
+    "adjustedScore": 7.554714343183874
   },
   {
     "id": 168374,
@@ -14640,9 +14640,9 @@
     "specialAwards": [],
     "malId": 56352,
     "malScore": 7.54,
-    "malMembers": 159413,
+    "malMembers": 124453,
     "malTomatometer": 50.3,
-    "adjustedScore": 7.562983713516523
+    "adjustedScore": 7.5634976085446635
   },
   {
     "id": 177120,
@@ -14750,9 +14750,9 @@
     "specialAwards": [],
     "malId": 58725,
     "malScore": 7.58,
-    "malMembers": 27821,
+    "malMembers": 24442,
     "malTomatometer": 53.4,
-    "adjustedScore": 7.583898140342118
+    "adjustedScore": 7.583857732185836
   },
   {
     "id": 116741,
@@ -14855,9 +14855,9 @@
     "specialAwards": [],
     "malId": 41488,
     "malScore": 7.59,
-    "malMembers": 237379,
+    "malMembers": 175536,
     "malTomatometer": 51.1,
-    "adjustedScore": 7.58771989724708
+    "adjustedScore": 7.587585381208882
   },
   {
     "id": 131516,
@@ -14933,9 +14933,9 @@
     "specialAwards": [],
     "malId": 48542,
     "malScore": 7.46,
-    "malMembers": 53266,
+    "malMembers": 47394,
     "malTomatometer": 47.6,
-    "adjustedScore": 7.554824711423227
+    "adjustedScore": 7.552870561627077
   },
   {
     "id": 21455,
@@ -15044,9 +15044,9 @@
     "specialAwards": [],
     "malId": 31953,
     "malScore": 7.55,
-    "malMembers": 271680,
+    "malMembers": 215402,
     "malTomatometer": 51.9,
-    "adjustedScore": 7.563292732341555
+    "adjustedScore": 7.563545396086695
   },
   {
     "id": 151379,
@@ -15144,9 +15144,9 @@
     "specialAwards": [],
     "malId": 52193,
     "malScore": 7.58,
-    "malMembers": 89712,
+    "malMembers": 79459,
     "malTomatometer": 53.8,
-    "adjustedScore": 7.582969189027145
+    "adjustedScore": 7.582886195871616
   },
   {
     "id": 150075,
@@ -15248,9 +15248,9 @@
     "specialAwards": [],
     "malId": 51958,
     "malScore": 7.52,
-    "malMembers": 206948,
+    "malMembers": 171408,
     "malTomatometer": 49.7,
-    "adjustedScore": 7.549105165753945
+    "adjustedScore": 7.548899111697886
   },
   {
     "id": 148969,
@@ -15312,9 +15312,9 @@
     "specialAwards": [],
     "malId": 52736,
     "malScore": 7.46,
-    "malMembers": 136005,
+    "malMembers": 110843,
     "malTomatometer": 49.7,
-    "adjustedScore": 7.529185582002313
+    "adjustedScore": 7.529285573195636
   },
   {
     "id": 158898,
@@ -15400,9 +15400,9 @@
     "specialAwards": [],
     "malId": 53865,
     "malScore": 7.58,
-    "malMembers": 58811,
+    "malMembers": 52483,
     "malTomatometer": 50.2,
-    "adjustedScore": 7.583370178971371
+    "adjustedScore": 7.583292801261299
   },
   {
     "id": 159039,
@@ -15476,9 +15476,9 @@
     "specialAwards": [],
     "malId": 53912,
     "malScore": 6.94,
-    "malMembers": 23766,
+    "malMembers": 21185,
     "malTomatometer": 30.5,
-    "adjustedScore": 7.5054817358082335
+    "adjustedScore": 7.4992940379181405
   },
   {
     "id": 179979,
@@ -15572,9 +15572,9 @@
     "specialAwards": [],
     "malId": 59466,
     "malScore": 7.48,
-    "malMembers": 42116,
+    "malMembers": 34222,
     "malTomatometer": 47.6,
-    "adjustedScore": 7.563780261840776
+    "adjustedScore": 7.563883776101864
   },
   {
     "id": 183385,
@@ -15678,9 +15678,9 @@
     "specialAwards": [],
     "malId": 60168,
     "malScore": 7.44,
-    "malMembers": 28553,
+    "malMembers": 26710,
     "malTomatometer": 47.4,
-    "adjustedScore": 7.563751008650678
+    "adjustedScore": 7.561239004670311
   },
   {
     "id": 21265,
@@ -15743,9 +15743,9 @@
     "specialAwards": [],
     "malId": 28771,
     "malScore": 7.53,
-    "malMembers": 71927,
+    "malMembers": 52281,
     "malTomatometer": 52.2,
-    "adjustedScore": 7.568322031111112
+    "adjustedScore": 7.569630258436108
   },
   {
     "id": 111501,
@@ -15814,9 +15814,9 @@
     "specialAwards": [],
     "malId": 40392,
     "malScore": 7.55,
-    "malMembers": 69124,
+    "malMembers": 56589,
     "malTomatometer": 52.8,
-    "adjustedScore": 7.574552675685495
+    "adjustedScore": 7.574543892876988
   },
   {
     "id": 20966,
@@ -15895,9 +15895,9 @@
     "specialAwards": [],
     "malId": 28677,
     "malScore": 7.52,
-    "malMembers": 631773,
+    "malMembers": 479895,
     "malTomatometer": 51.2,
-    "adjustedScore": 7.5336835912666285
+    "adjustedScore": 7.534494406101063
   },
   {
     "id": 128545,
@@ -15987,9 +15987,9 @@
     "specialAwards": [],
     "malId": 46093,
     "malScore": 7.52,
-    "malMembers": 53490,
+    "malMembers": 55843,
     "malTomatometer": 49.6,
-    "adjustedScore": 7.569090044389539
+    "adjustedScore": 7.566039711274806
   },
   {
     "id": 100179,
@@ -16039,9 +16039,9 @@
     "specialAwards": [],
     "malId": 36470,
     "malScore": 7.57,
-    "malMembers": 176334,
+    "malMembers": 141572,
     "malTomatometer": 52.4,
-    "adjustedScore": 7.5771351181825
+    "adjustedScore": 7.577201415194379
   },
   {
     "id": 20527,
@@ -16104,9 +16104,9 @@
     "specialAwards": [],
     "malId": 21327,
     "malScore": 7.52,
-    "malMembers": 191569,
+    "malMembers": 153817,
     "malTomatometer": 52.2,
-    "adjustedScore": 7.550343126818445
+    "adjustedScore": 7.55063522768117
   },
   {
     "id": 132010,
@@ -16193,9 +16193,9 @@
     "specialAwards": [],
     "malId": 48643,
     "malScore": 7.37,
-    "malMembers": 144510,
+    "malMembers": 118303,
     "malTomatometer": 44.3,
-    "adjustedScore": 7.4859617628076
+    "adjustedScore": 7.485896493487901
   },
   {
     "id": 101316,
@@ -16274,9 +16274,9 @@
     "specialAwards": [],
     "malId": 37497,
     "malScore": 7.52,
-    "malMembers": 169365,
+    "malMembers": 142190,
     "malTomatometer": 51.8,
-    "adjustedScore": 7.55232841931436
+    "adjustedScore": 7.551901971847922
   },
   {
     "id": 152681,
@@ -16349,9 +16349,9 @@
     "specialAwards": [],
     "malId": 52481,
     "malScore": 7.31,
-    "malMembers": 103607,
+    "malMembers": 91840,
     "malTomatometer": 45.4,
-    "adjustedScore": 7.480577266007881
+    "adjustedScore": 7.475311538138612
   },
   {
     "id": 166477,
@@ -16446,9 +16446,9 @@
     "specialAwards": [],
     "malId": 55749,
     "malScore": 7.4,
-    "malMembers": 46781,
+    "malMembers": 36523,
     "malTomatometer": 45.6,
-    "adjustedScore": 7.544713485133006
+    "adjustedScore": 7.546137631329895
   },
   {
     "id": 180425,
@@ -16517,9 +16517,9 @@
     "specialAwards": [],
     "malId": 59619,
     "malScore": 7.52,
-    "malMembers": 21740,
+    "malMembers": 19652,
     "malTomatometer": 48.4,
-    "adjustedScore": 7.577218806824963
+    "adjustedScore": 7.5765420887471775
   },
   {
     "id": 1689,
@@ -16593,9 +16593,9 @@
     "specialAwards": [],
     "malId": 1689,
     "malScore": 7.55,
-    "malMembers": 759166,
+    "malMembers": 602783,
     "malTomatometer": 55,
-    "adjustedScore": 7.5563187137934635
+    "adjustedScore": 7.556471590025542
   },
   {
     "id": 109019,
@@ -16689,9 +16689,9 @@
     "specialAwards": [],
     "malId": 39730,
     "malScore": 7.46,
-    "malMembers": 35026,
+    "malMembers": 30306,
     "malTomatometer": 46.4,
-    "adjustedScore": 7.5632607280082444
+    "adjustedScore": 7.562243957472962
   },
   {
     "id": 163133,
@@ -16773,9 +16773,9 @@
     "specialAwards": [],
     "malId": 54855,
     "malScore": 7.28,
-    "malMembers": 31447,
+    "malMembers": 30025,
     "malTomatometer": 42.6,
-    "adjustedScore": 7.53699630185914
+    "adjustedScore": 7.530439375618502
   },
   {
     "id": 2847,
@@ -16835,9 +16835,9 @@
     "specialAwards": [],
     "malId": 2847,
     "malScore": 7.33,
-    "malMembers": 118219,
+    "malMembers": 77947,
     "malTomatometer": 44.3,
-    "adjustedScore": 7.480132829621288
+    "adjustedScore": 7.493083681562396
   },
   {
     "id": 15451,
@@ -16969,9 +16969,9 @@
     "specialAwards": [],
     "malId": 15451,
     "malScore": 7.46,
-    "malMembers": 858559,
+    "malMembers": 626598,
     "malTomatometer": 50.7,
-    "adjustedScore": 7.480583295679312
+    "adjustedScore": 7.482610450215279
   },
   {
     "id": 105914,
@@ -17070,9 +17070,9 @@
     "specialAwards": [],
     "malId": 38759,
     "malScore": 7.31,
-    "malMembers": 232513,
+    "malMembers": 191755,
     "malTomatometer": 42.9,
-    "adjustedScore": 7.425949383052519
+    "adjustedScore": 7.425373964003317
   },
   {
     "id": 127549,
@@ -17169,9 +17169,9 @@
     "specialAwards": [],
     "malId": 45425,
     "malScore": 7.27,
-    "malMembers": 29235,
+    "malMembers": 25850,
     "malTomatometer": 39.5,
-    "adjustedScore": 7.53838223214103
+    "adjustedScore": 7.535213924561221
   },
   {
     "id": 137281,
@@ -17281,9 +17281,9 @@
     "specialAwards": [],
     "malId": 49520,
     "malScore": 7.27,
-    "malMembers": 200435,
+    "malMembers": 172854,
     "malTomatometer": 41.1,
-    "adjustedScore": 7.414346873326274
+    "adjustedScore": 7.410195461542635
   },
   {
     "id": 168138,
@@ -17378,9 +17378,9 @@
     "specialAwards": [],
     "malId": 56230,
     "malScore": 7.45,
-    "malMembers": 59403,
+    "malMembers": 53286,
     "malTomatometer": 44.6,
-    "adjustedScore": 7.549698495750354
+    "adjustedScore": 7.54725365062416
   },
   {
     "id": 166522,
@@ -17506,9 +17506,9 @@
     "specialAwards": [],
     "malId": 55774,
     "malScore": 7.26,
-    "malMembers": 34049,
+    "malMembers": 30794,
     "malTomatometer": 39.9,
-    "adjustedScore": 7.53038179074937
+    "adjustedScore": 7.525677912434581
   },
   {
     "id": 109287,
@@ -17585,9 +17585,9 @@
     "specialAwards": [],
     "malId": 39790,
     "malScore": 7.09,
-    "malMembers": 96492,
+    "malMembers": 85327,
     "malTomatometer": 38,
-    "adjustedScore": 7.405473387646227
+    "adjustedScore": 7.396429968144348
   },
   {
     "id": 112443,
@@ -17670,9 +17670,9 @@
     "specialAwards": [],
     "malId": 40530,
     "malScore": 7.1,
-    "malMembers": 276204,
+    "malMembers": 223048,
     "malTomatometer": 36.2,
-    "adjustedScore": 7.284604203504715
+    "adjustedScore": 7.286026481195635
   },
   {
     "id": 100722,
@@ -17782,9 +17782,9 @@
     "specialAwards": [],
     "malId": 36633,
     "malScore": 7.19,
-    "malMembers": 316876,
+    "malMembers": 234703,
     "malTomatometer": 41.8,
-    "adjustedScore": 7.3277581437996915
+    "adjustedScore": 7.3367489302037106
   },
   {
     "id": 20741,
@@ -17850,9 +17850,9 @@
     "specialAwards": [],
     "malId": 24655,
     "malScore": 7.32,
-    "malMembers": 175028,
+    "malMembers": 125414,
     "malTomatometer": 46.1,
-    "adjustedScore": 7.450340534741001
+    "adjustedScore": 7.459064177630221
   },
   {
     "id": 16732,
@@ -17929,9 +17929,9 @@
     "specialAwards": [],
     "malId": 16732,
     "malScore": 7.23,
-    "malMembers": 87230,
+    "malMembers": 72248,
     "malTomatometer": 41.6,
-    "adjustedScore": 7.4643083389208815
+    "adjustedScore": 7.463282755168889
   },
   {
     "id": 98596,
@@ -18014,9 +18014,9 @@
     "specialAwards": [],
     "malId": 35413,
     "malScore": 7.24,
-    "malMembers": 204801,
+    "malMembers": 166506,
     "malTomatometer": 42.8,
-    "adjustedScore": 7.396272619391673
+    "adjustedScore": 7.396758019364324
   },
   {
     "id": 114340,
@@ -18107,9 +18107,9 @@
     "specialAwards": [],
     "malId": 40974,
     "malScore": 7.23,
-    "malMembers": 123798,
+    "malMembers": 94224,
     "malTomatometer": 40.4,
-    "adjustedScore": 7.435144807046401
+    "adjustedScore": 7.441301218845048
   },
   {
     "id": 97767,
@@ -18217,9 +18217,9 @@
     "specialAwards": [],
     "malId": 34281,
     "malScore": 7.23,
-    "malMembers": 416989,
+    "malMembers": 306602,
     "malTomatometer": 43.8,
-    "adjustedScore": 7.332678472715193
+    "adjustedScore": 7.340593120012741
   },
   {
     "id": 6178,
@@ -18290,9 +18290,9 @@
     "specialAwards": [],
     "malId": 6178,
     "malScore": 7.06,
-    "malMembers": 89403,
+    "malMembers": 58571,
     "malTomatometer": 36.1,
-    "adjustedScore": 7.403755214938217
+    "adjustedScore": 7.42903450133834
   },
   {
     "id": 132456,
@@ -18411,9 +18411,9 @@
     "specialAwards": [],
     "malId": 48753,
     "malScore": 7,
-    "malMembers": 94660,
+    "malMembers": 94140,
     "malTomatometer": 32.8,
-    "adjustedScore": 7.375467142827091
+    "adjustedScore": 7.348505256343473
   },
   {
     "id": 160488,
@@ -18498,9 +18498,9 @@
     "specialAwards": [],
     "malId": 54284,
     "malScore": 7,
-    "malMembers": 27104,
+    "malMembers": 27641,
     "malTomatometer": 34.2,
-    "adjustedScore": 7.504155846764237
+    "adjustedScore": 7.4875781798231955
   },
   {
     "id": 175977,
@@ -18638,9 +18638,9 @@
     "specialAwards": [],
     "malId": 58426,
     "malScore": 6.94,
-    "malMembers": 108304,
+    "malMembers": 120158,
     "malTomatometer": 33.9,
-    "adjustedScore": 7.333710237799739
+    "adjustedScore": 7.285698436721681
   },
   {
     "id": 7695,
@@ -18706,9 +18706,9 @@
     "specialAwards": [],
     "malId": 7695,
     "malScore": 6.89,
-    "malMembers": 74721,
+    "malMembers": 48183,
     "malTomatometer": 31.6,
-    "adjustedScore": 7.372472423783076
+    "adjustedScore": 7.405754718451554
   },
   {
     "id": 146625,
@@ -18795,9 +18795,9 @@
     "specialAwards": [],
     "malId": 51417,
     "malScore": 6.78,
-    "malMembers": 127042,
+    "malMembers": 108189,
     "malTomatometer": 28.5,
-    "adjustedScore": 7.240443755497937
+    "adjustedScore": 7.232408948067743
   },
   {
     "id": 100526,
@@ -18856,9 +18856,9 @@
     "specialAwards": [],
     "malId": 36793,
     "malScore": 6.86,
-    "malMembers": 229172,
+    "malMembers": 184381,
     "malTomatometer": 33.1,
-    "adjustedScore": 7.168566567846989
+    "adjustedScore": 7.171429909190452
   },
   {
     "id": 160514,
@@ -18926,9 +18926,9 @@
     "specialAwards": [],
     "malId": 54294,
     "malScore": 7.11,
-    "malMembers": 1922,
+    "malMembers": 1823,
     "malTomatometer": 37.1,
-    "adjustedScore": 7.579231011857809
+    "adjustedScore": 7.578393056985842
   },
   {
     "id": 124194,
@@ -19077,9 +19077,9 @@
     "specialAwards": [],
     "malId": 42938,
     "malScore": 8.93,
-    "malMembers": 348927,
+    "malMembers": 282815,
     "malTomatometer": 87.4,
-    "adjustedScore": 8.489227278635758
+    "adjustedScore": 8.486631498320158
   },
   {
     "id": 21400,
@@ -19172,9 +19172,9 @@
     "specialAwards": [],
     "malId": 31758,
     "malScore": 8.78,
-    "malMembers": 380587,
+    "malMembers": 300775,
     "malTomatometer": 87.8,
-    "adjustedScore": 8.410886915275185
+    "adjustedScore": 8.402148861267506
   },
   {
     "id": 199,
@@ -19277,9 +19277,9 @@
     "specialAwards": [],
     "malId": 199,
     "malScore": 8.77,
-    "malMembers": 1845203,
+    "malMembers": 1419946,
     "malTomatometer": 86.3,
-    "adjustedScore": 8.66999574932184
+    "adjustedScore": 8.66430071052103
   },
   {
     "id": 151514,
@@ -19371,9 +19371,9 @@
     "specialAwards": [],
     "malId": 52215,
     "malScore": 8.72,
-    "malMembers": 127782,
+    "malMembers": 124561,
     "malTomatometer": 85.6,
-    "adjustedScore": 8.071777924859859
+    "adjustedScore": 8.121165253827073
   },
   {
     "id": 180516,
@@ -19462,9 +19462,9 @@
     "specialAwards": [],
     "malId": 59636,
     "malScore": 8.57,
-    "malMembers": 62290,
+    "malMembers": 54104,
     "malTomatometer": 86.2,
-    "adjustedScore": 7.848794326146706
+    "adjustedScore": 7.860643981812482
   },
   {
     "id": 100675,
@@ -19554,9 +19554,9 @@
     "specialAwards": [],
     "malId": 36885,
     "malScore": 8.42,
-    "malMembers": 121099,
+    "malMembers": 95380,
     "malTomatometer": 79.9,
-    "adjustedScore": 7.9320942841460065
+    "adjustedScore": 7.924524769450965
   },
   {
     "id": 161474,
@@ -19627,9 +19627,9 @@
     "specialAwards": [],
     "malId": 54870,
     "malScore": 8.28,
-    "malMembers": 113158,
+    "malMembers": 86589,
     "malTomatometer": 78.1,
-    "adjustedScore": 7.862463267930337
+    "adjustedScore": 7.851479617640565
   },
   {
     "id": 9260,
@@ -19714,9 +19714,9 @@
     "specialAwards": [],
     "malId": 9260,
     "malScore": 8.36,
-    "malMembers": 399950,
+    "malMembers": 314823,
     "malTomatometer": 79.9,
-    "adjustedScore": 8.12870099836936
+    "adjustedScore": 8.122485628678838
   },
   {
     "id": 113596,
@@ -19794,9 +19794,9 @@
     "specialAwards": [],
     "malId": 40787,
     "malScore": 8.38,
-    "malMembers": 349402,
+    "malMembers": 280804,
     "malTomatometer": 79.7,
-    "adjustedScore": 8.119645080343584
+    "adjustedScore": 8.116616410191227
   },
   {
     "id": 177687,
@@ -19869,9 +19869,9 @@
     "specialAwards": [],
     "malId": 58919,
     "malScore": 8.34,
-    "malMembers": 54298,
+    "malMembers": 46448,
     "malTomatometer": 80.4,
-    "adjustedScore": 7.767418586080206
+    "adjustedScore": 7.773752402096099
   },
   {
     "id": 105334,
@@ -20079,9 +20079,9 @@
     "specialAwards": [],
     "malId": 38680,
     "malScore": 8.2,
-    "malMembers": 545943,
+    "malMembers": 453335,
     "malTomatometer": 72.4,
-    "adjustedScore": 8.0538586647549
+    "adjustedScore": 8.055572464000806
   },
   {
     "id": 5081,
@@ -20244,9 +20244,9 @@
     ],
     "malId": 5081,
     "malScore": 8.32,
-    "malMembers": 911804,
+    "malMembers": 774988,
     "malTomatometer": 77,
-    "adjustedScore": 8.204425583581331
+    "adjustedScore": 8.20815008015851
   },
   {
     "id": 163571,
@@ -20343,9 +20343,9 @@
     ],
     "malId": 54959,
     "malScore": 8.24,
-    "malMembers": 24087,
+    "malMembers": 20905,
     "malTomatometer": 75.1,
-    "adjustedScore": 7.665881867516208
+    "adjustedScore": 7.6702274191796205
   },
   {
     "id": 171046,
@@ -20421,9 +20421,9 @@
     "specialAwards": [],
     "malId": 57433,
     "malScore": 8.17,
-    "malMembers": 86608,
+    "malMembers": 74457,
     "malTomatometer": 74.3,
-    "adjustedScore": 7.782136542978465
+    "adjustedScore": 7.7887546693897
   },
   {
     "id": 523,
@@ -20506,9 +20506,9 @@
     "specialAwards": [],
     "malId": 523,
     "malScore": 8.25,
-    "malMembers": 1017960,
+    "malMembers": 760856,
     "malTomatometer": 73.9,
-    "adjustedScore": 8.154770475454239
+    "adjustedScore": 8.147206347975583
   },
   {
     "id": 21355,
@@ -20644,9 +20644,9 @@
     ],
     "malId": 31240,
     "malScore": 8.25,
-    "malMembers": 1930769,
+    "malMembers": 1583092,
     "malTomatometer": 75.6,
-    "adjustedScore": 8.196148831223528
+    "adjustedScore": 8.196286560453167
   },
   {
     "id": 20694,
@@ -20726,9 +20726,9 @@
     "specialAwards": [],
     "malId": 23623,
     "malScore": 8.18,
-    "malMembers": 135969,
+    "malMembers": 107688,
     "malTomatometer": 74.1,
-    "adjustedScore": 7.84915319532573
+    "adjustedScore": 7.844477053865276
   },
   {
     "id": 170942,
@@ -20814,9 +20814,9 @@
     "specialAwards": [],
     "malId": 57181,
     "malScore": 8.15,
-    "malMembers": 170844,
+    "malMembers": 159239,
     "malTomatometer": 74.1,
-    "adjustedScore": 7.867968143844745
+    "adjustedScore": 7.886454707345173
   },
   {
     "id": 167152,
@@ -20902,9 +20902,9 @@
     "specialAwards": [],
     "malId": 56009,
     "malScore": 8.14,
-    "malMembers": 152593,
+    "malMembers": 144364,
     "malTomatometer": 74.6,
-    "adjustedScore": 7.847281726573788
+    "adjustedScore": 7.867525428296881
   },
   {
     "id": 155908,
@@ -21005,9 +21005,9 @@
     "specialAwards": [],
     "malId": 53410,
     "malScore": 8.04,
-    "malMembers": 46343,
+    "malMembers": 39393,
     "malTomatometer": 69.9,
-    "adjustedScore": 7.68210135766176
+    "adjustedScore": 7.685112282790901
   },
   {
     "id": 181841,
@@ -21118,9 +21118,9 @@
     ],
     "malId": 59898,
     "malScore": 8.08,
-    "malMembers": 29078,
+    "malMembers": 29338,
     "malTomatometer": 68.7,
-    "adjustedScore": 7.656905203089333
+    "adjustedScore": 7.670885691073419
   },
   {
     "id": 145545,
@@ -21202,9 +21202,9 @@
     "specialAwards": [],
     "malId": 51096,
     "malScore": 8.04,
-    "malMembers": 618295,
+    "malMembers": 473895,
     "malTomatometer": 70.3,
-    "adjustedScore": 7.94177678917235
+    "adjustedScore": 7.936704191523698
   },
   {
     "id": 154967,
@@ -21298,9 +21298,9 @@
     "specialAwards": [],
     "malId": 53129,
     "malScore": 7.76,
-    "malMembers": 122074,
+    "malMembers": 95504,
     "malTomatometer": 58.6,
-    "adjustedScore": 7.6578722310805425
+    "adjustedScore": 7.655995443420654
   },
   {
     "id": 198188,
@@ -21467,9 +21467,9 @@
     "specialAwards": [],
     "malId": 62405,
     "malScore": 8.04,
-    "malMembers": 46202,
+    "malMembers": 39114,
     "malTomatometer": 72.7,
-    "adjustedScore": 7.681867947662918
+    "adjustedScore": 7.684556382226648
   },
   {
     "id": 17549,
@@ -21561,9 +21561,9 @@
     "specialAwards": [],
     "malId": 16067,
     "malScore": 7.93,
-    "malMembers": 319566,
+    "malMembers": 269331,
     "malTomatometer": 64.4,
-    "adjustedScore": 7.810038920228567
+    "adjustedScore": 7.812400590363987
   },
   {
     "id": 153930,
@@ -21664,9 +21664,9 @@
     "specialAwards": [],
     "malId": 52865,
     "malScore": 7.9,
-    "malMembers": 204460,
+    "malMembers": 160839,
     "malTomatometer": 64.7,
-    "adjustedScore": 7.7567834589024685
+    "adjustedScore": 7.753756567570987
   },
   {
     "id": 158166,
@@ -21764,9 +21764,9 @@
     ],
     "malId": 53747,
     "malScore": 7.61,
-    "malMembers": 12716,
+    "malMembers": 10592,
     "malTomatometer": 55.5,
-    "adjustedScore": 7.58630822708804
+    "adjustedScore": 7.586339078720234
   },
   {
     "id": 166610,
@@ -21876,9 +21876,9 @@
     "specialAwards": [],
     "malId": 55813,
     "malScore": 7.77,
-    "malMembers": 378855,
+    "malMembers": 284645,
     "malTomatometer": 60.4,
-    "adjustedScore": 7.712555199498261
+    "adjustedScore": 7.709148380044416
   },
   {
     "id": 155645,
@@ -21977,9 +21977,9 @@
     "specialAwards": [],
     "malId": 54829,
     "malScore": 7.85,
-    "malMembers": 22385,
+    "malMembers": 18931,
     "malTomatometer": 62.5,
-    "adjustedScore": 7.615424196380269
+    "adjustedScore": 7.616356924631119
   },
   {
     "id": 20668,
@@ -22081,9 +22081,9 @@
     "specialAwards": [],
     "malId": 23289,
     "malScore": 7.81,
-    "malMembers": 690240,
+    "malMembers": 545400,
     "malTomatometer": 60,
-    "adjustedScore": 7.765443985423392
+    "adjustedScore": 7.764208818620569
   },
   {
     "id": 16067,
@@ -22174,9 +22174,9 @@
     "specialAwards": [],
     "malId": 17549,
     "malScore": 7.94,
-    "malMembers": 225647,
+    "malMembers": 186330,
     "malTomatometer": 65.1,
-    "adjustedScore": 7.787265704076155
+    "adjustedScore": 7.7881250283217565
   },
   {
     "id": 6547,
@@ -22287,9 +22287,9 @@
     "specialAwards": [],
     "malId": 6547,
     "malScore": 8.05,
-    "malMembers": 1677281,
+    "malMembers": 1351976,
     "malTomatometer": 68.4,
-    "adjustedScore": 8.007164683673258
+    "adjustedScore": 8.006605951714795
   },
   {
     "id": 162896,
@@ -22391,9 +22391,9 @@
     "specialAwards": [],
     "malId": 54724,
     "malScore": 7.78,
-    "malMembers": 99407,
+    "malMembers": 86000,
     "malTomatometer": 62.5,
-    "adjustedScore": 7.656659233132836
+    "adjustedScore": 7.659246735395188
   },
   {
     "id": 133965,
@@ -22523,9 +22523,9 @@
     "specialAwards": [],
     "malId": 48926,
     "malScore": 7.78,
-    "malMembers": 648872,
+    "malMembers": 544576,
     "malTomatometer": 61.1,
-    "adjustedScore": 7.739421172076488
+    "adjustedScore": 7.740253893442599
   },
   {
     "id": 141208,
@@ -22603,9 +22603,9 @@
     "specialAwards": [],
     "malId": 50307,
     "malScore": 7.64,
-    "malMembers": 135549,
+    "malMembers": 109656,
     "malTomatometer": 53.6,
-    "adjustedScore": 7.609141231097527
+    "adjustedScore": 7.608995381024054
   },
   {
     "id": 98659,
@@ -22698,9 +22698,9 @@
     "specialAwards": [],
     "malId": 35507,
     "malScore": 7.82,
-    "malMembers": 1197693,
+    "malMembers": 929415,
     "malTomatometer": 63,
-    "adjustedScore": 7.790732564998591
+    "adjustedScore": 7.789366318765571
   },
   {
     "id": 141949,
@@ -22787,9 +22787,9 @@
     "specialAwards": [],
     "malId": 50425,
     "malScore": 7.6,
-    "malMembers": 307448,
+    "malMembers": 242829,
     "malTomatometer": 54.4,
-    "adjustedScore": 7.59449392189436
+    "adjustedScore": 7.594370557144473
   },
   {
     "id": 165598,
@@ -22896,9 +22896,9 @@
     "specialAwards": [],
     "malId": 55528,
     "malScore": 7.56,
-    "malMembers": 13180,
+    "malMembers": 11665,
     "malTomatometer": 53.6,
-    "adjustedScore": 7.582770684685109
+    "adjustedScore": 7.582636414986342
   },
   {
     "id": 177709,
@@ -22999,9 +22999,9 @@
     "specialAwards": [],
     "malId": 58939,
     "malScore": 7.59,
-    "malMembers": 289386,
+    "malMembers": 244441,
     "malTomatometer": 52.2,
-    "adjustedScore": 7.5879780272377
+    "adjustedScore": 7.588019292313335
   },
   {
     "id": 167087,
@@ -23116,9 +23116,9 @@
     "specialAwards": [],
     "malId": 55973,
     "malScore": 7.64,
-    "malMembers": 59154,
+    "malMembers": 46556,
     "malTomatometer": 53.1,
-    "adjustedScore": 7.598853583269846
+    "adjustedScore": 7.598451979261879
   },
   {
     "id": 184591,
@@ -23195,9 +23195,9 @@
     "specialAwards": [],
     "malId": 60326,
     "malScore": 7.7,
-    "malMembers": 46159,
+    "malMembers": 41052,
     "malTomatometer": 57.3,
-    "adjustedScore": 7.609192464901383
+    "adjustedScore": 7.610861948014558
   },
   {
     "id": 178886,
@@ -23290,9 +23290,9 @@
     "specialAwards": [],
     "malId": 59207,
     "malScore": 7.62,
-    "malMembers": 68833,
+    "malMembers": 54865,
     "malTomatometer": 53.5,
-    "adjustedScore": 7.594756980905562
+    "adjustedScore": 7.5945725915658695
   },
   {
     "id": 20596,
@@ -23358,9 +23358,9 @@
     "specialAwards": [],
     "malId": 21995,
     "malScore": 7.63,
-    "malMembers": 716735,
+    "malMembers": 541071,
     "malTomatometer": 54.9,
-    "adjustedScore": 7.62128390558692
+    "adjustedScore": 7.620707610622887
   },
   {
     "id": 98291,
@@ -23435,9 +23435,9 @@
     "specialAwards": [],
     "malId": 34902,
     "malScore": 7.53,
-    "malMembers": 536565,
+    "malMembers": 419622,
     "malTomatometer": 51.6,
-    "adjustedScore": 7.543121417025494
+    "adjustedScore": 7.543570026715591
   },
   {
     "id": 169441,
@@ -23527,9 +23527,9 @@
     "specialAwards": [],
     "malId": 56701,
     "malScore": 7.41,
-    "malMembers": 66286,
+    "malMembers": 54616,
     "malTomatometer": 46.8,
-    "adjustedScore": 7.535572966746308
+    "adjustedScore": 7.535302224319876
   },
   {
     "id": 20657,
@@ -23619,9 +23619,9 @@
     "specialAwards": [],
     "malId": 23277,
     "malScore": 7.47,
-    "malMembers": 427964,
+    "malMembers": 338084,
     "malTomatometer": 50.2,
-    "adjustedScore": 7.502562385061004
+    "adjustedScore": 7.503370466131576
   },
   {
     "id": 99726,
@@ -23704,9 +23704,9 @@
     "specialAwards": [],
     "malId": 36038,
     "malScore": 7.51,
-    "malMembers": 343791,
+    "malMembers": 268149,
     "malTomatometer": 51.3,
-    "adjustedScore": 7.534662039663244
+    "adjustedScore": 7.535446496157222
   },
   {
     "id": 20654,
@@ -23767,9 +23767,9 @@
     "specialAwards": [],
     "malId": 23269,
     "malScore": 7.5,
-    "malMembers": 51155,
+    "malMembers": 39503,
     "malTomatometer": 50.4,
-    "adjustedScore": 7.564982180012291
+    "adjustedScore": 7.565828111930428
   },
   {
     "id": 164172,
@@ -23881,9 +23881,9 @@
     "specialAwards": [],
     "malId": 55071,
     "malScore": 7.54,
-    "malMembers": 47739,
+    "malMembers": 43743,
     "malTomatometer": 49.5,
-    "adjustedScore": 7.574771602793335
+    "adjustedScore": 7.5738755271825315
   },
   {
     "id": 176273,
@@ -24025,9 +24025,9 @@
     "specialAwards": [],
     "malId": 58502,
     "malScore": 7.57,
-    "malMembers": 84340,
+    "malMembers": 73639,
     "malTomatometer": 52.1,
-    "adjustedScore": 7.579715868603516
+    "adjustedScore": 7.5795020925790535
   },
   {
     "id": 166527,
@@ -24103,9 +24103,9 @@
     "specialAwards": [],
     "malId": 55779,
     "malScore": 7.43,
-    "malMembers": 2785,
+    "malMembers": 2220,
     "malTomatometer": 52.7,
-    "adjustedScore": 7.582045223952416
+    "adjustedScore": 7.582106751620997
   },
   {
     "id": 110229,
@@ -24193,9 +24193,9 @@
     "specialAwards": [],
     "malId": 40004,
     "malScore": 7.33,
-    "malMembers": 241315,
+    "malMembers": 184063,
     "malTomatometer": 44.1,
-    "adjustedScore": 7.435201935306561
+    "adjustedScore": 7.43951583890423
   },
   {
     "id": 107067,
@@ -24268,9 +24268,9 @@
     "specialAwards": [],
     "malId": 38992,
     "malScore": 7.34,
-    "malMembers": 200957,
+    "malMembers": 164727,
     "malTomatometer": 43.4,
-    "adjustedScore": 7.452064562794659
+    "adjustedScore": 7.4519114055185
   },
   {
     "id": 114065,
@@ -24360,9 +24360,9 @@
     "specialAwards": [],
     "malId": 40904,
     "malScore": 7.38,
-    "malMembers": 212764,
+    "malMembers": 178293,
     "malTomatometer": 47.7,
-    "adjustedScore": 7.470842226595548
+    "adjustedScore": 7.469603349156511
   },
   {
     "id": 151252,
@@ -24458,9 +24458,9 @@
     "specialAwards": [],
     "malId": 41514,
     "malScore": 7.23,
-    "malMembers": 138898,
+    "malMembers": 103254,
     "malTomatometer": 39.7,
-    "adjustedScore": 7.4251166210872785
+    "adjustedScore": 7.433424981481904
   },
   {
     "id": 127550,
@@ -24547,9 +24547,9 @@
     "specialAwards": [],
     "malId": 45486,
     "malScore": 7.29,
-    "malMembers": 54031,
+    "malMembers": 38674,
     "malTomatometer": 40.7,
-    "adjustedScore": 7.513500917375801
+    "adjustedScore": 7.5204249100257625
   },
   {
     "id": 174044,
@@ -24650,9 +24650,9 @@
     "specialAwards": [],
     "malId": 57947,
     "malScore": 7.34,
-    "malMembers": 23593,
+    "malMembers": 21498,
     "malTomatometer": 44.1,
-    "adjustedScore": 7.554734696092412
+    "adjustedScore": 7.551781551570221
   },
   {
     "id": 155657,
@@ -24755,9 +24755,9 @@
     "specialAwards": [],
     "malId": 53356,
     "malScore": 7.36,
-    "malMembers": 38756,
+    "malMembers": 34290,
     "malTomatometer": 45,
-    "adjustedScore": 7.542850476252745
+    "adjustedScore": 7.540105692561125
   },
   {
     "id": 151300,
@@ -24851,9 +24851,9 @@
     "specialAwards": [],
     "malId": 52186,
     "malScore": 7.5,
-    "malMembers": 3852,
+    "malMembers": 2988,
     "malTomatometer": 52.1,
-    "adjustedScore": 7.58266303534396
+    "adjustedScore": 7.582757102458779
   },
   {
     "id": 143277,
@@ -24992,9 +24992,9 @@
     "specialAwards": [],
     "malId": 50710,
     "malScore": 7.4,
-    "malMembers": 51620,
+    "malMembers": 56396,
     "malTomatometer": 44.7,
-    "adjustedScore": 7.541553713656792
+    "adjustedScore": 7.53127451669388
   },
   {
     "id": 180367,
@@ -25135,9 +25135,9 @@
     "specialAwards": [],
     "malId": 59597,
     "malScore": 7.36,
-    "malMembers": 65207,
+    "malMembers": 72867,
     "malTomatometer": 43.4,
-    "adjustedScore": 7.522287406499884
+    "adjustedScore": 7.507311829892892
   },
   {
     "id": 183965,
@@ -25207,9 +25207,9 @@
     "specialAwards": [],
     "malId": 60254,
     "malScore": 7.29,
-    "malMembers": 27042,
+    "malMembers": 24003,
     "malTomatometer": 39.7,
-    "adjustedScore": 7.544114016405731
+    "adjustedScore": 7.541164183873409
   },
   {
     "id": 124395,
@@ -25296,9 +25296,9 @@
     "specialAwards": [],
     "malId": 42962,
     "malScore": 7.23,
-    "malMembers": 133966,
+    "malMembers": 100471,
     "malTomatometer": 39.7,
-    "adjustedScore": 7.428282485608977
+    "adjustedScore": 7.4357890745180715
   },
   {
     "id": 103900,
@@ -25390,9 +25390,9 @@
     "specialAwards": [],
     "malId": 38186,
     "malScore": 7.26,
-    "malMembers": 317677,
+    "malMembers": 247736,
     "malTomatometer": 41.4,
-    "adjustedScore": 7.373130481898096
+    "adjustedScore": 7.376644210686145
   },
   {
     "id": 3470,
@@ -25500,9 +25500,9 @@
     "specialAwards": [],
     "malId": 3470,
     "malScore": 7.5,
-    "malMembers": 259530,
+    "malMembers": 193673,
     "malTomatometer": 49.9,
-    "adjustedScore": 7.533457812075101
+    "adjustedScore": 7.535321518319542
   },
   {
     "id": 104464,
@@ -25586,9 +25586,9 @@
     "specialAwards": [],
     "malId": 38483,
     "malScore": 7.29,
-    "malMembers": 334222,
+    "malMembers": 266640,
     "malTomatometer": 45.5,
-    "adjustedScore": 7.389303747199881
+    "adjustedScore": 7.390928201025336
   },
   {
     "id": 11433,
@@ -25668,9 +25668,9 @@
     "specialAwards": [],
     "malId": 11433,
     "malScore": 7.4,
-    "malMembers": 239184,
+    "malMembers": 188320,
     "malTomatometer": 48.4,
-    "adjustedScore": 7.476667548146111
+    "adjustedScore": 7.478365255602828
   },
   {
     "id": 116867,
@@ -25766,9 +25766,9 @@
     "specialAwards": [],
     "malId": 51678,
     "malScore": 7.64,
-    "malMembers": 104604,
+    "malMembers": 92047,
     "malTomatometer": 55.3,
-    "adjustedScore": 7.605663770449878
+    "adjustedScore": 7.606632397148274
   },
   {
     "id": 125124,
@@ -25841,9 +25841,9 @@
     "specialAwards": [],
     "malId": 43470,
     "malScore": 7.3,
-    "malMembers": 77095,
+    "malMembers": 60385,
     "malTomatometer": 43.2,
-    "adjustedScore": 7.495759258668198
+    "adjustedScore": 7.498362542136656
   },
   {
     "id": 100876,
@@ -25933,9 +25933,9 @@
     "specialAwards": [],
     "malId": 37086,
     "malScore": 7.18,
-    "malMembers": 663163,
+    "malMembers": 505574,
     "malTomatometer": 41.7,
-    "adjustedScore": 7.262542232457056
+    "adjustedScore": 7.267236710546682
   },
   {
     "id": 141351,
@@ -26001,9 +26001,9 @@
     "specialAwards": [],
     "malId": 50339,
     "malScore": 7.18,
-    "malMembers": 85413,
+    "malMembers": 63631,
     "malTomatometer": 38.3,
-    "adjustedScore": 7.449254634731272
+    "adjustedScore": 7.4575020380095705
   },
   {
     "id": 135778,
@@ -26108,9 +26108,9 @@
     "specialAwards": [],
     "malId": 49154,
     "malScore": 7.16,
-    "malMembers": 58750,
+    "malMembers": 47909,
     "malTomatometer": 37.5,
-    "adjustedScore": 7.475502225226747
+    "adjustedScore": 7.4757178919362754
   },
   {
     "id": 154412,
@@ -26208,9 +26208,9 @@
     "specialAwards": [],
     "malId": 52973,
     "malScore": 7.32,
-    "malMembers": 94072,
+    "malMembers": 73920,
     "malTomatometer": 41.9,
-    "adjustedScore": 7.490298759507324
+    "adjustedScore": 7.492696390493693
   },
   {
     "id": 143200,
@@ -26301,9 +26301,9 @@
     "specialAwards": [],
     "malId": 50694,
     "malScore": 7.39,
-    "malMembers": 19033,
+    "malMembers": 22747,
     "malTomatometer": 46.8,
-    "adjustedScore": 7.564948998432116
+    "adjustedScore": 7.557177848515999
   },
   {
     "id": 1120,
@@ -26388,9 +26388,9 @@
     "specialAwards": [],
     "malId": 1120,
     "malScore": 7.18,
-    "malMembers": 122448,
+    "malMembers": 80706,
     "malTomatometer": 39.2,
-    "adjustedScore": 7.415156793756901
+    "adjustedScore": 7.43593527470309
   },
   {
     "id": 98314,
@@ -26516,9 +26516,9 @@
     "specialAwards": [],
     "malId": 34933,
     "malScore": 7.21,
-    "malMembers": 1259629,
+    "malMembers": 1002941,
     "malTomatometer": 44,
-    "adjustedScore": 7.254536823204215
+    "adjustedScore": 7.255589496711229
   },
   {
     "id": 147369,
@@ -26583,9 +26583,9 @@
     "specialAwards": [],
     "malId": 51614,
     "malScore": 7.21,
-    "malMembers": 21149,
+    "malMembers": 20093,
     "malTomatometer": 39.8,
-    "adjustedScore": 7.543096872181483
+    "adjustedScore": 7.537233224993666
   },
   {
     "id": 155419,
@@ -26687,9 +26687,9 @@
     "specialAwards": [],
     "malId": 53262,
     "malScore": 7.17,
-    "malMembers": 18627,
+    "malMembers": 17849,
     "malTomatometer": 37.4,
-    "adjustedScore": 7.543600460276727
+    "adjustedScore": 7.5373629762632675
   },
   {
     "id": 154963,
@@ -26767,9 +26767,9 @@
     "specialAwards": [],
     "malId": 53128,
     "malScore": 7.21,
-    "malMembers": 28063,
+    "malMembers": 26027,
     "malTomatometer": 40,
-    "adjustedScore": 7.531469098320323
+    "adjustedScore": 7.5254666537228285
   },
   {
     "id": 163151,
@@ -26862,9 +26862,9 @@
     "specialAwards": [],
     "malId": 54869,
     "malScore": 7.12,
-    "malMembers": 23325,
+    "malMembers": 17596,
     "malTomatometer": 36.3,
-    "adjustedScore": 7.5284889901493255
+    "adjustedScore": 7.532338217220857
   },
   {
     "id": 186161,
@@ -26958,9 +26958,9 @@
     "specialAwards": [],
     "malId": 60765,
     "malScore": 7.13,
-    "malMembers": 15968,
+    "malMembers": 14405,
     "malTomatometer": 39.6,
-    "adjustedScore": 7.545507689605836
+    "adjustedScore": 7.541854342843566
   },
   {
     "id": 107871,
@@ -27086,9 +27086,9 @@
     "specialAwards": [],
     "malId": 39292,
     "malScore": 7.03,
-    "malMembers": 159834,
+    "malMembers": 134208,
     "malTomatometer": 35,
-    "adjustedScore": 7.315813876133504
+    "adjustedScore": 7.312131253345134
   },
   {
     "id": 11617,
@@ -27220,9 +27220,9 @@
     "specialAwards": [],
     "malId": 11617,
     "malScore": 7.31,
-    "malMembers": 1246940,
+    "malMembers": 963671,
     "malTomatometer": 47.2,
-    "adjustedScore": 7.342937974805297
+    "adjustedScore": 7.344607344769126
   },
   {
     "id": 19163,
@@ -27351,9 +27351,9 @@
     "specialAwards": [],
     "malId": 19163,
     "malScore": 7.18,
-    "malMembers": 574124,
+    "malMembers": 422216,
     "malTomatometer": 42.1,
-    "adjustedScore": 7.272418916767391
+    "adjustedScore": 7.280194070489646
   },
   {
     "id": 126546,
@@ -27429,9 +27429,9 @@
     "specialAwards": [],
     "malId": 44203,
     "malScore": 7.06,
-    "malMembers": 327275,
+    "malMembers": 236029,
     "malTomatometer": 36.8,
-    "adjustedScore": 7.239319559641281
+    "adjustedScore": 7.254413006631267
   },
   {
     "id": 128223,
@@ -27497,9 +27497,9 @@
     "specialAwards": [],
     "malId": 45653,
     "malScore": 7,
-    "malMembers": 71152,
+    "malMembers": 59737,
     "malTomatometer": 30.8,
-    "adjustedScore": 7.412068463129554
+    "adjustedScore": 7.408834366343042
   },
   {
     "id": 15583,
@@ -27617,9 +27617,9 @@
     "specialAwards": [],
     "malId": 15583,
     "malScore": 7.14,
-    "malMembers": 824070,
+    "malMembers": 626608,
     "malTomatometer": 41.9,
-    "adjustedScore": 7.216021944149425
+    "adjustedScore": 7.220707771423387
   },
   {
     "id": 114840,
@@ -27685,9 +27685,9 @@
     "specialAwards": [],
     "malId": 41103,
     "malScore": 7.11,
-    "malMembers": 143220,
+    "malMembers": 119518,
     "malTomatometer": 38.6,
-    "adjustedScore": 7.367554223934034
+    "adjustedScore": 7.365148637479469
   },
   {
     "id": 20646,
@@ -27775,9 +27775,9 @@
     "specialAwards": [],
     "malId": 25159,
     "malScore": 7.04,
-    "malMembers": 274581,
+    "malMembers": 207987,
     "malTomatometer": 35.6,
-    "adjustedScore": 7.248221075620906
+    "adjustedScore": 7.258136458898798
   },
   {
     "id": 151189,
@@ -27852,9 +27852,9 @@
     "specialAwards": [],
     "malId": 52092,
     "malScore": 7.1,
-    "malMembers": 60536,
+    "malMembers": 54757,
     "malTomatometer": 37.1,
-    "adjustedScore": 7.457302694679435
+    "adjustedScore": 7.447603005124549
   },
   {
     "id": 171291,
@@ -27923,9 +27923,9 @@
     "specialAwards": [],
     "malId": 57508,
     "malScore": 6.93,
-    "malMembers": 4524,
+    "malMembers": 3791,
     "malTomatometer": 36.2,
-    "adjustedScore": 7.5675692398788605
+    "adjustedScore": 7.567158612685094
   },
   {
     "id": 4026,
@@ -27991,9 +27991,9 @@
     "specialAwards": [],
     "malId": 4026,
     "malScore": 6.91,
-    "malMembers": 93694,
+    "malMembers": 60773,
     "malTomatometer": 32.2,
-    "adjustedScore": 7.3448644035155075
+    "adjustedScore": 7.379335272854275
   },
   {
     "id": 1122,
@@ -28062,9 +28062,9 @@
     "specialAwards": [],
     "malId": 1122,
     "malScore": 6.99,
-    "malMembers": 117387,
+    "malMembers": 76719,
     "malTomatometer": 33.8,
-    "adjustedScore": 7.341689999967356
+    "adjustedScore": 7.3730933550772875
   },
   {
     "id": 1723,
@@ -28130,9 +28130,9 @@
     "specialAwards": [],
     "malId": 1723,
     "malScore": 7.25,
-    "malMembers": 131021,
+    "malMembers": 95860,
     "malTomatometer": 47.5,
-    "adjustedScore": 7.438927463600939
+    "adjustedScore": 7.447992486859905
   },
   {
     "id": 108092,
@@ -28225,9 +28225,9 @@
     "specialAwards": [],
     "malId": 39388,
     "malScore": 6.89,
-    "malMembers": 39851,
+    "malMembers": 36875,
     "malTomatometer": 30.7,
-    "adjustedScore": 7.452642703730828
+    "adjustedScore": 7.438915510811185
   },
   {
     "id": 109020,
@@ -28329,9 +28329,9 @@
     "specialAwards": [],
     "malId": 39710,
     "malScore": 6.87,
-    "malMembers": 176036,
+    "malMembers": 152804,
     "malTomatometer": 34.1,
-    "adjustedScore": 7.221036117688964
+    "adjustedScore": 7.2103672172551345
   },
   {
     "id": 154459,
@@ -28395,9 +28395,9 @@
     "specialAwards": [],
     "malId": 52990,
     "malScore": 6.75,
-    "malMembers": 131590,
+    "malMembers": 107962,
     "malTomatometer": 28.2,
-    "adjustedScore": 7.220410603868226
+    "adjustedScore": 7.219709977502277
   },
   {
     "id": 113813,
@@ -28491,9 +28491,9 @@
     "specialAwards": [],
     "malId": 40839,
     "malScore": 6.82,
-    "malMembers": 834310,
+    "malMembers": 694838,
     "malTomatometer": 37.3,
-    "adjustedScore": 6.949413362428551
+    "adjustedScore": 6.947447436389224
   },
   {
     "id": 1119,
@@ -28573,9 +28573,9 @@
     "specialAwards": [],
     "malId": 1119,
     "malScore": 6.92,
-    "malMembers": 159178,
+    "malMembers": 104737,
     "malTomatometer": 32.6,
-    "adjustedScore": 7.263191628907819
+    "adjustedScore": 7.298976172940166
   },
   {
     "id": 12175,
@@ -28636,9 +28636,9 @@
     "specialAwards": [],
     "malId": 12175,
     "malScore": 6.96,
-    "malMembers": 142002,
+    "malMembers": 108223,
     "malTomatometer": 34.4,
-    "adjustedScore": 7.300289914874323
+    "adjustedScore": 7.311142553338149
   },
   {
     "id": 136934,
@@ -28711,9 +28711,9 @@
     "specialAwards": [],
     "malId": 44524,
     "malScore": 6.52,
-    "malMembers": 178910,
+    "malMembers": 134619,
     "malTomatometer": 27,
-    "adjustedScore": 7.038675687199044
+    "adjustedScore": 7.060790352511767
   },
   {
     "id": 155389,
@@ -28783,9 +28783,9 @@
     "specialAwards": [],
     "malId": 53237,
     "malScore": 6.72,
-    "malMembers": 30098,
+    "malMembers": 28309,
     "malTomatometer": 25.7,
-    "adjustedScore": 7.454495767177174
+    "adjustedScore": 7.4382549382514815
   },
   {
     "id": 97766,
@@ -28872,9 +28872,9 @@
     "specialAwards": [],
     "malId": 34280,
     "malScore": 6.72,
-    "malMembers": 498946,
+    "malMembers": 399244,
     "malTomatometer": 30.1,
-    "adjustedScore": 6.939705527831272
+    "adjustedScore": 6.943264013094279
   },
   {
     "id": 130592,
@@ -28989,9 +28989,9 @@
     "specialAwards": [],
     "malId": 48413,
     "malScore": 6.65,
-    "malMembers": 223700,
+    "malMembers": 177944,
     "malTomatometer": 25.7,
-    "adjustedScore": 7.053533487479346
+    "adjustedScore": 7.059853208970409
   },
   {
     "id": 21131,
@@ -29076,9 +29076,9 @@
     "specialAwards": [],
     "malId": 30544,
     "malScore": 6.8,
-    "malMembers": 541290,
+    "malMembers": 397235,
     "malTomatometer": 32.6,
-    "adjustedScore": 6.987505987741453
+    "adjustedScore": 7.00336329307844
   },
   {
     "id": 175450,
@@ -29145,9 +29145,9 @@
     "specialAwards": [],
     "malId": 58272,
     "malScore": 6.73,
-    "malMembers": 28454,
+    "malMembers": 26179,
     "malTomatometer": 26.7,
-    "adjustedScore": 7.462014139400658
+    "adjustedScore": 7.449101795409327
   },
   {
     "id": 20552,
@@ -29212,9 +29212,9 @@
     "specialAwards": [],
     "malId": 21639,
     "malScore": 6.74,
-    "malMembers": 38685,
+    "malMembers": 37477,
     "malTomatometer": 33.2,
-    "adjustedScore": 7.427980132834742
+    "adjustedScore": 7.405188752437526
   },
   {
     "id": 103139,
@@ -29296,9 +29296,9 @@
     "specialAwards": [],
     "malId": 37982,
     "malScore": 6.61,
-    "malMembers": 608366,
+    "malMembers": 499777,
     "malTomatometer": 32.5,
-    "adjustedScore": 6.822844772280159
+    "adjustedScore": 6.822062293200784
   },
   {
     "id": 97979,
@@ -29357,9 +29357,9 @@
     "specialAwards": [],
     "malId": 34580,
     "malScore": 6.66,
-    "malMembers": 40156,
+    "malMembers": 34159,
     "malTomatometer": 24.2,
-    "adjustedScore": 7.407878404711825
+    "adjustedScore": 7.402153254892424
   },
   {
     "id": 98231,
@@ -29437,9 +29437,9 @@
     "specialAwards": [],
     "malId": 34866,
     "malScore": 6.73,
-    "malMembers": 18902,
+    "malMembers": 21374,
     "malTomatometer": 29.7,
-    "adjustedScore": 7.499029094560238
+    "adjustedScore": 7.470646959381928
   },
   {
     "id": 9917,
@@ -29486,9 +29486,9 @@
     "specialAwards": [],
     "malId": 9917,
     "malScore": 6.67,
-    "malMembers": 57208,
+    "malMembers": 37084,
     "malTomatometer": 26.8,
-    "adjustedScore": 7.354267869179862
+    "adjustedScore": 7.391931098020929
   },
   {
     "id": 126192,
@@ -29591,9 +29591,9 @@
     "specialAwards": [],
     "malId": 43969,
     "malScore": 6.51,
-    "malMembers": 234103,
+    "malMembers": 208409,
     "malTomatometer": 25.4,
-    "adjustedScore": 6.962041024245349
+    "adjustedScore": 6.939927018194455
   },
   {
     "id": 127090,
@@ -29676,9 +29676,9 @@
     "specialAwards": [],
     "malId": 49470,
     "malScore": 6.72,
-    "malMembers": 200437,
+    "malMembers": 160703,
     "malTomatometer": 26.7,
-    "adjustedScore": 7.116750686407185
+    "adjustedScore": 7.120965340566885
   },
   {
     "id": 107961,
@@ -29758,9 +29758,9 @@
     "specialAwards": [],
     "malId": 39326,
     "malScore": 6.46,
-    "malMembers": 224177,
+    "malMembers": 174091,
     "malTomatometer": 23.6,
-    "adjustedScore": 6.944988048568582
+    "adjustedScore": 6.959249468888972
   },
   {
     "id": 117989,
@@ -29859,9 +29859,9 @@
     "specialAwards": [],
     "malId": 41812,
     "malScore": 6.48,
-    "malMembers": 117125,
+    "malMembers": 90337,
     "malTomatometer": 24.4,
-    "adjustedScore": 7.133969992235501
+    "adjustedScore": 7.149453753489045
   },
   {
     "id": 21887,
@@ -29956,9 +29956,9 @@
     "specialAwards": [],
     "malId": 33743,
     "malScore": 6.51,
-    "malMembers": 195122,
+    "malMembers": 156380,
     "malTomatometer": 27.8,
-    "adjustedScore": 7.010301636221915
+    "adjustedScore": 7.0156554792603325
   },
   {
     "id": 118375,
@@ -30047,9 +30047,9 @@
     "specialAwards": [],
     "malId": 41899,
     "malScore": 6.27,
-    "malMembers": 297779,
+    "malMembers": 226704,
     "malTomatometer": 21.1,
-    "adjustedScore": 6.7477280169067395
+    "adjustedScore": 6.7696404618596375
   },
   {
     "id": 13161,
@@ -30127,9 +30127,9 @@
     "specialAwards": [],
     "malId": 13161,
     "malScore": 6.68,
-    "malMembers": 327592,
+    "malMembers": 233393,
     "malTomatometer": 30.4,
-    "adjustedScore": 6.989030559214413
+    "adjustedScore": 7.017628568377809
   },
   {
     "id": 146323,
@@ -30212,9 +30212,9 @@
     "specialAwards": [],
     "malId": 51252,
     "malScore": 6.42,
-    "malMembers": 50401,
+    "malMembers": 48619,
     "malTomatometer": 21.3,
-    "adjustedScore": 7.318231559841463
+    "adjustedScore": 7.282761849620332
   },
   {
     "id": 13367,
@@ -30280,9 +30280,9 @@
     "specialAwards": [],
     "malId": 13367,
     "malScore": 6.49,
-    "malMembers": 140234,
+    "malMembers": 103827,
     "malTomatometer": 25,
-    "adjustedScore": 7.0897767298897545
+    "adjustedScore": 7.116538710538437
   },
   {
     "id": 97730,
@@ -30346,9 +30346,9 @@
     "specialAwards": [],
     "malId": 33836,
     "malScore": 6.29,
-    "malMembers": 112225,
+    "malMembers": 94834,
     "malTomatometer": 20.1,
-    "adjustedScore": 7.0697719338138665
+    "adjustedScore": 7.0595224623618344
   },
   {
     "id": 114072,
@@ -30402,9 +30402,9 @@
     "specialAwards": [],
     "malId": 40145,
     "malScore": 6.29,
-    "malMembers": 3501,
+    "malMembers": 5092,
     "malTomatometer": 21.1,
-    "adjustedScore": 7.558414210987938
+    "adjustedScore": 7.53878907547898
   },
   {
     "id": 142842,
@@ -30454,9 +30454,9 @@
     "specialAwards": [],
     "malId": 50607,
     "malScore": 6.18,
-    "malMembers": 995,
+    "malMembers": 1600,
     "malTomatometer": 24.1,
-    "adjustedScore": 7.576363250508016
+    "adjustedScore": 7.568552741564133
   },
   {
     "id": 111762,
@@ -30613,9 +30613,9 @@
     "specialAwards": [],
     "malId": 40417,
     "malScore": 8.52,
-    "malMembers": 381040,
+    "malMembers": 305317,
     "malTomatometer": 81.7,
-    "adjustedScore": 8.231402319288287
+    "adjustedScore": 8.227349742332427
   },
   {
     "id": 431,
@@ -30730,9 +30730,9 @@
     "specialAwards": [],
     "malId": 431,
     "malScore": 8.67,
-    "malMembers": 1347596,
+    "malMembers": 1032583,
     "malTomatometer": 84.2,
-    "adjustedScore": 8.54840712154
+    "adjustedScore": 8.541217417343814
   },
   {
     "id": 168872,
@@ -30819,9 +30819,9 @@
     "specialAwards": [],
     "malId": 56538,
     "malScore": 8.42,
-    "malMembers": 58281,
+    "malMembers": 44476,
     "malTomatometer": 79.5,
-    "adjustedScore": 7.7978331706126145
+    "adjustedScore": 7.787058991170056
   },
   {
     "id": 202955,
@@ -30906,9 +30906,9 @@
     "specialAwards": [],
     "malId": 63019,
     "malScore": 8.46,
-    "malMembers": 26908,
+    "malMembers": 23626,
     "malTomatometer": 78.8,
-    "adjustedScore": 7.704170546755938
+    "adjustedScore": 7.711721836999725
   },
   {
     "id": 169295,
@@ -31002,9 +31002,9 @@
     "specialAwards": [],
     "malId": 56653,
     "malScore": 8.08,
-    "malMembers": 17146,
+    "malMembers": 15787,
     "malTomatometer": 70.5,
-    "adjustedScore": 7.629929648619892
+    "adjustedScore": 7.635069324064148
   },
   {
     "id": 178533,
@@ -31132,9 +31132,9 @@
     "specialAwards": [],
     "malId": 59145,
     "malScore": 7.97,
-    "malMembers": 104422,
+    "malMembers": 87477,
     "malTomatometer": 68.5,
-    "adjustedScore": 7.731211324240105
+    "adjustedScore": 7.733421961011128
   },
   {
     "id": 99578,
@@ -31240,9 +31240,9 @@
     "specialAwards": [],
     "malId": 35968,
     "malScore": 7.91,
-    "malMembers": 747251,
+    "malMembers": 586787,
     "malTomatometer": 65,
-    "adjustedScore": 7.849679688570106
+    "adjustedScore": 7.847668373040461
   },
   {
     "id": 146066,
@@ -31343,9 +31343,9 @@
     "specialAwards": [],
     "malId": 51180,
     "malScore": 7.92,
-    "malMembers": 367332,
+    "malMembers": 284888,
     "malTomatometer": 66.2,
-    "adjustedScore": 7.813866611369913
+    "adjustedScore": 7.809995742894154
   },
   {
     "id": 21120,
@@ -31403,9 +31403,9 @@
     "specialAwards": [],
     "malId": 29755,
     "malScore": 8.12,
-    "malMembers": 90647,
+    "malMembers": 51126,
     "malTomatometer": 69.4,
-    "adjustedScore": 7.7707580521572
+    "adjustedScore": 7.728525480281062
   },
   {
     "id": 109979,
@@ -31500,9 +31500,9 @@
     "specialAwards": [],
     "malId": 36699,
     "malScore": 7.6,
-    "malMembers": 120012,
+    "malMembers": 95724,
     "malTomatometer": 54.8,
-    "adjustedScore": 7.5909353199888905
+    "adjustedScore": 7.5908425021042465
   },
   {
     "id": 151801,
@@ -31608,9 +31608,9 @@
     "specialAwards": [],
     "malId": 52211,
     "malScore": 7.61,
-    "malMembers": 587746,
+    "malMembers": 455028,
     "malTomatometer": 53.5,
-    "adjustedScore": 7.604287180691971
+    "adjustedScore": 7.604041552694347
   },
   {
     "id": 176246,
@@ -31719,9 +31719,9 @@
     "specialAwards": [],
     "malId": 58492,
     "malScore": 7.72,
-    "malMembers": 21733,
+    "malMembers": 19970,
     "malTomatometer": 58.5,
-    "adjustedScore": 7.599890963061226
+    "adjustedScore": 7.601553220506494
   },
   {
     "id": 99468,
@@ -31791,9 +31791,9 @@
     "specialAwards": [],
     "malId": 35860,
     "malScore": 7.67,
-    "malMembers": 386632,
+    "malMembers": 319066,
     "malTomatometer": 56.1,
-    "adjustedScore": 7.643898615280146
+    "adjustedScore": 7.644065998052501
   },
   {
     "id": 170938,
@@ -31888,9 +31888,9 @@
     "specialAwards": [],
     "malId": 57217,
     "malScore": 7.55,
-    "malMembers": 47345,
+    "malMembers": 39567,
     "malTomatometer": 50.6,
-    "adjustedScore": 7.577012970257508
+    "adjustedScore": 7.576883553310058
   },
   {
     "id": 14227,
@@ -31952,9 +31952,9 @@
     "specialAwards": [],
     "malId": 14227,
     "malScore": 7.45,
-    "malMembers": 864798,
+    "malMembers": 653860,
     "malTomatometer": 49,
-    "adjustedScore": 7.472102027662034
+    "adjustedScore": 7.473586150725119
   },
   {
     "id": 182158,
@@ -32036,9 +32036,9 @@
     "specialAwards": [],
     "malId": 59957,
     "malScore": 7.28,
-    "malMembers": 4911,
+    "malMembers": 3780,
     "malTomatometer": 43,
-    "adjustedScore": 7.575985581356337
+    "adjustedScore": 7.576473704047607
   },
   {
     "id": 186621,
@@ -32106,9 +32106,9 @@
     "specialAwards": [],
     "malId": 60969,
     "malScore": 7.31,
-    "malMembers": 19616,
+    "malMembers": 16137,
     "malTomatometer": 41.8,
-    "adjustedScore": 7.556134999264925
+    "adjustedScore": 7.555979459857527
   },
   {
     "id": 166828,
@@ -32195,9 +32195,9 @@
     "specialAwards": [],
     "malId": 55877,
     "malScore": 7.27,
-    "malMembers": 36551,
+    "malMembers": 31366,
     "malTomatometer": 40.7,
-    "adjustedScore": 7.528876180800955
+    "adjustedScore": 7.5266269998938595
   },
   {
     "id": 173935,
@@ -32262,9 +32262,9 @@
     "specialAwards": [],
     "malId": 57915,
     "malScore": 7.22,
-    "malMembers": 1552,
+    "malMembers": 1273,
     "malTomatometer": 42.8,
-    "adjustedScore": 7.58123819028993
+    "adjustedScore": 7.581227858988667
   },
   {
     "id": 148098,
@@ -32345,9 +32345,9 @@
     "specialAwards": [],
     "malId": 51705,
     "malScore": 7.16,
-    "malMembers": 88169,
+    "malMembers": 73541,
     "malTomatometer": 37,
-    "adjustedScore": 7.4395499615392175
+    "adjustedScore": 7.437642974597454
   },
   {
     "id": 155963,
@@ -32438,9 +32438,9 @@
     "specialAwards": [],
     "malId": 53421,
     "malScore": 7.06,
-    "malMembers": 131087,
+    "malMembers": 105139,
     "malTomatometer": 33.7,
-    "adjustedScore": 7.356164012463568
+    "adjustedScore": 7.358643459111069
   },
   {
     "id": 165790,
@@ -32525,9 +32525,9 @@
     "specialAwards": [],
     "malId": 55887,
     "malScore": 7.11,
-    "malMembers": 64195,
+    "malMembers": 53492,
     "malTomatometer": 34.2,
-    "adjustedScore": 7.4544613848315215
+    "adjustedScore": 7.452666269060103
   },
   {
     "id": 183291,
@@ -32596,9 +32596,9 @@
     "specialAwards": [],
     "malId": 60162,
     "malScore": 7.12,
-    "malMembers": 37181,
+    "malMembers": 30020,
     "malTomatometer": 34.6,
-    "adjustedScore": 7.501169769528182
+    "adjustedScore": 7.502028845485252
   },
   {
     "id": 154692,
@@ -32681,9 +32681,9 @@
     "specialAwards": [],
     "malId": 53040,
     "malScore": 7,
-    "malMembers": 73988,
+    "malMembers": 57763,
     "malTomatometer": 34.3,
-    "adjustedScore": 7.407278776089882
+    "adjustedScore": 7.4129359455991075
   },
   {
     "id": 160188,
@@ -32752,9 +32752,9 @@
     "specialAwards": [],
     "malId": 54234,
     "malScore": 7.16,
-    "malMembers": 108600,
+    "malMembers": 97146,
     "malTomatometer": 38.5,
-    "adjustedScore": 7.419049296556418
+    "adjustedScore": 7.4098899641066005
   },
   {
     "id": 172190,
@@ -32868,9 +32868,9 @@
     "specialAwards": [],
     "malId": 57611,
     "malScore": 7.05,
-    "malMembers": 63629,
+    "malMembers": 54683,
     "malTomatometer": 32.7,
-    "adjustedScore": 7.438954855863861
+    "adjustedScore": 7.433619189417332
   },
   {
     "id": 178022,
@@ -32935,9 +32935,9 @@
     "specialAwards": [],
     "malId": 59055,
     "malScore": 7.09,
-    "malMembers": 13461,
+    "malMembers": 12712,
     "malTomatometer": 34.8,
-    "adjustedScore": 7.548250712797914
+    "adjustedScore": 7.543098736183803
   },
   {
     "id": 1118,
@@ -33004,9 +33004,9 @@
     "specialAwards": [],
     "malId": 1118,
     "malScore": 7.1,
-    "malMembers": 183332,
+    "malMembers": 121900,
     "malTomatometer": 37.4,
-    "adjustedScore": 7.333126730725262
+    "adjustedScore": 7.358146858811487
   },
   {
     "id": 21701,
@@ -33093,9 +33093,9 @@
     "specialAwards": [],
     "malId": 32949,
     "malScore": 7.07,
-    "malMembers": 432389,
+    "malMembers": 356607,
     "malTomatometer": 42.6,
-    "adjustedScore": 7.2152070572680085
+    "adjustedScore": 7.214308929179607
   },
   {
     "id": 169927,
@@ -33166,9 +33166,9 @@
     "specialAwards": [],
     "malId": 56838,
     "malScore": 7.04,
-    "malMembers": 45842,
+    "malMembers": 37683,
     "malTomatometer": 32.3,
-    "adjustedScore": 7.46888378545704
+    "adjustedScore": 7.4683972734440625
   },
   {
     "id": 171748,
@@ -33225,9 +33225,9 @@
     "specialAwards": [],
     "malId": 57567,
     "malScore": 6.92,
-    "malMembers": 14105,
+    "malMembers": 11296,
     "malTomatometer": 30.1,
-    "adjustedScore": 7.533623388939019
+    "adjustedScore": 7.534590644221518
   },
   {
     "id": 115113,
@@ -33318,9 +33318,9 @@
     "specialAwards": [],
     "malId": 41226,
     "malScore": 6.95,
-    "malMembers": 355285,
+    "malMembers": 287707,
     "malTomatometer": 34,
-    "adjustedScore": 7.15535734700328
+    "adjustedScore": 7.156700418469622
   },
   {
     "id": 21390,
@@ -33413,9 +33413,9 @@
     "specialAwards": [],
     "malId": 31737,
     "malScore": 6.98,
-    "malMembers": 380191,
+    "malMembers": 269202,
     "malTomatometer": 36,
-    "adjustedScore": 7.166791739633362
+    "adjustedScore": 7.1858552272255345
   },
   {
     "id": 144533,
@@ -33492,9 +33492,9 @@
     "specialAwards": [],
     "malId": 50923,
     "malScore": 6.88,
-    "malMembers": 39787,
+    "malMembers": 32850,
     "malTomatometer": 30.9,
-    "adjustedScore": 7.4509178072073965
+    "adjustedScore": 7.449860433307636
   },
   {
     "id": 21093,
@@ -33622,9 +33622,9 @@
     "specialAwards": [],
     "malId": 30307,
     "malScore": 6.92,
-    "malMembers": 597521,
+    "malMembers": 455868,
     "malTomatometer": 35.1,
-    "adjustedScore": 7.0671896326232355
+    "adjustedScore": 7.075279012258043
   },
   {
     "id": 14749,
@@ -33701,9 +33701,9 @@
     "specialAwards": [],
     "malId": 14749,
     "malScore": 6.88,
-    "malMembers": 398879,
+    "malMembers": 307644,
     "malTomatometer": 32.5,
-    "adjustedScore": 7.09053885627808
+    "adjustedScore": 7.099258549233657
   },
   {
     "id": 124410,
@@ -33797,9 +33797,9 @@
     "specialAwards": [],
     "malId": 42963,
     "malScore": 6.68,
-    "malMembers": 249874,
+    "malMembers": 202300,
     "malTomatometer": 30.3,
-    "adjustedScore": 7.046231617153285
+    "adjustedScore": 7.048387094825424
   },
   {
     "id": 118419,
@@ -33891,9 +33891,9 @@
     "specialAwards": [],
     "malId": 41930,
     "malScore": 6.81,
-    "malMembers": 147844,
+    "malMembers": 127256,
     "malTomatometer": 34.5,
-    "adjustedScore": 7.224263393427651
+    "adjustedScore": 7.214349631422079
   },
   {
     "id": 146676,
@@ -33961,9 +33961,9 @@
     "specialAwards": [],
     "malId": 51403,
     "malScore": 6.7,
-    "malMembers": 86624,
+    "malMembers": 70670,
     "malTomatometer": 30,
-    "adjustedScore": 7.285958967285282
+    "adjustedScore": 7.286400130986395
   },
   {
     "id": 160181,
@@ -34042,9 +34042,9 @@
     "specialAwards": [],
     "malId": 54233,
     "malScore": 6.72,
-    "malMembers": 21628,
+    "malMembers": 25461,
     "malTomatometer": 30.7,
-    "adjustedScore": 7.486960642602428
+    "adjustedScore": 7.450693085071338
   },
   {
     "id": 148116,
@@ -34114,9 +34114,9 @@
     "specialAwards": [],
     "malId": 51711,
     "malScore": 6.36,
-    "malMembers": 143977,
+    "malMembers": 105863,
     "malTomatometer": 20.1,
-    "adjustedScore": 7.023013959686914
+    "adjustedScore": 7.055125500642879
   },
   {
     "id": 159483,
@@ -34174,9 +34174,9 @@
     "specialAwards": [],
     "malId": 54028,
     "malScore": 6.56,
-    "malMembers": 6686,
+    "malMembers": 6830,
     "malTomatometer": 26.8,
-    "adjustedScore": 7.545766467182562
+    "adjustedScore": 7.5365515700741765
   },
   {
     "id": 20565,
@@ -34272,9 +34272,9 @@
     "specialAwards": [],
     "malId": 24705,
     "malScore": 6.42,
-    "malMembers": 88020,
+    "malMembers": 69576,
     "malTomatometer": 24.3,
-    "adjustedScore": 7.187270498490886
+    "adjustedScore": 7.1960745026461215
   },
   {
     "id": 6205,
@@ -34353,9 +34353,9 @@
     "specialAwards": [],
     "malId": 6205,
     "malScore": 6.35,
-    "malMembers": 202364,
+    "malMembers": 151925,
     "malTomatometer": 25,
-    "adjustedScore": 6.913618217713362
+    "adjustedScore": 6.939844514785314
   },
   {
     "id": 113425,
@@ -34486,9 +34486,9 @@
     "specialAwards": [],
     "malId": 40750,
     "malScore": 6.31,
-    "malMembers": 428785,
+    "malMembers": 371192,
     "malTomatometer": 30.3,
-    "adjustedScore": 6.67185130559486
+    "adjustedScore": 6.657242833019564
   },
   {
     "id": 98951,
@@ -34567,9 +34567,9 @@
     "specialAwards": [],
     "malId": 35712,
     "malScore": 6.2,
-    "malMembers": 170019,
+    "malMembers": 135035,
     "malTomatometer": 19.9,
-    "adjustedScore": 6.8922293578318214
+    "adjustedScore": 6.902284436162962
   },
   {
     "id": 8861,
@@ -34683,9 +34683,9 @@
     "specialAwards": [],
     "malId": 8861,
     "malScore": 5.99,
-    "malMembers": 362458,
+    "malMembers": 287926,
     "malTomatometer": 25.1,
-    "adjustedScore": 6.499093926695849
+    "adjustedScore": 6.509154409578984
   },
   {
     "id": 4224,
@@ -34772,9 +34772,9 @@
     "specialAwards": [],
     "malId": 4224,
     "malScore": 8.04,
-    "malMembers": 1821741,
+    "malMembers": 1478034,
     "malTomatometer": 67.9,
-    "adjustedScore": 8.001125032833393
+    "adjustedScore": 8.000848389992983
   },
   {
     "id": 7054,
@@ -34880,9 +34880,9 @@
     "specialAwards": [],
     "malId": 7054,
     "malScore": 7.99,
-    "malMembers": 1001193,
+    "malMembers": 779085,
     "malTomatometer": 66,
-    "adjustedScore": 7.931146449834159
+    "adjustedScore": 7.928611910077953
   },
   {
     "id": 143866,
@@ -34949,9 +34949,9 @@
     "specialAwards": [],
     "malId": 50803,
     "malScore": 7.04,
-    "malMembers": 80333,
+    "malMembers": 64234,
     "malTomatometer": 35.2,
-    "adjustedScore": 7.409791973174205
+    "adjustedScore": 7.4124303781056184
   },
   {
     "id": 19221,
@@ -35034,9 +35034,9 @@
     "specialAwards": [],
     "malId": 19221,
     "malScore": 7.12,
-    "malMembers": 294111,
+    "malMembers": 222587,
     "malTomatometer": 41.2,
-    "adjustedScore": 7.2901557041755485
+    "adjustedScore": 7.29857532340465
   },
   {
     "id": 132052,
@@ -35102,9 +35102,9 @@
     "specialAwards": [],
     "malId": 48675,
     "malScore": 6.85,
-    "malMembers": 155384,
+    "malMembers": 137128,
     "malTomatometer": 30.9,
-    "adjustedScore": 7.233765440281692
+    "adjustedScore": 7.219757921919969
   },
   {
     "id": 164244,
@@ -35170,9 +35170,9 @@
     "specialAwards": [],
     "malId": 55129,
     "malScore": 6.9,
-    "malMembers": 71813,
+    "malMembers": 57879,
     "malTomatometer": 28.4,
-    "adjustedScore": 7.381244325245616
+    "adjustedScore": 7.383294386216495
   },
   {
     "id": 168623,
@@ -35239,9 +35239,9 @@
     "specialAwards": [],
     "malId": 56449,
     "malScore": 6.79,
-    "malMembers": 41847,
+    "malMembers": 32822,
     "malTomatometer": 25.6,
-    "adjustedScore": 7.427588136818638
+    "adjustedScore": 7.432761203244738
   },
   {
     "id": 165855,
@@ -35310,9 +35310,9 @@
     "specialAwards": [],
     "malId": 55597,
     "malScore": 6.77,
-    "malMembers": 61564,
+    "malMembers": 53789,
     "malTomatometer": 29.1,
-    "adjustedScore": 7.367982130299262
+    "adjustedScore": 7.357276843927387
   },
   {
     "id": 157397,
@@ -35379,9 +35379,9 @@
     "specialAwards": [],
     "malId": 53632,
     "malScore": 6.61,
-    "malMembers": 139741,
+    "malMembers": 108798,
     "malTomatometer": 24.7,
-    "adjustedScore": 7.144869888134339
+    "adjustedScore": 7.156657016860173
   },
   {
     "id": 1894,
@@ -35438,9 +35438,9 @@
     "specialAwards": [],
     "malId": 1894,
     "malScore": 6.59,
-    "malMembers": 72653,
+    "malMembers": 51277,
     "malTomatometer": 27.6,
-    "adjustedScore": 7.2867609467866385
+    "adjustedScore": 7.3165224670554885
   },
   {
     "id": 104325,
@@ -35538,9 +35538,9 @@
     "specialAwards": [],
     "malId": 38397,
     "malScore": 6.49,
-    "malMembers": 254785,
+    "malMembers": 195523,
     "malTomatometer": 26,
-    "adjustedScore": 6.928036027686048
+    "adjustedScore": 6.944798371005632
   },
   {
     "id": 128712,
@@ -35644,9 +35644,9 @@
     "specialAwards": [],
     "malId": 46471,
     "malScore": 6.44,
-    "malMembers": 162563,
+    "malMembers": 158897,
     "malTomatometer": 27.4,
-    "adjustedScore": 7.025065488405559
+    "adjustedScore": 6.974045376300927
   },
   {
     "id": 131863,
@@ -35723,9 +35723,9 @@
     "specialAwards": [],
     "malId": 48633,
     "malScore": 6.29,
-    "malMembers": 82225,
+    "malMembers": 69882,
     "malTomatometer": 19.9,
-    "adjustedScore": 7.162519115950514
+    "adjustedScore": 7.151445770645231
   },
   {
     "id": 21685,
@@ -35841,9 +35841,9 @@
     "specialAwards": [],
     "malId": 32901,
     "malScore": 6.31,
-    "malMembers": 542638,
+    "malMembers": 450183,
     "malTomatometer": 26.8,
-    "adjustedScore": 6.614040949290688
+    "adjustedScore": 6.61068843714757
   },
   {
     "id": 97863,
@@ -35942,9 +35942,9 @@
     "specialAwards": [],
     "malId": 34403,
     "malScore": 6.26,
-    "malMembers": 428243,
+    "malMembers": 331470,
     "malTomatometer": 22.2,
-    "adjustedScore": 6.636387411170073
+    "adjustedScore": 6.651333167819239
   },
   {
     "id": 124675,
@@ -36017,9 +36017,9 @@
     "specialAwards": [],
     "malId": 43007,
     "malScore": 6.06,
-    "malMembers": 145115,
+    "malMembers": 130015,
     "malTomatometer": 18.4,
-    "adjustedScore": 6.882465239739835
+    "adjustedScore": 6.847727507625661
   },
   {
     "id": 187331,
@@ -36122,9 +36122,9 @@
     "specialAwards": [],
     "malId": 61142,
     "malScore": 6.12,
-    "malMembers": 20385,
+    "malMembers": 16580,
     "malTomatometer": 16,
-    "adjustedScore": 7.427724526725415
+    "adjustedScore": 7.428461983956275
   },
   {
     "id": 2034,
@@ -36190,9 +36190,9 @@
     "specialAwards": [],
     "malId": 2034,
     "malScore": 8.03,
-    "malMembers": 407372,
+    "malMembers": 321306,
     "malTomatometer": 67.2,
-    "adjustedScore": 7.8988386932872015
+    "adjustedScore": 7.89548190869534
   },
   {
     "id": 18897,
@@ -36294,9 +36294,9 @@
     "specialAwards": [],
     "malId": 18897,
     "malScore": 7.55,
-    "malMembers": 886819,
+    "malMembers": 696953,
     "malTomatometer": 53.4,
-    "adjustedScore": 7.555555477352903
+    "adjustedScore": 7.555742566225514
   },
   {
     "id": 20876,
@@ -36394,9 +36394,9 @@
     "specialAwards": [],
     "malId": 27787,
     "malScore": 7.35,
-    "malMembers": 606240,
+    "malMembers": 453699,
     "malTomatometer": 46.4,
-    "adjustedScore": 7.401364441436435
+    "adjustedScore": 7.4050034932805975
   },
   {
     "id": 10110,
@@ -36482,9 +36482,9 @@
     "specialAwards": [],
     "malId": 10110,
     "malScore": 7.2,
-    "malMembers": 376868,
+    "malMembers": 279198,
     "malTomatometer": 41.4,
-    "adjustedScore": 7.319537318001087
+    "adjustedScore": 7.327811504272898
   },
   {
     "id": 20701,
@@ -36546,9 +36546,9 @@
     "specialAwards": [],
     "malId": 23673,
     "malScore": 6.98,
-    "malMembers": 367640,
+    "malMembers": 270321,
     "malTomatometer": 38.5,
-    "adjustedScore": 7.171152321294208
+    "adjustedScore": 7.185292461085352
   },
   {
     "id": 98320,
@@ -36625,9 +36625,9 @@
     "specialAwards": [],
     "malId": 34934,
     "malScore": 6.47,
-    "malMembers": 263455,
+    "malMembers": 212476,
     "malTomatometer": 26.3,
-    "adjustedScore": 6.907118349126479
+    "adjustedScore": 6.910771248858861
   },
   {
     "id": 167144,
@@ -36695,9 +36695,9 @@
     "specialAwards": [],
     "malId": 55996,
     "malScore": 6.23,
-    "malMembers": 28753,
+    "malMembers": 25835,
     "malTomatometer": 17.9,
-    "adjustedScore": 7.388579412741534
+    "adjustedScore": 7.372236269384035
   },
   {
     "id": 144176,
@@ -36773,9 +36773,9 @@
     "specialAwards": [],
     "malId": 50869,
     "malScore": 6.27,
-    "malMembers": 44093,
+    "malMembers": 37030,
     "malTomatometer": 17.4,
-    "adjustedScore": 7.313804019844731
+    "adjustedScore": 7.308007813803995
   },
   {
     "id": 7593,
@@ -36842,9 +36842,9 @@
     "specialAwards": [],
     "malId": 7593,
     "malScore": 6.55,
-    "malMembers": 455999,
+    "malMembers": 352491,
     "malTomatometer": 31.9,
-    "adjustedScore": 6.830944752340847
+    "adjustedScore": 6.842580160092285
   },
   {
     "id": 166896,
@@ -36904,9 +36904,9 @@
     "specialAwards": [],
     "malId": 55894,
     "malScore": 6.09,
-    "malMembers": 15475,
+    "malMembers": 13691,
     "malTomatometer": 17.7,
-    "adjustedScore": 7.4598403236048965
+    "adjustedScore": 7.450528881623129
   },
   {
     "id": 156896,
@@ -36976,8 +36976,8 @@
     "specialAwards": [],
     "malId": 51139,
     "malScore": 5.32,
-    "malMembers": 4041,
+    "malMembers": 4895,
     "malTomatometer": 14,
-    "adjustedScore": 7.53195657356955
+    "adjustedScore": 7.507501410500137
   }
 ]

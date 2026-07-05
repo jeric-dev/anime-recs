@@ -1,15 +1,17 @@
 // Refreshes MAL-derived stats (malScore, malMembers, malTomatometer, adjustedScore)
 // for every anime in data/anime.json.
 //
-// malMembers is the "Completed" status count from each anime's MAL /stats page
-// (not the total members count on the main page), since that reflects users who've
-// actually finished it rather than everyone who's ever added it to a list.
+// malMembers is the number of voting members — the sum of vote counts across all
+// ten score buckets (1 through 10) on each anime's MAL /stats page. This is neither
+// the total members count on the main page nor the "Completed" status count; it's
+// specifically how many people actually cast a score, which is the relevant sample
+// size for a Bayesian average of malScore.
 //
 // adjustedScore uses a Bayesian average pulling low-sample scores toward the global
 // mean. Neither Bayesian constant is hardcoded — both are recomputed each run from
 // the whole list, so they stay in step with what's typical here instead of going
 // stale as the list grows:
-//   - MIN_MEMBERS: median Completed count across the list, floored to the nearest 1,000
+//   - MIN_MEMBERS: median voting members across the list, floored to the nearest 1,000
 //   - GLOBAL_MEAN: mean malScore across the list
 //
 // Both values are also written to data/bayesian_constants.json as a snapshot. This
@@ -41,9 +43,9 @@ function mean(vals) {
   return vals.reduce((a, b) => a + b, 0) / vals.length;
 }
 
-function adjustedScore(score, completed, minMembers, globalMean) {
-  const denom = completed + minMembers;
-  return (completed / denom) * score + (minMembers / denom) * globalMean;
+function adjustedScore(score, votingMembers, minMembers, globalMean) {
+  const denom = votingMembers + minMembers;
+  return (votingMembers / denom) * score + (minMembers / denom) * globalMean;
 }
 
 async function fetchMalStats(malId, retries = 3) {
@@ -59,16 +61,20 @@ async function fetchMalStats(malId, retries = 3) {
       if (statsRes.status !== 200) throw new Error(`stats page status ${statsRes.status}`);
       const statsHtml = await statsRes.text();
 
-      const completedMatch = statsHtml.match(/<span class="dark_text">Completed:<\/span>\s*([\d,]+)/);
-      const completed = completedMatch ? parseInt(completedMatch[1].replace(/,/g, ''), 10) : null;
+      // Each row on the stats page gives the vote count for one score (1-10).
+      // Voting members (the sample size for the Bayesian average) is the sum of
+      // all ten; Tomatometer is just the 8/9/10 percentages, same as before.
+      const regex = /<td width="20" class="score-label score-(\d+)">\d+<\/td>\s*<td>.*?width: (\d+\.\d+)%;.*?\((\d+) votes\)/gs;
+      let votingMembers = 0, tomatometerTotal = 0, m;
+      while ((m = regex.exec(statsHtml)) !== null) {
+        const rank = parseInt(m[1], 10);
+        votingMembers += parseInt(m[3], 10);
+        if (rank >= 8) tomatometerTotal += parseFloat(m[2]);
+      }
+      const tomatometer = parseFloat(tomatometerTotal.toFixed(1));
 
-      const regex = /<td width="20" class="score-label score-(10|9|8)">(\d+)<\/td>\s*<td>.*?width: (\d+\.\d+)%/g;
-      let total = 0, m;
-      while ((m = regex.exec(statsHtml)) !== null) total += parseFloat(m[3]);
-      const tomatometer = parseFloat(total.toFixed(1));
-
-      if (score === null || completed === null) throw new Error('missing score or completed count');
-      return { score, completed, tomatometer };
+      if (score === null || votingMembers === 0) throw new Error('missing score or voting member count');
+      return { score, votingMembers, tomatometer };
     } catch (e) {
       if (attempt === retries - 1) throw e;
       await sleep(1500);
@@ -92,18 +98,18 @@ async function fetchMalStats(malId, retries = 3) {
     const malId = idList[i];
     try {
       statsById[malId] = await fetchMalStats(malId);
-      console.log(`[${i + 1}/${idList.length}] malId ${malId} -> score=${statsById[malId].score}, completed=${statsById[malId].completed}, tomatometer=${statsById[malId].tomatometer}`);
+      console.log(`[${i + 1}/${idList.length}] malId ${malId} -> score=${statsById[malId].score}, votingMembers=${statsById[malId].votingMembers}, tomatometer=${statsById[malId].tomatometer}`);
     } catch (e) {
       console.log(`[${i + 1}/${idList.length}] malId ${malId} -> FAILED: ${e.message}`);
     }
     await sleep(THROTTLE_MS);
   }
 
-  const allCompleted = Object.values(statsById).map(s => s.completed).filter(v => v != null);
+  const allVotingMembers = Object.values(statsById).map(s => s.votingMembers).filter(v => v != null);
   const allScores = Object.values(statsById).map(s => s.score).filter(v => v != null);
-  const minMembers = Math.floor(median(allCompleted) / 1000) * 1000;
+  const minMembers = Math.floor(median(allVotingMembers) / 1000) * 1000;
   const globalMean = mean(allScores);
-  console.log(`\nDynamic MIN_MEMBERS (median Completed count, floored to nearest 1000): ${minMembers}`);
+  console.log(`\nDynamic MIN_MEMBERS (median voting members, floored to nearest 1000): ${minMembers}`);
   console.log(`Dynamic GLOBAL_MEAN (mean malScore across the list): ${globalMean}`);
 
   fs.writeFileSync(constantsPath, JSON.stringify({
@@ -121,18 +127,18 @@ async function fetchMalStats(malId, retries = 3) {
         const stat = statsById[s.malId];
         if (!stat) { missing.push(`${a.title} (malStats ${s.malId})`); return; }
         s.malScore = stat.score;
-        s.malMembers = stat.completed;
+        s.malMembers = stat.votingMembers;
         s.malTomatometer = stat.tomatometer;
-        s.adjustedScore = adjustedScore(stat.score, stat.completed, minMembers, globalMean);
+        s.adjustedScore = adjustedScore(stat.score, stat.votingMembers, minMembers, globalMean);
         updatedStats++;
       });
     } else {
       const stat = statsById[a.malId];
       if (!stat) { missing.push(`${a.title} (malId ${a.malId})`); return; }
       a.malScore = stat.score;
-      a.malMembers = stat.completed;
+      a.malMembers = stat.votingMembers;
       a.malTomatometer = stat.tomatometer;
-      a.adjustedScore = adjustedScore(stat.score, stat.completed, minMembers, globalMean);
+      a.adjustedScore = adjustedScore(stat.score, stat.votingMembers, minMembers, globalMean);
       updatedFlat++;
     }
   });
