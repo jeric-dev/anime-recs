@@ -105,9 +105,39 @@ h1 {
 .filter-controls-bar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 18px;
+  justify-content: flex-start;
+  gap: 14px;
+  margin-bottom: 14px;
   min-height: 28px;
+}
+
+.filters-toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  color: var(--text);
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.filters-toggle-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.filters-toggle-btn .filters-icon {
+  flex-shrink: 0;
+}
+
+.filters-toggle-btn .filters-chevron {
+  font-size: 0.7rem;
 }
 
 .filter-count {
@@ -119,7 +149,9 @@ h1 {
 .filter-actions {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 14px;
+  margin-bottom: 14px;
 }
 
 .clear-btn {
@@ -148,6 +180,10 @@ h1 {
   font-size: 0.82rem;
   color: var(--text-muted);
   user-select: none;
+}
+
+.toggle-18-label.hidden {
+  display: none;
 }
 
 .toggle-18-label input[type="checkbox"] {
@@ -190,6 +226,10 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 14px;
+}
+
+#filter-panel.collapsed {
+  display: none;
 }
 
 .filter-group {
@@ -373,6 +413,28 @@ body.show-18plus .nsfw-group {
   flex-direction: column;
   gap: 8px;
   width: 100%;
+}
+
+.scoring-metric-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 16px;
+}
+
+.scoring-metric-row:last-child {
+  margin-bottom: 0;
+}
+
+.scoring-metric-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text);
+  cursor: help;
+  width: fit-content;
+  border-bottom: 1px dotted var(--text-dim);
 }
 
 .year-display {
@@ -784,6 +846,41 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
+}
+
+.modal-genres-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.modal-stats-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.modal-stats-label {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.modal-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.stat-chip {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: help;
 }
 
 .modal-description {

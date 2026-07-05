@@ -13,7 +13,7 @@ A personal anime recommendation site built on top of my [Anilist](https://anilis
 - Result cards show the animation studio(s) under the title (genres were dropped from the card front to save space and avoid repeating what's already filterable via chips)
 - Clicking a card opens a detail view with the full description, studio, season, any special award badges, and a link to my review where one exists
 - Default view (no filters) shows my ★9 and ★10 rated picks
-- Anime that need prior series/season context are excluded from results entirely (hand-curated, not just "has a prequel")
+- Anime that need prior series/season context are hidden by default (hand-curated, not just "has a prequel") — the "Show All Anime" toggle reveals them everywhere except the header collage
 - Mature content (Ecchi genre, or tags like Nudity/Large Breasts at ≥75% rank) is hidden from every view — default and filtered — until the "Mature Content" toggle is switched on
 - The header shows a randomized, blurred collage of covers from my list behind the title — a fresh mix every page load
 
@@ -63,7 +63,7 @@ Every tag shown as a filter appears in at least 5 of my completed anime at ≥75
 - **Genres & Studios:** +10 pts flat per match
 - **Tags & Demographics:** `(rank / 100) × 5` pts if the tag's rank is ≥75% — a tag at 96% confidence scores 4.8 pts, one at 75% scores 3.75 pts
 
-Results are sorted by **my personal rating first**, then by **total match score** (tag/genre/studio relevance), then by **Anilist's community average score**, then **alphabetically by title** as the final tiebreaker.
+Filtered results are sorted by **my personal rating first**, then **Weighted Score**, then **Tomatometer**, then **MAL Score**, then **alphabetically by title** as the final tiebreaker. (The default, no-filters view sorts by personal rating, then Anilist's community average, then title.)
 
 ## Special award badges
 
@@ -74,7 +74,7 @@ Shown on the detail view next to the season badge, and filterable via the "Speci
 - 🏆 **4chan AOTY Winner** — crowned Anime of the Year by members of /a/
 - 🏆 **Crunchyroll AOTY Winner** — won the Crunchyroll Anime Award for Anime of the Year
 - 🏆 **r/anime AOTY/MOTY Jury/Public Winner** — community award wins
-- 🍅 **Certified Fresh** / 🗑️ **Certified Rotten** — my own quality call, independent of score, for shows that are either a great starting point regardless of genre or a rough watch
+- 🍅 **Certified Fresh** / 🗑️ **Certified Rotten** — computed automatically, not hand-curated: Fresh is the top 10% of all rated anime by Weighted Score, Rotten is the bottom 10%. Recalculates whenever the underlying MAL stats change
 
 ## Stack
 
@@ -92,5 +92,18 @@ python fetch_anime.py
 ```
 
 This overwrites `data/anime.json` and `data/tag_descriptions.json`. Hand-curated fields (`requiresPrereq`, `specialAwards`) are preserved across re-runs by ID — only genuinely new anime get a best-guess default (flagged in the script's output for manual review). Commit and push to deploy.
+
+Run the MAL stats script whenever you want to refresh `malScore`, `malMembers`, `malTomatometer`, and `adjustedScore` (Weighted Score) for every anime with a `malId`:
+
+```bash
+node scrape_mal_stats.js
+```
+
+`malMembers` is the "Completed" status count from each anime's MAL stats page (not the total members count), since that reflects people who've actually finished it. `adjustedScore` is a Bayesian average of `malScore` pulled toward a global mean — neither Bayesian constant is fixed; both are recomputed every run from the whole list, so they stay in step with what's typical here rather than going stale as the list grows:
+
+- **Confidence weight:** the median `malMembers` across the whole list, floored to the nearest 1,000
+- **Global mean:** the mean `malScore` across the whole list
+
+Both values are written to `data/bayesian_constants.json` as a snapshot each time `scrape_mal_stats.js` runs. This file is the single source of truth for these two constants — the companion Google Sheet (`anime spreadsheet backup code.txt`) fetches this same snapshot from the live site rather than computing its own median/mean locally. Two independent live computations over differently-timed, differently-scoped data will otherwise silently drift apart (this happened in practice — the sheet and site disagreed on a Weighted Score until the sheet was pointed at this shared snapshot).
 
 If you change any CSS or JS, bump the `?v=` cache-busting query string on `style.css`/`app.js` in `index.html` — GitHub Pages' CDN caches aggressively and won't pick up changes otherwise.

@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20260702d">
+  <link rel="stylesheet" href="style.css?v=20260702j">
 </head>
 <body>
   <header class="hero">
@@ -22,22 +22,34 @@
   <section class="filter-section">
     <div class="filter-section-inner">
       <div class="filter-controls-bar">
+        <button id="filters-toggle" class="filters-toggle-btn" aria-expanded="false">
+          <svg class="filters-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+            <path d="M3 5h18M6 12h12M10 19h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          Filters
+          <span class="filters-chevron">▾</span>
+        </button>
         <span class="filter-count" id="filter-count"></span>
-        <div class="filter-actions">
-          <button id="clear-filters" class="clear-btn">Clear all</button>
-          <label class="toggle-18-label">
-            <input type="checkbox" id="toggle-or-mode">
-            <span class="toggle-track"><span class="toggle-thumb"></span></span>
-            Match Any (OR)
-          </label>
-          <label class="toggle-18-label">
-            <input type="checkbox" id="toggle-18plus">
-            <span class="toggle-track"><span class="toggle-thumb"></span></span>
-            Mature Content
-          </label>
-        </div>
       </div>
-      <div id="filter-panel"></div>
+      <div class="filter-actions">
+        <button id="clear-filters" class="clear-btn">Clear all</button>
+        <label class="toggle-18-label hidden" id="or-mode-label">
+          <input type="checkbox" id="toggle-or-mode">
+          <span class="toggle-track"><span class="toggle-thumb"></span></span>
+          Match Any (OR)
+        </label>
+        <label class="toggle-18-label">
+          <input type="checkbox" id="toggle-18plus">
+          <span class="toggle-track"><span class="toggle-thumb"></span></span>
+          Mature Content
+        </label>
+        <label class="toggle-18-label">
+          <input type="checkbox" id="toggle-show-all">
+          <span class="toggle-track"><span class="toggle-thumb"></span></span>
+          Show All Anime
+        </label>
+      </div>
+      <div id="filter-panel" class="collapsed"></div>
     </div>
   </section>
 
@@ -46,6 +58,6 @@
     <div id="results" class="results-grid"></div>
   </main>
 
-  <script src="app.js?v=20260702f"></script>
+  <script src="app.js?v=20260702v"></script>
 </body>
 </html>

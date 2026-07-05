@@ -150,6 +150,25 @@ const AWARD_META = {
   },
 };
 
+// MAL-derived stats shown on the detail modal
+const MAL_STAT_META = {
+  malScore: {
+    name: 'MAL Score',
+    label: (v) => `MAL Score: ${v}`,
+    hover: 'This is the score for this anime on MyAnimeList',
+  },
+  adjustedScore: {
+    name: 'Weighted Score',
+    label: (v) => `Weighted Score: ${v.toFixed(2)}`,
+    hover: "A version of the MAL score adjusted for how many people have completed it, so a niche anime with a handful of 10s doesn't outrank a widely-rated favorite",
+  },
+  malTomatometer: {
+    name: '🍅 Tomatometer',
+    label: (v) => `🍅 Tomatometer: ${v}%`,
+    hover: "This is the percentage of MAL users who've rated this anime an 8 or higher",
+  },
+};
+
 // Filter chips for anime.specialAwards — "medalist" covers any AOTY/MOTY win
 const SPECIAL_TITLES_META = {
   medalist: {
@@ -162,9 +181,26 @@ const SPECIAL_TITLES_META = {
 
 const MEDALIST_AWARDS = ['gold', 'fivechAOTY', 'fourchanAOTY', 'crunchyroll', 'jury', 'public', 'motyJury', 'motyPublic'];
 
+// Certified Fresh/Rotten are no longer hand-curated — they're derived
+// automatically from where an anime's Weighted Score ranks against every
+// other anime with a score: top 10% is Fresh, bottom 10% is Rotten. Reuses
+// the same metricRankings population the Scoring Metrics chips are colored
+// from, so the two stay consistent with each other.
+function getFreshRottenStatus(anime) {
+  const list = metricRankings.adjustedScore;
+  if (!list) return null;
+  const rank = list.findIndex(x => x.id === anime.id) + 1;
+  if (rank === 0) return null;
+  const pct = rank / list.length;
+  if (pct <= 0.10) return 'fresh';
+  if (pct > 0.90) return 'rotten';
+  return null;
+}
+
 function animeHasSpecialTitle(anime, key) {
   const awards = anime.specialAwards || [];
   if (key === 'medalist') return MEDALIST_AWARDS.some(a => awards.includes(a));
+  if (key === 'fresh' || key === 'rotten') return getFreshRottenStatus(anime) === key;
   return awards.includes(key);
 }
 
@@ -185,12 +221,21 @@ const state = {
   yearMax: null,
   scoreMin: null,
   scoreMax: null,
+  malScoreMin: null,
+  malScoreMax: null,
+  adjustedScoreMin: null,
+  adjustedScoreMax: null,
+  malTomatometerMin: null,
+  malTomatometerMax: null,
 };
 
 // Default is AND (every selected filter, within and across groups, must
 // match). Toggling this on switches everything to OR (any one match is enough).
 let orMode = false;
 let matureEnabled = false;
+// Anime that need prior series/season context (requiresPrereq) are hidden
+// from every view by default; this reveals them everywhere results are shown.
+let showAllAnime = false;
 // Populated in buildFilterUI once anime data is loaded — only Mature Content
 // tags that clear the ≥5-anime qualification bar are ever shown as chips or
 // used to decide whether an anime counts as "mature" for hiding purposes.
@@ -214,6 +259,66 @@ async function loadData() {
   } catch {
     // Tooltips are a nice-to-have; missing descriptions shouldn't break the app.
   }
+
+  computeMetricRankings();
+}
+
+// A handful of entries (e.g. the Re:ZERO OVAs, which bundle two separate MAL
+// entries) store their MAL stats in a malStats array instead of flat fields
+// — fall back to the first one so those entries still rank/display.
+function getStatsSource(anime) {
+  return anime.malScore !== undefined
+    ? anime
+    : (Array.isArray(anime.malStats) && anime.malStats[0]) || {};
+}
+
+// Per-metric ranking of every anime, used to color-code each stat chip by
+// how that anime's value compares to the rest of the list.
+let metricRankings = {};
+function computeMetricRankings() {
+  metricRankings = {};
+  ['malScore', 'adjustedScore', 'malTomatometer'].forEach(key => {
+    const list = animeData
+      .map(a => ({ id: a.id, value: getStatsSource(a)[key] }))
+      .filter(x => x.value !== undefined)
+      .sort((a, b) => b.value - a.value);
+    metricRankings[key] = list;
+  });
+}
+
+// Rank-based color coding: #1 and #2 overall get unique colors, then a
+// blue gradient for top 5/10/20/50%, orange for the bottom 10%, and no
+// special color for the unremarkable middle. Hover text is only shown for
+// tiers that actually got a special color (top 50% or better, or bottom
+// 10%) — the boring middle stretch gets neither color nor hover text.
+function metricRankInfo(anilistId, key) {
+  const list = metricRankings[key];
+  if (!list) return null;
+  const rank = list.findIndex(x => x.id === anilistId) + 1;
+  if (rank === 0) return null;
+  const total = list.length;
+  const watched = "of the anime I've watched";
+
+  if (rank === 1) return { color: '#8b0000', hover: `This anime is first for this metric ${watched}` };
+  if (rank === 2) return { color: '#006400', hover: `This anime is second for this metric ${watched}` };
+
+  const pct = rank / total;
+  if (pct <= 0.05) return { color: '#0000cd', hover: `This anime is in the top 5% for this metric ${watched}` };
+  if (pct <= 0.10) return { color: '#1e90ff', hover: `This anime is in the top 10% for this metric ${watched}` };
+  if (pct <= 0.20) return { color: '#add8e6', hover: `This anime is in the top 20% for this metric ${watched}` };
+  if (pct <= 0.50) return { color: '#f0ffff', hover: `This anime is in the top 50% for this metric ${watched}` };
+  if (pct > 0.90) return { color: '#ff6d01', hover: `This anime is in the bottom 10% for this metric ${watched}` };
+
+  return { color: null, hover: null };
+}
+
+// Picks readable black/white text for an arbitrary background hex color.
+function readableTextColor(hex) {
+  const r = parseInt(hex.slice(1, 3), 16);
+  const g = parseInt(hex.slice(3, 5), 16);
+  const b = parseInt(hex.slice(5, 7), 16);
+  const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+  return luminance > 0.6 ? '#111318' : '#ffffff';
 }
 
 // ── Engine ─────────────────────────────────────────────────────────────────
@@ -252,6 +357,23 @@ function matchesScoreFilter(anime) {
   if (state.scoreMax !== null && s > state.scoreMax) return false;
   return true;
 }
+
+// Scoring Metrics sliders (MAL Score, Weighted Score, Tomatometer) all follow
+// the same min/max range-check shape as My Score above, just reading their
+// value off getStatsSource() instead of anime.score directly.
+function makeStatRangeFilter(statKey, minKey, maxKey) {
+  return function (anime) {
+    if (state[minKey] === null && state[maxKey] === null) return true;
+    const value = getStatsSource(anime)[statKey];
+    if (value === undefined) return true;
+    if (state[minKey] !== null && value < state[minKey]) return false;
+    if (state[maxKey] !== null && value > state[maxKey]) return false;
+    return true;
+  };
+}
+const matchesMalScoreFilter = makeStatRangeFilter('malScore', 'malScoreMin', 'malScoreMax');
+const matchesAdjustedScoreFilter = makeStatRangeFilter('adjustedScore', 'adjustedScoreMin', 'adjustedScoreMax');
+const matchesTomatometerFilter = makeStatRangeFilter('malTomatometer', 'malTomatometerMin', 'malTomatometerMax');
 
 function specialTitleMatches(anime, requireAll) {
   const selected = [...state.specialTitles];
@@ -371,6 +493,9 @@ function passesFilters(anime, requireAll) {
   if (state.lengths.size > 0) checks.push(lengthMatches(anime, requireAll));
   if (state.yearMin !== null || state.yearMax !== null) checks.push(matchesYearFilter(anime));
   if (state.scoreMin !== null || state.scoreMax !== null) checks.push(matchesScoreFilter(anime));
+  if (state.malScoreMin !== null || state.malScoreMax !== null) checks.push(matchesMalScoreFilter(anime));
+  if (state.adjustedScoreMin !== null || state.adjustedScoreMax !== null) checks.push(matchesAdjustedScoreFilter(anime));
+  if (state.malTomatometerMin !== null || state.malTomatometerMax !== null) checks.push(matchesTomatometerFilter(anime));
   if (state.specialTitles.size > 0) checks.push(specialTitleMatches(anime, requireAll));
   if (state.genres.size > 0) checks.push(genreMatches(anime, requireAll));
   if (state.tags.size > 0) checks.push(tagMatches(anime, requireAll));
@@ -387,7 +512,10 @@ function recommend() {
     state.excludedGenres.size > 0 || state.excludedTags.size > 0 || state.excludedStudios.size > 0 ||
     state.excludedSpecialTitles.size > 0 || state.excludedLengths.size > 0 ||
     state.lengths.size > 0 || state.yearMin !== null || state.yearMax !== null ||
-    state.scoreMin !== null || state.scoreMax !== null;
+    state.scoreMin !== null || state.scoreMax !== null ||
+    state.malScoreMin !== null || state.malScoreMax !== null ||
+    state.adjustedScoreMin !== null || state.adjustedScoreMax !== null ||
+    state.malTomatometerMin !== null || state.malTomatometerMax !== null;
 
   if (!hasFilters) {
     renderDefault();
@@ -397,7 +525,7 @@ function recommend() {
   const requireAll = !orMode;
 
   const results = animeData
-    .filter(a => !a.requiresPrereq)
+    .filter(a => showAllAnime || !a.requiresPrereq)
     .filter(a => matureEnabled || !isMatureAnime(a))
     .filter(a => !isExcluded(a))
     .map(a => {
@@ -407,8 +535,11 @@ function recommend() {
     .filter(a => passesFilters(a, requireAll))
     .sort((a, b) => {
       if ((b.score || 0) !== (a.score || 0)) return (b.score || 0) - (a.score || 0);
-      if (b._score !== a._score) return b._score - a._score;
-      if ((b.averageScore || 0) !== (a.averageScore || 0)) return (b.averageScore || 0) - (a.averageScore || 0);
+      const aStats = getStatsSource(a);
+      const bStats = getStatsSource(b);
+      if ((bStats.adjustedScore || 0) !== (aStats.adjustedScore || 0)) return (bStats.adjustedScore || 0) - (aStats.adjustedScore || 0);
+      if ((bStats.malTomatometer || 0) !== (aStats.malTomatometer || 0)) return (bStats.malTomatometer || 0) - (aStats.malTomatometer || 0);
+      if ((bStats.malScore || 0) !== (aStats.malScore || 0)) return (bStats.malScore || 0) - (aStats.malScore || 0);
       return (a.title || a.titleRomaji || '').localeCompare(b.title || b.titleRomaji || '');
     });
 
@@ -471,7 +602,12 @@ function openModal(id) {
 
   const metaRow = overlay.querySelector('.modal-meta');
   metaRow.querySelectorAll('.modal-award-chip').forEach(el => el.remove());
-  (anime.specialAwards || []).forEach(awardId => {
+  const freshRottenStatus = getFreshRottenStatus(anime);
+  const displayAwards = [
+    ...(freshRottenStatus ? [freshRottenStatus] : []),
+    ...(anime.specialAwards || []).filter(a => a !== 'fresh' && a !== 'rotten'),
+  ];
+  displayAwards.forEach(awardId => {
     const info = AWARD_META[awardId];
     if (!info) return;
     const chip = document.createElement('span');
@@ -486,6 +622,33 @@ function openModal(id) {
 
   overlay.querySelector('.modal-genres').innerHTML =
     (anime.genres || []).map(g => `<span class="genre-pill">${escapeHtml(g)}</span>`).join('');
+
+  const statsSource = getStatsSource(anime);
+  const statsSection = overlay.querySelector('.modal-stats-section');
+  const statsRow = overlay.querySelector('.modal-stats');
+  statsRow.innerHTML = '';
+  ['malScore', 'adjustedScore', 'malTomatometer'].forEach(key => {
+    const value = statsSource[key];
+    if (value === undefined) return;
+    const meta = MAL_STAT_META[key];
+    const chip = document.createElement('span');
+    chip.className = 'stat-chip';
+    chip.textContent = meta.label(value);
+    const rankInfo = metricRankInfo(anime.id, key);
+    if (rankInfo?.color) {
+      chip.style.background = rankInfo.color;
+      chip.style.borderColor = rankInfo.color;
+      chip.style.color = readableTextColor(rankInfo.color);
+    }
+    if (rankInfo?.hover) {
+      attachHoverTooltip(chip, rankInfo.hover);
+    } else {
+      chip.style.cursor = 'default';
+    }
+    statsRow.appendChild(chip);
+  });
+  statsSection.classList.toggle('hidden', statsRow.children.length === 0);
+
   overlay.querySelector('.modal-description').textContent =
     anime.description || 'No description available.';
   const reviewLink = overlay.querySelector('.modal-review-link');
@@ -549,7 +712,7 @@ function renderDefault() {
   const grid = document.getElementById('results');
   const status = document.getElementById('status-bar');
   const top = animeData
-    .filter(a => !a.requiresPrereq && a.score >= 9)
+    .filter(a => (showAllAnime || !a.requiresPrereq) && a.score >= 9)
     .filter(a => matureEnabled || !isMatureAnime(a))
     .sort((a, b) => {
       if (b.score !== a.score) return b.score - a.score;
@@ -575,7 +738,10 @@ function updateFilterCount() {
     state.excludedSpecialTitles.size + state.excludedLengths.size +
     state.lengths.size +
     (state.yearMin !== null || state.yearMax !== null ? 1 : 0) +
-    (state.scoreMin !== null || state.scoreMax !== null ? 1 : 0);
+    (state.scoreMin !== null || state.scoreMax !== null ? 1 : 0) +
+    (state.malScoreMin !== null || state.malScoreMax !== null ? 1 : 0) +
+    (state.adjustedScoreMin !== null || state.adjustedScoreMax !== null ? 1 : 0) +
+    (state.malTomatometerMin !== null || state.malTomatometerMax !== null ? 1 : 0);
   const el = document.getElementById('filter-count');
   if (el) el.textContent = count > 0 ? `${count} filter${count === 1 ? '' : 's'} active` : '';
   updateGroupBadges();
@@ -725,11 +891,102 @@ function makeGroup(label, extraClass) {
   return { group, chips };
 }
 
+// Reusable dual-handle range slider — same mechanics as Year Range (two
+// overlapping <input type="range"> elements plus a fill bar), just
+// parameterized so Scoring Metrics can build four of these without
+// re-deriving the whole widget each time.
+function makeRangeSlider({ idPrefix, min, max, step = 1, formatValue = (v) => v, onChange }) {
+  const parse = step < 1 ? parseFloat : (v) => parseInt(v, 10);
+  const wrapper = document.createElement('div');
+  wrapper.className = 'year-slider-wrapper';
+
+  const display = document.createElement('div');
+  display.className = 'year-display';
+  const minLabel = document.createElement('span');
+  minLabel.className = 'year-display-val';
+  minLabel.id = `${idPrefix}-min-display`;
+  minLabel.textContent = formatValue(min);
+  const dash = document.createElement('span');
+  dash.className = 'year-display-dash';
+  dash.textContent = '—';
+  const maxLabel = document.createElement('span');
+  maxLabel.className = 'year-display-val';
+  maxLabel.id = `${idPrefix}-max-display`;
+  maxLabel.textContent = formatValue(max);
+  display.appendChild(minLabel);
+  display.appendChild(dash);
+  display.appendChild(maxLabel);
+
+  const trackContainer = document.createElement('div');
+  trackContainer.className = 'year-track-container';
+  const trackBg = document.createElement('div');
+  trackBg.className = 'year-track-bg';
+  const trackFill = document.createElement('div');
+  trackFill.className = 'year-track-fill';
+  trackFill.id = `${idPrefix}-track-fill`;
+  trackBg.appendChild(trackFill);
+
+  const minInput = document.createElement('input');
+  minInput.type = 'range';
+  minInput.className = 'year-slider';
+  minInput.id = `${idPrefix}-slider-min`;
+  minInput.min = min;
+  minInput.max = max;
+  minInput.step = step;
+  minInput.value = min;
+  minInput.style.zIndex = '4';
+
+  const maxInput = document.createElement('input');
+  maxInput.type = 'range';
+  maxInput.className = 'year-slider';
+  maxInput.id = `${idPrefix}-slider-max`;
+  maxInput.min = min;
+  maxInput.max = max;
+  maxInput.step = step;
+  maxInput.value = max;
+  maxInput.style.zIndex = '3';
+
+  const updateFill = () => {
+    const range = max - min;
+    const lo = parse(minInput.value);
+    const hi = parse(maxInput.value);
+    trackFill.style.left = ((lo - min) / range * 100) + '%';
+    trackFill.style.right = ((max - hi) / range * 100) + '%';
+    minLabel.textContent = formatValue(lo);
+    maxLabel.textContent = formatValue(hi);
+    minInput.style.zIndex = (hi > min && (lo <= min || lo >= hi)) ? '4' : '2';
+  };
+
+  const handleChange = () => {
+    const lo = parse(minInput.value) <= min ? null : parse(minInput.value);
+    const hi = parse(maxInput.value) >= max ? null : parse(maxInput.value);
+    updateFill();
+    onChange(lo, hi);
+    recommend();
+  };
+
+  minInput.addEventListener('input', () => {
+    if (parse(minInput.value) > parse(maxInput.value)) minInput.value = maxInput.value;
+    handleChange();
+  });
+  maxInput.addEventListener('input', () => {
+    if (parse(maxInput.value) < parse(minInput.value)) maxInput.value = minInput.value;
+    handleChange();
+  });
+
+  trackContainer.appendChild(trackBg);
+  trackContainer.appendChild(minInput);
+  trackContainer.appendChild(maxInput);
+  wrapper.appendChild(display);
+  wrapper.appendChild(trackContainer);
+  return wrapper;
+}
+
 // Collapsible groups render their name as a small pill in a shared, wrapping
 // nav row instead of a full-width label — clicking a pill reveals the group's
 // content (label + chips) below the nav, keeping the panel compact when
 // nothing is expanded instead of stacking empty full-width rows.
-function makeCollapsibleGroup(label, categoryNav, extraClass) {
+function makeCollapsibleGroup(label, categoryNav, extraClass, countFn) {
   // extraClass (e.g. nsfw-group) controls a separate show/hide concern (the
   // 18+ toggle) that must not compete with the collapsed/expanded state on
   // the same element — both would otherwise fight over `display` via CSS
@@ -772,13 +1029,13 @@ function makeCollapsibleGroup(label, categoryNav, extraClass) {
   });
   categoryNav.appendChild(toggleBtn);
 
-  collapsibleGroups.push({ chips, badge });
+  collapsibleGroups.push({ chips, badge, countFn });
   return { group: outer, chips };
 }
 
 function updateGroupBadges() {
-  collapsibleGroups.forEach(({ chips, badge }) => {
-    const count = chips.querySelectorAll('.filter-chip.active, .filter-chip.excluded').length;
+  collapsibleGroups.forEach(({ chips, badge, countFn }) => {
+    const count = countFn ? countFn() : chips.querySelectorAll('.filter-chip.active, .filter-chip.excluded').length;
     badge.textContent = count;
     badge.classList.toggle('hidden', count === 0);
   });
@@ -901,94 +1158,58 @@ function buildFilterUI() {
   yearChips.appendChild(sliderWrapper);
   panel.appendChild(yearGroup);
 
-  // My Score range slider
-  const dataMinScore = 1;
-  const dataMaxScore = 10;
+  // Scoring Metrics: My Score plus the three MAL-derived stats, all sharing
+  // the same dual-handle slider widget. Lives where the standalone "My
+  // Score" group used to be — always expanded, not folded into the
+  // alphabetized "Additional Filters" pills below.
+  const SCORING_METRICS = [
+    {
+      label: 'My Score', idPrefix: 'score', min: 1, max: 10,
+      minKey: 'scoreMin', maxKey: 'scoreMax', hover: 'This is the score you gave this anime',
+    },
+    {
+      label: MAL_STAT_META.malScore.name, idPrefix: 'mal-score', min: 1, max: 10, step: 0.01,
+      minKey: 'malScoreMin', maxKey: 'malScoreMax', hover: MAL_STAT_META.malScore.hover, formatValue: (v) => v.toFixed(2),
+    },
+    {
+      label: MAL_STAT_META.adjustedScore.name, idPrefix: 'weighted-score', min: 1, max: 10, step: 0.01,
+      minKey: 'adjustedScoreMin', maxKey: 'adjustedScoreMax', hover: MAL_STAT_META.adjustedScore.hover, formatValue: (v) => v.toFixed(2),
+    },
+    {
+      label: MAL_STAT_META.malTomatometer.name, idPrefix: 'tomatometer', min: 0, max: 100, step: 0.1,
+      minKey: 'malTomatometerMin', maxKey: 'malTomatometerMax', hover: MAL_STAT_META.malTomatometer.hover, formatValue: (v) => `${v.toFixed(1)}%`,
+    },
+  ];
 
-  const { group: scoreGroup, chips: scoreChips } = makeGroup('My Score');
-  scoreChips.classList.add('year-range-chips');
+  function renderScoringMetrics(chips) {
+    SCORING_METRICS.forEach(metric => {
+      const row = document.createElement('div');
+      row.className = 'scoring-metric-row';
+      const label = document.createElement('div');
+      label.className = 'scoring-metric-label';
+      label.textContent = metric.label;
+      attachHoverTooltip(label, metric.hover);
+      const slider = makeRangeSlider({
+        idPrefix: metric.idPrefix,
+        min: metric.min,
+        max: metric.max,
+        step: metric.step,
+        formatValue: metric.formatValue,
+        onChange: (lo, hi) => {
+          state[metric.minKey] = lo;
+          state[metric.maxKey] = hi;
+        },
+      });
+      row.appendChild(label);
+      row.appendChild(slider);
+      chips.appendChild(row);
+    });
+  }
 
-  const scoreSliderWrapper = document.createElement('div');
-  scoreSliderWrapper.className = 'year-slider-wrapper';
-
-  const scoreDisplay = document.createElement('div');
-  scoreDisplay.className = 'year-display';
-  const scoreMinLabel = document.createElement('span');
-  scoreMinLabel.className = 'year-display-val';
-  scoreMinLabel.id = 'score-min-display';
-  scoreMinLabel.textContent = dataMinScore;
-  const scoreDash = document.createElement('span');
-  scoreDash.className = 'year-display-dash';
-  scoreDash.textContent = '—';
-  const scoreMaxLabel = document.createElement('span');
-  scoreMaxLabel.className = 'year-display-val';
-  scoreMaxLabel.id = 'score-max-display';
-  scoreMaxLabel.textContent = dataMaxScore;
-  scoreDisplay.appendChild(scoreMinLabel);
-  scoreDisplay.appendChild(scoreDash);
-  scoreDisplay.appendChild(scoreMaxLabel);
-
-  const scoreTrackContainer = document.createElement('div');
-  scoreTrackContainer.className = 'year-track-container';
-  const scoreTrackBg = document.createElement('div');
-  scoreTrackBg.className = 'year-track-bg';
-  const scoreTrackFill = document.createElement('div');
-  scoreTrackFill.className = 'year-track-fill';
-  scoreTrackFill.id = 'score-track-fill';
-  scoreTrackBg.appendChild(scoreTrackFill);
-
-  const scoreMinInput = document.createElement('input');
-  scoreMinInput.type = 'range';
-  scoreMinInput.className = 'year-slider';
-  scoreMinInput.id = 'score-slider-min';
-  scoreMinInput.min = dataMinScore;
-  scoreMinInput.max = dataMaxScore;
-  scoreMinInput.value = dataMinScore;
-  scoreMinInput.style.zIndex = '4';
-
-  const scoreMaxInput = document.createElement('input');
-  scoreMaxInput.type = 'range';
-  scoreMaxInput.className = 'year-slider';
-  scoreMaxInput.id = 'score-slider-max';
-  scoreMaxInput.min = dataMinScore;
-  scoreMaxInput.max = dataMaxScore;
-  scoreMaxInput.value = dataMaxScore;
-  scoreMaxInput.style.zIndex = '3';
-
-  const updateScoreFill = () => {
-    const range = dataMaxScore - dataMinScore;
-    const lo = parseInt(scoreMinInput.value);
-    const hi = parseInt(scoreMaxInput.value);
-    scoreTrackFill.style.left  = ((lo - dataMinScore) / range * 100) + '%';
-    scoreTrackFill.style.right = ((dataMaxScore - hi)  / range * 100) + '%';
-    scoreMinLabel.textContent = lo;
-    scoreMaxLabel.textContent = hi;
-    scoreMinInput.style.zIndex = (hi > dataMinScore && (lo <= dataMinScore || lo >= hi)) ? '4' : '2';
-  };
-
-  scoreMinInput.addEventListener('input', () => {
-    if (parseInt(scoreMinInput.value) > parseInt(scoreMaxInput.value)) scoreMinInput.value = scoreMaxInput.value;
-    state.scoreMin = parseInt(scoreMinInput.value) <= dataMinScore ? null : parseInt(scoreMinInput.value);
-    state.scoreMax = parseInt(scoreMaxInput.value) >= dataMaxScore ? null : parseInt(scoreMaxInput.value);
-    updateScoreFill();
-    recommend();
-  });
-
-  scoreMaxInput.addEventListener('input', () => {
-    if (parseInt(scoreMaxInput.value) < parseInt(scoreMinInput.value)) scoreMaxInput.value = scoreMinInput.value;
-    state.scoreMin = parseInt(scoreMinInput.value) <= dataMinScore ? null : parseInt(scoreMinInput.value);
-    state.scoreMax = parseInt(scoreMaxInput.value) >= dataMaxScore ? null : parseInt(scoreMaxInput.value);
-    updateScoreFill();
-    recommend();
-  });
-
-  scoreTrackContainer.appendChild(scoreTrackBg);
-  scoreTrackContainer.appendChild(scoreMinInput);
-  scoreTrackContainer.appendChild(scoreMaxInput);
-  scoreSliderWrapper.appendChild(scoreDisplay);
-  scoreSliderWrapper.appendChild(scoreTrackContainer);
-  scoreChips.appendChild(scoreSliderWrapper);
-  panel.appendChild(scoreGroup);
+  const { group: scoringGroup, chips: scoringChips } = makeGroup('Scoring Metrics');
+  scoringChips.classList.add('year-range-chips');
+  renderScoringMetrics(scoringChips);
+  panel.appendChild(scoringGroup);
 
   // Special Titles (Certified Fresh/Rotten, Award Winning — derived from specialAwards)
   const { group: specialGroup, chips: specialChips } = makeGroup('Special Titles');
@@ -1064,6 +1285,20 @@ function toggle18plus(enabled) {
   recommend();
 }
 
+function resetRangeSlider(idPrefix, formatValue = (v) => v) {
+  const minSlider = document.getElementById(`${idPrefix}-slider-min`);
+  const maxSlider = document.getElementById(`${idPrefix}-slider-max`);
+  if (!minSlider || !maxSlider) return;
+  minSlider.value = minSlider.min;
+  maxSlider.value = maxSlider.max;
+  const fill = document.getElementById(`${idPrefix}-track-fill`);
+  if (fill) { fill.style.left = '0%'; fill.style.right = '0%'; }
+  const minDisp = document.getElementById(`${idPrefix}-min-display`);
+  const maxDisp = document.getElementById(`${idPrefix}-max-display`);
+  if (minDisp) minDisp.textContent = formatValue(parseFloat(minSlider.min));
+  if (maxDisp) maxDisp.textContent = formatValue(parseFloat(maxSlider.max));
+}
+
 function clearAllFilters() {
   state.genres.clear();
   state.tags.clear();
@@ -1079,32 +1314,19 @@ function clearAllFilters() {
   state.yearMax = null;
   state.scoreMin = null;
   state.scoreMax = null;
+  state.malScoreMin = null;
+  state.malScoreMax = null;
+  state.adjustedScoreMin = null;
+  state.adjustedScoreMax = null;
+  state.malTomatometerMin = null;
+  state.malTomatometerMax = null;
   document.querySelectorAll('.filter-chip.active, .filter-chip.excluded')
     .forEach(btn => btn.classList.remove('active', 'excluded'));
-  const minSlider = document.getElementById('year-slider-min');
-  const maxSlider = document.getElementById('year-slider-max');
-  if (minSlider && maxSlider) {
-    minSlider.value = minSlider.min;
-    maxSlider.value = maxSlider.max;
-    const fill = document.getElementById('year-track-fill');
-    if (fill) { fill.style.left = '0%'; fill.style.right = '0%'; }
-    const minDisp = document.getElementById('year-min-display');
-    const maxDisp = document.getElementById('year-max-display');
-    if (minDisp) minDisp.textContent = minSlider.min;
-    if (maxDisp) maxDisp.textContent = maxSlider.max;
-  }
-  const scoreMinSlider = document.getElementById('score-slider-min');
-  const scoreMaxSlider = document.getElementById('score-slider-max');
-  if (scoreMinSlider && scoreMaxSlider) {
-    scoreMinSlider.value = scoreMinSlider.min;
-    scoreMaxSlider.value = scoreMaxSlider.max;
-    const scoreFill = document.getElementById('score-track-fill');
-    if (scoreFill) { scoreFill.style.left = '0%'; scoreFill.style.right = '0%'; }
-    const scoreMinDisp = document.getElementById('score-min-display');
-    const scoreMaxDisp = document.getElementById('score-max-display');
-    if (scoreMinDisp) scoreMinDisp.textContent = scoreMinSlider.min;
-    if (scoreMaxDisp) scoreMaxDisp.textContent = scoreMaxSlider.max;
-  }
+  resetRangeSlider('year');
+  resetRangeSlider('score');
+  resetRangeSlider('mal-score', (v) => v.toFixed(2));
+  resetRangeSlider('weighted-score', (v) => v.toFixed(2));
+  resetRangeSlider('tomatometer', (v) => `${v.toFixed(1)}%`);
   recommend();
 }
 
@@ -1128,7 +1350,14 @@ async function init() {
             <div class="modal-meta">
               <span class="modal-season-chip"></span>
             </div>
-            <div class="modal-genres"></div>
+            <div class="modal-stats-section hidden">
+              <div class="modal-stats-label">Stats</div>
+              <div class="modal-stats"></div>
+            </div>
+            <div class="modal-genres-section">
+              <div class="modal-stats-label">Genres</div>
+              <div class="modal-genres"></div>
+            </div>
             <p class="modal-description"></p>
             <a class="modal-review-link hidden" href="#" target="_blank" rel="noopener">Read Jeric's Review →</a>
             <a class="modal-anilist-link" href="#" target="_blank" rel="noopener">View on Anilist →</a>
@@ -1170,7 +1399,18 @@ async function init() {
 
   document.getElementById('toggle-18plus').addEventListener('change', e => toggle18plus(e.target.checked));
   document.getElementById('toggle-or-mode').addEventListener('change', e => { orMode = e.target.checked; recommend(); });
+  document.getElementById('toggle-show-all').addEventListener('change', e => { showAllAnime = e.target.checked; recommend(); });
   document.getElementById('clear-filters').addEventListener('click', clearAllFilters);
+
+  const filtersToggleBtn = document.getElementById('filters-toggle');
+  const filterPanel = document.getElementById('filter-panel');
+  const orModeLabel = document.getElementById('or-mode-label');
+  filtersToggleBtn.addEventListener('click', () => {
+    const collapsed = filterPanel.classList.toggle('collapsed');
+    filtersToggleBtn.setAttribute('aria-expanded', String(!collapsed));
+    filtersToggleBtn.querySelector('.filters-chevron').textContent = collapsed ? '▾' : '▴';
+    orModeLabel.classList.toggle('hidden', collapsed);
+  });
 
   renderDefault();
 }
