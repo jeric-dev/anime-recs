@@ -1401,9 +1401,21 @@ async function init() {
   buildFilterUI();
   renderHeroCollage();
 
-  document.getElementById('toggle-18plus').addEventListener('change', e => toggle18plus(e.target.checked));
-  document.getElementById('toggle-or-mode').addEventListener('change', e => { orMode = e.target.checked; recommend(); });
-  document.getElementById('toggle-show-all').addEventListener('change', e => { showAllAnime = e.target.checked; recommend(); });
+  // Browsers restore checkbox checked state across a reload independent of the
+  // HTML (no `checked` attribute is set here), which left these visually "on"
+  // while the JS state they control had already reset to false — forcing a
+  // resync click before the toggle would actually do anything. Reset the
+  // checkbox to match on every load so a refresh always starts unchecked.
+  const toggle18plusEl = document.getElementById('toggle-18plus');
+  const toggleOrModeEl = document.getElementById('toggle-or-mode');
+  const toggleShowAllEl = document.getElementById('toggle-show-all');
+  toggle18plusEl.checked = false;
+  toggleOrModeEl.checked = false;
+  toggleShowAllEl.checked = false;
+
+  toggle18plusEl.addEventListener('change', e => toggle18plus(e.target.checked));
+  toggleOrModeEl.addEventListener('change', e => { orMode = e.target.checked; recommend(); });
+  toggleShowAllEl.addEventListener('change', e => { showAllAnime = e.target.checked; recommend(); });
   document.getElementById('clear-filters').addEventListener('click', clearAllFilters);
 
   const filtersToggleBtn = document.getElementById('filters-toggle');
