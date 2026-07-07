@@ -181,23 +181,35 @@ const SPECIAL_TITLES_META = {
 
 const MEDALIST_AWARDS = ['gold', 'fivechAOTY', 'fourchanAOTY', 'crunchyroll', 'jury', 'public', 'motyJury', 'motyPublic'];
 
-// Certified Fresh/Rotten are no longer hand-curated — they're derived
-// automatically from where an anime's Weighted Score ranks against every
-// other anime with a score: top 10% is Fresh, bottom 10% is Rotten. Reuses
-// the same metricRankings population the Scoring Metrics chips are colored
-// from, so the two stay consistent with each other.
-function getFreshRottenStatus(anime) {
-  // Prereq anime never carry the Fresh/Rotten title, even if their Weighted
-  // Score would otherwise qualify — someone has to watch something else
-  // first, so it's not a title worth surfacing on its own.
-  if (anime.requiresPrereq) return null;
-  const list = metricRankings.adjustedScore;
+// Returns an anime's percentile rank (0-1, lower is better) for a given
+// metric, or null if it isn't ranked for that metric at all.
+function metricPercentile(anilistId, key) {
+  const list = metricRankings[key];
   if (!list) return null;
-  const rank = list.findIndex(x => x.id === anime.id) + 1;
+  const rank = list.findIndex(x => x.id === anilistId) + 1;
   if (rank === 0) return null;
-  const pct = rank / list.length;
-  if (pct <= 0.10) return 'fresh';
-  if (pct > 0.90) return 'rotten';
+  return rank / list.length;
+}
+
+// Certified Fresh/Rotten are no longer hand-curated — they're derived
+// automatically from where an anime ranks against every other anime with a
+// score. Fresh requires top 10% on BOTH Weighted Score and Tomatometer;
+// Rotten requires bottom 10% on both. A single standout (or single dud)
+// metric alone isn't enough — a high Weighted Score can come from a large,
+// only-decent audience, and a low one can come from a small, harsh one, so
+// both titles are meant to flag anime that agree across metrics, not just one.
+function getFreshRottenStatus(anime) {
+  // Prereq anime never carry the Fresh/Rotten title, even if their scores
+  // would otherwise qualify — someone has to watch something else first,
+  // so it's not a title worth surfacing on its own.
+  if (anime.requiresPrereq) return null;
+
+  const adjustedPct = metricPercentile(anime.id, 'adjustedScore');
+  const tomatometerPct = metricPercentile(anime.id, 'malTomatometer');
+  if (adjustedPct === null || tomatometerPct === null) return null;
+
+  if (adjustedPct <= 0.10 && tomatometerPct <= 0.10) return 'fresh';
+  if (adjustedPct > 0.90 && tomatometerPct > 0.90) return 'rotten';
   return null;
 }
 
@@ -690,7 +702,7 @@ function renderResults(results) {
     return;
   }
 
-  status.textContent = `${results.length} match${results.length === 1 ? '' : 'es'} from my completed list`;
+  status.textContent = `${results.length} match${results.length === 1 ? '' : 'es'} found`;
   status.classList.remove('hidden');
   grid.innerHTML = results.map(renderCard).join('');
 }
@@ -1169,7 +1181,7 @@ function buildFilterUI() {
   const SCORING_METRICS = [
     {
       label: 'My Score', idPrefix: 'score', min: 1, max: 10,
-      minKey: 'scoreMin', maxKey: 'scoreMax', hover: 'This is the score you gave this anime',
+      minKey: 'scoreMin', maxKey: 'scoreMax', hover: 'This is the score I gave this anime',
     },
     {
       label: MAL_STAT_META.malScore.name, idPrefix: 'mal-score', min: 1, max: 10, step: 0.01,
@@ -1363,7 +1375,7 @@ async function init() {
               <div class="modal-genres"></div>
             </div>
             <p class="modal-description"></p>
-            <a class="modal-review-link hidden" href="#" target="_blank" rel="noopener">Read Jeric's Review →</a>
+            <a class="modal-review-link hidden" href="#" target="_blank" rel="noopener">Read My Review →</a>
             <a class="modal-anilist-link" href="#" target="_blank" rel="noopener">View on Anilist →</a>
           </div>
         </div>
