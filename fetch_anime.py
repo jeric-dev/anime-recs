@@ -13,6 +13,11 @@ query ($username: String) {
       entries {
         score(format: POINT_10)
         notes
+        completedAt {
+          year
+          month
+          day
+        }
         media {
           id
           title {
@@ -70,6 +75,47 @@ def clean_description(desc):
     desc = '\n'.join(re.sub(r' +', ' ', line).strip() for line in desc.split('\n'))
     desc = re.sub(r'\n{3,}', '\n\n', desc)
     return desc.strip()
+
+def get_completed_date(completed_at):
+    # AniList's completedAt is a "fuzzy date" — users can log a completion
+    # with just a year, or year+month, without a specific day. Only build a
+    # date string when we have enough precision to place it on the "last 3
+    # months" timeline unambiguously; otherwise leave it out rather than
+    # guessing a day.
+    if not completed_at:
+        return None
+    year, month, day = completed_at.get("year"), completed_at.get("month"), completed_at.get("day")
+    if not (year and month and day):
+        return None
+    return f"{year:04d}-{month:02d}-{day:02d}"
+
+MAL_SEARCH_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0 Safari/537.36"
+
+def lookup_mal_id(title_romaji, year):
+    # MAL's own site-search autocomplete endpoint (what powers the search box
+    # on myanimelist.net) — more reliable than Jikan, which proxies MAL and
+    # occasionally times out. Only auto-accepts the top-scored result if its
+    # start_year also matches Anilist's seasonYear; otherwise returns None so
+    # the entry falls back to manual review rather than guessing wrong.
+    try:
+        response = requests.get(
+            "https://myanimelist.net/search/prefix.json",
+            params={"type": "anime", "keyword": title_romaji},
+            headers={"User-Agent": MAL_SEARCH_UA, "X-Requested-With": "XMLHttpRequest"},
+            timeout=15,
+        )
+        if response.status_code != 200:
+            return None
+        data = response.json()
+        items = data.get("categories", [{}])[0].get("items", [])
+        if not items:
+            return None
+        top = items[0]
+        if year and top.get("payload", {}).get("start_year") == year:
+            return top["id"]
+        return None
+    except Exception:
+        return None
 
 def get_studios(media):
     # AniList's "Studios" section on the site is the isMain edges; the rest
@@ -183,6 +229,7 @@ def fetch_anime_list(existing_prereq_map, existing_awards_map, existing_mal_id_m
                 "season": media.get("season"),
                 "url": media["siteUrl"],
                 "notes": entry["notes"] or "",
+                "completedDate": get_completed_date(entry.get("completedAt")),
                 "studios": get_studios(media),
                 "requiresPrereq": requires_prereq,
                 "specialAwards": existing_awards_map.get(media["id"], []),
@@ -216,7 +263,27 @@ if __name__ == "__main__":
     print(f"Saved {len(tag_descriptions)} tag descriptions to {tags_out}")
 
     if new_ids:
-        print(f"\n{len(new_ids)} new anime not in prior data — requiresPrereq was guessed from AniList's PREQUEL relation. Review these manually:")
+        print(f"\n{len(new_ids)} new anime not in prior data — requiresPrereq was guessed from Anilist's PREQUEL relation. Review these manually:")
+        needs_mal_lookup = []
         for a in anime:
             if a["id"] in new_ids:
                 print(f"  [{a['requiresPrereq']}] {a['title']} (id={a['id']})")
+                if "malId" not in a:
+                    needs_mal_lookup.append(a)
+
+        if needs_mal_lookup:
+            print(f"\nLooking up MAL IDs for {len(needs_mal_lookup)} new anime with no existing mapping...")
+            still_unmapped = []
+            for a in needs_mal_lookup:
+                mal_id = lookup_mal_id(a["titleRomaji"], a["year"])
+                if mal_id:
+                    a["malId"] = mal_id
+                    print(f"  matched \"{a['title']}\" -> MAL id {mal_id} (year confirmed)")
+                else:
+                    still_unmapped.append(a)
+            with open(out, "w", encoding="utf-8") as f:
+                json.dump(anime, f, ensure_ascii=False, indent=2)
+            if still_unmapped:
+                print(f"\n{len(still_unmapped)} anime need a manual MAL ID (no confident automatic match):")
+                for a in still_unmapped:
+                    print(f"  {a['title']} (id={a['id']})")
