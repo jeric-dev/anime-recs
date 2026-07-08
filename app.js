@@ -739,15 +739,33 @@ function renderDefault() {
       return (a.title || a.titleRomaji || '').localeCompare(b.title || b.titleRomaji || '');
     });
 
-  if (!recent.length) {
+  if (recent.length) {
+    status.textContent = 'What I\'ve completed in the last 3 months — select filters above to find something specific';
+    status.classList.remove('hidden');
+    grid.innerHTML = recent.map(renderCard).join('');
+    return;
+  }
+
+  // Nothing completed recently — fall back to the all-time ★9/★10 picks
+  // rather than showing a blank page.
+  const topRated = animeData
+    .filter(a => (showAllAnime || !a.requiresPrereq) && a.score >= 9)
+    .filter(a => matureEnabled || !isMatureAnime(a))
+    .sort((a, b) => {
+      if (b.score !== a.score) return b.score - a.score;
+      if ((b.averageScore || 0) !== (a.averageScore || 0)) return (b.averageScore || 0) - (a.averageScore || 0);
+      return (a.title || a.titleRomaji || '').localeCompare(b.title || b.titleRomaji || '');
+    });
+
+  if (!topRated.length) {
     grid.innerHTML = '';
     status.classList.add('hidden');
     return;
   }
 
-  status.textContent = 'What I\'ve completed in the last 3 months — select filters above to find something specific';
+  status.textContent = 'My highest-rated picks — select filters above to find something specific';
   status.classList.remove('hidden');
-  grid.innerHTML = recent.map(renderCard).join('');
+  grid.innerHTML = topRated.map(renderCard).join('');
 }
 
 function updateFilterCount() {
