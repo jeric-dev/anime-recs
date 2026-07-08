@@ -731,15 +731,27 @@ function renderDefault() {
   const cutoff = new Date();
   cutoff.setMonth(cutoff.getMonth() - 3);
 
-  const recent = animeData
-    .filter(a => (showAllAnime || !a.requiresPrereq) && a.completedDate && new Date(a.completedDate) >= cutoff)
-    .filter(a => matureEnabled || !isMatureAnime(a))
-    .sort((a, b) => {
-      if (a.completedDate !== b.completedDate) return a.completedDate < b.completedDate ? 1 : -1;
-      return (a.title || a.titleRomaji || '').localeCompare(b.title || b.titleRomaji || '');
-    });
+  // Whether to show "recently completed" mode is decided independent of the
+  // current toggle state, using only non-prereq, non-mature completions as
+  // the baseline. Otherwise, switching on Show All Anime or Mature Content
+  // could flip the page from "my highest-rated picks" over to a small list
+  // that only exists because the toggle revealed it — a bait-and-switch. If
+  // nothing normally-visible was completed recently, stay in the top-rated
+  // fallback framework regardless of what gets toggled afterward; that
+  // fallback still reacts to the toggles itself, same as it always has.
+  const hasBaselineRecent = animeData.some(a =>
+    !a.requiresPrereq && !isMatureAnime(a) && a.completedDate && new Date(a.completedDate) >= cutoff
+  );
 
-  if (recent.length) {
+  if (hasBaselineRecent) {
+    const recent = animeData
+      .filter(a => (showAllAnime || !a.requiresPrereq) && a.completedDate && new Date(a.completedDate) >= cutoff)
+      .filter(a => matureEnabled || !isMatureAnime(a))
+      .sort((a, b) => {
+        if (a.completedDate !== b.completedDate) return a.completedDate < b.completedDate ? 1 : -1;
+        return (a.title || a.titleRomaji || '').localeCompare(b.title || b.titleRomaji || '');
+      });
+
     status.textContent = 'What I\'ve completed in the last 3 months — select filters above to find something specific';
     status.classList.remove('hidden');
     grid.innerHTML = recent.map(renderCard).join('');
