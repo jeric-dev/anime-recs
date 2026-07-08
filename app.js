@@ -727,24 +727,27 @@ function renderHeroCollage() {
 function renderDefault() {
   const grid = document.getElementById('results');
   const status = document.getElementById('status-bar');
-  const top = animeData
-    .filter(a => (showAllAnime || !a.requiresPrereq) && a.score >= 9)
+
+  const cutoff = new Date();
+  cutoff.setMonth(cutoff.getMonth() - 3);
+
+  const recent = animeData
+    .filter(a => (showAllAnime || !a.requiresPrereq) && a.completedDate && new Date(a.completedDate) >= cutoff)
     .filter(a => matureEnabled || !isMatureAnime(a))
     .sort((a, b) => {
-      if (b.score !== a.score) return b.score - a.score;
-      if ((b.averageScore || 0) !== (a.averageScore || 0)) return (b.averageScore || 0) - (a.averageScore || 0);
+      if (a.completedDate !== b.completedDate) return a.completedDate < b.completedDate ? 1 : -1;
       return (a.title || a.titleRomaji || '').localeCompare(b.title || b.titleRomaji || '');
     });
 
-  if (!top.length) {
+  if (!recent.length) {
     grid.innerHTML = '';
     status.classList.add('hidden');
     return;
   }
 
-  status.textContent = 'My highest-rated picks — select filters above to find something specific';
+  status.textContent = 'What I\'ve completed in the last 3 months — select filters above to find something specific';
   status.classList.remove('hidden');
-  grid.innerHTML = top.map(renderCard).join('');
+  grid.innerHTML = recent.map(renderCard).join('');
 }
 
 function updateFilterCount() {

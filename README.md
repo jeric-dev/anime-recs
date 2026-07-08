@@ -12,7 +12,7 @@ A personal anime recommendation site built on top of my [Anilist](https://anilis
 - Ranks results by my personal rating first, tiebroken by tag relevance, then Anilist's community average
 - Result cards show the animation studio(s) under the title (genres were dropped from the card front to save space and avoid repeating what's already filterable via chips)
 - Clicking a card opens a detail view with the full description, studio, season, any special award badges, and a link to my review where one exists
-- Default view (no filters) shows my ★9 and ★10 rated picks
+- Default view (no filters) shows what I've completed in the rolling last 3 months, newest first (uses Anilist's `completedAt` date; entries logged without a specific day are excluded rather than guessed)
 - Anime that need prior series/season context are hidden by default (hand-curated, not just "has a prequel") — the "Show All Anime" toggle reveals them everywhere except the header collage
 - Mature content (Ecchi genre, or tags like Nudity/Large Breasts at ≥75% rank) is hidden from every view — default and filtered — until the "Mature Content" toggle is switched on
 - The header shows a randomized, blurred collage of covers from my list behind the title — a fresh mix every page load
@@ -63,7 +63,7 @@ Every tag shown as a filter appears in at least 5 of my completed anime at ≥75
 - **Genres & Studios:** +10 pts flat per match
 - **Tags & Demographics:** `(rank / 100) × 5` pts if the tag's rank is ≥75% — a tag at 96% confidence scores 4.8 pts, one at 75% scores 3.75 pts
 
-Filtered results are sorted by **my personal rating first**, then **Weighted Score**, then **Tomatometer**, then **MAL Score**, then **alphabetically by title** as the final tiebreaker. (The default, no-filters view sorts by personal rating, then Anilist's community average, then title.)
+Filtered results are sorted by **my personal rating first**, then **Weighted Score**, then **Tomatometer**, then **MAL Score**, then **alphabetically by title** as the final tiebreaker. (The default, no-filters view sorts by completion date instead, newest first, then title.)
 
 ## Special award badges
 
