@@ -9,10 +9,10 @@ A personal anime recommendation site built on top of my [Anilist](https://anilis
 - Pulls my completed anime list from Anilist (ratings, genres, tags, studios, seasons, and personal review notes)
 - Lets visitors filter using structured chips — genres, demographics, studios, themes, tone, cast/characters, and more
 - Tag chips show Anilist's own description on hover (desktop) or long-press (mobile)
-- Ranks results by my personal rating first, tiebroken by tag relevance, then Anilist's community average
+- Ranks filtered results by my personal rating first, then Weighted Score, Tomatometer, and MAL Score as tiebreakers, then alphabetically (see Scoring & sort order below)
 - Result cards show the animation studio(s) under the title (genres were dropped from the card front to save space and avoid repeating what's already filterable via chips)
 - Clicking a card opens a detail view with the full description, studio, season, any special award badges, and a link to my review where one exists
-- Default view (no filters) shows what I've completed in the rolling last 3 months, newest first (uses Anilist's `completedAt` date; entries logged without a specific day are excluded rather than guessed)
+- Default view (no filters) shows what I've completed in the rolling last 3 months, newest first (uses Anilist's `completedAt` date; entries logged without a specific day are excluded rather than guessed) — if nothing qualifies as recently completed, falls back to all-time ★9–10 picks instead, sorted by my score then Anilist's community average
 - Anime that need prior series/season context are hidden by default (hand-curated, not just "has a prequel") — the "Show All Anime" toggle reveals them everywhere except the header collage
 - Mature content (Ecchi genre, or tags like Nudity/Large Breasts at ≥75% rank) is hidden from every view — default and filtered — until the "Mature Content" toggle is switched on
 - The header shows a randomized, blurred collage of covers from my list behind the title — a fresh mix every page load
@@ -63,7 +63,7 @@ Every tag shown as a filter appears in at least 5 of my completed anime at ≥75
 - **Genres & Studios:** +10 pts flat per match
 - **Tags & Demographics:** `(rank / 100) × 5` pts if the tag's rank is ≥75% — a tag at 96% confidence scores 4.8 pts, one at 75% scores 3.75 pts
 
-Filtered results are sorted by **my personal rating first**, then **Weighted Score**, then **Tomatometer**, then **MAL Score**, then **alphabetically by title** as the final tiebreaker. (The default, no-filters view sorts by completion date instead, newest first, then title.)
+Filtered results are sorted by **my personal rating first**, then **Weighted Score**, then **Tomatometer**, then **MAL Score**, then **alphabetically by title** as the final tiebreaker. (The default, no-filters view sorts by completion date instead, newest first, then title — or, when nothing's been completed in the rolling 3-month window, falls back to all-time ★9–10 picks sorted by my score, then Anilist's community average, then title.)
 
 ## Special award badges
 
@@ -74,7 +74,7 @@ Shown on the detail view next to the season badge, and filterable via the "Speci
 - 🏆 **4chan AOTY Winner** — crowned Anime of the Year by members of /a/
 - 🏆 **Crunchyroll AOTY Winner** — won the Crunchyroll Anime Award for Anime of the Year
 - 🏆 **r/anime AOTY/MOTY Jury/Public Winner** — community award wins
-- 🍅 **Certified Fresh** / 🗑️ **Certified Rotten** — computed automatically, not hand-curated: Fresh is the top 10% of all rated anime by Weighted Score, Rotten is the bottom 10%. Recalculates whenever the underlying MAL stats change
+- 🍅 **Certified Fresh** / 🗑️ **Certified Rotten** — computed automatically, not hand-curated: Fresh requires top 10% on *both* Weighted Score and Tomatometer; Rotten requires bottom 10% on both — a standout (or dud) on only one metric doesn't qualify. Anime that need prior series context (`requiresPrereq`) never carry either badge, regardless of score. Recalculates whenever the underlying MAL stats change
 
 ## Stack
 
@@ -99,7 +99,7 @@ Run the MAL stats script whenever you want to refresh `malScore`, `malMembers`, 
 node scrape_mal_stats.js
 ```
 
-`malMembers` is the "Completed" status count from each anime's MAL stats page (not the total members count), since that reflects people who've actually finished it. `adjustedScore` is a Bayesian average of `malScore` pulled toward a global mean — neither Bayesian constant is fixed; both are recomputed every run from the whole list, so they stay in step with what's typical here rather than going stale as the list grows:
+`malMembers` is the number of voting members — the sum of vote counts across all ten score buckets (1 through 10) on each anime's MAL stats page — since that's the actual sample size behind `malScore`, not the total members count or the "Completed" status count. `adjustedScore` is a Bayesian average of `malScore` pulled toward a global mean — neither Bayesian constant is fixed; both are recomputed every run from the whole list, so they stay in step with what's typical here rather than going stale as the list grows:
 
 - **Confidence weight:** the median `malMembers` across the whole list, floored to the nearest 1,000
 - **Global mean:** the mean `malScore` across the whole list
