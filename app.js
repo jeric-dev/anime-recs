@@ -148,6 +148,12 @@ const AWARD_META = {
     label: () => 'Certified Rotten',
     hover: () => 'Anime that score poorly across most metrics. Watch at your own risk',
   },
+  hiddenGem: {
+    emoji: '💎',
+    className: 'award-hidden-gem',
+    label: () => 'Hidden Gem',
+    hover: () => 'A well-liked anime that flies under the radar — worth a look if you want something great that not many people have watched',
+  },
 };
 
 // MAL-derived stats shown on the detail modal
@@ -177,6 +183,7 @@ const SPECIAL_TITLES_META = {
   },
   fresh: { label: `${AWARD_META.fresh.emoji} Certified Fresh`, hover: AWARD_META.fresh.hover() },
   rotten: { label: `${AWARD_META.rotten.emoji} Certified Rotten`, hover: AWARD_META.rotten.hover() },
+  hiddenGem: { label: `${AWARD_META.hiddenGem.emoji} Hidden Gem`, hover: 'Anime that have gone under radar for most but are still worth the watch' },
 };
 
 const MEDALIST_AWARDS = ['gold', 'fivechAOTY', 'fourchanAOTY', 'crunchyroll', 'jury', 'public', 'motyJury', 'motyPublic'];
@@ -213,10 +220,35 @@ function getFreshRottenStatus(anime) {
   return null;
 }
 
+// Hidden Gem: a well-regarded anime that not many people have watched. Needs
+// agreement on both Weighted Score and Tomatometer (same reasoning as
+// Fresh/Rotten — a single metric alone isn't a reliable enough signal), each
+// landing in the 20-50% band (good, but not so good it'd already be
+// Certified Fresh or otherwise widely known), a below-median voting-member
+// count (the "not many people have watched it" part), no prerequisite, and
+// my own score of 7+ — community metrics alone let a show I only rated a 6
+// still carry the "worth the watch" badge, which undercuts it as a personal
+// endorsement.
+function isHiddenGem(anime) {
+  if (anime.requiresPrereq) return false;
+  if ((anime.score || 0) < 7) return false;
+
+  const adjustedPct = metricPercentile(anime.id, 'adjustedScore');
+  const tomatometerPct = metricPercentile(anime.id, 'malTomatometer');
+  if (adjustedPct === null || tomatometerPct === null) return false;
+  const inBand = pct => pct > 0.20 && pct <= 0.50;
+  if (!inBand(adjustedPct) || !inBand(tomatometerPct)) return false;
+
+  const members = getStatsSource(anime).malMembers;
+  if (members === undefined || medianVotingMembers === null) return false;
+  return members < medianVotingMembers;
+}
+
 function animeHasSpecialTitle(anime, key) {
   const awards = anime.specialAwards || [];
   if (key === 'medalist') return MEDALIST_AWARDS.some(a => awards.includes(a));
   if (key === 'fresh' || key === 'rotten') return getFreshRottenStatus(anime) === key;
+  if (key === 'hiddenGem') return isHiddenGem(anime);
   return awards.includes(key);
 }
 
@@ -291,6 +323,10 @@ function getStatsSource(anime) {
 // Per-metric ranking of every anime, used to color-code each stat chip by
 // how that anime's value compares to the rest of the list.
 let metricRankings = {};
+// Median voting-member count across the whole list, used by the Hidden Gem
+// title. Recomputed alongside the rankings so it stays in step as the list
+// grows, same reasoning as the Bayesian constants in bayesian_constants.json.
+let medianVotingMembers = null;
 function computeMetricRankings() {
   metricRankings = {};
   ['malScore', 'adjustedScore', 'malTomatometer'].forEach(key => {
@@ -300,6 +336,19 @@ function computeMetricRankings() {
       .sort((a, b) => b.value - a.value);
     metricRankings[key] = list;
   });
+
+  const members = animeData
+    .map(a => getStatsSource(a).malMembers)
+    .filter(v => v !== undefined)
+    .sort((a, b) => a - b);
+  if (members.length) {
+    const mid = Math.floor(members.length / 2);
+    medianVotingMembers = members.length % 2 === 0
+      ? (members[mid - 1] + members[mid]) / 2
+      : members[mid];
+  } else {
+    medianVotingMembers = null;
+  }
 }
 
 // Rank-based color coding: #1 and #2 overall get unique colors, then a
@@ -619,9 +668,15 @@ function openModal(id) {
   const metaRow = overlay.querySelector('.modal-meta');
   metaRow.querySelectorAll('.modal-award-chip').forEach(el => el.remove());
   const freshRottenStatus = getFreshRottenStatus(anime);
+  // Display order: Award Winning badges (alphabetized by label when there's
+  // more than one), then Certified Fresh/Rotten, then Hidden Gem last.
+  const medalistAwards = (anime.specialAwards || [])
+    .filter(a => a !== 'fresh' && a !== 'rotten')
+    .sort((a, b) => AWARD_META[a].label().localeCompare(AWARD_META[b].label()));
   const displayAwards = [
+    ...medalistAwards,
     ...(freshRottenStatus ? [freshRottenStatus] : []),
-    ...(anime.specialAwards || []).filter(a => a !== 'fresh' && a !== 'rotten'),
+    ...(isHiddenGem(anime) ? ['hiddenGem'] : []),
   ];
   displayAwards.forEach(awardId => {
     const info = AWARD_META[awardId];
@@ -630,8 +685,8 @@ function openModal(id) {
     chip.className = `modal-award-chip award-chip ${info.className}`;
     chip.textContent = `${info.emoji} ${info.label(anime.year)}`;
     metaRow.appendChild(chip);
-    // Fresh/Rotten hover text lives on the "Special Titles" filter chips instead.
-    if (awardId !== 'fresh' && awardId !== 'rotten') {
+    // Fresh/Rotten/Hidden Gem hover text lives on the "Special Titles" filter chips instead.
+    if (awardId !== 'fresh' && awardId !== 'rotten' && awardId !== 'hiddenGem') {
       attachHoverTooltip(chip, info.hover(anime.year));
     }
   });

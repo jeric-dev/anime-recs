@@ -3424,7 +3424,7 @@
     "studios": [
       "CloverWorks"
     ],
-    "requiresPrereq": false,
+    "requiresPrereq": true,
     "specialAwards": [],
     "malId": 55357,
     "malScore": 8.31,
@@ -3497,7 +3497,7 @@
     "studios": [
       "CloverWorks"
     ],
-    "requiresPrereq": false,
+    "requiresPrereq": true,
     "specialAwards": [],
     "malId": 55357,
     "malScore": 8.31,
@@ -31578,7 +31578,7 @@
     "studios": [
       "Shin-Ei Animation"
     ],
-    "requiresPrereq": false,
+    "requiresPrereq": true,
     "specialAwards": [],
     "malId": 59985,
     "malScore": 7.74,
@@ -31983,7 +31983,7 @@
     "studios": [
       "Production I.G"
     ],
-    "requiresPrereq": false,
+    "requiresPrereq": true,
     "specialAwards": [],
     "malId": 29755,
     "malScore": 8.12,

@@ -842,6 +842,13 @@ main {
   cursor: default;
 }
 
+.award-chip.award-hidden-gem {
+  background: rgba(166, 132, 250, 0.15);
+  border: 1px solid rgba(166, 132, 250, 0.45);
+  color: #a684fa;
+  cursor: default;
+}
+
 .modal-genres {
   display: flex;
   flex-wrap: wrap;
