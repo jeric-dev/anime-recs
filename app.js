@@ -179,7 +179,7 @@ const MAL_STAT_META = {
 const SPECIAL_TITLES_META = {
   medalist: {
     label: '🏆 Award Winning',
-    hover: 'Anime recognized for outstanding achievement in their year of release.',
+    hover: 'Anime recognized for outstanding achievement in their year of release',
   },
   fresh: { label: `${AWARD_META.fresh.emoji} Certified Fresh`, hover: AWARD_META.fresh.hover() },
   rotten: { label: `${AWARD_META.rotten.emoji} Certified Rotten`, hover: AWARD_META.rotten.hover() },
@@ -216,27 +216,27 @@ function getFreshRottenStatus(anime) {
   if (adjustedPct === null || tomatometerPct === null) return null;
 
   if (adjustedPct <= 0.10 && tomatometerPct <= 0.10) return 'fresh';
-  if (adjustedPct > 0.90 && tomatometerPct > 0.90) return 'rotten';
+  if (adjustedPct >= 0.90 && tomatometerPct >= 0.90) return 'rotten';
   return null;
 }
 
 // Hidden Gem: a well-regarded anime that not many people have watched. Needs
 // agreement on both Weighted Score and Tomatometer (same reasoning as
 // Fresh/Rotten — a single metric alone isn't a reliable enough signal), each
-// landing in the 20-50% band (good, but not so good it'd already be
+// in the top 50% (good, but not necessarily good enough to already be
 // Certified Fresh or otherwise widely known), a below-median voting-member
 // count (the "not many people have watched it" part), no prerequisite, and
-// my own score of 7+ — community metrics alone let a show I only rated a 6
+// my own score of 8+ — community metrics alone let a show I only rated a 6
 // still carry the "worth the watch" badge, which undercuts it as a personal
 // endorsement.
 function isHiddenGem(anime) {
   if (anime.requiresPrereq) return false;
-  if ((anime.score || 0) < 7) return false;
+  if ((anime.score || 0) < 8) return false;
 
   const adjustedPct = metricPercentile(anime.id, 'adjustedScore');
   const tomatometerPct = metricPercentile(anime.id, 'malTomatometer');
   if (adjustedPct === null || tomatometerPct === null) return false;
-  const inBand = pct => pct > 0.20 && pct <= 0.50;
+  const inBand = pct => pct <= 0.50;
   if (!inBand(adjustedPct) || !inBand(tomatometerPct)) return false;
 
   const members = getStatsSource(anime).malMembers;
@@ -944,7 +944,10 @@ function makeFilterChip(label, type, extraClass, value, hoverText) {
   if (hoverText) {
     attachHoverTooltip(btn, hoverText, { suppressClick: true });
   } else if (type === 'tag' && tagDescriptions[label]) {
-    attachHoverTooltip(btn, tagDescriptions[label], { suppressClick: true });
+    // Anilist's tag descriptions always end in a period; strip it to match
+    // this site's hover text style (only the trailing period goes — any
+    // periods after earlier sentences stay).
+    attachHoverTooltip(btn, tagDescriptions[label].trim().replace(/\.$/, ''), { suppressClick: true });
   }
 
   btn.addEventListener('click', () => {
