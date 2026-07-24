@@ -183,7 +183,7 @@ const SPECIAL_TITLES_META = {
   },
   fresh: { label: `${AWARD_META.fresh.emoji} Certified Fresh`, hover: AWARD_META.fresh.hover() },
   rotten: { label: `${AWARD_META.rotten.emoji} Certified Rotten`, hover: AWARD_META.rotten.hover() },
-  hiddenGem: { label: `${AWARD_META.hiddenGem.emoji} Hidden Gem`, hover: 'Anime that have gone under radar for most but are still worth the watch' },
+  hiddenGem: { label: `${AWARD_META.hiddenGem.emoji} Hidden Gem`, hover: 'Underrated anime relative to everything else I\'ve watched' },
 };
 
 const MEDALIST_AWARDS = ['gold', 'fivechAOTY', 'fourchanAOTY', 'crunchyroll', 'jury', 'public', 'motyJury', 'motyPublic'];
@@ -220,18 +220,16 @@ function getFreshRottenStatus(anime) {
   return null;
 }
 
-// Hidden Gem: a well-regarded anime that not many people have watched. Needs
-// agreement on both Weighted Score and Tomatometer (same reasoning as
-// Fresh/Rotten — a single metric alone isn't a reliable enough signal), each
-// in the top 50% (good, but not necessarily good enough to already be
-// Certified Fresh or otherwise widely known), a below-median voting-member
-// count (the "not many people have watched it" part), no prerequisite, and
-// my own score of 8+ — community metrics alone let a show I only rated a 6
-// still carry the "worth the watch" badge, which undercuts it as a personal
-// endorsement.
+// Hidden Gem: a critical-consensus title, same as Fresh/Rotten — it makes no
+// claim about my personal opinion, only about how the wider anime community
+// rates it relative to the rest of what I've watched. Needs agreement on
+// both Weighted Score and Tomatometer (a single metric alone isn't a
+// reliable enough signal), each in the top 50% (good, but not necessarily
+// good enough to already be Certified Fresh or otherwise widely known), a
+// below-median voting-member count (the "not many people have watched it"
+// part), and no prerequisite.
 function isHiddenGem(anime) {
   if (anime.requiresPrereq) return false;
-  if ((anime.score || 0) < 8) return false;
 
   const adjustedPct = metricPercentile(anime.id, 'adjustedScore');
   const tomatometerPct = metricPercentile(anime.id, 'malTomatometer');
