@@ -2,6 +2,7 @@ import requests
 import json
 import os
 import re
+from datetime import datetime, timezone
 
 ANILIST_API = "https://graphql.anilist.co"
 USERNAME = "JBrual"
@@ -261,6 +262,10 @@ if __name__ == "__main__":
     with open(tags_out, "w", encoding="utf-8") as f:
         json.dump(tag_descriptions, f, ensure_ascii=False, indent=2, sort_keys=True)
     print(f"Saved {len(tag_descriptions)} tag descriptions to {tags_out}")
+
+    last_updated_out = os.path.join("data", "last_updated.json")
+    with open(last_updated_out, "w", encoding="utf-8") as f:
+        json.dump({"anilistSyncedAt": datetime.now(timezone.utc).isoformat()}, f, indent=2)
 
     if new_ids:
         print(f"\n{len(new_ids)} new anime not in prior data — requiresPrereq was guessed from Anilist's PREQUEL relation. Review these manually:")

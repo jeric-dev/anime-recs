@@ -309,6 +309,41 @@ async function loadData() {
   computeMetricRankings();
 }
 
+// "Last updated" combines the two independent sync steps from the README —
+// fetch_anime.py (Anilist) and scrape_mal_stats.js (MAL stats, which stamps
+// bayesian_constants.json on every run) — and shows whichever ran more
+// recently, since either one can change what's on the page.
+async function renderLastUpdated() {
+  const el = document.getElementById('hero-updated');
+  if (!el) return;
+
+  const timestamps = [];
+  try {
+    const res = await fetch('data/last_updated.json', { cache: 'no-cache' });
+    if (res.ok) {
+      const data = await res.json();
+      if (data.anilistSyncedAt) timestamps.push(new Date(data.anilistSyncedAt));
+    }
+  } catch {
+    // Fall through — the other timestamp may still be available.
+  }
+  try {
+    const res = await fetch('data/bayesian_constants.json', { cache: 'no-cache' });
+    if (res.ok) {
+      const data = await res.json();
+      if (data.computedAt) timestamps.push(new Date(data.computedAt));
+    }
+  } catch {
+    // Missing/invalid timestamps just mean the indicator stays blank.
+  }
+
+  const valid = timestamps.filter(d => !isNaN(d));
+  if (!valid.length) return;
+
+  const latest = new Date(Math.max(...valid));
+  el.textContent = `Data last updated ${latest.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' })}`;
+}
+
 // A handful of entries (e.g. the Re:ZERO OVAs, which bundle two separate MAL
 // entries) store their MAL stats in a malStats array instead of flat fields
 // — fall back to the first one so those entries still rank/display.
@@ -1501,6 +1536,7 @@ async function init() {
 
   buildFilterUI();
   renderHeroCollage();
+  renderLastUpdated();
 
   // Browsers restore checkbox checked state across a reload independent of the
   // HTML (no `checked` attribute is set here), which left these visually "on"
